@@ -1,9 +1,13 @@
 body {
     font-family: "Ubuntu", sans-serif;
+    colo: #444;
 }
 code {
     font-family: "Ubuntu Mono"
 }
 hr {
     border-top: 1px solid #ddd;
+}
+code {
+    color: #bf616a;
 }
