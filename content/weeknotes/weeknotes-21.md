@@ -17,7 +17,7 @@ Going from these three fields to one (without manually looking at each and every
 
 Right now, I've reduced the vocabulary to around 50 fields, and a dissimilarity matrix based on the Jaccard distance allows us to surface 17 "buckets" -- each company falling into one at the most:
 
-![Dendrogram of company categories]({{ site.baseurl }}/assets/ward-dendro.png)
+![Dendrogram of company categories](/assets/ward-dendro.png)
 
 But labelling and explaining is difficult too. Particularly when one such bucket brings together "Food", "Gamification", "IoT", etc. 
 
@@ -36,7 +36,7 @@ Some of that work consists of code reviews, data audits, and system administrati
 
 Aside from looking after backing up Neo4J instances, I quickly stood up an uptime monitor thanks to the [Koj team's](https://twitter.com/kojengineering) excellent work: 
 
-![Screenshot of my uptime monitor]({{ site.baseurl }}/assets/upptime-monitor.png)
+![Screenshot of my uptime monitor](/assets/upptime-monitor.png)
 
 [https://basilesimon.github.io/upptime-monitor](https://basilesimon.github.io/upptime-monitor)
 

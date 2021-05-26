@@ -8,7 +8,7 @@ However, lockdown is going to last a while longer here in Germany. While the inf
 
 [Zeit have all the details](https://www.zeit.de/wissen/gesundheit/2021-02/corona-varianten-verbreitung-deutschland-mutationen-virus-datenlage/komplettansicht), but the chart below summarises it:
 
-![Screenshot of Zeit Covid model]({{ site.baseurl }}/assets/zeit-infection-rate.png)
+![Screenshot of Zeit Covid model](/assets/zeit-infection-rate.png)
 
 So there we have it. We're adapting our daycare plans.
 
