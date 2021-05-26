@@ -1,0 +1,9 @@
+[submodule "themes/lanyon"]
+	path = themes/lanyon
+	url = https://github.com/tummychow/lanyon-hugo.git
+[submodule "themes/novela"]
+	path = themes/novela
+	url = https://github.com/forestryio/hugo-theme-novela.git
+[submodule "themes/hugo-bearblog"]
+	path = themes/hugo-bearblog
+	url = https://github.com/janraasch/hugo-bearblog.git
