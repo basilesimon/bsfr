@@ -8,7 +8,7 @@ However, lockdown is going to last a while longer here in Germany. While the inf
 
 [Zeit have all the details](https://www.zeit.de/wissen/gesundheit/2021-02/corona-varianten-verbreitung-deutschland-mutationen-virus-datenlage/komplettansicht), but the chart below summarises it:
 
-![Screenshot of Zeit Covid model](/assets/zeit-infection-rate.png)
+![Screenshot of Zeit Covid model](assets/zeit-infection-rate.png)
 
 So there we have it. We're adapting our daycare plans.
 
@@ -17,7 +17,7 @@ So there we have it. We're adapting our daycare plans.
 I've sketched out an intro for the Tactical Tech project, in Observable. Big hit with the team. It feels that we're now on the same page and all looking in the same direction content-wise.
 
 <video autoplay="" loop="" muted="" playsinline="" class="video-background" style="width:100%">
-  <source src="/assets/tactech-intro.mp4" type="video/mp4">
+  <source src="assets/tactech-intro.mp4" type="video/mp4">
 </video>
 
 I've also produced another notebook to allow us to play with some parameters and to collectively agree on a definition.
@@ -25,7 +25,7 @@ I've also produced another notebook to allow us to play with some parameters and
 In this example, what do we mean by "companies X and Y are in quasi-monopolies in this and that field"? With the tool, we can not only pick out which fields see such monopolies, but also influence our definition of a monopoly. Is it one company owning more than 70% of the field? Or more?
   
 <video autoplay="" loop="" muted="" playsinline="" class="video-background" style="width:100%">
-  <source src="/assets/tactech-notebook.mp4" type="video/mp4">
+  <source src="assets/tactech-notebook.mp4" type="video/mp4">
 </video>
 
 ---
