@@ -1,7 +1,7 @@
 ---
-title: "hello, hugo!"
-date: 2020-05-26T00:00:00+00:00
+date: "2020-05-26T00:00:00+00:00"
 draft: false
+title: hello, hugo!
 ---
 
 yay!
