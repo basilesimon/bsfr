@@ -1,4 +1,9 @@
-I am a coder-journalist who has left the newsroom behind in order to focus on different practices of data analysis and visualisation.
+---
+title: "👋 hi, I’m basile"
+description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
+---
+
+I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation.
 
 <span style="font-weight: bold; color: var(--highlight)">Update March 2021:</span> I am looking for freelance/contract work from January 2022 onwards!
 
