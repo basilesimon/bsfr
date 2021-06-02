@@ -2,6 +2,7 @@
 date: "2021-02-11T00:00:00Z"
 description: Hello d3-render, a lovely declarative library looking after the heavy lifting of the General Update Pattern
 image: https://blog.basilesimon.fr/assets/share-render.png
+tags: [observable, d3]
 title: Some declarative, React-like logic for your Observable/d3 toolkit
 ---
 

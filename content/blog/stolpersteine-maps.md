@@ -2,6 +2,7 @@
 date: "2020-11-13T00:00:00Z"
 description: ""
 image: ""
+tags: [observable, viz]
 title: Comparing Berlin memorial street plaques datasets
 ---
 

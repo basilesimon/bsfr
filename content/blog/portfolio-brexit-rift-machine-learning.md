@@ -2,6 +2,7 @@
 date: "2020-11-25T00:00:00Z"
 description: null
 image: null
+tags: [portfolio, viz]
 title: "Portfolio case study: Machine learning's take on Brexit"
 ---
 

@@ -2,6 +2,7 @@
 date: "2020-11-08T00:00:00Z"
 description: null
 image: https://blog.basilesimon.fr/assets/ge2019-header.png
+tags: [portfolio, viz]
 title: "Portfolio case study: Reuters' 2019 general election results page"
 ---
 

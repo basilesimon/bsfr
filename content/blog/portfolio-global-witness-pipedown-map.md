@@ -1,6 +1,7 @@
 ---
 date: "2020-10-21T00:00:00Z"
 image: https://blog.basilesimon.fr/assets/gw-full.png
+tags: [portfolio, viz]
 title: 'Portfolio case study: Global Witness'' Pipedown interactive map'
 ---
 
