@@ -3,7 +3,8 @@
 }
 body {
     font-family: "Ubuntu", sans-serif;
-    colo: #444;
+    font-size: 18px;
+    color: #444;
 }
 code {
     font-family: "Ubuntu Mono"

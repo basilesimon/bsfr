@@ -28,7 +28,7 @@ I also co-founded **Airwars**, a non-profit monitoring organisation exposing the
 ---
 ## Selected projects/stories
 
-_(reel)_
+{{< include-html "content/reel.html" >}}
 
 ---
 
