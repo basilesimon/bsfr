@@ -23,11 +23,16 @@
   </div>
 
   <div class="projectContainer item">
-    <img
-      class="reelitem"
+    <!--<img
       loading="lazy"
       src="https://basilesimon.fr/img/portfolio/ge2019-results.gif"
-    />
+    />-->
+    <video
+      class="reelitem"
+      loop>
+      <source src="assets/ge2019-results.webm" type="video/webm"/>
+      <source src="assets/ge2019-results.mp4" type="video/mp4"/>
+    </video>
     <div>
       <h3><a href="https://blog.basilesimon.fr/2020/11/08/portfolio-general-election-2019-britain/">General election 2019 results</a></h3>
       <p class="portfolioLink">
@@ -237,7 +242,8 @@ p.portfolioLink {
     margin-bottom: 0.3rem;
 }
 
-.item > img {
+.item > img,
+.item > video {
     height: 150px;
     width: auto;
     margin-bottom: 0;

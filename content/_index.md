@@ -55,7 +55,7 @@ Some of that work consists of code reviews, data audits, and system administrati
 *  digital sleuthing and OSINT techniques,
 *  bias in statistical models and policy,
 *  defense and armament (and exports thereof),
-*  the West's new fights against radical ideas.
+*  the West's new fights against radical ideas,
 *  bread-making and bicycle-adventuring
 
 ---
