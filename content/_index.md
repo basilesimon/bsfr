@@ -94,12 +94,12 @@ I have done some studying myself:
 **Talks, books**
 + [“Working with data in the newsroom”](https://blog.basilesimon.fr/2021/03/23/data-journalism-handbook-published/), [The Data Journalism Handbook](https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook) (Amsterdam University Press, 2021)
 + “Career paths for news nerds (or lack of them)” - International Journalism Festival 2018, Perugia
-+ [“Airwars.org - a field report,two years on”](https://basilesimon.fr/talks/hhlondon2016) - Hacks/Hackers London
-+ [“Airwars - strike by strike”](https://basilesimon.fr/talks/hhberlin2016) - Dataharvest 2016, Brussels and Hacks/Hackers Berlin
-+ [“Hackers trying to stay relevant: linked data and structured journalism at the BBC”](https://basilesimon.fr/talks/csvconf2016) - csv,conf,v2 2016, Berlin
-+ [“Passion > compensation”](https://basilesimon.fr/talks/sudweb2016) - Sud Web 2016, France
-+ [“Hacking the newsroom”](https://docs.google.com/presentation/d/1rWytMs0HVqEQPSAdNyqYSEH4cVmaKGTa6tcNbiL0_pY/edit?usp=sharing) - International Journalism Festival 2016, Perugia
-+ [“BBC News Labs, Linked Data, Datastringer: the Hacks and Hackers paradigm”](https://basilesimon.fr/talks/cjsymposium2014/) - Computation + Journalism Symposium 2014, New York City
++ “Airwars.org - a field report,two years on” - Hacks/Hackers London
++ “Airwars - strike by strike” - Dataharvest 2016, Brussels and Hacks/Hackers Berlin
++ “Hackers trying to stay relevant: linked data and structured journalism at the BBC” - csv,conf,v2 2016, Berlin
++ “Passion > compensation” - Sud Web 2016, France
++ “Hacking the newsroom” - International Journalism Festival 2016, Perugia
++ “BBC News Labs, Linked Data, Datastringer: the Hacks and Hackers paradigm” - Computation + Journalism Symposium 2014, New York City
 + “Algorithms in Journalism: danger or opportunity?” - Assises du Journalisme 2014, France
 
 ---
