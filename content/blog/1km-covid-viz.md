@@ -1,7 +1,7 @@
 ---
 date: "2020-04-26T00:00:00Z"
 description: Animated map of Strava activities during Covid in a one-kilometre radius
-image: https://blog.basilesimon.fr/assets/covid-viz-terrain.png
+image: https://basilesimon.fr/assets/covid-viz-terrain.png
 tags: [r, viz]
 title: Exercising in a 1km radius (another Strava data viz)
 ---

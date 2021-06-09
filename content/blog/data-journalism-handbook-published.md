@@ -1,7 +1,7 @@
 ---
 date: "2021-03-23T00:00:00Z"
 description: "The newly updated version of #ddj's bible is out, and I've contributed a chapter about the challenges of coding in newsrooms"
-image: https://blog.basilesimon.fr/assets/ddj-handbook-cover.png
+image: https://basilesimon.fr/assets/ddj-handbook-cover.png
 published: true
 title: New book chapter out in the Data Journalism Handbook
 ---

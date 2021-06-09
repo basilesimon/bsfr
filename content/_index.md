@@ -37,12 +37,12 @@ Since the beginning of western airstrikes against Isis, [Airwars.org](https://ai
 
 During my time at [Reuters](https://graphics.reuters.com) we published several pieces [about the unraveling of the nuclear deal](https://graphics.reuters.com/IRAN-NUCLEAR/0100B0660CC/index.html) between Iran and the so-called P5+1. I created a dataset that **tracked the progress of Iran’s commitments to the deal in terms of its efforts to enrich Uranium which underpinned much of the reporting.**
 
-I've covered the (never-ending) Brexit saga for a number of years and devised bespoke maps of the British political spectrum on the topic. This has involved manipulating the [raw voting records](https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html) and feeding the results [to a simple machine learning clustering algorithm](https://blog.basilesimon.fr/2019/10/06/brexit-machine-learning/).
+I've covered the (never-ending) Brexit saga for a number of years and devised bespoke maps of the British political spectrum on the topic. This has involved manipulating the [raw voting records](https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html) and feeding the results [to a simple machine learning clustering algorithm](https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning/).
 
 ## I specialise in reactive data-visualisation
 For several newsrooms I have covered (more than enough) elections. They are the bread and butter of news nerds' work and involve standing up both a back end and front end which picks up results as they come in and redraws charts and analysis live (as well as without forcing the reader to refresh).
 
-Think of [big dashboards of live data](https://blog.basilesimon.fr/2020/11/08/portfolio-general-election-2019-britain/), for lack of a better image.
+Think of [big dashboards of live data](https://basilesimon.fr/blog/portfolio-general-election-2019-britain/), for lack of a better image.
 
 I am also familiar with building projects which involve readers directly engaging with content, like our [survey of knowledge of modern slavery in Britain](https://www.thetimes.co.uk/article/child-trafficking-boys-lured-by-dreams-of-football-stardom-forced-into-sex-slavery-9qr53xpkw), our analysis of [changing attitudes to divorce](https://www.thetimes.co.uk/article/meet-the-new-breed-of-happy-divorcee-women-who-are-empowered-positive-and-thrilled-to-be-single-7skzg3k8s), or our [2017 Budget calculator](https://www.thetimes.co.uk/article/the-times-2017-budget-calculator-mwx5jwwjl/). 
 
@@ -92,7 +92,7 @@ I have done some studying myself:
 + [Reading the Brexit Tea Leaves](https://www.informationisbeautifulawards.com/showcase/4236-reading-the-brexit-tea-leaves), a project for which I did some exploratory data analysis and modelling 
 
 **Talks, books**
-+ [“Working with data in the newsroom”](https://blog.basilesimon.fr/2021/03/23/data-journalism-handbook-published/), [The Data Journalism Handbook](https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook) (Amsterdam University Press, 2021)
++ [“Working with data in the newsroom”](https://basilesimon.fr/blog/data-journalism-handbook-published/), [The Data Journalism Handbook](https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook) (Amsterdam University Press, 2021)
 + “Career paths for news nerds (or lack of them)” - International Journalism Festival 2018, Perugia
 + “Airwars.org - a field report,two years on” - Hacks/Hackers London
 + “Airwars - strike by strike” - Dataharvest 2016, Brussels and Hacks/Hackers Berlin

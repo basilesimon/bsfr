@@ -2,7 +2,7 @@
 date: "2021-03-11T00:00:00Z"
 description: Funded by the Prototype Fund, the project aims to improve the standards
   of evidence-gathering by small groups or individuals
-image: https://blog.basilesimon.fr/assets/toolkit-banner.png
+image: https://basilesimon.fr/assets/toolkit-banner.png
 title: Announcing the Digital Evidence Toolkit
 ---
 

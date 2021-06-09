@@ -1,7 +1,7 @@
 ---
 date: "2019-03-02T00:00:00Z"
 description: Using phylogenetics visualisations to represent the Tractatus Logico-Philosophicus
-image: https://blog.basilesimon.fr/assets/tractatus_tree.png
+image: https://basilesimon.fr/assets/tractatus_tree.png
 tags: [r]
 title: Tractatus Logico (Phylo)sophicus
 ---

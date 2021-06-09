@@ -1,7 +1,7 @@
 ---
 date: "2019-08-18T00:00:00Z"
 description: New R package to load, parse and chart 20 years of oceanic storms data
-image: https://blog.basilesimon.fr/assets/storms_facet.png
+image: https://basilesimon.fr/assets/storms_facet.png
 tags: [r]
 title: noaastorms R package now supports NOAA IBTrACS v4
 ---

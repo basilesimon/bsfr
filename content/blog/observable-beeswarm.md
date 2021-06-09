@@ -1,8 +1,7 @@
 ---
 date: "2020-10-21T00:00:00Z"
-description: A step-by-step walkthrough of a beeswarm layout I produced as an alternative
-  to a bar chart
-image: https://blog.basilesimon.fr/assets/beeswarm-obs.png
+description: A step-by-step walkthrough of a beeswarm layout I produced as an alternative a bar chart
+image: https://basilesimon.fr/assets/beeswarm-obs.png
 tags: [observable, d3, viz]
 title: A beeswarm layout in Observable -- on deadline
 ---

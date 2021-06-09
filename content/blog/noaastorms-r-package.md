@@ -1,7 +1,7 @@
 ---
 date: "2019-01-30T00:00:00Z"
 description: New R package to load, parse and chart 20 years of oceanic storms data
-image: https://blog.basilesimon.fr/assets/storms_final.png
+image: https://basilesimon.fr/assets/storms_final.png
 tags: [r]
 title: 'New R package: load and chart oceanic storms'
 ---

@@ -1,7 +1,7 @@
 ---
 date: "2019-10-06T00:00:00Z"
 description: Visualising 200 Brexit-related votes with machine learning
-image: https://blog.basilesimon.fr/assets/tsne.png
+image: https://basilesimon.fr/assets/tsne.png
 tags: [observable, d3, viz]
 title: Machine learning's take on the Brexit's House of Commons
 ---
