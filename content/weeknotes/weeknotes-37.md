@@ -23,6 +23,6 @@ Or rather: "were no-go zones."
 
 On friends' recommendations I bought some UniFi gear and _voila_, here I am writing you from the future of prosumer gear. It's worth it, people.
 
---
+---
 
 Thanks to my efforts and the team's discipline, we received our lowest AWS bill ever for the Data and Investigations team at Global Witness. Next best thing to do to cut costs: cutting me. Er...
