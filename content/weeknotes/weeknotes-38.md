@@ -1,6 +1,6 @@
 ---
 date: "2021-06-18T00:00:00Z"
-title: 'Waldzweisamkeit - weeknotes #37'
+title: 'Waldzweisamkeit - weeknotes #38'
 ---
 
 It was really hot. Nobody at home was feeling well. Didn't do a huge amount of work, if I'm honest.
