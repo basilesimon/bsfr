@@ -14,7 +14,9 @@ code {
 hr {
     border-top: 1px solid #ddd;
 }
-code {
-    color: var(--highlight);
+@media (prefers-color-scheme: light) {
+    code {
+        color: var(--highlight);
+    }
 }
 
