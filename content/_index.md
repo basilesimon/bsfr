@@ -3,9 +3,23 @@ title: "👋 hi, I’m basile"
 description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
 ---
 
-I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation.
+- I am a **graphics and data journalist**
+- I support the work of **investigative journalism teams**
+- I participate in an **effort of the State to become an open source software driver** and stimulator
+- I worry about the **evidentiary status of digital evidence** and am proposing a **preservation framework for international prosecution** hopes
 
-<span style="font-weight: bold; color: var(--highlight)">Update March 2021:</span> I am looking for freelance/contract work from January 2022 onwards!
+---
+
+**I support the work of investigative journalism teams.**  
+Technical audits, code reviews, data collection due diligence, infrastructure and sys-admin...
+
+**I participate to an effort of the State to become a driver and stimulator of open source software**  
+Somehow, both French and German administrations are funding some work of mine – which helps _me_ and aims to put something out there in the commons.
+
+**I worry about the evidentiary status of digital evidence and am proposing a preservation framework for internal prosecution hopes**  
+And I think there's room for an easy-to-use solution handling chain of custody preservation to a high standard, based on immutable ledger ideas and functional programming discipline.
+
+If any of this somehow makes sense,  <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
 
 ## Contact
 * ✉️ `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
@@ -29,34 +43,6 @@ I also co-founded **Airwars**, a non-profit monitoring organisation exposing the
 ## Selected projects/stories
 
 {{< include-html "content/reel.html" >}}
-
----
-
-## I turn datasets into long term stories
-Since the beginning of western airstrikes against Isis, [Airwars.org](https://airwars.org) has held militaries across the world to account for the harm they have caused to civilians. This work was made possible through the creation of **a dataset collating military reports and OSINT investigations into claims of civilian harm**. This project and stories have spanned years and led to meaningful change, not only raising the bar for public accountability of their governments but holding those in power in check.
-
-During my time at [Reuters](https://graphics.reuters.com) we published several pieces [about the unraveling of the nuclear deal](https://graphics.reuters.com/IRAN-NUCLEAR/0100B0660CC/index.html) between Iran and the so-called P5+1. I created a dataset that **tracked the progress of Iran’s commitments to the deal in terms of its efforts to enrich Uranium which underpinned much of the reporting.**
-
-I've covered the (never-ending) Brexit saga for a number of years and devised bespoke maps of the British political spectrum on the topic. This has involved manipulating the [raw voting records](https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html) and feeding the results [to a simple machine learning clustering algorithm](https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning/).
-
-## I specialise in reactive data-visualisation
-For several newsrooms I have covered (more than enough) elections. They are the bread and butter of news nerds' work and involve standing up both a back end and front end which picks up results as they come in and redraws charts and analysis live (as well as without forcing the reader to refresh).
-
-Think of [big dashboards of live data](https://basilesimon.fr/blog/portfolio-general-election-2019-britain/), for lack of a better image.
-
-I am also familiar with building projects which involve readers directly engaging with content, like our [survey of knowledge of modern slavery in Britain](https://www.thetimes.co.uk/article/child-trafficking-boys-lured-by-dreams-of-football-stardom-forced-into-sex-slavery-9qr53xpkw), our analysis of [changing attitudes to divorce](https://www.thetimes.co.uk/article/meet-the-new-breed-of-happy-divorcee-women-who-are-empowered-positive-and-thrilled-to-be-single-7skzg3k8s), or our [2017 Budget calculator](https://www.thetimes.co.uk/article/the-times-2017-budget-calculator-mwx5jwwjl/). 
-
-## I support investigative journalism work
-Part of my time is spent working as a technologist and advisor to investigative journalism organisations, such as **Global Witness** and **The Bureau of Investigative Journalism**.
-
-Some of that work consists of code reviews, data audits, and system administration. Out of the trenches, I advise on infrastructure and systems architecture to support the work of these teams.
-
-### I read about (and would give a kidney to report on) the following topics:
-*  digital sleuthing and OSINT techniques,
-*  bias in statistical models and policy,
-*  defense and armament (and exports thereof),
-*  the West's new fights against radical ideas,
-*  bread-making and bicycle-adventuring
 
 ---
 
