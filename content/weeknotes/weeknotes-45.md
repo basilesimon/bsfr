@@ -1,6 +1,6 @@
 ---
 date: "2021-08-06T00:00:00Z"
-title: ' - weeknotes #45'
+title: 'The pace picks up - weeknotes #45'
 ---
   
 Big week on [the Digital Evidence Toolkit](https://digitalevidencetoolkit.org). We're in the home stretch and I feel the pressure mounting.
