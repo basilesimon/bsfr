@@ -3,20 +3,15 @@ title: "👋 hi, I’m basile"
 description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
 ---
 
-- I am a **graphics and data journalist**
-- I support the work of **investigative journalism teams**
-- I participate in an **effort of the State to become an open source software driver** and stimulator
-- I worry about the **evidentiary status of digital evidence** and am proposing a **preservation framework for international prosecution** hopes
+I am a **graphics and data journalist,** and:
 
----
-
-**I support the work of investigative journalism teams.**  
+- **I support the work of investigative journalism teams.**  
 Technical audits, code reviews, data collection due diligence, infrastructure and sys-admin...
 
-**I participate to an effort of the State to become a driver and stimulator of open source software**  
+- **I participate to an effort of the State to become a driver and stimulator of open source software**  
 Somehow, both French and German administrations are funding some work of mine – which helps _me_ and aims to put something out there in the commons.
 
-**I worry about the evidentiary status of digital evidence and am proposing a preservation framework for internal prosecution hopes**  
+- **I worry about the evidentiary status of digital evidence and am proposing a preservation framework for internal prosecution hopes**  
 And I think there's room for an easy-to-use solution handling chain of custody preservation to a high standard, based on immutable ledger ideas and functional programming discipline.
 
 If any of this somehow makes sense,  <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
