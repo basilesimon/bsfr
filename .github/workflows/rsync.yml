@@ -38,6 +38,6 @@ jobs:
         
       - name: Deploy
         run: |
-          rsync -vrhp -e "ssh -p 22  --exclude ".*" --delete-after \
+          rsync -vrhp -e "ssh -p 22"  --exclude ".*" --delete-after \
           --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r \
           /public/ b@51.159.139.203:/var/www/basilesimon.fr
