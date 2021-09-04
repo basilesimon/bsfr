@@ -1,0 +1,8 @@
+tasks:
+  - name: Install Hugo dependencies
+    before: brew install hugo
+    init: echo "Your version of Hugo is `hugo version`"
+    command: hugo server -D
+ports:
+  - port: 1313
+    onOpen: open-preview
