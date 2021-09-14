@@ -3,18 +3,9 @@ title: "👋 hi, I’m basile"
 description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
 ---
 
-I am a **graphics and data journalist,** and:
+I am a **graphics, coder and data journalist** based in Berlin.
 
-- **I support the work of investigative journalism teams.**  
-Technical audits, code reviews, data collection due diligence, infrastructure and sys-admin...
-
-- **I participate to an effort of the State to become a driver and stimulator of open source software**  
-Somehow, both French and German administrations are funding some work of mine – which helps _me_ and aims to put something out there in the commons.
-
-- **I worry about the evidentiary status of digital evidence and am proposing a preservation framework for internal prosecution hopes**  
-And I think there's room for an easy-to-use solution handling chain of custody preservation to a high standard, based on immutable ledger ideas and functional programming discipline.
-
-If any of this somehow makes sense,  <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
+Update Aug 2021: <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
 
 ## Contact
 * ✉️ `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
@@ -43,6 +34,7 @@ I also co-founded **Airwars**, a non-profit monitoring organisation exposing the
 
 ## Open source work
 Fortunately I was able to open-source some of the work I have done:
++ [deptoolkit](https://github.com/digitalevidencetoolkit/deptoolkit), an archiving software demonstrating chain of custody based on an immutable ledger
 + [noaastorms](https://github.com/basilesimon/noaastorms), an R package to download, parse and clean historical storms data from the NOAA
 + [twitter-tools](https://github.com/basilesimon/twitter-tools), a Python toolkit to monitor deleted tweets, automate screenshoting, and archiving
 + [d3-grid](https://github.com/basilesimon/d3-grid), a fork in d3v4 of the beloved d3-grid
