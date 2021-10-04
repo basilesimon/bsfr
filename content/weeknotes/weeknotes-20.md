@@ -1,5 +1,6 @@
 ---
 date: "2021-02-12T00:00:00Z"
+published: false
 title: 'Bubbles bubbles - weeknotes #20'
 ---
 There's been perma-snow in Berlin for the last two weeks now. This weekend, hundreds of people were having a wander on the frozen canals. Two digits negative temperatures. Proper winter!

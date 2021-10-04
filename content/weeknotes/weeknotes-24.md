@@ -1,5 +1,6 @@
 ---
 date: "2021-03-12T00:00:00Z"
+published: false
 title: 'Hello, Digital Evidence Toolkit - weeknotes #24'
 ---
 

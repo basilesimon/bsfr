@@ -1,5 +1,6 @@
 ---
 date: "2021-02-26T00:00:00Z"
+published: false
 title: 'Short week, short notes - weeknotes #22'
 ---
 

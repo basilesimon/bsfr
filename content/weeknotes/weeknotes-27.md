@@ -1,5 +1,6 @@
 ---
 date: "2021-04-02T00:00:00Z"
+published: false
 title: 'Working from Factory - weeknotes #27'
 ---
 

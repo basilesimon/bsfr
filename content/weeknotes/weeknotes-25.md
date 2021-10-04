@@ -1,5 +1,6 @@
 ---
 date: "2021-03-19T00:00:00Z"
+published: false
 title: 'Busy busy - weeknotes #25'
 ---
 

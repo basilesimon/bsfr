@@ -1,5 +1,6 @@
 ---
 date: "2021-03-05T00:00:00Z"
+published: false
 title: 'Pick up the phone - weeknotes #23'
 ---
 The phone is your best friend. I always thought one's willingness to ring people up made a difference in a newsroom. At least, every time I could be bothered to do it, it was very helpful.

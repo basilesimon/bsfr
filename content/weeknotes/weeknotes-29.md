@@ -1,5 +1,6 @@
 ---
 date: "2021-04-16T00:00:00Z"
+published: false
 title: 'Finally moving on - weeknotes #29'
 ---
 

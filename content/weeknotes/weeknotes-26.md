@@ -1,5 +1,6 @@
 ---
 date: "2021-03-26T00:00:00Z"
+published: false
 title: 'A bout of fever - weeknotes #26'
 ---
 
