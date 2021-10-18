@@ -3,7 +3,7 @@ title: "👋 hi, I’m basile"
 description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
 ---
 
-I am a **graphics, coder and data journalist** based in Berlin.
+I am a **graphics-, coder- and data-journalist** based in Berlin.
 
 Update Aug 2021: <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
 

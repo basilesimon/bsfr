@@ -11,6 +11,7 @@ enableRobotsTXT: true
 params:
   description: ""
   favicon: "images/favicon.png"
+  rssTitle: "Basile Simon • blog"
 
   # These "images" are used for the structured data templates. This will show up, when
   # services like Twitter or Slack want to generate a preview of a link to your site.
