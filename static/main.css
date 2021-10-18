@@ -21,7 +21,7 @@ hr {
     }
 }
 
-section, header {
+section, header, article.single {
     max-width: 720px;
     margin: 0 auto;
 }
