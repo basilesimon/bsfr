@@ -3,6 +3,8 @@ title: "👋 hi, I’m basile"
 description: "I am a coder-journalist who has left the newsroom in order to focus on different practices of data analysis and visualisation."
 ---
 
+<section>
+
 I am a **graphics-, coder- and data-journalist** based in Berlin.
 
 Update Aug 2021: <span style="font-weight: bold; color: var(--highlight)">I am looking for freelance/contract work from January 2022 onwards!</span>
@@ -11,6 +13,10 @@ Update Aug 2021: <span style="font-weight: bold; color: var(--highlight)">I am l
 * ✉️ `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
 * 📞 `+49 172 253 9671` (Signal/Telegram)
 * 🔗 `@basilesimon` on some social platforms
+
+</section>
+
+<section>
 
 ---
 
@@ -28,7 +34,11 @@ I also co-founded **Airwars**, a non-profit monitoring organisation exposing the
 ---
 ## Selected projects/stories
 
+</section>
+
 {{< include-html "content/reel.html" >}}
+
+<section>
 
 ---
 
@@ -82,3 +92,5 @@ I have done some studying myself:
 + Winner with Le 6 Mai 2012 and Pancarte.js - Popathon, Mozilla Paris, France
 + Participated in Tribeca Hacks Story Matter - CERN, Geneva, Switzerland
 + Failed to do something worth mentioning at many others
+
+</section>

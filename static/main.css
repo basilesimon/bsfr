@@ -4,6 +4,7 @@
 body {
     font-family: "Ubuntu", sans-serif;
     font-size: 18px;
+    max-width: none;
 }
 @media (prefers-color-scheme: light) {
     color: #444;
@@ -20,3 +21,15 @@ hr {
     }
 }
 
+section, header {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 450px) {
+    ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+    }
+}
