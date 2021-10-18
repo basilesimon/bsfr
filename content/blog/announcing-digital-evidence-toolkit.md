@@ -6,7 +6,7 @@ image: https://basilesimon.fr/assets/toolkit-banner.png
 title: Announcing the Digital Evidence Toolkit
 ---
 
-<img style="margin: 0 auto; width: 30%" src="https://digitalevidencetoolkit.org/logo.png">
+<img style="margin: 0 auto; width: 30%" src="https://digitalevidencetoolkit.org/images/logo.svg">
 
 🎉
 
