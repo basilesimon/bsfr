@@ -15,7 +15,7 @@
 
       <hr />
 
-      <h2>Past employment</h2>
+      <h2>👔 Past employment</h2>
       <p>
         My journalism career started in the UK, where I worked for large
         broadcasters, newspapers, and agencies.
@@ -33,17 +33,22 @@
       </p>
       {{ end }}
 
+      <hr>
+
+      </section>
+
       {{ with $.Site.Data.reel }}
-      <h2>Portfolio</h2>
-      <ul>
+        <div class="portfolio">
+        <h2>Portfolio</h2>
         {{ range .pieces }}
-        <li><a href="{{.url}}">{{ .title }}</a></li>
+          {{ partial "partials/item.html" . }}
         {{ end }}
-      </ul>
+	</p>
       {{ end }}
 
+      <section>
     {{ with $.Site.Data.homepage }}
-      <h2>Open source work</h2>
+      <h3>Open source work</h3>
       <p>Fortunately I was able to open-source some of the work I have done:</p>
       <ul>
 	{{ range .open_source }}
@@ -52,7 +57,9 @@
       </ul>
     {{ end }}
 
-      <h2>Academic work</h2>
+      <hr>
+
+      <h2>🎓 Academic work</h2>
       <p>I had the privilege of teaching the Advanced Data and Coding module on the MA in Interactive Journalism course at City University. We ran through an introduction to programming, statistical methods, R data analysis and modelling with ggplot.</p>
 
       <p>All my teaching notes are <a href="https://github.com/basilesimon/interactive-journalism-module">available on Github</a>.</p>
@@ -65,16 +72,20 @@
       </ul>
 
     {{ with $.Site.Data.homepage }}
-      <h2>Talks and awards</h2>
+      <h2>🏅 Awards</h2>
+      {{ range .awards }}
+      <h4>{{ .award }}, <b>{{ .org }}</b></h4>
       <ul>
-	{{ range .awards }}
-	<li>{{ .award }}, <b>{{ .org }}</b></li>
-	{{ end }}
+        {{ range .pieces }}
+	<li> {{ .title }}</li>
+        {{ end }}
       </ul>
+      {{ end }}
 
+      <h2>🎙  Talks and publications</h2>
       <ul>
 	{{ range .talks_publications }}
-	<li>{{ . | markdownify }}</li>
+	<li>“{{ .title | markdownify }}”<br> <em style="color: #6c6c6c">{{ .location | markdownify }}</em></li>
 	{{ end }}
       </ul>
 

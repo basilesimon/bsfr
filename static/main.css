@@ -33,3 +33,8 @@ section, header, article.single {
 	margin: 0px;
     }
 }
+
+.portfolio {
+    width: 80%;
+    margin: 0 auto;
+}
