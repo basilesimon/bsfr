@@ -34,7 +34,9 @@ section, header, article.single {
     }
 }
 
-.portfolio {
-    width: 80%;
-    margin: 0 auto;
+@media (min-width: 1024px) {
+    .portfolio {
+	width: 80%;
+	margin: 0 auto;
+    }
 }

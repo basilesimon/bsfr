@@ -1,5 +1,10 @@
 pieces:
-  - title: "The Brexit challenge"
-    url: "tktkt"
-  - title: "Pipedown"
-    url: "chosechose"
+  - title: Pipedown
+    client: Global Witness
+    copy: A short contract bringing to life the dataset on which GW's campaign was based, modular once again, and published both from the CMS and as a standalone.
+    url: "https://pipedown.globalwitness.org/"
+    tags:
+      - Cartography
+      - D3
+      - NGO
+      - Svelte

@@ -1,12 +1,52 @@
 <div class="portfolioitem">
-  <h4>{{ .title }}</h4>
+  <div class="copy">
+  <h3>For {{ .client }}:<br>
+  {{ .title }}</h3>
+  <p>{{ .copy }}</p>
+
+  {{ range .tags }}
+    <code>{{ . }}</code>
+  {{ end }}
+  </div>
+  <div class="image">
+    <img class="reelitem" loading="lazy" src="assets/pipedown.png">
+  </div>
 </div>
 
 <style>
   .portfolioitem {
       width: 100%;
-      height: 200px;
-      border: 1px solid steelblue;
+      border: 1px solid #ddd;
       margin: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  @media screen and (max-width: 760px) {
+      .portfolioitem {
+	  flex-direction: column-reverse;
+      }
+  }
+
+  .copy {
+      width: 33%;
+      padding: 0 1rem;
+  }
+
+  .image {
+      width: 50%;
+  }
+  .image > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: 250px;
+  }
+
+  @media screen and (max-width: 760px) {
+      .copy, .image {
+	  width: 100%;
+      }
   }
 </style>
