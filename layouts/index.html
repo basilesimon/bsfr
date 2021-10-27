@@ -1,8 +1,88 @@
 {{ define "main" }}
-    <main role="main">
-      <div class="homepage-content">
-        <!-- pull from content/_index.md -->
-        {{.Content}}
-      </div>
-    </main>
+<main role="main">
+  <div class="homepage-content">
+    {{ with $.Site.Data.homepage }}
+    <section>
+      <p>{{ .catchline | markdownify }}</p>
+      <p>{{ .update | markdownify }}</p>
+
+      <h3>Contact</h3>
+      <ul>
+        {{ range .contact }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+
+      <hr />
+
+      <h2>Past employment</h2>
+      <p>
+        My journalism career started in the UK, where I worked for large
+        broadcasters, newspapers, and agencies.
+      </p>
+
+      <ul>
+        {{ range .past_employment }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+
+      <p>
+        I also co-founded <b>Airwars</b>, a non-profit monitoring organisation
+        exposing the harm done to civilians by air conflicts.
+      </p>
+      {{ end }}
+
+      {{ with $.Site.Data.reel }}
+      <h2>Portfolio</h2>
+      <ul>
+        {{ range .pieces }}
+        <li><a href="{{.url}}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+    {{ with $.Site.Data.homepage }}
+      <h2>Open source work</h2>
+      <p>Fortunately I was able to open-source some of the work I have done:</p>
+      <ul>
+	{{ range .open_source }}
+	<li><a href="{{.url}}">{{ .name }}</a>, {{ .copy }}</li>
+	{{ end }}
+      </ul>
+    {{ end }}
+
+      <h2>Academic work</h2>
+      <p>I had the privilege of teaching the Advanced Data and Coding module on the MA in Interactive Journalism course at City University. We ran through an introduction to programming, statistical methods, R data analysis and modelling with ggplot.</p>
+
+      <p>All my teaching notes are <a href="https://github.com/basilesimon/interactive-journalism-module">available on Github</a>.</p>
+
+      <p>I have done some studying myself:</p>
+      <ul>
+	<li>Master of Arts in Multimedia Journalism - Univ. of Westminster (UK)</li>
+	<li>Masters in Political Science and Sociology - High European Studies Institute (France)</li>
+	<li>BA Private Law, minor Political Science - Univ. Lyon III (France)</li>
+      </ul>
+
+    {{ with $.Site.Data.homepage }}
+      <h2>Talks and awards</h2>
+      <ul>
+	{{ range .awards }}
+	<li>{{ .award }}, <b>{{ .org }}</b></li>
+	{{ end }}
+      </ul>
+
+      <ul>
+	{{ range .talks_publications }}
+	<li>{{ . | markdownify }}</li>
+	{{ end }}
+      </ul>
+
+    {{ end }}
+    </section>
+
+    <!-- pull from content/_index.md -->
+    <!-- {{.Content}} -->
+  </div>
+</main>
 {{ end }}
