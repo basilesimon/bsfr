@@ -1,10 +1,56 @@
 pieces:
-  - title: Pipedown
+  - title: The Digital Evidence Toolkit
+    client: Prototype Fund
+    copy: Public/private 50,000€ grant for the research and development of proof-of-concept techniques highlighting the uncertain legal framework of digital evidence admissibility.
+    url: 'https://digitalevidencetoolkit.org/'
+    img: 'assets/dept.svg'
+    blog: 'https://digitalevidencetoolkit.org/end-of-grant-announcement/'
+    tags:
+      - Typescript
+      - Svelte
+      - Grant
+
+  - title: The “Pipedown” map
     client: Global Witness
     copy: A short contract bringing to life the dataset on which GW's campaign was based, modular once again, and published both from the CMS and as a standalone.
-    url: "https://pipedown.globalwitness.org/"
+    url: 'https://pipedown.globalwitness.org/'
+    img: '/assets/pipedown.svg'
+    blog: 'blog/portfolio-global-witness-pipedown-map/'
     tags:
+      - Visualisation
       - Cartography
       - D3
-      - NGO
       - Svelte
+      - NGO
+
+  - title: Brexit through machine learning
+    client: Reuters
+    copy: A data-driven experiment looking at how Brexit splits the Tories. Don't miss the even-nerdier, [machine learning-driven complement.](blog/brexit-machine-learning/)
+    url: 'https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html'
+    # img: "assets/brexit-split.png"
+    img: 'assets/tsne.svg'
+    blog: 'blog/portfolio-brexit-rift-machine-learning/'
+    tags:
+      - Visualisation
+      - R
+      - Data modelling
+      - Scraping
+
+  - title: 90% of all British crimes are unsolved
+    client: The Times & Sunday Times
+    copy: Collaboration with the Data team to bring this multi-week exclusive analysis of police data to life in just over two days.
+    url: 'https://www.thetimes.co.uk/past-six-days/2018-06-17/news/sunday-times-crime-map-under-5-of-all-burglaries-and-robberies-solved-vw569clqh'
+    img: 'assets/unsolved_crime.gif'
+    blog:
+    tags:
+      - Visualisation
+      - D3
+      - React
+#   - title:
+#     client:
+#     copy:
+#     url: ""
+#     img: ""
+#     blog: ""
+#     tags:
+#       -
