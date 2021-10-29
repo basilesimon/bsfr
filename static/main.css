@@ -6,9 +6,9 @@ body {
     font-size: 18px;
     max-width: none;
 }
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     color: #444;
-}
+} */
 code {
     font-family: "Ubuntu Mono"
 }
@@ -36,14 +36,20 @@ section, header, article.single {
 
 @media (min-width: 1024px) {
     .portfolio {
-	width: 80%;
-	margin: 0 auto;
+	    width: 80%;
+	    margin: 0 auto;
     }
 }
 
 .open-source {
+    width: 100%;
     display: flex;
-    @media (min-width: 767px) {
+    flex-direction: column;
+}
+@media (min-width: 767px) {
+    .open-source {
         flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

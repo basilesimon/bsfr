@@ -12,23 +12,6 @@ past_employment:
   - Newsroom developer, **The Times and the Sunday Times**
   - Coder-journalist, **BBC News Labs**
 
-open_source:
-  - name: deptoolkit
-    url: https://github.com/digitalevidencetoolkit/deptoolkit
-    copy: an archiving software demonstrating chain of custody based on an immutable ledger
-  - name: noaastorms
-    url: https://github.com/basilesimon/noaastorms 
-    copy: an R package to download, parse and clean historical storms data from the NOAA 
-  - name: twitter-tools
-    url: https://github.com/basilesimon/twitter-tools 
-    copy: a Python toolkit to monitor deleted tweets, automate screenshoting, and archiving
-  - name: d3-grid
-    url: https://github.com/basilesimon/d3-grid 
-    copy: a fork in d3v4 of the beloved d3-grid
-  - name: The Times dataviz catalogue
-    url: https://github.com/times/dataviz-catalogue
-    copy: a public resource of data viz code and designs
-
 awards:
   - award: Award of Excellence, 2019
     org: Society of News Design

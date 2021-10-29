@@ -12,4 +12,13 @@ projects:
   - title: d3-grid
     url: "https://github.com/basilesimon/d3-grid"
     description: "A fork in d3v4 of the beloved d3-grid"
-    pic: ""
+    pic: "assets/d3-grid.png"
+
+  - title: twitter-tools
+    url: "https://github.com/basilesimon/twitter-tools"
+    description: "A Python toolkit to monitor deleted tweets, automate screenshoting, and archiving"
+
+  - title: The Times' Dataviz catalogue
+    url: "https://github.com/times/dataviz-catalogue"
+    description: "A public resource of data viz code and designs, _a la_ Storybook/ FT Visual Vocabulary"
+    pic: "https://miro.medium.com/max/1400/1*57sbiU06flH3A8H5XUAw2g.png"

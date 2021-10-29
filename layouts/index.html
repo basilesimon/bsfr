@@ -45,7 +45,9 @@
     {{ end }}
 
     <section>
-      <h2>tktk</h2>
+      <hr />
+      <h2>Open source work</h2>
+      <p>Fortunately I was able to open-source some of the work I have done:</p>
       <div class="open-source">
         {{ with $.Site.Data.opensource }}
           {{ range .projects }}
@@ -53,16 +55,6 @@
           {{ end }}
         {{ end }}
       </div>
-      <hr />
-      {{ with $.Site.Data.homepage }}
-      <h3>Open source work</h3>
-      <p>Fortunately I was able to open-source some of the work I have done:</p>
-      <ul>
-        {{ range .open_source }}
-        <li><a href="{{.url}}">{{ .name }}</a>, {{ .copy }}</li>
-        {{ end }}
-      </ul>
-      {{ end }}
 
       <hr />
 
