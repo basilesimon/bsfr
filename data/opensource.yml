@@ -1,0 +1,15 @@
+projects:
+  - title: deptoolkit
+    url: "https://github.com/digitalevidencetoolkit/deptoolkit"
+    description: "An archiving software demonstrating chain of custody based on an immutable ledger"
+    pic: "assets/dept.svg"
+
+  - title: noaastorms
+    url: "https://github.com/basilesimon/noaastorms"
+    description: "An R package to download, parse and clean historical storms data from the NOAA"
+    pic: "https://raw.githubusercontent.com/basilesimon/noaastorms/master/Rplot.png"
+
+  - title: d3-grid
+    url: "https://github.com/basilesimon/d3-grid"
+    description: "A fork in d3v4 of the beloved d3-grid"
+    pic: ""

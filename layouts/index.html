@@ -45,6 +45,14 @@
     {{ end }}
 
     <section>
+      <h2>tktk</h2>
+      <div class="open-source">
+        {{ with $.Site.Data.opensource }}
+          {{ range .projects }}
+            {{ partial "partials/card.html" .}}
+          {{ end }}
+        {{ end }}
+      </div>
       <hr />
       {{ with $.Site.Data.homepage }}
       <h3>Open source work</h3>
