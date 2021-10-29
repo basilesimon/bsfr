@@ -8,14 +8,20 @@
     </h3>
     <p>{{ .data.copy | markdownify }}</p>
 
-    <p>👉 <a href="{{" .data.blog }}>Read all about it</a></p>
+    <p>
+      {{ if.data.url }}
+        🔗 <a href="{{ .data.url }}">See the piece</a><br>
+      {{ end }}
+      {{ if .data.blog }}
+        👉 <a href="{{ .data.blog }}">Read all about it</a>
+      {{ end }}</p>
 
     {{ range .data.tags }}
     <code>{{ . }}</code>
     {{ end }}
   </div>
   <div class="image">
-    <img class="reelitem" loading="lazy" src="{{" .data.img }} />
+    <img class="reelitem" loading="lazy" src="{{ .data.img }}" />
   </div>
 </div>
 
