@@ -48,14 +48,13 @@
       <hr />
       <h2>Open source work</h2>
       <p>Fortunately I was able to open-source some of the work I have done:</p>
-      <div class="open-source">
-        {{ with $.Site.Data.opensource }}
-          {{ range .projects }}
-            {{ partial "partials/card.html" .}}
-          {{ end }}
-        {{ end }}
-      </div>
+    </section>
+    <div class="open-source">
+      {{ with $.Site.Data.opensource }} {{ range .projects }} {{ partial
+      "partials/card.html" .}} {{ end }} {{ end }}
+    </div>
 
+    <section>
       <hr />
 
       <h2>🎓 Academic work</h2>

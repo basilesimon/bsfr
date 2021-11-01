@@ -3,7 +3,7 @@ pieces:
     client: Prototype Fund
     copy: Public/private 50,000€ grant for the research and development of proof-of-concept techniques highlighting the uncertain legal framework of digital evidence admissibility.
     url: 'https://digitalevidencetoolkit.org/'
-    img: 'assets/dept.svg'
+    img: 'assets/dept.png'
     blog: 'https://digitalevidencetoolkit.org/end-of-grant-announcement/'
     tags:
       - Typescript
@@ -28,7 +28,7 @@ pieces:
     copy: A data-driven experiment looking at how Brexit splits the Tories. Don't miss the even-nerdier, [machine learning-driven complement.](blog/brexit-machine-learning/)
     url: 'https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html'
     # img: "assets/brexit-split.png"
-    img: 'assets/tsne.svg'
+    img: 'assets/tsne.png'
     blog: 'blog/portfolio-brexit-rift-machine-learning/'
     tags:
       - Visualisation
@@ -40,7 +40,7 @@ pieces:
     client: The Times & Sunday Times
     copy: Collaboration with the Data team to bring this multi-week exclusive analysis of police data to life in just over two days.
     url: 'https://www.thetimes.co.uk/past-six-days/2018-06-17/news/sunday-times-crime-map-under-5-of-all-burglaries-and-robberies-solved-vw569clqh'
-    img: 'assets/unsolved_crime.gif'
+    img: 'assets/unsolved-crime.png'
     tags:
       - Visualisation
       - D3
@@ -49,13 +49,12 @@ pieces:
   - title: Pen plotter maps
     client: Christmas
     copy: Pen-plotted bicycle journeys on postcards, from a minimal implementation of GPX in R.
-    img: "assets/blog-map-final-group.JPG"
-    blog: "blog/pen-plotter-maps/"
+    img: 'assets/blog-map-final-group.JPG'
+    blog: 'blog/pen-plotter-maps/'
     tags:
       - Visualisation
       - R
       - Pen plotter
-
 #   - title:
 #     client:
 #     copy:
