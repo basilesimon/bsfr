@@ -1,0 +1,66 @@
+<!-- <div class="portfolioitem"
+     style="flex-direction: row; {{ if not (modBool .index 2) }} flex-direction: row-reverse; {{ end }}"> -->
+<div class="portfolioitem">
+  <div class="copy">
+    <h3>
+      For {{ .data.client }}:<br />
+      {{ .data.title }}
+    </h3>
+    <p>{{ .data.copy | markdownify }}</p>
+
+    <p>
+      {{ if.data.url }}
+        🔗 <a href="{{ .data.url }}">See the piece</a><br>
+      {{ end }}
+      {{ if .data.blog }}
+        👉 <a href="{{ .data.blog }}">Read all about it</a>
+      {{ end }}</p>
+
+    {{ range .data.tags }}
+    <code>{{ . }}</code>
+    {{ end }}
+  </div>
+  <div class="image">
+    <img class="reelitem" loading="lazy" src="{{ .data.img }}" />
+  </div>
+</div>
+
+<style>
+  .portfolioitem {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 760px) {
+    .portfolioitem {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .copy {
+    width: 33%;
+    padding: 0 1rem;
+  }
+
+  .image {
+    width: 50%;
+  }
+  .image > img {
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+  }
+
+  @media screen and (max-width: 760px) {
+    .copy,
+    .image {
+      width: 100%;
+    }
+  }
+</style>

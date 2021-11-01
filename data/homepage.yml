@@ -1,0 +1,58 @@
+catchline: I am a <b>graphics-, coder- and data-journalist</b> based in Berlin.
+update: "Update Aug 2021: <span style='font-weight: bold; color: var(--highlight)'>I am looking for freelance/contract work from January 2022 onwards!</span>"
+
+contact:
+  -  ✉️ `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
+  -  📞 `+49 172 253 9671` (Signal/Telegram)
+  -  🔗 `@basilesimon` on some social platforms
+  
+past_employment:
+  - Graphics editor,  Europe, Middle East and Africa, **Reuters**
+  - Senior interactive journalist, **The Times and The Sunday Times**
+  - Newsroom developer, **The Times and the Sunday Times**
+  - Coder-journalist, **BBC News Labs**
+
+awards:
+  - award: Award of Excellence, 2019
+    org: Society of News Design
+    pieces:
+      - title: The Brexit Rift Splitting the Conservative Party
+        url: https://www.informationisbeautifulawards.com/showcase/4236-reading-the-brexit-tea-leaves
+      - title: Not Far Ahead
+        url: https://www.informationisbeautifulawards.com/showcase/4232-not-far-ahead
+  - award: Long list, 2019
+    org: Kantar Information is Beautiful
+    pieces:
+      - title: Reading the Brexit Tea Leaves
+        url: https://www.informationisbeautifulawards.com/showcase/4236-reading-the-brexit-tea-leaves
+      - title: The Brexit Rift Splitting the Conservative Party
+        url: https://www.informationisbeautifulawards.com/showcase/4236-reading-the-brexit-tea-leaves
+      - title: Not Far Ahead
+        url: https://www.informationisbeautifulawards.com/showcase/4232-not-far-ahead
+
+talks_publications:
+  - title: Working with data in the newsroom
+    location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
+  - title: Career paths for news nerds (or lack of them)
+    location: International Journalism Festival 2018, Perugia
+  - title: "Airwars.org: a field report,two years on"
+    location: Hacks/Hackers Berlin 2017
+  - title: "Airwars: strike by strike"
+    location: Dataharvest 2016, Brussels + Hacks/Hackers Berlin
+  - title: "Hackers trying to stay relevant: linked data and structured journalism at the BBC"
+    location: csv,conf,v2 2016, Berlin
+  - title: "Passion > compensation"
+    location: Sud Web 2016, France
+  - title: Hacking the newsroom
+    location: International Journalism Festival 2016, Perugia
+  - title: "BBC News Labs, Linked Data, Datastringer: the Hacks and Hackers paradigm"
+    location: Computation + Journalism Symposium 2014, New York City
+  - title: "Algorithms in Journalism: danger or opportunity?"
+    location: Assises du Journalism 2014, France
+
+hackathons:
+  - “Greatest Impact and Distruption” and “Best Diffusion” awards for tinyfm - Al Jazeera Canvas Media in Context, Doha, Qatar
+  - Winner with Le 6 Mai 2012 and Pancarte.js - Popathon, Mozilla Paris, France
+  - Participated in Tribeca Hacks Story Matter - CERN, Geneva, Switzerland
+  - Failed to do something worth mentioning at many others
+
