@@ -1,0 +1,45 @@
+items:
+  - title: Fire devastates Notre Dame
+    label: reuters.com
+    url: 'https://graphics.reuters.com/FRANCE-NOTREDAME/010091GN25R/index.html'
+    img: 'assets/notre-dame.png'
+  - title: Extrajudicial killings in Egypt
+    label: reuters.com
+    url: 'https://www.reuters.com/investigates/special-report/egypt-killings/'
+    img: 'assets/egypt-killings.png'
+  - title: Reading the Brexit Tea Leaves
+    label: reuters.com
+    url: 'https://graphics.reuters.com/BRITAIN-EU/010092G834N/index.html'
+    img: 'assets/brexit-tea-leaves.png'
+  - title: Not Far Ahead - Tour de France
+    label: reuters.com
+    url: 'https://graphics.reuters.com/CYCLING-FRANCE/0100B0C90R4/index.html'
+    img: 'assets/tour-de-france.png'
+  - title: Spain Votes
+    label: reuters.com
+    url: 'https://graphics.reuters.com/SPAIN-ELECTION/0100B301248/index.html'
+    img: 'assets/spain-elex.png'
+  - title: Brexit's Super Saturday
+    label: reuters.com
+    url: 'https://graphics.reuters.com/BRITAIN-EU/0100B2J31TT/index.html'
+    img: 'assets/super-saturday.png'
+  - title: The EU's Top Jobs
+    label: reuters.com
+    url: 'https://graphics.reuters.com/EU-JOBS/010092MD3E2/index.html'
+    img: 'assets/eu-top-jobs.png'
+  - title: Airtrikes on Saudi Aramco
+    label: reuters.com
+    url: 'https://graphics.reuters.com/SAUDI-ARAMCO/0100B29Q1C7/index.html'
+    img: 'assets/saudi-strikes.png'
+  - title: Fire on Gran Canaria
+    label: reuters.com
+    url: 'https://twitter.com/basilesimon/status/1163524194761469954'
+    img: 'assets/gran-canaria-fire.png'
+  - title: The Rukban Camp
+    label: reuters.com
+    url: 'https://twitter.com/basilesimon/status/1154342489417015296'
+    img: 'assets/rukban-camp.png'
+  - title: Divorce survey
+    label: thetimes.co.uk
+    url: 'https://twitter.com/basilesimon/status/1068112294289252352'
+    img: 'assets/divorces.png'

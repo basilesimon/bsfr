@@ -43,6 +43,13 @@ article.single {
   }
 }
 
+.portfolio-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .open-source {
   width: 100%;
   display: flex;

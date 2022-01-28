@@ -39,8 +39,17 @@
     {{ with $.Site.Data.reel }}
     <div class="portfolio">
       <h2>Portfolio</h2>
-      {{ range $index, $data := .pieces }} {{ partial "partials/item.html" (dict
-      "index" $index "data" $data) }} {{ end }}
+      {{ range $index, $data := .pieces }}
+      {{ partial "partials/item.html" (dict "index" $index "data" $data) }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $.Site.Data.reelgrid }}
+    <div class="portfolio-grid">
+      {{ range $index, $data := .items }}
+      {{ partial "partials/item-grid.html" (dict "index" $index "data" $data) }}
+      {{ end }}
     </div>
     {{ end }}
 
