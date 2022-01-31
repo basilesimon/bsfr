@@ -24,11 +24,11 @@ Three events or storylines defined December 2021:
  
 Now, work-wise. So… Aside from a few actual work days, I spent most of these few working hours preparing 2022. That means emailing some folks I contact periodically, sending an actual pitch for a three-month project, and replying to an open call for consultancy from Tactical Tech. That also means sorting out a few unknowns on the accounting front and wanting at my partner about how complicated things are in Germany and how little I can work out about some pretty important things like health insurance and my precise bottom line. 
  
-What I know however is that we renewed my contacts with Global Witness and the Deutsche Welle for assignments covering all of 2022! 🎉 
+What I know however is that **we renewed my contacts with Global Witness and the Deutsche Welle for assignments covering all of 2022!** 🎉
  
 Without hitting the jackpot yet, I’ve done some thinking about a simplified infrastructure for Global Witness Data & Investigations as I sunset legacy bits, and what a cool Wireguard VPN à la Tailscale could unlock regarding resources I really need to keep very private. 
  
-The buzz-themes of the month were web3 and datalog, mostly by virtue of having several friends and colleagues interested in the same things at the same time. 
+The buzz-themes of the month were **web3** and **datalog**, mostly by virtue of having several friends and colleagues interested in the same things at the same time. 
  
 I did no work on the [Toolkit](https://digitalevidencetoolkit.org) but had two amazing meetings — one of which was with Ilya and Ed from [Web Recorder](https://webrecorder.net/) who are way ahead drafting the [spec for WACZ](https://webrecorder.github.io/wacz-spec/), an interoperable web archiving format and tools. 
  
