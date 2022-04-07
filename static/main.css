@@ -64,3 +64,18 @@ article.single {
     margin: 0 auto;
   }
 }
+
+.blog-posts > li {
+    flex-direction: column-reverse;
+}
+.blog-posts > li > span {
+    flex-basis: 0px !important;
+}
+@media (min-width: 450px) {
+    .blog-posts > li {
+	flex-direction: row;
+    }
+    .blog-posts > li > span {
+	flex-basis: 130px !important;
+    }
+}
