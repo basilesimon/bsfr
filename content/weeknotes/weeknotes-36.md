@@ -1,5 +1,6 @@
 ---
 date: "2021-06-04T00:00:00Z"
+published: false
 title: 'News in brief - weeknotes #36'
 ---
 

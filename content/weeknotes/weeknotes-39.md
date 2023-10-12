@@ -1,5 +1,6 @@
 ---
 date: "2021-06-25T00:00:00Z"
+published: false
 title: 'Like layers of an onion - weeknotes #39'
 ---
 

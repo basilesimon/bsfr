@@ -1,5 +1,6 @@
 ---
 date: "2021-11-19T00:00:00Z"
+published: false
 title: 'Short Parisian notes - weeknotes #60'
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: "2021-08-27T00:00:00Z"
+published: false
 title: 'Not so momentous after all - weeknotes #48'
 ---
 

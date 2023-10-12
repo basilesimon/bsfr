@@ -1,5 +1,6 @@
 ---
 date: "2021-08-13T00:00:00Z"
+published: false
 title: 'Expect not too much personal news - weeknotes #46'
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: "2021-07-02T00:00:00Z"
+published: false
 title: 'The least work-y note in a while - weeknotes #40'
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: "2021-06-11T00:00:00Z"
+published: false
 title: 'Spanner in the works - weeknotes #37'
 ---
 

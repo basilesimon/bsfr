@@ -1,5 +1,6 @@
 ---
 date: "2021-07-23T00:00:00Z"
+published: false
 title: 'Back to Germany - weeknotes #43'
 ---
 

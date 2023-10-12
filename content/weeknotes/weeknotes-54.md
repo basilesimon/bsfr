@@ -1,5 +1,6 @@
 ---
 date: "2021-10-09T00:00:00Z"
+published: false
 title: 'Speccing = cool - weeknotes #54'
 ---
 

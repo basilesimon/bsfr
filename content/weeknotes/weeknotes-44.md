@@ -1,5 +1,6 @@
 ---
 date: "2021-07-30T00:00:00Z"
+published: false
 title: Second shot, missed tile - weeknotes #44'
 ---
 

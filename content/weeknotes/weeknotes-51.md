@@ -1,5 +1,6 @@
 ---
 date: "2021-09-17T00:00:00Z"
+published: false
 title: 'Stack jumping every day - weeknotes #51'
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: "2021-09-03T00:00:00Z"
+published: false
 title: 'Hello from the holiday side - weeknotes #49'
 ---
 

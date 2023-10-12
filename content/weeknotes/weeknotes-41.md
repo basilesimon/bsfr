@@ -1,6 +1,7 @@
 
 ---
 date: "2021-07-09T00:00:00Z"
+published: false
 title: 'First-class history hoops - weeknotes #41'
 ---
 

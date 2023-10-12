@@ -1,5 +1,6 @@
 ---
 date: "2021-08-20T00:00:00Z"
+published: false
 title: 'The beginning of the end - weeknotes #47'
 ---
 

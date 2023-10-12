@@ -1,5 +1,6 @@
 ---
 date: "2021-08-06T00:00:00Z"
+published: false
 title: 'The pace picks up - weeknotes #45'
 ---
   
