@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/basilesimon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://basilesimon.fr
+  * I am basilesimon (https://keybase.io/basilesimon) on keybase.
+  * I have a public key with fingerprint F659 40E8 4739 495F BAD6  74C3 9275 B939 3778 0CF6
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101bd1f192fd94b94b395bb597dc5cc1d2d94fc4f6f7e3a6d191dc62771a64f76090a",
+      "fingerprint": "f65940e84739495fbad674c39275b93937780cf6",
+      "host": "keybase.io",
+      "key_id": "9275b93937780cf6",
+      "kid": "0101bd1f192fd94b94b395bb597dc5cc1d2d94fc4f6f7e3a6d191dc62771a64f76090a",
+      "uid": "dbd3094bdbdd45c1ba3d2c51d1a5f019",
+      "username": "basilesimon"
+    },
+    "service": {
+      "hostname": "basilesimon.fr",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1707900206,
+  "expire_in": 157680000,
+  "prev": "e8d48cc97bb0a8825327c9203ecd7e4b242b11c88a8be83f5f86fb3ca143b731",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmtMFFcU3nUVASsIFU1sUJmm2dQgmfeLpvXVbKmioDZAql3mcQdHYHbZXZ7r
+Im2BUgJCQSHiQkC2agmlEqIESUuoVE2hpMGCGAViKJZHpTUVUpClnSH1V/uzNzc5
+ued833e+c3PK1xt0vvqK9A6GynppXt87xetAnwtxQrxFzIZYJ5QMVgJIEYHdYU6W
+RYiFYARGeBGREAaVRAbn1YsxBM8TDCUKhCAgIqqmJQGXSIkCGEeKCIOIAolSFMKR
+uESRMANzUDgkyUoSsFltsuJQZSWSYHAY0DiFMThDSDwnkhQuYAxKETyDMRhF0bAg
+kSrxhMWuMVRzPGcHEbJFzakP84q9/8D/z77TV+REXsRgVUONIk4ICM9hIioQiIhw
+hAQjjAa0A5vCpQIVrRqVU4BdTrUokCscUgsZsgC0v9WG+TcoQrKpAlabxWERLClq
+7YTDYbWzGteRbdXAmYA3/yNj5mVFVD9TZWQAm11We7CIihQcsqaLUDDFwDAKk+EQ
+yLLKNmCWNQRBkTSsHq0PyFAlAf2BiNOCwFA8D3M0jRIYSgkMCmNAECmA8yiO8ggi
+0DRH84DGJEKiSYnHBA7BMZ7CEEibLE2xQCyKqUa5JFXULicpnCPdBiCX/6ersNU6
+va8udFPY6vmEXZMmJsp8Y8hx88UGrlmlrZ/O32/Di4yJDXzuc+t+a9zrxum41zZ4
+ybaJb5vca/OiDCGQsTv12j6z/k13vPcj/D0412C7MeDyLgxLady5A1/eKegO8Ktr
+IWNNSb+/05u0xrODnb9c6V1XxvV2FjdZbp7hZvdkh11hzUPi+fIej9VEXBj8xlh7
+d1NDbUBOc0PVvSeXPCNfLYxv1w+UVs1c7zvvDs00dB9L7Hr7dFk+fKDk682O6Vl4
+tOppcuzFfY++/yQzYKyPd165Nh/Dr8sxuZTDbYNHX95bc3njG7m//BhxRlkmOfcz
+kp30Vt6PvNsof5yz9a1oEDz3uCn4L7/Iwqn1O9vfXcwLCswfLdvRpT9ZfftwecL0
+k4qRL/L+bHUldzT2eX0Xm0/90et5kHuv8blQPJVwSKiOn0ClqxUNtDJc6r4axIaE
+tSIeZ1C98eByrrGrf/TkcvT7O5P3frcnsm46erKyB+nsG/Y7Hfqzz+efHVky/HRK
++a204Nf6liMxT+NLt43NYsSlpTTnw6lH1qUL28OmCgtCJq87U0eEjqq2oubIFEd0
+72BapWH/0qtbNj4sLxEu3mrJIqsnus8uto5u+RAbO140NDOzOFg/4p84VhxT03i0
+s79k/NnSsZ6BuLO7RxvZza3jNvF21CvFuljzrq0g52Bgcb//nNG0zXNHDg10tz0u
++qFw91zi/roHtRmp7cdr8jN95oPbzy3M/g0=
+=TbBe
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/basilesimon
+
+==================================================================
