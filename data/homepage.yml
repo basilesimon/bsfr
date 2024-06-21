@@ -1,7 +1,7 @@
 catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>Stanford University's Starling Lab</b> as Director of Special Projects.<br/>I come from a background of <b>graphics-, coder- and creative data-journalist</b>, and I'm based in Berlin.
 
 contact:
-  - ✉️ `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
+  - ✉️ `basile-at-stanford-dot-edu` or <br/> `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
   - 📞 `+49 172 253 9671` (Signal/Telegram)
   - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
 
@@ -48,6 +48,8 @@ talks_publications:
     location: Computation + Journalism Symposium 2014, New York City
   - title: "Algorithms in Journalism: danger or opportunity?"
     location: Assises du Journalism 2014, France
+  - title: "Datastringer: easy dataset monitoring for journalists"
+    location: "Paper on <a href='https://arxiv.org/abs/2402.05764'>arXiv (PDF)</a>, 2014"
 
 hackathons:
   - “Greatest Impact and Distruption” and “Best Diffusion” awards for tinyfm - Al Jazeera Canvas Media in Context, Doha, Qatar
