@@ -1,4 +1,250 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basile Simon • blog</title><link>https://basilesimon.fr/</link><description>Recent content on 👋 hi, I’m basile</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/index.xml" rel="self" type="application/rss+xml"/><item><title>New book chapter out in the Data Journalism Handbook</title><link>https://basilesimon.fr/blog/data-journalism-handbook-published/</link><pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/blog/data-journalism-handbook-published/</guid><description>&lt;p>&lt;img src="assets/ddj-handbook-cover.png" alt="Cover of the Data Journalism Handbook as published by the Amsterdam University Press">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basile Simon • blog</title><link>https://basilesimon.fr/</link><description>Recent content on 👋 hi, I’m basile</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/index.xml" rel="self" type="application/rss+xml"/><item><title>No-time February - weeknotes #71, #72, #73, #74</title><link>https://basilesimon.fr/weeknotes/weeknotes-71-72-73-74/</link><pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-71-72-73-74/</guid><description>&lt;p>Hold on – March? I know February’s always a bit shorter than usual (I love this &lt;a href="https://www.britannica.com/story/why-are-there-only-28-days-in-february">Britannica summary&lt;/a>) but boy was this one short. I blame a combo of physical therapy (twice a week) and a whole lot of running (~120km this month, a lot by my standards) for the relative scarcity of long work days.&lt;/p>
+&lt;hr>
+&lt;p>I started a couple of new things this month:&lt;/p>
+&lt;ul>
+&lt;li>I joined a &lt;strong>Correctiv/Beabee project&lt;/strong> creating a &lt;strong>local-journalism-in-a-box&lt;/strong> software to enable communities to set up a membership system (💰) and interaction with their community. That will be ~10 days a month for the foreseeable, and is probably the largest codebase I’ve worked on. Everybody involved is remote, and it’s been good fun so far.&lt;/li>
+&lt;li>I also started a &lt;strong>collaboration with the Digital Threats to Democracy team at Global Witness&lt;/strong>, designing experiments &lt;strong>testing hypotheses about TikTok and political leaning.&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>And some things are carrying on:&lt;/p>
+&lt;ul>
+&lt;li>I’m preparing a hosted version of the &lt;a href="https://digitalevidencetoolkit.org/">Digital Evidence Toolkit&lt;/a>, per request of a person in Berlin. That means moving to a remote store (hello, S3) and thinking about how to permission delivery and database additions.&lt;/li>
+&lt;li>Speaking of, there are two funding opportunities that, fingers crossed, I’ll have more to tell you about when I publish March’s notes&amp;hellip; 🤞&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>What I talk about when I talk about running&lt;/li>
+&lt;li>“&lt;a href="http://well-formed-data.net/archives/495/propositional-density-in-visualization">Propositional density in dataviz&lt;/a>”, an oldie from Moritz Stefaner, about &lt;em>“the associative, evocative character of our visual information vocabulary”&lt;/em> with wondeful examples&lt;/li>
+&lt;li>&lt;a href="https://theconversation.com/how-to-capture-satellite-images-in-your-backyard-and-contribute-to-a-snapshot-of-the-climate-crisis-167327">“How to capture satellite images in your backyard”&lt;/a>, by Sophie Dyer (Amnesty) and Sasha Engelmann (Royal Holloway Uni), which – come on! – makes you want to place an order and spend some time faffing outside&lt;/li>
+&lt;li>&lt;a href="https://onlineornot.com/what-learned-running-saas-for-year">“What I learned running a SaaS for a year”,&lt;/a> by a guy who’s run a SaaS for a year.&lt;/li>
+&lt;/ul></description></item><item><title>50% of 50% January - weeknotes #67, #68, #69, #70</title><link>https://basilesimon.fr/weeknotes/weeknotes-67-68-69-70/</link><pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-67-68-69-70/</guid><description>&lt;p>I’ve hardly opened emacs this month. Hadn’t hapenned in a while.&lt;/p>
+&lt;p>We came back from France early in the month and had somehow missed the memo about my daughter needing to quarantine for a week as she hasn’t gotten the vaccine yet (she doesn’t has strong feelings towards it, she’s just got a few years to wait).&lt;br>
+Then, a mere day after the happy return to daycare it’s our nanny who tested positive, so we had to keep cruising on staggered work days for another week. We’re now in the clear and testing the little one three times a week. It’s mandatory. Fingers crossed this works and is worth it.&lt;/p>
+&lt;p>The other factor in this text-editor-less spell is&amp;hellip; I’ve been enjoying note-taking in Notion, &lt;a href="https://basilesimon.fr/weeknotes/weeknotes-63-64-65-66/">as I mentioned last month&lt;/a>. It’s not as fast as I’d wish it were but just quite pleasant to use.&lt;/p>
+&lt;hr>
+&lt;p>It’s been a good month for borderline order-obsessed folks like me. I got to do a whole bunch of cleaning up of the AWS accounts I run, deleting and unallocating cloud resources as if it was raining.&lt;/p>
+&lt;p>I like running a tight ship. It’s easier to maintain and to enforce policies across. Two examples in Global Witness’ Data &amp;amp; Investigations team:&lt;/p>
+&lt;ol>
+&lt;li>As I reduced our many non-overlapping VPCs and subnets to a couple, setting up Tailscale as a mesh Wireguard tool really opened up opportunities, including in the literal sense by granting access to private resources.&lt;/li>
+&lt;li>As I now have fewer things to look after and more of the similar kind, I could turn my attention to adding further consistency to the few micro services we&amp;rsquo;ve got going. Now we’re one step away from automated deployment and easier health monitoring. And it’s just so much easier to list what we’re running and how it’s running.&lt;/li>
+&lt;/ol>
+&lt;p>One item of note this month – which &lt;a href="https://ltrg.co.uk/2022/01/29/observable-vs-r.html">Louis must have forgotten to mention&lt;/a>:&lt;/p>
+&lt;p>We’re now trialing running &lt;a href="https://postgrest.org/en/stable/index.html">PostgREST&lt;/a> to interface between databases RDS and Observable notebooks. Now our public Observable notebooks can use our RDS data from REST endpoints created behind-the-scenes and in pure SQL fashion, which PostgREST kindly maps to views.&lt;/p>
+&lt;p>We had been looking for this missing piece in the puzzle for a while.&lt;/p>
+&lt;hr>
+&lt;p>Working a little over half-time isn’t so bad. One downside I found is that it becomes okay for tasks to “spill over” into un-booked time, at the expense of the latter.&lt;br>
+But with this extra time and since I can’t ride, I managed to get into a much more consistent running rhythm, clocking about 75km this month.&lt;/p>
+&lt;p>I also had a bit of time for pro-bono work, and I’m super happy to reconnect with Airwars folks. It’s been, wow, maybe four or five years since I stepped down from an active role, and it’s funny to see how some things have changed and some haven’t.&lt;/p>
+&lt;p>One area of interest with them is their Wordpress-centric workflow, which has the unfortunate consequence to keep away from folks the raw dataset of incidents of concern, since the PHP-MySQL layer co-mingles with the CMS and web output.&lt;/p>
+&lt;p>And I don’t know about you but I’ve never had a good experience building on top of Wordpress…&lt;/p>
+&lt;hr>
+&lt;p>So there are two questions in here: one is about custodial data practices and enabling self-service querying/analysis for a variety of technical levels ; the second is about content management systems (CMS) and their use for data inputting.&lt;/p>
+&lt;p>In other words: beyond spreadsheets, what tools for researchers to populate a database?&lt;/p>
+&lt;p>One strand of experiments Niko and I are running focus on headless CMS: the nice GUI used to manage and write content is de-coupled from how the database is ran and the content is rendered.&lt;/p>
+&lt;p>The second looks at tools à la AirTable, BaseRow, which aim to empower engineers to empower their non-technical colleagues, and everyone would look at the same database through a different prism.&lt;/p>
+&lt;hr>
+&lt;p>I hope to have an update to share on the &lt;a href="https://digitalevidencetoolkit.org">Digital Evidence Toolkit&lt;/a> next month. Spoiler: it’s got to do with Datalog, open-source v AWS, and fancy temporality management. For now I’m just excited by the new stuff.&lt;/p>
+&lt;hr>
+&lt;p>&lt;img src="assets/moon-sketches.png" alt="Where is the Moon from my window">&lt;/p>
+&lt;p>Oh, and I finally published &lt;a href="https://observablehq.com/@basilesimon/the-moon-from-my-kitchen-window-this-evening">a v1 version of the Moon sketches&lt;/a> I mentioned last month. It’s only the base chart (in Observable Plot) for now but I aim to include some &lt;code>&amp;lt;ref&lt;/code>-fu and to get it over the line.&lt;/p>
+&lt;p>The notebook got in the &amp;ldquo;most liked&amp;rdquo; little sidebar for a while, so that&amp;rsquo;s my kid and me happy about it!&lt;/p></description></item><item><title>Festive December - weeknotes #63, #64, #65, #66</title><link>https://basilesimon.fr/weeknotes/weeknotes-63-64-65-66/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-63-64-65-66/</guid><description>&lt;p>Welcome to my first &lt;em>monthnote&lt;/em> written in the &lt;em>weeknote&lt;/em> format.&lt;br>
+I’ve had a ton of fun with note-taking this month and, for better or worse, have let go of graph-db-flavours of &lt;a href="https://roamresearch.com/">Roam&lt;/a> (e.g. &lt;a href="http://athensresearch.org/">Athens&lt;/a>). I went all in with Notion and despite the clunkiness of how Zettelkasten-type patterns work in it, I’ve not looked back yet.&lt;/p>
+&lt;p>Just wanted to highlight Jeff’s point one more time about the difference between a &lt;em>feature&lt;/em> and a &lt;em>product&lt;/em>:&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">The [[wiki link]] is just like #&amp;#39;s and @&amp;#39;s — public-domain innovations in hypertext.&lt;br>&lt;br>But just cause your social app has @&amp;#39;s and #&amp;#39;s doesn&amp;#39;t mean people will use it.&lt;br>&lt;br>It&amp;#39;s a starting point, not a finish line. We&amp;#39;ve just begun.&lt;/p>&amp;mdash; Jeff Tang 🏛🍊 (@tangjeff0) &lt;a href="https://twitter.com/tangjeff0/status/1476284525797801985?ref_src=twsrc%5Etfw">December 29, 2021&lt;/a>&lt;/blockquote> &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>And of course, welcome to 2022!&lt;/p>
+&lt;hr>
+&lt;p>Three events or storylines defined December 2021:&lt;/p>
+&lt;ul>
+&lt;li>I broke my thumb in a silly, non sport-related bicycle fall over some ice. Consequently, I spent a good deal of this month worrying about care, surgery, pain and future recovery. 0/10 would like this to not happen again.&lt;/li>
+&lt;li>There were family celebrations over the festive period, and we spent half the month in France. All of it got turned upside down several times because of the resurgence of the virus, but I feel blessed nonetheless.&lt;/li>
+&lt;li>My folks helped us get over the uncharted territory hump and sent my partner and I away for two nights while they looked after the little one. Our first childless holiday since her birth. And you guessed right: two morning sleeping in.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>Now, work-wise. So… Aside from a few actual work days, I spent most of these few working hours preparing 2022. That means emailing some folks I contact periodically, sending an actual pitch for a three-month project, and replying to an open call for consultancy from Tactical Tech. That also means sorting out a few unknowns on the accounting front and wanting at my partner about how complicated things are in Germany and how little I can work out about some pretty important things like health insurance and my precise bottom line.&lt;/p>
+&lt;p>What I know however is that &lt;strong>we renewed my contacts with Global Witness and the Deutsche Welle for assignments covering all of 2022!&lt;/strong> 🎉&lt;/p>
+&lt;p>Without hitting the jackpot yet, I’ve done some thinking about a simplified infrastructure for Global Witness Data &amp;amp; Investigations as I sunset legacy bits, and what a cool Wireguard VPN à la Tailscale could unlock regarding resources I really need to keep very private.&lt;/p>
+&lt;p>The buzz-themes of the month were &lt;strong>web3&lt;/strong> and &lt;strong>datalog&lt;/strong>, mostly by virtue of having several friends and colleagues interested in the same things at the same time.&lt;/p>
+&lt;p>I did no work on the &lt;a href="https://digitalevidencetoolkit.org">Toolkit&lt;/a> but had two amazing meetings — one of which was with Ilya and Ed from &lt;a href="https://webrecorder.net/">Web Recorder&lt;/a> who are way ahead drafting the &lt;a href="https://webrecorder.github.io/wacz-spec/">spec for WACZ&lt;/a>, an interoperable web archiving format and tools.&lt;/p>
+&lt;p>Finally, no real surprise there but I didn’t manage to publish some Moon dataviz sketches, let alone turning them into Christmas presents.&lt;/p>
+&lt;h3 id="reading-list">Reading list&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ft.com/content/8399873e-0dda-4c87-ba59-0e2678166fba">“Researchers train AI on &amp;lsquo;synthetic data&amp;rsquo; to uncover Syrian war rimes”&lt;/a>, by Madhumita Murgia, technology correspondent at the FT&lt;/li>
+&lt;li>&lt;a href="https://flowingdata.com/2021/12/13/leland-wilkinson-creator-of-the-grammar-of-graphics-passed-away/">“Leland Wilkinson, creator of The Grammar of Graphics, passed away ”&lt;/a> 😢&lt;/li>
+&lt;li>&lt;a href="https://www.thebureauinvestigates.com/stories/2021-12-06/spam-spies-sms-how-it-works">“Spam, Spies, SMS: how it works”&lt;/a> by Crofton Black for the Bureau of Investigative Journalism&lt;/li>
+&lt;li>&lt;a href="https://www.ft.com/content/8fbd120f-9377-4a7c-8c6f-c0b0a620b2f4">“Sleaze will be hard to clean up while the data remains so opaque”&lt;/a>, by Max Harlow, who knows a good deal about British open data, on the FT&lt;/li>
+&lt;/ul></description></item><item><title>Moving to a monthly format - weeknotes #62</title><link>https://basilesimon.fr/weeknotes/weeknotes-62/</link><pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-62/</guid><description>&lt;p>Hello, December.&lt;/p>
+&lt;p>I probably won&amp;rsquo;t be publishing weekly notes this month, in a trial of a monthly format instead. I&amp;rsquo;ve moved some of my notes from &lt;a href="https://github.com/org-roam/org-roam/">org-roam&lt;/a> to &lt;a href="https://www.notion.so/">Notion&lt;/a> and the upset in my life is simply too great for me to just write about at the minute.&lt;/p>
+&lt;p>Speak in a few weeks, then!&lt;/p></description></item><item><title>Write before the weekend - weeknotes #61</title><link>https://basilesimon.fr/weeknotes/weeknotes-61/</link><pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-61/</guid><description>&lt;p>I&amp;rsquo;m way behind writing these notes, but that may be because I&amp;rsquo;ve got little time on my hands these days. Seems like it&amp;rsquo;s busy as is every early winter, except this year it&amp;rsquo;s a lot of child care. Don&amp;rsquo;t get me wrong: it&amp;rsquo;s really cool and relaxing to chill out in bed or do puzzles. It just leaves less time to faff around the computer.&lt;/p>
+&lt;hr>
+&lt;p>&lt;img src="assets/radartech-camembert.png" alt="">&lt;/p>
+&lt;p>I&amp;rsquo;ve done a bit more work composing some of the UI elements and now charts I&amp;rsquo;m creating for the French survey project (the current status of which is a bit complicated to explain). Above is a new chart type, inspired by the [State of Dataviz 2020/21], composing with highlights and pull-outs.&lt;/p>
+&lt;p>I like &lt;a href="https://github.com/etalab/radar-tech-frontend/blob/camembert-graphique/src/components/charts/LabelledPie.tsx">how simple it is&lt;/a>, though React isn&amp;rsquo;t exactly terse&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;p>There&amp;rsquo;s another chart I&amp;rsquo;d like to tell you about but&amp;hellip; I&amp;rsquo;d really like to do so with a kind of online REPL, &lt;em>à la&lt;/em> &lt;a href="https://svelte.dev/repl/d5216f421c5b4ffab4a3c2e0e81fac5d?version=3.44.2">this example in Svelte-land&lt;/a>, but for ClojureScript.&lt;/p>
+&lt;hr>
+&lt;p>I&amp;rsquo;m actually going to stop writing these notes and get on with this week, instead of looking back. Lesson learned: write the weeknotes at least mostly before the weekend.&lt;/p></description></item><item><title>Short Parisian notes - weeknotes #60</title><link>https://basilesimon.fr/weeknotes/weeknotes-60/</link><pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-60/</guid><description>&lt;p>Hi from Paris! Feels a bit odd to be travelling considering the seemingly sudden surge in Covid cases in Europe. Our apathy towards this in October and November being illustrated rather well by this Die Zeit viz:&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">This is what I love about &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw">#dataviz&lt;/a>: its ability to point at *a problem*, to show it clearly, so we can then discuss it.&lt;br>&lt;br>The example below is so powerful and graspable. Makes you wonder: how? why? &lt;a href="https://t.co/xJzGINKlYb">https://t.co/xJzGINKlYb&lt;/a>&lt;/p>&amp;mdash; Basile Simon (@basilesimon) &lt;a href="https://twitter.com/basilesimon/status/1461620122934816769?ref_src=twsrc%5Etfw">November 19, 2021&lt;/a>&lt;/blockquote> &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;hr>
+&lt;p>And honestly, it&amp;rsquo;s been a busy week socially. I mostly spent time catching up with old pals, hence the terseness of these notes 😉&lt;/p>
+&lt;hr>
+&lt;p>I&amp;rsquo;ve been translating a few basic charts templates into React, JSX, and TypeScript. Kind of fun. As I mentioned before, I kind of indulge in how much I get to learn through trying to accurately type constructs I&amp;rsquo;ve used for years, be they DOM manipulations of D3 abstractions.&lt;/p>
+&lt;p>Case in point: this isotype, in Observable below, and &lt;a href="https://github.com/etalab/radar-tech-frontend/blob/master/src/components/charts/BarreDePersonnages.tsx">now in &lt;code>.tsx&lt;/code> too.&lt;/a>&lt;/p>
+&lt;iframe width="100%" height="495" frameborder="0" scroll="no" overflow="hidden" src="https://observablehq.com/embed/@basilesimon/isotype-sketch-a-wee-people-bar-chart?cell=viz&amp;cell=minibar&amp;cell=viewof+highlight&amp;cell=barStyle&amp;cell=myStyle">&lt;/iframe></description></item><item><title>The Toolkit returns? - weeknotes #59</title><link>https://basilesimon.fr/weeknotes/weeknotes-59/</link><pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-59/</guid><description>&lt;p>First week with an M1 laptop. It&amp;rsquo;s kind of insane, and it&amp;rsquo;s the little things. The instant wake and opening of apps. The whole-workday battery life. The total silence.&lt;/p>
+&lt;hr>
+&lt;p>I followed up on a few leads for the &lt;a href="https://digitalevidencetoolkit.org/">Digital Evidence Toolkit&lt;/a>, and it&amp;rsquo;s quite pleasant to see that some of them are still ongoing.&lt;/p>
+&lt;p>The plans remain the same, though: I&amp;rsquo;m still fleshing out options for either future work (collaboration on an org-wide instance, for example) or pivots (provide chain-of-custody as a service kind of a thing).&lt;/p>
+&lt;hr>
+&lt;p>It appears that I did a couple of Clojure/ClojureScript things this week. &lt;a href="https://bzg.fr">Bastien&lt;/a> had his big moment as the minister announced ambitious plans for the Digital Commons, and I ended up submitting a couple of CLJS patches to &lt;a href="https://code.gouv.fr/">code.gouv.fr&lt;/a>, which aggregates open source code and projects from the French administration.&lt;/p>
+&lt;p>There&amp;rsquo;s a chart that&amp;rsquo;s been bugging me in this release, and so I&amp;rsquo;m looking into either re-doing it in a nice, pure HTML form (which I&amp;rsquo;m yet to draft) or just bash it with Observable&amp;rsquo;s latest baby: &lt;a href="https://observablehq.com/@observablehq/plot">Plot&lt;/a>.&lt;/p>
+&lt;p>CLJS interops with Javascript, but it&amp;rsquo;s kind of a funny one. See for example the need to move data structures between Clojure and JS with &lt;code>clj-&amp;gt;js&lt;/code> and the relatively gross rendering of Plot&amp;rsquo;s return, which is a built &lt;code>SVGElement&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-clj" data-lang="clj">(&lt;span style="color:#000;font-weight:bold">defn &lt;/span>&lt;span style="color:#008080">make-plot&lt;/span> [&lt;span style="color:#008080">data&lt;/span>]
+(&lt;span style="color:#900;font-weight:bold">plot/plot&lt;/span>
+(&lt;span style="color:#0086b3">-&amp;gt; &lt;/span>{&lt;span style="color:#990073">:marks&lt;/span>
+[(&lt;span style="color:#900;font-weight:bold">plot/barY&lt;/span>
+(&lt;span style="color:#900;font-weight:bold">clj-&amp;gt;js&lt;/span> &lt;span style="color:#008080">data&lt;/span>)
+(&lt;span style="color:#900;font-weight:bold">clj-&amp;gt;js&lt;/span> {&lt;span style="color:#990073">:x&lt;/span> &lt;span style="color:#d14">&amp;#34;letter&amp;#34;&lt;/span> &lt;span style="color:#990073">:y&lt;/span> &lt;span style="color:#d14">&amp;#34;frequency&amp;#34;&lt;/span>}))]
+&lt;span style="color:#990073">:x&lt;/span> {&lt;span style="color:#990073">:label&lt;/span> &lt;span style="color:#d14">&amp;#34;&amp;#34;&lt;/span>}
+&lt;span style="color:#990073">:caption&lt;/span> &lt;span style="color:#d14">&amp;#34;test caption&amp;#34;&lt;/span>}
+&lt;span style="color:#008080">clj-&amp;gt;js&lt;/span>)))
+(&lt;span style="color:#000;font-weight:bold">defn &lt;/span>&lt;span style="color:#008080">&amp;lt;header&amp;gt;&lt;/span> []
+[&lt;span style="color:#990073">:header.mb-5&lt;/span>
+[&lt;span style="color:#990073">:h3.title.is-3&lt;/span> &lt;span style="color:#d14">&amp;#34;Frequency of letters in the English language&amp;#34;&lt;/span>]])
+(&lt;span style="color:#000;font-weight:bold">defn &lt;/span>&lt;span style="color:#008080">render-dom-el&lt;/span>
+&lt;span style="color:#d14">&amp;#34;Renders a js DOM element as a reagent component, and updates
+&lt;/span>&lt;span style="color:#d14"> when the DOM element updates, too&amp;#34;&lt;/span>
+[&lt;span style="color:#008080">dom-el&lt;/span>] [&lt;span style="color:#990073">:div&lt;/span> {&lt;span style="color:#990073">:dangerouslySetInnerHTML&lt;/span> {&lt;span style="color:#990073">:__html&lt;/span> (&lt;span style="color:#900;font-weight:bold">.-outerHTML&lt;/span> &lt;span style="color:#008080">dom-el&lt;/span>)}}])
+&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>And I had a lovely chat with Chris (who &lt;a href="https://blog.chrislowis.co.uk/">also writes weeknotes&lt;/a>), a mix of a friendly catchup and sussing out &amp;ldquo;collabs.&amp;rdquo;&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ft.com/content/d5aebb99-0316-41a9-b19a-505713e4fb41">“Arcane, hereditary, all-male — and at the heart of British democracy”&lt;/a> by George Parker from the Financial Times. Comes for the artistocratic tosh, stay for the plot twist explaning why they&amp;rsquo;re still around.&lt;/li>
+&lt;li>&lt;a href="https://newsletter.butwhatfor.com/p/invert-always-invert-avoid-failure">“Suppose I Wanted to Kill a Lot of Pilots”&lt;/a> by But What For? on Substack. I&amp;rsquo;ve just discovered this way of finding answers through coachings, and found the writing to be a real eye-opener.&lt;/li>
+&lt;/ul></description></item><item><title>Long workshops - weeknotes #58</title><link>https://basilesimon.fr/weeknotes/weeknotes-58/</link><pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-58/</guid><description>&lt;p>Hello, November!&lt;/p>
+&lt;hr>
+&lt;p>I spent most of my working hours in workshops for the Deutsche Welle, who&amp;rsquo;s been given a pot of money to work on projects related to uses of AI to fight (mis/dis)information.&lt;/p>
+&lt;p>Lots of people in a Teams meeting&amp;hellip; turned out to not be so bad. Miro is an amazing tool and the workshop facilitators did a really good job of keeping the whole affair feeling snappy and quick!&lt;/p>
+&lt;hr>
+&lt;p>I &lt;a href="https://console.substack.com/p/console-78">gave an interview to Amazon&amp;rsquo;s Jackson Kelley&lt;/a>, who runs the Console newsletter. We talked about the &lt;a href="https://digitalevidencetoolkit.org/">Digital Evidence Toolkit&lt;/a> from the perspective of open source software.&lt;/p>
+&lt;p>From the resulting newsletter signups, hello to the &lt;a href="https://www.atf.gov/">Bureau of Alcohol, Tobacco, Firearms and Explosives&lt;/a> staff. I&amp;rsquo;d love to hear about your interest in this project.&lt;/p>
+&lt;hr>
+&lt;p>After much faffing and inability to finally decide to spend something north of two grands on a new laptop, a rental MacBook Air M1 arrived on Friday.&lt;/p>
+&lt;p>The straight-out-of-the-box smell of the is just like it&amp;rsquo;s always been – there&amp;rsquo;s no way these things aren&amp;rsquo;t designed, right?&lt;/p>
+&lt;hr>
+&lt;p>Went to see &lt;em>No Time to Die&lt;/em> – it had been a while since I last went to the movies. My calendar says not since October 2019.&lt;/p>
+&lt;p>The movie was a good laugh, and a fitting goodbye to Craig&amp;rsquo;s Bond. Everybody kicks absolute ass, but it&amp;rsquo;s not quite as the shock &lt;em>Casino Royale&lt;/em> was or the mood &lt;em>Skyfall&lt;/em> had about it.&lt;/p></description></item><item><title>Old PHP, and where does the Moon rise? - weeknotes #57</title><link>https://basilesimon.fr/weeknotes/weeknotes-57/</link><pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-57/</guid><description>&lt;p>Dealing with ageing bespoke-built content: never fun. I hope that the tools we use today (static-files generation, lockfiles, containerisation, etc.) will make that job easier in the long run.&lt;/p>
+&lt;p>Even so, tools churn will remain a factor. This week, I looked at an old interactive web campaign, commissioned by Global Witness and built by capable people, in a mix of techs commonly referred to as a LAMP stack and updated a couple of years ago into a Docker orchestration.&lt;/p>
+&lt;p>Now, I personally am not very capable in SQL, and would certainly not accept money to do PHP professionally.&lt;/p>
+&lt;p>There&amp;rsquo;s always guesswork and learning, I guess, but somehow I ended up stumbling upon a custom Levenshtein algorithm implementation which I can only assume aims to help with the non-English nature of the material&amp;hellip;&lt;/p>
+&lt;p>But that&amp;rsquo;s where I pack it up and wash my hands with it.&lt;/p>
+&lt;p>So what to do? Commission someone to build the whole thing again?&lt;/p>
+&lt;p>At this point, consultancies and freelancers should sell subscriptions, not one-offs.&lt;/p>
+&lt;hr>
+&lt;p>Spent an afternoon at the Onion Space, which is slowly but surely coming back life (I wouldn&amp;rsquo;t know, though).&lt;/p>
+&lt;hr>
+&lt;p>Did a bit more Clojure/ClojureScript with Niko for the Deutsche Welle. The project, &lt;a href="https://github.com/DW-ReCo/kid-game-framework">a tool that facilitates disinformation awareness trainings&lt;/a>, is coming to an end insofar as a &lt;em>v1.0&lt;/em> is concerned.&lt;/p>
+&lt;hr>
+&lt;p>I am thinking about moving these notes to a monthly format, in an attempt to focus them slightly differently. The weekly log is kind of nice as The Work Week is still a significant time period, but I wonder what would the expectations of a longer term be?&lt;/p>
+&lt;p>&lt;a href="https://puntofisso.medium.com/">Giuseppe&lt;/a> formats his this way&amp;hellip;&lt;/p></description></item><item><title>Cryptic updates and Moon things - weeknotes #56</title><link>https://basilesimon.fr/weeknotes/weeknotes-56/</link><pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-56/</guid><description>&lt;p>Chaperoning the little one to her new daycare centre is coming to an end, after the successful completion of more mini milestones such as napping, saying goodbye to me in the morning, and accepting to change nappies during the day.&lt;/p>
+&lt;hr>
+&lt;p>Staying available for several hours a day in case the all-important nap wouldn&amp;rsquo;t work was rather annoying, however. Like, 3/10 quality of work.&lt;/p>
+&lt;hr>
+&lt;p>The highlight of the week is the start of a series of coaching sessions aiming to inform broad reflexions about whatever it is I do as an occupation.&lt;/p>
+&lt;p>The importance of this appears to be inversely proportional to the length of this paragraph.&lt;/p>
+&lt;hr>
+&lt;p>Equally cryptically, one of the jobs I&amp;rsquo;m involved in (see?) is in a really weird place (you can&amp;rsquo;t make up this amount of imprecision). I don&amp;rsquo;t know if it&amp;rsquo;s dead or not, and I must wait till next week to find out.&lt;/p>
+&lt;p>Not ideal.&lt;/p>
+&lt;h2 id="made">Made&lt;/h2>
+&lt;h4 id="altitude-of-the-moon-in-the-berlin-sky">Altitude of the moon in the Berlin sky&lt;/h4>
+&lt;iframe width="100%" height="384" frameborder="0"
+src="https://observablehq.com/embed/@basilesimon/hello-suncalc?cells=chart">&lt;/iframe></description></item><item><title>Very, very part-time - weeknotes #55</title><link>https://basilesimon.fr/weeknotes/weeknotes-55/</link><pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-55/</guid><description>&lt;p>Second week of introductions to the new childcare centre. Fortunately, it&amp;rsquo;s moving in the right direction – excellent news since in the meantime, I&amp;rsquo;m working very very part-time.&lt;/p>
+&lt;p>My folks were also visiting us this week. It was such a great timing because they really could help us &lt;em>and&lt;/em> got to experience first-hand why Berlin&amp;rsquo;s been so great for us as young parents, including meeting the new daycare team and getting their take on the two education systems.&lt;/p>
+&lt;hr>
+&lt;p>Big discussions with Niko regarding refactorings with Bulma (a CSS framework) and agreeing on a strategy for using Github rather asynchronously: stacked PRs v constant rebases, particularly.&lt;/p>
+&lt;hr>
+&lt;p>No, really, that&amp;rsquo;s about it. As I said: very part-time&amp;hellip;&lt;/p>
+&lt;h2 id="read">Read&lt;/h2>
+&lt;p>(since I&amp;rsquo;ve been hanging out in coffee shops a bit this week, I got some reading done!)&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://acoup.blog/2021/09/17/collections-no-mans-land-part-i-the-trench-stalemate/">“No Man&amp;rsquo;s Land: The Trench Stalemate”&lt;/a>, Bret Devereaux&amp;rsquo;s latest &lt;a href="https://acoup.blog/2021/09/24/collections-no-mans-land-part-ii-breaking-the-stalemate/">multi-part&lt;/a> historical vulgarisation essay about trench war in WW1.&lt;/li>
+&lt;li>&lt;a href="https://scattered-thoughts.net/writing/things-unlearned">“Things unlearned”&lt;/a> by Jamie Brandon. A hodge-podge of great bits about programming and solving problems.&lt;/li>
+&lt;li>&lt;a href="https://www.nplusonemag.com/issue-40/essays/babel-4/">“Babel – Could a machine have an unconscious?”&lt;/a> by Meghan O&amp;rsquo;Gieblyn for n+1 mag, a writer&amp;rsquo;s essay about writing-AI GPT-3, which I found really deep and thought-provoking.&lt;/li>
+&lt;/ul></description></item><item><title>Speccing = cool - weeknotes #54</title><link>https://basilesimon.fr/weeknotes/weeknotes-54/</link><pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-54/</guid><description>&lt;p>I&amp;rsquo;ve been working about 50% this week as I&amp;rsquo;m chaperoning the little one in her introduction to the new daycare centre. Which means that I spent my mornings with a group of about a dozen 2-6 year olds – a relatively different bunch than my regular colleagues, believe me.&lt;/p>
+&lt;p>I won&amp;rsquo;t bore you with parental softness, but it&amp;rsquo;s a really sweet thing seeing her navigating this new world and having so much to take on, from the new everyday language (🇫🇷) to the many rules of this new, strange place.&lt;/p>
+&lt;hr>
+&lt;p>I&amp;rsquo;ve gladly welcomed (tautology?) the opportunity to work on some UI bits through tools nudging towards the isolation and &amp;ldquo;statelessness&amp;rdquo; of components.&lt;/p>
+&lt;p>On the JS, React side I&amp;rsquo;m leaning on &lt;a href="https://storybook.js.org/">Storybook&lt;/a> once again and&amp;hellip; still loving it so far.&lt;/p>
+&lt;p>It&amp;rsquo;s a bit more involved in ClojureScript, as I didn&amp;rsquo;t find the courage to set up the plumbing for &lt;a href="https://github.com/bhauman/devcards">devcards&lt;/a>. Instead, Niko and I scaffolded a one-page view where I can toss my components and rather manually recreate their state.&lt;/p>
+&lt;hr>
+&lt;p>For obscure large-company-German-IT reasons, the question of knowledge bases for a small team has come up. It&amp;rsquo;s something I&amp;rsquo;d like to get my thoughts in order about, as I&amp;rsquo;ve been using a few systems in the last few years, including as a now-floating agent.&lt;/p>
+&lt;p>TL;DR: where I used to favour dev-integrated tools (reference a PR/issue seamlessly), I&amp;rsquo;ve come to favour autosaved, WYSIWYG, great UI-X ones.&lt;/p>
+&lt;hr>
+&lt;p>I&amp;rsquo;ve discovered &lt;a href="https://clojure.org/guides/spec">Clojure Spec&lt;/a>, part of the standard library, which assists the spec-ing and confirmity checking of data structures.&lt;/p>
+&lt;p>In a simplified form, it works this way:&lt;/p>
+&lt;p>Let&amp;rsquo;s define a &lt;code>post&lt;/code>, which is a map/object containing, at least, &lt;code>type&lt;/code>, &lt;code>author&lt;/code>, and &lt;code>copy&lt;/code> and at most the aforementioned plus &lt;code>media&lt;/code> and &lt;code>location&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-clj" data-lang="clj">(&lt;span style="color:#900;font-weight:bold">s/def&lt;/span> &lt;span style="color:#990073">::post&lt;/span> (&lt;span style="color:#900;font-weight:bold">s/keys&lt;/span> &lt;span style="color:#990073">:req-un&lt;/span> [&lt;span style="color:#990073">::type&lt;/span>
+&lt;span style="color:#990073">::author&lt;/span>
+&lt;span style="color:#990073">::copy&lt;/span>]
+&lt;span style="color:#990073">:opt-un&lt;/span> [&lt;span style="color:#990073">::media&lt;/span>
+&lt;span style="color:#990073">::location&lt;/span>]))
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Is this map valid? Nope&amp;hellip;&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-clj" data-lang="clj">(&lt;span style="color:#900;font-weight:bold">s/valid?&lt;/span> &lt;span style="color:#990073">::post&lt;/span>
+{&lt;span style="color:#990073">:type&lt;/span> &lt;span style="color:#d14">&amp;#34;text&amp;#34;&lt;/span>
+&lt;span style="color:#990073">:author&lt;/span> &lt;span style="color:#d14">&amp;#34;basile&amp;#34;&lt;/span>})
+&lt;span style="color:#008080">=&amp;gt;&lt;/span> &lt;span style="color:#008080">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Why? &lt;code>explain-data&lt;/code> points at the missing keyword:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-clj" data-lang="clj">(&lt;span style="color:#900;font-weight:bold">s/explain-data&lt;/span> &lt;span style="color:#990073">::post&lt;/span> {&lt;span style="color:#990073">:type&lt;/span> &lt;span style="color:#d14">&amp;#34;text&amp;#34;&lt;/span>
+&lt;span style="color:#990073">:author&lt;/span> &lt;span style="color:#d14">&amp;#34;basile&amp;#34;&lt;/span>})
+&lt;span style="color:#008080">=&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">#&lt;/span>&lt;span style="color:#990073">:spec&lt;/span>{&lt;span style="color:#990073">:problems&lt;/span>
+({&lt;span style="color:#990073">:path&lt;/span> [],
+&lt;span style="color:#990073">:pred&lt;/span> (&lt;span style="color:#900;font-weight:bold">clojure.core/fn&lt;/span> [&lt;span style="color:#008080">%&lt;/span>] (&lt;span style="color:#900;font-weight:bold">clojure.core/contains?&lt;/span> &lt;span style="color:#008080">%&lt;/span> &lt;span style="color:#990073">:copy&lt;/span>)),
+&lt;span style="color:#990073">:val&lt;/span> {&lt;span style="color:#990073">:type&lt;/span> &lt;span style="color:#d14">&amp;#34;text&amp;#34;&lt;/span>, &lt;span style="color:#990073">:author&lt;/span> &lt;span style="color:#d14">&amp;#34;basile&amp;#34;&lt;/span>},
+&lt;span style="color:#990073">:via&lt;/span> [&lt;span style="color:#990073">:spec-demo.core/post&lt;/span>],
+&lt;span style="color:#990073">:in&lt;/span> []}), &lt;span style="color:#990073">:spec&lt;/span> &lt;span style="color:#990073">:spec-demo.core/post&lt;/span>,
+&lt;span style="color:#990073">:value&lt;/span> {&lt;span style="color:#990073">:type&lt;/span> &lt;span style="color:#d14">&amp;#34;text&amp;#34;&lt;/span>, &lt;span style="color:#990073">:author&lt;/span> &lt;span style="color:#d14">&amp;#34;basile&amp;#34;&lt;/span>}}
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Blowing it - weeknotes #53</title><link>https://basilesimon.fr/weeknotes/weeknotes-53/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-53/</guid><description>&lt;p>One of the most significant bits of last week is that I blew a technical interview. I had never done one before but thought I could navigate my way around doing some kind
+of d3.js thing under time pressure.&lt;/p>
+&lt;p>Well, I didn&amp;rsquo;t. The task wasn&amp;rsquo;t particularly difficult but my mistake was to think I had enough React under my belt. Nope. Everything from function signatures to patterns
+which are literally part of the standard library evaded me.&lt;/p>
+&lt;p>I felt so inappropriate and kept thinking about it, thinking I&amp;rsquo;d do totally differently were I to be allowed to do it again&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;p>In nicer news, I paired with Niko a couple of times on this ClojureScript project for Deutsche Welle. The experience was pleasant and it gave me more confidence to look a
+little deeper to find the bits of underlying data I could pass or state I could alter to fiddle with the app through the REPL.&lt;/p>
+&lt;hr>
+&lt;p>That&amp;rsquo;s it for this week. Well, last week. Should really write these notes when the week ends&amp;hellip;&lt;/p></description></item><item><title>A year of weeknotes - weeknotes #52</title><link>https://basilesimon.fr/weeknotes/weeknotes-52/</link><pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-52/</guid><description>&lt;p>One year writing these notes.&lt;/p>
+&lt;p>When I started, I was very much trying to go back to work, struggling to find more than a few hours here and there.&lt;/p>
+&lt;p>Since then:&lt;/p>
+&lt;ul>
+&lt;li>I found work 🎉 and negotiated my rate and conditions with different kinds of clients,&lt;/li>
+&lt;li>I got to say no to assignments for various reasons,&lt;/li>
+&lt;li>When it got too busy or difficult, I set boundaries and made time for flexibility and family (the huge perks of this lifestyle),&lt;/li>
+&lt;li>And since today, I lived through the difficulty of having to dump a client.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>A year into this notes is as good a time as any to think about these full-time employment opportuinities that arise every so often. It would mean no more admin, no more thinking I&amp;rsquo;m &amp;ldquo;losing&amp;rdquo; a day&amp;rsquo;s wages when I&amp;rsquo;m doing things for myself. Ah well, I&amp;rsquo;ll choose on merit of each opportuinity.&lt;/p>
+&lt;hr>
+&lt;p>Convergence and coincidence at Global Witness: several avenues to slimming down our cloud infra opened up at the same time. I&amp;rsquo;m trying to concentrate (centralise?) non-essential, let&amp;rsquo;s-try-it-for-a-few-month services instead of running each little thing on its own VPS. Bad for the environment, bad for maintenance, bad for the monthly bill.&lt;/p>
+&lt;p>I also want to move an old (five years?) app which is hosted on a single VPS to a, how do I put this, more modern and less costly stack. Problem is I don&amp;rsquo;t know much PHP, so it&amp;rsquo;s kind of a tricky task.&lt;/p>
+&lt;hr>
+&lt;p>Bit of frustration working on this ClojureScript project for Deutsche Welle. One of the central promises of the language and the tooling is this REPL companion, which seamlessy fits into REPL-aware text editors and which allows you to play around, modify state, and never really reload your app and replay actions to achieve the same state.&lt;/p>
+&lt;p>Niko was on holiday and I couldn&amp;rsquo;t get the bits I needed to work. So I was back on a livereload-y setup, tweaking something and replaying the actions in browser to see how I liked the change&amp;hellip;&lt;/p>
+&lt;hr>
+&lt;p>For the first time since the little one was born, I played a full weekend of bike polo at a little tournament in Berlin. Was good to be outside for so much of the day, even though I should really do some strength exercise: the gear ratio felt high and the mallet heavy&amp;hellip;&lt;/p></description></item><item><title>Stack jumping every day - weeknotes #51</title><link>https://basilesimon.fr/weeknotes/weeknotes-51/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/weeknotes/weeknotes-51/</guid><description>&lt;p>Back to work after a week off, and now approaching a year of writing these weekly notes. I had lots of &lt;em>life admin&lt;/em> stuff to do early in the week – things I had left for later after some time focusing solely on the Toolkit.&lt;/p>
+&lt;p>This week was the first week &lt;em>&amp;ldquo;after&amp;rdquo;&lt;/em> the Toolkit, and I chopped it down into three clients.&lt;/p>
+&lt;hr>
+&lt;p>I worked two full days for Deutsche Welle, the German broadcaster. No meetings, just logging in and doing some work. I spent this time reviewing the codebase for a project called KID, which has to do with training resources about disinformation.&lt;/p>
+&lt;p>It&amp;rsquo;s a ClojureScript app so this was straight in the deep end.&lt;/p>
+&lt;p>I&amp;rsquo;m starting from the front-of-the-frontend and bringing in sharper, more consistent styles, and working my way down the stack. Hopefully.&lt;/p>
+&lt;hr>
+&lt;p>I dedicated one day to jumping back into a Tactical Tech project which has now been extended (and topped up). There are new ideas I want to pitch but I feel I miss a system/method to do so. One I can use by default, when a client doesn&amp;rsquo;t impose &lt;em>their&lt;/em> method of working or submitting work. See below: &amp;ldquo;Mise en place for Knowledge Workers.&amp;rdquo;&lt;/p>
+&lt;hr>
+&lt;p>And I also spent a day (well, almost) similarly getting back into Radartech, this survey and dataviz project for the French administration.&lt;/p>
+&lt;hr>
+&lt;p>I started the &lt;a href="https://exercism.org/tracks/clojure">Exercism Clojure track&lt;/a> to practise the language a bit. The exercises are varied and have kept me interested so far!&lt;/p>
+&lt;p>Will next week be this varied, I wonder?&lt;/p>
+&lt;h3 id="read">Read&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://fortelabs.co/blog/mise-en-place-for-knowledge-workers/">“Mise en place for knowledge workers”&lt;/a>, by Tiago Forte of Forte Labs. Really interesting in terms of balancing new methods, tools, and constant learning with needs of expertise and efficiency, which I read from a solo freelancer&amp;rsquo;s perspective.&lt;/li>
+&lt;li>As a corollary to the above, I&amp;rsquo;ve got &lt;a href="https://www.nashvail.me/blog/stop-learning">”Stop learning”&lt;/a> by Nash Vail in my list too.&lt;/li>
+&lt;/ul></description></item><item><title>New book chapter out in the Data Journalism Handbook</title><link>https://basilesimon.fr/blog/data-journalism-handbook-published/</link><pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate><guid>https://basilesimon.fr/blog/data-journalism-handbook-published/</guid><description>&lt;p>&lt;img src="assets/ddj-handbook-cover.png" alt="Cover of the Data Journalism Handbook as published by the Amsterdam University Press">&lt;/p>
 &lt;p>The &lt;a href="https://www.aup.nl/en/book/9789048542079/the-data-journalism-handbook">updated version of The Data Journalism Handbook&lt;/a> was published this week – a huge relief for Liliana Bounegru and Jonathan Gray, its editors, who have been working on this for years.&lt;/p>
 &lt;p>I contributed a chapter: &lt;em>“Coding with data in the newsroom”&lt;/em>, which you&amp;rsquo;ll find in the second section, &lt;em>“Working with data”&lt;/em>, nicely tucked between Barbara Maseda&amp;rsquo;s &lt;em>“Text as data: finding stories in text collections”&lt;/em> 😎 and Sam Leon&amp;rsquo;s &lt;em>“Accounting for methods: spreadsheets, scripts and programming notebooks.”&lt;/em>&lt;/p>
 &lt;hr>
