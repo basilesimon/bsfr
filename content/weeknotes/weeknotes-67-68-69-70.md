@@ -1,6 +1,6 @@
 ---
 date: "2022-01-31T00:00:00Z"
-published: false
+published: true
 title: '50% of 50% January - weeknotes #67, #68, #69, #70'
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2021-10-29T00:00:00Z"
-published: false
+published: true
 title: 'Old PHP, and where does the Moon rise? - weeknotes #57'
 ---
 Dealing with ageing bespoke-built content: never fun. I hope that the tools we use today (static-files generation, lockfiles, containerisation, etc.) will make that job easier in the long run.

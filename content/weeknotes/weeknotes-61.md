@@ -1,6 +1,6 @@
 ---
 date: "2021-11-26T00:00:00Z"
-published: false
+published: true
 title: 'Write before the weekend - weeknotes #61'
 ---
 

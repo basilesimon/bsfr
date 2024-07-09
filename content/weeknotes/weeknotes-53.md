@@ -1,6 +1,6 @@
 ---
 date: "2021-10-01T00:00:00Z"
-published: false
+published: true
 title: 'Blowing it - weeknotes #53'
 ---
 

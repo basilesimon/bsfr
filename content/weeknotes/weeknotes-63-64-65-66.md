@@ -1,6 +1,6 @@
 ---
 date: "2021-12-31T00:00:00Z"
-published: false
+published: true
 title: 'Festive December - weeknotes #63, #64, #65, #66'
 ---
 

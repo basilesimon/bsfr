@@ -1,6 +1,6 @@
 ---
 date: "2021-10-22T00:00:00Z"
-published: false
+published: true
 title: 'Cryptic updates and Moon things - weeknotes #56'
 ---
 
