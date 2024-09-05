@@ -3,13 +3,14 @@ languageCode: "en-uk"
 
 title: "👋 hi, I’m basile"
 author: "basile simon"
-
 theme: "hugo-bearblog"
-
 enableRobotsTXT: true
 
 params:
-  description: ""
+  author: "Basile Simon"
+  description: "The personal website of Basile, a creative technologist based in Berlin 
+  and working on evidence authentication and preservation, with a background in data-journalism"
+  logo = "/assets/author.jpg"
   favicon: "images/favicon.png"
   rssTitle: "Basile Simon • blog"
 
@@ -17,12 +18,11 @@ params:
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  images: ["images/share.png"]
+  # images: ["images/share.png"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title: "~basile"
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
