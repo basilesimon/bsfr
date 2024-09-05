@@ -23,7 +23,8 @@
       "description": "{{ .Params.description }}",
       "publisher": {
         "@type": "Person",
-        "name": "{{ .Site.Author }}",
+        "name": {{ $.Site.Params.Author }},
+        "url" {{ .Site.BaseURL }},
         "image": {
           "@type": "ImageObject",
           "url": "{{ .Site.Params.logo }}"
