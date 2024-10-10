@@ -1,11 +1,17 @@
 catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>Stanford University's Starling Lab</b> as Director of Special Projects.<br/>I come from a background of <b>graphics-, coder- and creative data-journalist</b>, and I'm based in Berlin.
 
 contact:
-  - ✉️ `basile-at-stanford-dot-edu` or <br/> `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
+  - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
   - 📞 `+49 172 253 9671` (Signal/Telegram)
   - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
 
-past_employment:
+now:
+  - title: Stanford
+  - title: GW
+  - title: misc
+
+past_employment: "I'm presently self-employed. My journalism career started in the UK, where I worked for large broadcasters, newspapers, and agencies:"
+past_employment_jobs:
   - Graphics editor,  Europe, Middle East and Africa, **Reuters**
   - Senior interactive journalist, **The Times and The Sunday Times**
   - Newsroom developer, **The Times and the Sunday Times**
@@ -30,6 +36,12 @@ awards:
         url: https://www.informationisbeautifulawards.com/showcase/4232-not-far-ahead
 
 talks_publications:
+  - title: Law, Evidence, and Generative AI
+    location: Roundtable for the State Dpt Glocal Criminal Justice, Washington DC, 2024
+  - title: Old and new doubts about verification of open-source imagery from gen AI
+    location: "in <a href='https://opiniojuris.org/2024/06/26/old-doubts-new-doubts-evaluating-digital-open-source-imagery-in-the-courtroom/'>OpinioJuris</a>, 2024"
+  - title: Legal Roundtable on best practices for admissible web archives
+    location: Organised event with Global Justice Advisors, Nicholas Taylor, and the Internet Archive, 2022
   - title: Working with data in the newsroom
     location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
   - title: Career paths for news nerds (or lack of them)

@@ -37,7 +37,7 @@ article.single {
 }
 
 @media (min-width: 1024px) {
-  .portfolio {
+  .wide-80 {
     width: 80%;
     margin: 0 auto;
   }
