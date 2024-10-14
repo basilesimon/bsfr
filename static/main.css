@@ -79,3 +79,21 @@ article.single {
 	flex-basis: 130px !important;
     }
 }
+
+.now {
+  display: flex;
+  flex-direction: column;
+}
+.now .item {
+  width: 100%;
+  align-content: end
+}
+@media (min-width: 450px) {
+  .now {
+    flex-direction: row;
+  }
+  .now .item {
+    width: 33%;
+    padding: 0 1rem;
+  }
+}

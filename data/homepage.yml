@@ -5,10 +5,16 @@ contact:
   - 📞 `+49 172 253 9671` (Signal/Telegram)
   - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
 
-now:
+now: tktktk
+now_list:
   - title: Stanford
+    img: "assets/logo-starling.png"
+    desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA and Verifiable Credentials. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
   - title: GW
+    img: "assets/logo-gw.png"
+    desc: "Consultant technologist and sysadmin to the Data Investigations team. Advise investigative reporting initiatives on workflow and technical, cloud-based resources. Cloud security, building of micro-services, and information design."
   - title: misc
+    desc: "Advisory board at Airwars on technical and architectural matters; technical advisor to the Hala Protocol on Audio. Resident at ECCHR  Investigative Commons. Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others."
 
 past_employment: "I'm presently self-employed. My journalism career started in the UK, where I worked for large broadcasters, newspapers, and agencies:"
 past_employment_jobs:

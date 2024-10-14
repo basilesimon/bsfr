@@ -11,9 +11,26 @@
         <li>{{ . | markdownify }}</li>
         {{ end }}
       </ul>
-
       <hr />
+    </section>
 
+    <div class="wide-80">
+      <h2>/now</h2>
+      <p>{{ .now }}</p>
+      <div class="now">
+        {{ range .now_list }}
+      <div class="item">
+        <img loading="lazy" src="{{ .img }}" style="width: 200px; 
+        object-fit: contain; height: auto;"/>
+        <h4>{{ .title }}</h4>
+        <p>{{ .desc }}</p>
+      </div>
+      {{ end }}
+      </div>
+    </div>
+
+    <section>
+      <hr />
       <h2>👔 Past employment</h2>
       <p> {{ .past_employment | markdownify }}</p>
 
