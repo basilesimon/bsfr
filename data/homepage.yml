@@ -1,16 +1,20 @@
-catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>Stanford University's Starling Lab</b> as Director of Special Projects.<br/>I come from a background of <b>graphics-, coder- and creative data-journalist</b>, and I'm based in Berlin.
+catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>Stanford University's Starling Lab</b>.<br/>I come from a background of <b>information design and creative technologist</b>, and I'm based in Berlin–though I miss the mountains.
 
 contact:
   - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
   - 📞 `+49 172 253 9671` (Signal/Telegram)
   - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
 
-now:
-  - title: Stanford
-  - title: GW
+now: "The freedom I draw from self-employment is really important to me. My varied interest and work strands don't make for a snappy soundbite over a family holiday meal, however. Ah well–can't please everybody. Here's a short summary of what I'm up to:"
+now_list:
+  - img: "assets/logo-starling.png"
+    desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA and Verifiable Credentials. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
+  - img: "assets/logo-gw.png"
+    desc: "Consultant technologist and sysadmin to the Data Investigations team. Advise investigative reporting initiatives on workflow and technical, cloud-based resources. IAM policies, lambdas, information design, chasing whitespace chars in Ansible."
   - title: misc
+    desc: "Advisory board at **Airwars** on technical and architectural matters; technical advisor to the **Hala Protocol on Audio**. Resident at **ECCHR** and **Investigative Commons**. <br />Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others."
 
-past_employment: "I'm presently self-employed. My journalism career started in the UK, where I worked for large broadcasters, newspapers, and agencies:"
+past_employment: "My journalism career started in the UK, where I worked for large broadcasters, newspapers, and agencies:"
 past_employment_jobs:
   - Graphics editor,  Europe, Middle East and Africa, **Reuters**
   - Senior interactive journalist, **The Times and The Sunday Times**
