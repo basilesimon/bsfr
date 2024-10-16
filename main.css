@@ -79,3 +79,27 @@ article.single {
 	flex-basis: 130px !important;
     }
 }
+
+.now {
+  display: flex;
+  flex-direction: column;
+}
+.now .item {
+  width: 100%;
+  align-content: end;
+}
+@media (min-width: 450px) {
+  .now {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .now .item {
+    width: 80%;
+    /* padding: 0 1rem; */
+  }
+  .now .item:nth-child(-n+2) {
+    width: 50%;
+    max-width: 30rem;
+  }
+}
