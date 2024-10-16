@@ -1,7 +1,7 @@
 ---
 date: "2021-03-12T00:00:00Z"
-published: false
-title: 'Hello, Digital Evidence Toolkit - weeknotes #24'
+draft: true
+title: "Hello, Digital Evidence Toolkit - weeknotes #24"
 ---
 
 How is it Friday already? Where did this week go?
@@ -16,9 +16,9 @@ Please read the above post, and there's also a newsletter I'll try to keep up-to
 
 ---
 
-Further trimming down on infrastructure at Global Witness Data and Investigations. I'm  archiving and republishing two projects which currently run in a multi-parts `docker-compose` and on their own EC2 boxes.
+Further trimming down on infrastructure at Global Witness Data and Investigations. I'm archiving and republishing two projects which currently run in a multi-parts `docker-compose` and on their own EC2 boxes.
 
-Not straightforward. 
+Not straightforward.
 
 Also not a pleasure to need to reinstall all the tools of the day (I'm looking at you, `bower` and `grunt`).
 
@@ -30,10 +30,9 @@ I'm looking at how we'd do this the Gatsby way by leveraging static server-side 
 
 I shall keep on fiddling.
 
-The project has been pushed another half-year down the line, so there is time. 
+The project has been pushed another half-year down the line, so there is time.
 
 How do other freelancers deal with this, by the way? I didn't estimate my days to cater for such lenghtening of the deadlines, and I find difficult to "tune back in" to a project you've been off for weeks.
-
 
 ### Read
 

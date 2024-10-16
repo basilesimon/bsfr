@@ -1,9 +1,8 @@
 ---
 date: "2020-12-25T00:00:00Z"
-published: false
-title: 'See you next year - weeknotes #14'
+draft: true
+title: "See you next year - weeknotes #14"
 ---
-
 
 Merry Christmas and holiday season, everyone. I've got very little time this week, and I must confess confess I am writing this note a day late.
 

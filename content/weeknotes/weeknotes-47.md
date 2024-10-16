@@ -1,7 +1,7 @@
 ---
 date: "2021-08-20T00:00:00Z"
-published: false
-title: 'The beginning of the end - weeknotes #47'
+draft: true
+title: "The beginning of the end - weeknotes #47"
 ---
 
 This week felt like the beginning of the end of my grant dedicated to working on the Digital Evidence Toolkit. There were two internal deadlines having to do with public comms that will take place over the next two weeks, which meant that there was quite a lot to rush through so it would make MVP.
@@ -14,7 +14,7 @@ I'm rather one to believe that things go as far as you push them – let's see h
 
 Back in the trenches, I pulled a few favours in order to go a bit beyond the bare minimum:
 
-- [Friedrich](https://pudo.org/) helped with architecturing things in a Docker world and by having none of my “how about we do this later, it's not _that_ important” shit 
+- [Friedrich](https://pudo.org/) helped with architecturing things in a Docker world and by having none of my “how about we do this later, it's not _that_ important” shit
 - and [Clément](http://cgg.sexy) let loose with introducing unit and integration tests as a way to get to know his new OS ahead of starting a new job next week. Bon vent!
 
 ---

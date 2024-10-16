@@ -1,13 +1,12 @@
 ---
 date: "2021-09-17T00:00:00Z"
-published: true
-title: 'Stack jumping every day - weeknotes #51'
+
+title: "Stack jumping every day - weeknotes #51"
 ---
 
 Back to work after a week off, and now approaching a year of writing these weekly notes. I had lots of _life admin_ stuff to do early in the week – things I had left for later after some time focusing solely on the Toolkit.
 
 This week was the first week _"after"_ the Toolkit, and I chopped it down into three clients.
-
 
 ---
 
@@ -19,7 +18,7 @@ I'm starting from the front-of-the-frontend and bringing in sharper, more consis
 
 ---
 
-I dedicated one day to jumping back into a Tactical Tech project which has now been extended (and topped up). There are new ideas I want to pitch but I feel I miss a system/method to do so. One I can use by default, when a client doesn't impose _their_ method of working or submitting work. See below: "Mise en place for Knowledge Workers." 
+I dedicated one day to jumping back into a Tactical Tech project which has now been extended (and topped up). There are new ideas I want to pitch but I feel I miss a system/method to do so. One I can use by default, when a client doesn't impose _their_ method of working or submitting work. See below: "Mise en place for Knowledge Workers."
 
 ---
 
@@ -32,5 +31,6 @@ I started the [Exercism Clojure track](https://exercism.org/tracks/clojure) to p
 Will next week be this varied, I wonder?
 
 ### Read
+
 - [“Mise en place for knowledge workers”](https://fortelabs.co/blog/mise-en-place-for-knowledge-workers/), by Tiago Forte of Forte Labs. Really interesting in terms of balancing new methods, tools, and constant learning with needs of expertise and efficiency, which I read from a solo freelancer's perspective.
 - As a corollary to the above, I've got [”Stop learning”](https://www.nashvail.me/blog/stop-learning) by Nash Vail in my list too.

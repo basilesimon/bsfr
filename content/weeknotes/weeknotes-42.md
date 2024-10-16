@@ -1,15 +1,14 @@
-
 ---
 date: "2021-07-16T00:00:00Z"
-published: false
-title: 'Short week shot note - weeknotes #42'
+draft: true
+title: "Short week shot note - weeknotes #42"
 ---
 
 Once again, hello from France, though from quite a bit more South than previously. It's been pouring for the last three weeks in Lyon, so we drove down to _la Drôme provençale_: the bit in between Lyon and the Riviera/Marseille, a lovely and quiet piece of nature.
 
 ---
 
-Coaching session on Thursday. We moved from "North Star" metrics we set last time to road-mapping. 
+Coaching session on Thursday. We moved from "North Star" metrics we set last time to road-mapping.
 
 The end of the grant period is nigh, and having an external point of view on the schedule and the MVP bucket list.
 

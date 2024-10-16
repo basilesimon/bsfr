@@ -1,8 +1,9 @@
 ---
 date: "2021-10-29T00:00:00Z"
-published: true
-title: 'Old PHP, and where does the Moon rise? - weeknotes #57'
+
+title: "Old PHP, and where does the Moon rise? - weeknotes #57"
 ---
+
 Dealing with ageing bespoke-built content: never fun. I hope that the tools we use today (static-files generation, lockfiles, containerisation, etc.) will make that job easier in the long run.
 
 Even so, tools churn will remain a factor. This week, I looked at an old interactive web campaign, commissioned by Global Witness and built by capable people, in a mix of techs commonly referred to as a LAMP stack and updated a couple of years ago into a Docker orchestration.

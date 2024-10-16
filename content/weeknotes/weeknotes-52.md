@@ -1,7 +1,7 @@
 ---
 date: "2021-09-24T00:00:00Z"
-published: true
-title: 'A year of weeknotes - weeknotes #52'
+
+title: "A year of weeknotes - weeknotes #52"
 ---
 
 One year writing these notes.
@@ -9,7 +9,8 @@ One year writing these notes.
 When I started, I was very much trying to go back to work, struggling to find more than a few hours here and there.
 
 Since then:
-- I found work 🎉  and negotiated my rate and conditions with different kinds of clients,
+
+- I found work 🎉 and negotiated my rate and conditions with different kinds of clients,
 - I got to say no to assignments for various reasons,
 - When it got too busy or difficult, I set boundaries and made time for flexibility and family (the huge perks of this lifestyle),
 - And since today, I lived through the difficulty of having to dump a client.
@@ -24,7 +25,7 @@ Convergence and coincidence at Global Witness: several avenues to slimming down 
 
 I also want to move an old (five years?) app which is hosted on a single VPS to a, how do I put this, more modern and less costly stack. Problem is I don't know much PHP, so it's kind of a tricky task.
 
---- 
+---
 
 Bit of frustration working on this ClojureScript project for Deutsche Welle. One of the central promises of the language and the tooling is this REPL companion, which seamlessy fits into REPL-aware text editors and which allows you to play around, modify state, and never really reload your app and replay actions to achieve the same state.
 

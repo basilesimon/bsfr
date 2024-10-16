@@ -1,7 +1,7 @@
 ---
 date: "2020-10-23T00:00:00Z"
-published: false
-title: 'Christmas hopes -  weeknotes #5'
+draft: true
+title: "Christmas hopes -  weeknotes #5"
 ---
 
 Booked flights home for Christmas. Actually, the perspective of going home led me to pay more attention to all things Covid. I guess there's some anxiety that we wouldn't be allowed to travel or to have a Christmas like my family usually does.
@@ -18,6 +18,6 @@ Anybody has any recommendation of self-hosted, respectful analytics? If yes, giv
 
 ### Read
 
-* [Constructing a career in dataviz: Finding success](https://www.williamrchase.com/post/constructing-a-career-in-dataviz-finding-success/) - Will Chase
-* [The attack on voting in the 2020 election](https://www.nytimes.com/2020/09/30/magazine/trump-voter-fraud.html) - Jim Rutenberg for the New York Times
-* [In memoriam: Sir Harry Evans](https://www.thebureauinvestigates.com/stories/2020-09-26/in-memoriam-sir-harry-evans) - a rare byline by Elaine Potter for the Bureau of Investigative Journalism
+- [Constructing a career in dataviz: Finding success](https://www.williamrchase.com/post/constructing-a-career-in-dataviz-finding-success/) - Will Chase
+- [The attack on voting in the 2020 election](https://www.nytimes.com/2020/09/30/magazine/trump-voter-fraud.html) - Jim Rutenberg for the New York Times
+- [In memoriam: Sir Harry Evans](https://www.thebureauinvestigates.com/stories/2020-09-26/in-memoriam-sir-harry-evans) - a rare byline by Elaine Potter for the Bureau of Investigative Journalism

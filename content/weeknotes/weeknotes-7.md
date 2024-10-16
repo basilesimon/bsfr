@@ -1,7 +1,7 @@
 ---
 date: "2020-11-06T00:00:00Z"
-published: false
-title: 'When news aren''t so great - weeknotes #7'
+draft: true
+title: "When news aren't so great - weeknotes #7"
 ---
 
 A lot of waiting for things to happen. Or, for that matter, for things to _not happen_.
@@ -13,9 +13,11 @@ I've re-equiped this blog and website with analytics, as I'd like to know how su
 I had a meeting with the team that I'll be working with for the French _Direction du Numérique_ (see [previous note]({{ site.baseurl }}/2020/10/16/weeknotes-4/)). Really looking forward to having this signed and to start doing some work.
 
 ### TKTK
+
 Three months till the end of our savings at our current burn rate, we're enlisting the help of a nanny to help us with looking after the little one. Right now, work is done at the expense of the other's time -- and as we're both trying to make it back into the workplace, we need some help.
 
 Happy to see how it feels having a stranger and a proper professional around!
 
 ### Read
-+ Started reading ["Professor Frisby's Mostly Adequate Guide to Functional Programming"](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/content/)
+
+- Started reading ["Professor Frisby's Mostly Adequate Guide to Functional Programming"](https://mostly-adequate.gitbooks.io/mostly-adequate-guide/content/)

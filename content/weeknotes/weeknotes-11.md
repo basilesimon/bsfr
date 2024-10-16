@@ -1,7 +1,7 @@
 ---
 date: "2020-12-05T00:00:00Z"
-published: false
-title: 'Winter disruptions - weeknotes #11'
+draft: true
+title: "Winter disruptions - weeknotes #11"
 ---
 
 Our winter holiday plans are being disrupted already. Someone's ill, we can't go see them and we won't be around for Christmas. I've got family in hospital with few prospects of family gatherings any time soon. It's sad.

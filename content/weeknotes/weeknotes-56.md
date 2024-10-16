@@ -1,7 +1,7 @@
 ---
 date: "2021-10-22T00:00:00Z"
-published: true
-title: 'Cryptic updates and Moon things - weeknotes #56'
+
+title: "Cryptic updates and Moon things - weeknotes #56"
 ---
 
 Chaperoning the little one to her new daycare centre is coming to an end, after the successful completion of more mini milestones such as napping, saying goodbye to me in the morning, and accepting to change nappies during the day.

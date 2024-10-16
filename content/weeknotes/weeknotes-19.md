@@ -1,7 +1,7 @@
 ---
 date: "2021-02-05T00:00:00Z"
-published: false
-title: 'Odd sketches - weeknotes #19'
+draft: true
+title: "Odd sketches - weeknotes #19"
 ---
 
 The week started with [CVE 2021-3156](https://security-tracker.debian.org/tracker/CVE-2021-3156), which I patched across Global Witness' boxes with Ansible. Nice little tool, this! As the playbook grows, I wonder how folks keep track of what's in the toolkit?
@@ -41,6 +41,7 @@ Had a good phone call with [Niko](https://niko.io/), who's joining Deutsche Well
 [Friedrich](https://twitter.com/pudo) and I braved the arrival of the snowstorm on Friday afternoon for a drinkie and a work catchup. Wherever you find yourself in Berlin, there's plenty of history to take in, and Friedrich is a nice guide. I did, however, catch a cold.
 
 ### Read and seen
+
 - [Ramda patterns in React](https://tommmyy.github.io/ramda-react-redux-patterns/pages/react-ramda.html), by [@tommmyy](https://github.com/tommmyy)...
 - Following [Easily integrate Ramda with into your React workflow](https://hint.io/blog/react-and-ramda), by Nate Shoemaker with nice real-world examples...
 - Following the [Thinking in Ramda](https://randycoulman.com/blog/2016/05/31/thinking-in-ramda-combining-functions/) series by Randy Coulman.

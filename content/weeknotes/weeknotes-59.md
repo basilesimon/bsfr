@@ -1,10 +1,10 @@
 ---
 date: "2021-11-12T00:00:00Z"
-published: true
-title: 'The Toolkit returns? - weeknotes #59'
+
+title: "The Toolkit returns? - weeknotes #59"
 ---
 
-First week with an M1 laptop. It's kind of insane, and it's the little things. The instant wake and opening of apps. The whole-workday battery life. The total silence. 
+First week with an M1 laptop. It's kind of insane, and it's the little things. The instant wake and opening of apps. The whole-workday battery life. The total silence.
 
 ---
 
@@ -14,7 +14,7 @@ The plans remain the same, though: I'm still fleshing out options for either fut
 
 ---
 
-It appears that I did a couple of Clojure/ClojureScript things this week. [Bastien](https://bzg.fr) had his big moment as the minister announced ambitious plans for the Digital Commons, and I ended up submitting a couple of CLJS patches to [code.gouv.fr](https://code.gouv.fr/), which aggregates open source code and projects from the French administration. 
+It appears that I did a couple of Clojure/ClojureScript things this week. [Bastien](https://bzg.fr) had his big moment as the minister announced ambitious plans for the Digital Commons, and I ended up submitting a couple of CLJS patches to [code.gouv.fr](https://code.gouv.fr/), which aggregates open source code and projects from the French administration.
 
 There's a chart that's been bugging me in this release, and so I'm looking into either re-doing it in a nice, pure HTML form (which I'm yet to draft) or just bash it with Observable's latest baby: [Plot](https://observablehq.com/@observablehq/plot).
 
@@ -36,7 +36,7 @@ CLJS interops with Javascript, but it's kind of a funny one. See for example the
    [:h3.title.is-3 "Frequency of letters in the English language"]])
 
 (defn render-dom-el
-  "Renders a js DOM element as a reagent component, and updates 
+  "Renders a js DOM element as a reagent component, and updates
    when the DOM element updates, too"
   [dom-el] [:div {:dangerouslySetInnerHTML {:__html (.-outerHTML dom-el)}}])
 ```

@@ -1,6 +1,6 @@
 ---
 date: "2021-07-30T00:00:00Z"
-published: false
+draft: true
 title: Second shot, missed tile - weeknotes #44'
 ---
 
@@ -35,4 +35,3 @@ Ah well, I'll have to go back...
 ---
 
 Wait, August??!
-

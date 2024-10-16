@@ -1,7 +1,7 @@
 ---
 date: "2021-06-11T00:00:00Z"
-published: false
-title: 'Spanner in the works - weeknotes #37'
+draft: true
+title: "Spanner in the works - weeknotes #37"
 ---
 
 Well, this is yet another note I end up publishing on Monday morning. I should probably aim for a different schedule: it doesn't seem like I can make Friday evenings most weeks.
@@ -12,7 +12,7 @@ So that's that. Sometimes it's not all rosy.
 
 ---
 
-After three weeks only, I gave back the temporary office-flat I had hired for a month. Too much of a home to be a proper office... but not my home at all, so I'm not free to reorganise the whole place. 
+After three weeks only, I gave back the temporary office-flat I had hired for a month. Too much of a home to be a proper office... but not my home at all, so I'm not free to reorganise the whole place.
 
 My main takeaway is that _going off to the place you work_ is cool and helpful in all kinds of ways. But this flat wasn't what I want my office to be.
 

@@ -1,7 +1,7 @@
 ---
 date: "2021-05-28T00:00:00Z"
-published: false
-title: 'Touch-and-go week - weeknotes #35'
+draft: true
+title: "Touch-and-go week - weeknotes #35"
 ---
 
 Bit of a special week which was all, as per the headline, touch-and-go. Monday was a public holiday in Germany, then my partner and I alternated looking after the little one during the afternoons as our nanny was off. Throw in an occasional errand and a walk-in doctor's appointment and you've got a rather weird week!
@@ -28,9 +28,10 @@ I moved forward with the backend of the [Digital Evidence Toolkit](https://digit
 
 I'm also trying [`ai/nanoid`](https://github.com/ai/nanoid/) while I'm at it: it boasts being four times as small as `uuid/v4` and quite a bit faster. I've enlisted the help of someone who knows about IETF and RFCs, because I really don't.
 
-Soon, hopefully: pushing screenshots, which means fiddling with storage of documents. 
+Soon, hopefully: pushing screenshots, which means fiddling with storage of documents.
 
 ## Read
+
 - ["Goodbye to the Future: The Last Days of Tokyo’s Nakagin Capsule Tower"](https://japan-forward.com/goodbye-to-the-future-the-last-days-of-tokyos-nakagin-capsule-tower/), by Peter Tasker on Japan-Forward.com (yes, me neither). I've not been to Tokyo but I love these bonkers architectural creations of the 70s.
 - ["How Michel Foucault Lost the Left and Won the Right"](https://www.nytimes.com/2021/05/25/opinion/michel-foucault.html) by the NYT's columnist Ross Douthat. Not sure that the "how" is well proven, but the author's point regarding the absence of Foucault from the debate after a year and a half of follow-the-science politics and social restrictions is interesting.
 - ["The Full Story of the Stunning RSA Hack Can Finally Be Told"](https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/) by Andy Greenberg, senior writer ar Wired. A pure hacking long read.

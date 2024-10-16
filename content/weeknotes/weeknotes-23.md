@@ -1,8 +1,9 @@
 ---
 date: "2021-03-05T00:00:00Z"
-published: false
-title: 'Pick up the phone - weeknotes #23'
+draft: true
+title: "Pick up the phone - weeknotes #23"
 ---
+
 The phone is your best friend. I always thought one's willingness to ring people up made a difference in a newsroom. At least, every time I could be bothered to do it, it was very helpful.
 
 This week, I was struggling with the Tactical Tech brief. As a solo freelancer, I don't feel I can afford to be a little off from what the client has got in mind.
@@ -36,4 +37,5 @@ I've published my first bit of Clojure: [the Digital Evidence Toolkit's website]
 Built with [perun.io](https://perun.io), a collection of Boot tasks helping the creation of static sites. It builds and publishes itself with GitHub Actions, and I look forward to having to do more advanced things than publishing a static website from Markdown!
 
 ### Read
+
 - [An immersive experience in the Dyatlov Group's fate](https://dyatlov.ruptly.tv/en/), by Ruptly. This won a Society of News Design award and as I knew about these poor souls, I spent some time discovering this piece.

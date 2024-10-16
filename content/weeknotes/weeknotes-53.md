@@ -1,7 +1,7 @@
 ---
 date: "2021-10-01T00:00:00Z"
-published: true
-title: 'Blowing it - weeknotes #53'
+
+title: "Blowing it - weeknotes #53"
 ---
 
 One of the most significant bits of last week is that I blew a technical interview. I had never done one before but thought I could navigate my way around doing some kind

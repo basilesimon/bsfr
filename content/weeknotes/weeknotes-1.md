@@ -1,7 +1,7 @@
 ---
 date: "2020-09-27T00:00:00Z"
-published: false
-title: 'First weeknotes? weeknotes #1'
+draft: true
+title: "First weeknotes? weeknotes #1"
 ---
 
 Attempt number _#n_ to find a rhythm and a balance between family imperatives and my desire to do some work, so as to find some self-satisfaction outside of the baby bubble.
@@ -16,11 +16,12 @@ First "Family Day": a workday dedicated to family activities. This week, we cycl
 
 ### TKTK
 
-+ A "tea and armament" afternoon meeting with a Deutsche Welle colleague who's also in charge of little humans.
-+ A "human rights and sandbox" play date at the Spielplatz next week with someone I need to meet and who straight of the bat mentioned he'd need to bring his six-month-old to our intro meeting. Loving Berlin.
-+ We're taking the little one to Berghain in a few weeks to tour [the exhibition](https://www.studio.berlin/)
+- A "tea and armament" afternoon meeting with a Deutsche Welle colleague who's also in charge of little humans.
+- A "human rights and sandbox" play date at the Spielplatz next week with someone I need to meet and who straight of the bat mentioned he'd need to bring his six-month-old to our intro meeting. Loving Berlin.
+- We're taking the little one to Berghain in a few weeks to tour [the exhibition](https://www.studio.berlin/)
 
 ### Read
-+ [The economics of the Tour de France](https://thehustle.co/the-economics-of-the-tour-de-france/) - thehustle.co
-+ [Creating an animated smoke map](https://medium.com/@steve.bernard/etcdf-optionscreating-animated-smoke-map-4cd8f3480da4) - Steve Bernard (FT) on Medium
-+ [The most American Covid-19 failure yet](https://www.theatlantic.com/politics/archive/2020/08/contact-tracing-hr-6666-working-us/615637) - Olga Khazan for The Atlantic
+
+- [The economics of the Tour de France](https://thehustle.co/the-economics-of-the-tour-de-france/) - thehustle.co
+- [Creating an animated smoke map](https://medium.com/@steve.bernard/etcdf-optionscreating-animated-smoke-map-4cd8f3480da4) - Steve Bernard (FT) on Medium
+- [The most American Covid-19 failure yet](https://www.theatlantic.com/politics/archive/2020/08/contact-tracing-hr-6666-working-us/615637) - Olga Khazan for The Atlantic

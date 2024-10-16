@@ -1,7 +1,7 @@
 ---
 date: "2021-07-23T00:00:00Z"
-published: false
-title: 'Back to Germany - weeknotes #43'
+draft: true
+title: "Back to Germany - weeknotes #43"
 ---
 
 Wow, this feels like the beginning of the week was a really long time away. We're now back in Berlin and getting in the groove again. We've got daycare, I've got my work setup and my bikes.

@@ -1,14 +1,14 @@
 ---
 date: "2021-01-29T00:00:00Z"
-published: false
-title: 'Optimising for work - weeknotes #18'
+draft: true
+title: "Optimising for work - weeknotes #18"
 ---
 
 Can't quite believe it's Friday already. That being said, we're all working tomorrow because what are even weekends in young-parent-and-global-pandemic times?
 
 ---
 
-The week kicked off with a banger. One of Global Witness's graph database instances went down, and having been in the job six hours I didn't really shine. 
+The week kicked off with a banger. One of Global Witness's graph database instances went down, and having been in the job six hours I didn't really shine.
 
 From the team's puzzled looks at the service I managed to stand up again, I think it's upgraded to a new major version, and it looks totally different now. My guess is that the database needed to migrate or do something to itself to follow the upgrade and that this bit needed some TLC.
 
@@ -27,7 +27,6 @@ I kept my "baby day" (where one of us is in charge solo) despite how much work I
 I'm sure it looked smooth and easy, but I had a little smug face in the evening as a result of having timed things so well.
 
 Back behind the computer, I've picked up Svelte again and am preparing a small "proof of concept" showing the visual devices I'd like to use to walk readers through the dataset.
-
 
 ### Tinkering
 

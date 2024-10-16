@@ -1,7 +1,7 @@
 ---
 date: "2021-04-16T00:00:00Z"
-published: false
-title: 'Finally moving on - weeknotes #29'
+draft: true
+title: "Finally moving on - weeknotes #29"
 ---
 
 End of the longer-than-expected Tactical Tech rush. It's in soft-launch and there are still types to harmonise, spacing to tighten and layouts to tweak – but overall we're almost there.

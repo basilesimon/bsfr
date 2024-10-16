@@ -1,7 +1,7 @@
 ---
 date: "2021-04-30T00:00:00Z"
-published: false
-title: 'Deutsche Welle sprint - weeknotes #31'
+draft: true
+title: "Deutsche Welle sprint - weeknotes #31"
 ---
 
 I worked all week on a sprint for Deutsche Welle, in company of three other people – including [Niko](https://niko.io/).
@@ -14,7 +14,7 @@ We spent a couple of days working in [Figma](https://figma.com) and I won't hesi
 
 ---
 
-Tickets for France booked! 
+Tickets for France booked!
 
 What do you do when daycare is closed and you need to work? My folks are going to give us a hand and – fingers crossed – things will be better on the Covid front so we'll visit friends.
 

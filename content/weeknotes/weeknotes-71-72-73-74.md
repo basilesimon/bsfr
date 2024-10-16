@@ -1,10 +1,10 @@
 ---
 date: "2022-02-28T00:00:00Z"
-published: true
-title: 'No-time February - weeknotes #71, #72, #73, #74'
+
+title: "No-time February - weeknotes #71, #72, #73, #74"
 ---
 
-Hold on – March? I know February’s always a bit shorter than usual (I love this [Britannica summary](https://www.britannica.com/story/why-are-there-only-28-days-in-february)) but boy was this one short. I blame a combo of physical therapy (twice a week) and a whole lot of running (~120km this month, a lot by my standards) for the relative scarcity of long work days. 
+Hold on – March? I know February’s always a bit shorter than usual (I love this [Britannica summary](https://www.britannica.com/story/why-are-there-only-28-days-in-february)) but boy was this one short. I blame a combo of physical therapy (twice a week) and a whole lot of running (~120km this month, a lot by my standards) for the relative scarcity of long work days.
 
 ---
 
@@ -21,6 +21,6 @@ And some things are carrying on:
 ---
 
 - What I talk about when I talk about running
-- “[Propositional density in dataviz](http://well-formed-data.net/archives/495/propositional-density-in-visualization)”, an oldie from Moritz Stefaner, about *“the associative, evocative character of our visual information vocabulary”* with wondeful examples
+- “[Propositional density in dataviz](http://well-formed-data.net/archives/495/propositional-density-in-visualization)”, an oldie from Moritz Stefaner, about _“the associative, evocative character of our visual information vocabulary”_ with wondeful examples
 - [“How to capture satellite images in your backyard”](https://theconversation.com/how-to-capture-satellite-images-in-your-backyard-and-contribute-to-a-snapshot-of-the-climate-crisis-167327), by Sophie Dyer (Amnesty) and Sasha Engelmann (Royal Holloway Uni), which – come on! – makes you want to place an order and spend some time faffing outside
 - [“What I learned running a SaaS for a year”,](https://onlineornot.com/what-learned-running-saas-for-year) by a guy who’s run a SaaS for a year.

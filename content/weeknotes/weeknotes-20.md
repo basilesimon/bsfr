@@ -1,8 +1,9 @@
 ---
 date: "2021-02-12T00:00:00Z"
-published: false
-title: 'Bubbles bubbles - weeknotes #20'
+draft: true
+title: "Bubbles bubbles - weeknotes #20"
 ---
+
 There's been perma-snow in Berlin for the last two weeks now. This weekend, hundreds of people were having a wander on the frozen canals. Two digits negative temperatures. Proper winter!
 
 However, lockdown is going to last a while longer here in Germany. While the infection numbers are falling, the concern is the still-invisible surge of infections from the other variants, which would (according to some models) rocket up in the next three weeks and bring us the omniously-named Third Wave.
@@ -24,7 +25,7 @@ I've sketched out an intro for the Tactical Tech project, in Observable. Big hit
 I've also produced another notebook to allow us to play with some parameters and to collectively agree on a definition.
 
 In this example, what do we mean by "companies X and Y are in quasi-monopolies in this and that field"? With the tool, we can not only pick out which fields see such monopolies, but also influence our definition of a monopoly. Is it one company owning more than 70% of the field? Or more?
-  
+
 <video autoplay="" loop="" muted="" playsinline="" class="video-background" style="width:100%">
   <source src="assets/tactech-notebook.mp4" type="video/mp4">
 </video>
@@ -46,7 +47,6 @@ And to be honest, it's the first week I managed to keep it to our agreed four ho
 ---
 
 I spoke with a few people on the phone -- most notably Thomas, who [also publishes weeknotes](https://détour.studio/) _(wink wink)_. We're both in a good place, how nice to hear 😊
-
 
 ### Thing of the week
 

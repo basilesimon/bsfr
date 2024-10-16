@@ -1,13 +1,13 @@
 ---
 date: "2021-06-18T00:00:00Z"
-published: false
-title: 'Waldzweisamkeit - weeknotes #38'
+draft: true
+title: "Waldzweisamkeit - weeknotes #38"
 ---
 
 It was really hot. Nobody at home was feeling well. Didn't do a huge amount of work, if I'm honest.
 
 In a sudden burst of [Waldzweisamkeit](https://blogs.transparent.com/german/untranslatable-german-words-waldeinsamkeit/), I spent quite a few evenings in the forest, my local gravel cycling trails, so to speak. It's a nice place for a quiet drink in the evening, though the hunt for cool temperatures last week was a lost cause.
-  
+
 We all got our first dose of the Covid vaccine, just in time for our travels to France the coming week.
 
 ---

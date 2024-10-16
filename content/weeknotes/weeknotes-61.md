@@ -1,7 +1,7 @@
 ---
 date: "2021-11-26T00:00:00Z"
-published: true
-title: 'Write before the weekend - weeknotes #61'
+
+title: "Write before the weekend - weeknotes #61"
 ---
 
 I'm way behind writing these notes, but that may be because I've got little time on my hands these days. Seems like it's busy as is every early winter, except this year it's a lot of child care. Don't get me wrong: it's really cool and relaxing to chill out in bed or do puzzles. It just leaves less time to faff around the computer.

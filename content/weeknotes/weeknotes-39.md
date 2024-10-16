@@ -1,7 +1,7 @@
 ---
 date: "2021-06-25T00:00:00Z"
-published: false
-title: 'Like layers of an onion - weeknotes #39'
+draft: true
+title: "Like layers of an onion - weeknotes #39"
 ---
 
 This note comes to you from France, where my little family has relocated for the next few weeks as a way to deal with the summer closure of the daycare centre.

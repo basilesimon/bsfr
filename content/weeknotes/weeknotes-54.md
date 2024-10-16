@@ -1,7 +1,7 @@
 ---
 date: "2021-10-09T00:00:00Z"
-published: true
-title: 'Speccing = cool - weeknotes #54'
+
+title: "Speccing = cool - weeknotes #54"
 ---
 
 I've been working about 50% this week as I'm chaperoning the little one in her introduction to the new daycare centre. Which means that I spent my mornings with a group of about a dozen 2-6 year olds – a relatively different bunch than my regular colleagues, believe me.

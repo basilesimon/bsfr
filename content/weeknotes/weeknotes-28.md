@@ -1,9 +1,8 @@
 ---
 date: "2021-04-09T00:00:00Z"
-published: false
-title: 'Friday already? - weeknotes #28'
+draft: true
+title: "Friday already? - weeknotes #28"
 ---
-
 
 Wait, is it Friday already?
 

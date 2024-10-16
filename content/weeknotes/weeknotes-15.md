@@ -1,7 +1,7 @@
 ---
 date: "2021-01-08T00:00:00Z"
-published: false
-title: 'Hello 2021 - weeknotes #15'
+draft: true
+title: "Hello 2021 - weeknotes #15"
 ---
 
 Welcome into 2021. I wish it is more peaceful than the year just elapsed. (Friday edit: well, [that sentence got old quick](https://www.nytimes.com/interactive/2021/01/06/us/trump-mob-capitol-building.html))
@@ -15,6 +15,7 @@ A first: I'm about to take on a project that's not going to be the most well-pai
 I was wondering how other freelance folks get a more accurate picture of their income flow, availability, and money planning. Entered [cushion.app](https://cushionapp.com/), which seems to be doing all of that, in a lovely visual package. Signed up.
 
 ### Read
+
 - [You need to practice being your future self](https://hbr.org/2016/03/you-need-to-practice-being-your-future-self), by Peter Bregman for the Harvard Business Review. Focus on the unproductive, dream-big future stuff -- not the never-ending to-do list of the present
 - [How data analysis can enrich the liberal arts](https://www.economist.com/christmas-specials/2020/12/19/how-data-analysis-can-enrich-the-liberal-arts), The Economist
 - [2020's most newsworthy events captured by Planet's satellites](https://medium.com/planet-stories/2020s-most-newsworthy-events-captured-by-planet-s-satellites-8e3de02045b9) - by the Planet PR team, big woah

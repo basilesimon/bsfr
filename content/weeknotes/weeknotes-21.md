@@ -1,9 +1,8 @@
 ---
 date: "2021-02-19T00:00:00Z"
-published: false
-title: 'Jaccard and dendrograms - weeknotes #21'
+draft: true
+title: "Jaccard and dendrograms - weeknotes #21"
 ---
-
 
 The little one is spending more and more time at daycare, and I'm loving it.  
 It feels like it's such a nice place for her, she's got her own buddies and comes home hyper-stimulated. Meanwhile, I get to hang out with my internet buddies and be stimulated 😇
@@ -20,22 +19,22 @@ Right now, I've reduced the vocabulary to around 50 fields, and a dissimilarity 
 
 ![Dendrogram of company categories](assets/ward-dendro.png)
 
-But labelling and explaining is difficult too. Particularly when one such bucket brings together "Food", "Gamification", "IoT", etc. 
+But labelling and explaining is difficult too. Particularly when one such bucket brings together "Food", "Gamification", "IoT", etc.
 
 ---
 
-The Bureau published the story I audited last week: 
+The Bureau published the story I audited last week:
 [Amazon’s empty pledge leaves agency workers without shifts and pay](https://www.thebureauinvestigates.com/stories/2021-02-18/amazons-empty-pledge-leaves-agency-workers-without-shifts-and-pay). I'm credited as _Tech auditor_, which is a first for me!
 
 It made me think that I rather enjoy this support role to investigative journalism teams, so I added this section to my website:
 
 > **I support investigative journalism work**  
-Part of my time is spent working as a technologist and advisor to investigative journalism organisations, such as Global Witness and The Bureau of Investigative Journalism.  
-Some of that work consists of code reviews, data audits, and system administration. Out of the trenches, I advise on infrastructure and systems architecture to support the work of these teams.
+> Part of my time is spent working as a technologist and advisor to investigative journalism organisations, such as Global Witness and The Bureau of Investigative Journalism.  
+> Some of that work consists of code reviews, data audits, and system administration. Out of the trenches, I advise on infrastructure and systems architecture to support the work of these teams.
 
 ---
 
-Aside from looking after backing up Neo4J instances, I quickly stood up an uptime monitor thanks to the [Koj team's](https://twitter.com/kojengineering) excellent work: 
+Aside from looking after backing up Neo4J instances, I quickly stood up an uptime monitor thanks to the [Koj team's](https://twitter.com/kojengineering) excellent work:
 
 ![Screenshot of my uptime monitor](assets/upptime-monitor.png)
 

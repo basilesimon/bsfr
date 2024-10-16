@@ -1,10 +1,9 @@
 ---
 date: "2021-01-22T00:00:00Z"
-published: false
-title: 'More work helps - weeknotes #17'
+draft: true
+title: "More work helps - weeknotes #17"
 ---
 
-  
 Big work week in response to the workload (which I'm very happy about!). I worked four afternoons and probably will work Saturday's, as well as a couple of evenings.
 
 ---
@@ -30,8 +29,10 @@ In the meantime, I've put together a tool for the project's researcher. They can
 It's a bit useless without the data (which I can't share yet) but [here is the Observable notebook](https://observablehq.com/@basilesimon/explorations-in-d3-and-druid-js), which makes good use of [DruidJS](https://github.com/saehm/DruidJS/), a new JS lib for dimensionality reduction.
 
 ### O'Reilly books I wish existed
+
 - _Docker to deploy things - for those who missed the boat_
 - _Ansible without breaking everything_
 
 ### Read
+
 ["Have you ever noticed that feedback is implicitly considered to be right, when it’s purely opinion?"](https://twitter.com/jasonfried/status/1344364060679184384) - @jasonfried, from David Bauer's Weekly Filet (https://weeklyfilet.substack.com/)

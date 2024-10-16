@@ -1,7 +1,7 @@
 ---
 date: "2021-04-02T00:00:00Z"
-published: false
-title: 'Working from Factory - weeknotes #27'
+draft: true
+title: "Working from Factory - weeknotes #27"
 ---
 
 The little one now needs a negative Covid quick test if she's got cold/flu symptoms to attend daycare. For those not well-versed in baby deets, this includes a runny nose or a cough and that's, well, very often for a one-year-old when it's 5C outside.

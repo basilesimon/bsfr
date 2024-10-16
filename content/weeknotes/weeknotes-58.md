@@ -1,7 +1,7 @@
 ---
 date: "2021-11-05T00:00:00Z"
-published: true
-title: 'Long workshops - weeknotes #58'
+
+title: "Long workshops - weeknotes #58"
 ---
 
 Hello, November!

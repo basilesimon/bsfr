@@ -1,7 +1,7 @@
 ---
 date: "2021-01-15T00:00:00Z"
-published: false
-title: 'Daycare alternatives - weeknotes #16'
+draft: true
+title: "Daycare alternatives - weeknotes #16"
 ---
 
 We have a new person helping us look after the little one for a few afternoons a week, and we're so happy with her. Today was also baby's introduction to Kita (kindergarten), which means that in a few weeks she'll be with kids her age and looked after by pros a few hours every day.
@@ -10,7 +10,6 @@ That is, if Covid things improve, and that's not a sure thing in Germany:
 
 ![]({{ site.baseurl }}/assets/germany-jan2021.png)
 _from [Reuters Graphics' most excellent tracker](https://graphics.reuters.com/world-coronavirus-tracker-and-maps/countries-and-territories/germany/)_
-
 
 ---
 
@@ -33,6 +32,7 @@ This week was also my first half-day with Global Witness (whom you may remember 
 Which is going to be fun, and it had been a while since [Louis](https://twitter.com/ltrgoddard/) and I were in the same Slack instance 👋
 
 ### Thing of the week
+
 I've been tinkering with how to represent people-specific data points from a survey, i.e. how many respondents describe themselves as x or y?
 
 I built this [isotype-bar-chart (full notebook)](https://observablehq.com/@basilesimon/isotype-sketch-a-wee-people-bar-chart):
@@ -43,5 +43,6 @@ I built this [isotype-bar-chart (full notebook)](https://observablehq.com/@basil
 Thank you to [@elibryan/covid-19-test-accuracy-simulator](https://observablehq.com/@elibryan/covid-19-test-accuracy-simulator) for the machinery behind rendering the glyphs from [@propublicz/weepeople](https://github.com/propublica/weepeople)'s release.
 
 ### Read
+
 - [The German "Word of the Year"](https://blogs.transparent.com/german/german-word-of-the-year-2020/) - I love "systemrelevant"
 - [How Silicon Valley, in a Show of Monopolistic Force, Destroyed Parler](https://greenwald.substack.com/p/how-silicon-valley-in-a-show-of-monopolistic), by Glenn Greenwald on his new Substack. Very interesting counterpoint to the overwhelming cheer for knocking off Parler from the Internet.

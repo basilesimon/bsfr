@@ -1,7 +1,7 @@
 ---
 date: "2021-06-04T00:00:00Z"
-published: false
-title: 'News in brief - weeknotes #36'
+draft: true
+title: "News in brief - weeknotes #36"
 ---
 
 Excellent week! It was the return of our nanny after two weeks off, and it's fair to say we were all very, very happy to have her again.
@@ -29,4 +29,3 @@ In brief, because I'm writing this on a Sunday evening:
 - Back to RadarTech after quite a few weeks off. Bit difficult to get back in the groove of my own self-assigned pull requests. What did I mean _back then?_
 
 - Quickly put together a Lambda function periodically hitting the API endpoint we stood up for Global Witness. Comprehensive reporting of errors for free in CloudWatch. Should I have used GitHub Actions like everyone else does at the moment?
-  

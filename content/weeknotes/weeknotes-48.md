@@ -1,7 +1,7 @@
 ---
 date: "2021-08-27T00:00:00Z"
-published: false
-title: 'Not so momentous after all - weeknotes #48'
+draft: true
+title: "Not so momentous after all - weeknotes #48"
 ---
 
 There is no overarching theme to this week's notes. These two weeks (this past, about which you're reading, and this coming, during which you're reading this) are a bit of a lull:
@@ -19,7 +19,6 @@ Three things to report on the Toolkit front:
 - The [last release (v.0.10.0)](https://github.com/digitalevidencetoolkit/deptoolkit/releases/tag/0.10.0) includes the work I've mentioned last week: a new `docker-compose` orchestration and tests, tests, tests. Thanks again Friedrich and Clément!
 - I've swapped the black-and-white mono fonts for a very startup-y look. [Check out the website](https://digitalevidencetoolkit.org), and don't laugh: the feedback so far is really positive. Yeah, I know...
 - And I've had really interesting conversations (read: kind of user interviews) with two international lawyers with experience of special tribunals (e.g. former Yugoslavia, Cambodia, Lebanon). Super interesting perspectives.
-
 
 ---
 

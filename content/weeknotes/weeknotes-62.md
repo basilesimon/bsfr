@@ -1,7 +1,7 @@
 ---
 date: "2021-12-03T00:00:00Z"
-published: true
-title: 'Moving to a monthly format - weeknotes #62'
+
+title: "Moving to a monthly format - weeknotes #62"
 ---
 
 Hello, December.

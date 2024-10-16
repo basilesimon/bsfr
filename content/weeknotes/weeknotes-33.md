@@ -1,7 +1,7 @@
 ---
 date: "2021-05-14T00:00:00Z"
-published: false
-title: 'Good busy and Toolkit progress - weeknotes #33'
+draft: true
+title: "Good busy and Toolkit progress - weeknotes #33"
 ---
 
 It was a really fun week, I think. Don't get me wrong, it was busy – but maybe the _right kind of busy_ ™️.
@@ -42,5 +42,6 @@ And an oddity cropped up in our CloudFront CDN distribution: readers in Belgium,
 Curious.
 
 ### Read
+
 - [“What I learned roasting 200 landing pages in 12 months”](https://blog.roastmylandingpage.com/landing-page-roasts/) - a small business success story with boat-loads of valuable lessons for anybody who's got a shopwindow website
 - [The Berlin Flat Quest](https://www.settle-in-berlin.com/berlinflatquest/) - a newsgame with lovely aesthetics about [“collective frustration”](https://www.settle-in-berlin.com/berlin-flat-quest-the-game/)

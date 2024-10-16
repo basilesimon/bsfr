@@ -1,7 +1,7 @@
 ---
 date: "2021-10-15T00:00:00Z"
-published: true
-title: 'Very, very part-time - weeknotes #55'
+
+title: "Very, very part-time - weeknotes #55"
 ---
 
 Second week of introductions to the new childcare centre. Fortunately, it's moving in the right direction – excellent news since in the meantime, I'm working very very part-time.
@@ -20,6 +20,6 @@ No, really, that's about it. As I said: very part-time...
 
 (since I've been hanging out in coffee shops a bit this week, I got some reading done!)
 
-- [“No Man's Land: The Trench Stalemate”](https://acoup.blog/2021/09/17/collections-no-mans-land-part-i-the-trench-stalemate/), Bret Devereaux's latest [multi-part](https://acoup.blog/2021/09/24/collections-no-mans-land-part-ii-breaking-the-stalemate/) historical vulgarisation essay about trench war in WW1. 
+- [“No Man's Land: The Trench Stalemate”](https://acoup.blog/2021/09/17/collections-no-mans-land-part-i-the-trench-stalemate/), Bret Devereaux's latest [multi-part](https://acoup.blog/2021/09/24/collections-no-mans-land-part-ii-breaking-the-stalemate/) historical vulgarisation essay about trench war in WW1.
 - [“Things unlearned”](https://scattered-thoughts.net/writing/things-unlearned) by Jamie Brandon. A hodge-podge of great bits about programming and solving problems.
 - [“Babel – Could a machine have an unconscious?”](https://www.nplusonemag.com/issue-40/essays/babel-4/) by Meghan O'Gieblyn for n+1 mag, a writer's essay about writing-AI GPT-3, which I found really deep and thought-provoking.

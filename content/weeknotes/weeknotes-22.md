@@ -1,13 +1,12 @@
 ---
 date: "2021-02-26T00:00:00Z"
-published: false
-title: 'Short week, short notes - weeknotes #22'
+draft: true
+title: "Short week, short notes - weeknotes #22"
 ---
-
 
 Our nanny broke her toe at the weekend, so we were on our own on Monday, and didn't know about Tuesday until late in the morning, leaving us to contemplate how fragile our ability to do a day's work seems now.
 
---- 
+---
 
 Catchup with [Bastien](https://bzg.fr/) about dataviz for RadarTech, and design of the project in general. _"Reach out when you need me to decide something that helps you pick a general direction over another,"_ he said. If all my clients could be this helpful!
 
@@ -27,6 +26,6 @@ I mean just [look at that team!](https://innovation.dw.com/team/)
 
 ---
 
-My in-laws are in town for a few days -- the pandemic made us miss St Nicholas Day (huge in these parts), Christmas (also huge), and the little one's birthday (they haven't seen her in months). 
+My in-laws are in town for a few days -- the pandemic made us miss St Nicholas Day (huge in these parts), Christmas (also huge), and the little one's birthday (they haven't seen her in months).
 
 Much wine drinking to catch up with, so that's it for this week!

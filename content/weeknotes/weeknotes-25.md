@@ -1,7 +1,7 @@
 ---
 date: "2021-03-19T00:00:00Z"
-published: false
-title: 'Busy busy - weeknotes #25'
+draft: true
+title: "Busy busy - weeknotes #25"
 ---
 
 This is going to be a short one: I somehow didn't take notes through the week.
@@ -14,7 +14,7 @@ Part of me felt that there is a cost to tuning on and off from a project and a c
 
 ---
 
-We had another very interesting conversation with Deutsche Welle, who are working on projects related to verification. 
+We had another very interesting conversation with Deutsche Welle, who are working on projects related to verification.
 
 Obviously the "news innovation" spiel reminds me of the old days at BBC News Labs. Unlike how things used to go back then, the structure, contracts and money are really well defined, however!
 

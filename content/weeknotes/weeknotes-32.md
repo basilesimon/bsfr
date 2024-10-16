@@ -1,7 +1,7 @@
 ---
 date: "2021-05-07T00:00:00Z"
-published: false
-title: 'Full steam ahead - weeknotes #32'
+draft: true
+title: "Full steam ahead - weeknotes #32"
 ---
 
 For the first time since I was awarded the grant, I got to spend several _consecutive_ days on the [Digital Evidence Toolkit](https://digitalevidencetoolkit.org). I liked this pace: it felt like this wasn't a hobby, but my job proper. I hope this continues through the spring and summer.
@@ -34,4 +34,5 @@ We'll do this again.
 It's also the first time of my _new_ career, i.e. my solo freelance one, that I look for external paid help. I've hinted at this in previous weeknotes but am more and more serious about it.
 
 ## Read
+
 - [“Design, Composition, and Performance”](https://www.youtube.com/watch?v=MCZ3YgeEUPg) by Rich Hickey. I sent it to [Paul](https://paul.cx/) because of the long parallel with music and the ending with [Yves Usson's](https://www.arturia.com/stories/yves-usson) work.

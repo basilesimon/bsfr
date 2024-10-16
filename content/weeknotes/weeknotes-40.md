@@ -1,7 +1,7 @@
 ---
 date: "2021-07-02T00:00:00Z"
-published: false
-title: 'The least work-y note in a while - weeknotes #40'
+draft: true
+title: "The least work-y note in a while - weeknotes #40"
 ---
 
 Still in France. We're trying to find a rhythm with my folks who in fairness are doing their best to help us with looking after the little one. Despite our excellent relationship, it can be frustrating at times.
@@ -14,7 +14,7 @@ Two, my folks sorted us out with concert tickets and a corker of a restaurant re
 
 ---
 
-And on the work front, I finished and merged the large refactor PR of the Digital Evidence Toolkit: [#15 - Typings](https://github.com/digitalevidencetoolkit/deptoolkit-node-api/pull/15). 
+And on the work front, I finished and merged the large refactor PR of the Digital Evidence Toolkit: [#15 - Typings](https://github.com/digitalevidencetoolkit/deptoolkit-node-api/pull/15).
 
 [“Like layers of an onion”](https://basilesimon.fr/weeknotes/weeknotes-40) I said last week.
 

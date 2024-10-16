@@ -1,7 +1,7 @@
 ---
 date: "2020-12-18T00:00:00Z"
-published: false
-title: 'Paying for the Christmas presents - weeknotes #13'
+draft: true
+title: "Paying for the Christmas presents - weeknotes #13"
 ---
 
 First week of our winter holiday in France, at my folks. It's lovely and a very stimulating environment for the little one.

@@ -1,10 +1,10 @@
 ---
 date: "2020-10-16T00:00:00Z"
-published: false
-title: 'First proper work week - weeknotes #4'
+draft: true
+title: "First proper work week - weeknotes #4"
 ---
 
-Feels like this week was the first  proper work week I had in a long while. I only worked two days, as per the new baby duties schedule, but hey: they were _two productive days_.
+Feels like this week was the first proper work week I had in a long while. I only worked two days, as per the new baby duties schedule, but hey: they were _two productive days_.
 
 I met Lachlan, of Forensic Architecture. They're probably at the very top of my list of places I'd like to work at. Lachlan is a software researcher there, and the ball is very much in my camp regarding coming up with pitches. I'd love to have the time to focus on this...
 
@@ -21,4 +21,5 @@ Oh, and a bit of relief arrived on the bank account: we have been granted our El
 We were lucky enough to be able to sustain ourselves while it took us five months to get the money. What do you do when you need it to make ends meet at the end of the month?
 
 ###Read
-+ [The Hacker News comments](https://news.ycombinator.com/item?id=24763209) on [The niche I'm trying to fill](http://www.eclogiselle.com/2020/10/the-niche-i-am-looking-to-fill.html)
+
+- [The Hacker News comments](https://news.ycombinator.com/item?id=24763209) on [The niche I'm trying to fill](http://www.eclogiselle.com/2020/10/the-niche-i-am-looking-to-fill.html)

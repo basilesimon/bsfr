@@ -1,7 +1,7 @@
 ---
 date: "2020-12-11T00:00:00Z"
-published: false
-title: 'Belated winter travels - weeknotes #12'
+draft: true
+title: "Belated winter travels - weeknotes #12"
 ---
 
 These notes are coming out a few days later than usual, as I spent the tail end of last week off the computer.

@@ -1,7 +1,7 @@
 ---
 date: "2021-03-26T00:00:00Z"
-published: false
-title: 'A bout of fever - weeknotes #26'
+draft: true
+title: "A bout of fever - weeknotes #26"
 ---
 
 26th weeknotes, published on March 26. Well, maybe March 27, actually, who knows?
@@ -10,7 +10,7 @@ It's been a crazy week, I thought today was the 23rd.
 
 ---
 
-The little one had a bout of fever. That meant hospital, being shouted at profusely, and quite frankly ridiculous nights. 
+The little one had a bout of fever. That meant hospital, being shouted at profusely, and quite frankly ridiculous nights.
 
 The funny thing with these occasions is how quickly your priorities redefine themselves. For example, I'm very much up against the clock for Tactical Tech but I can tell you I chose the extra sleep this morning – and I would do it again.
 
@@ -28,9 +28,9 @@ I contributed a chapter called _“Coding with data in the newsroom”_ (the tit
 
 ---
 
-I had to say no to the Bureau (of Investigative Journalism), who put out a widely picked up investigation into the pay of Deliveroo riders ahead of the company's IPO. As previously, Charles wanted me to audit their methodology, code, and data. 
+I had to say no to the Bureau (of Investigative Journalism), who put out a widely picked up investigation into the pay of Deliveroo riders ahead of the company's IPO. As previously, Charles wanted me to audit their methodology, code, and data.
 
-Unfortunately, I had so little time to spare over the weekend I couldn't do it. I took an hour off the books to chat through thoughts, but it felt weird saying no to them. 
+Unfortunately, I had so little time to spare over the weekend I couldn't do it. I took an hour off the books to chat through thoughts, but it felt weird saying no to them.
 
 ---
 

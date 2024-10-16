@@ -1,9 +1,9 @@
 ---
 date: "2021-08-06T00:00:00Z"
-published: false
-title: 'The pace picks up - weeknotes #45'
+draft: true
+title: "The pace picks up - weeknotes #45"
 ---
-  
+
 Big week on [the Digital Evidence Toolkit](https://digitalevidencetoolkit.org). We're in the home stretch and I feel the pressure mounting.
 
 I spent a bit of time doing further work on editing records, as well as designing some of the static assets for promotion, social media, etc. Turns out I'm being asked to _show_ the product a lot.
@@ -38,8 +38,8 @@ In personal news, I got to play a bit of bike polo this week, which was nice. A 
 
 More problematically, this week was a note-taking meltdown as I started to replicate some things between [org-roam](https://github.com/org-roam/org-roam) (at home in emacs), [Athens](https://github.com/athensresearch/athens) (a Roam clone written in Clojure) and [Notion](https://notion.so) (which I use to collaborate with people and whose UI is just up there).
 
-
 ### Read
-- [“ClojureScript in the age of TypeScript”](https://www.youtube.com/watch?v=3HxVMGaiZbc) by David Nolen, which to be frank isn't really what the bait title lets you think. “How I REPL into things because we use cljs”, rather. 
+
+- [“ClojureScript in the age of TypeScript”](https://www.youtube.com/watch?v=3HxVMGaiZbc) by David Nolen, which to be frank isn't really what the bait title lets you think. “How I REPL into things because we use cljs”, rather.
 - [“Six years of professional Clojure”](https://engineering.nanit.com/6-years-of-professional-clojure-2b61cb6c1983), by Erez Rabih (on Medium)
-- [“Properly valuing contributions”](https://qbix.com/blog/2016/11/17/properly-valuing-contributions/), by Qbix. A carrot-and-no-stick approach to paying external contributors. 
+- [“Properly valuing contributions”](https://qbix.com/blog/2016/11/17/properly-valuing-contributions/), by Qbix. A carrot-and-no-stick approach to paying external contributors.

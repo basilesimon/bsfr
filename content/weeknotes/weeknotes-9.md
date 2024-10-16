@@ -1,9 +1,8 @@
 ---
 date: "2020-11-20T00:00:00Z"
-published: false
-title: 'A job tanks, another surfaces - weeknotes #9'
+draft: true
+title: "A job tanks, another surfaces - weeknotes #9"
 ---
-
 
 Cold, cold, cold in Berlin. Winter has come!
 

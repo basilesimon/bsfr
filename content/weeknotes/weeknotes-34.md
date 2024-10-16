@@ -1,7 +1,7 @@
 ---
 date: "2021-05-21T00:00:00Z"
-published: false
-title: 'Note with personal notes - weeknotes #34'
+draft: true
+title: "Note with personal notes - weeknotes #34"
 ---
 
 If everything went well, you should be reading an HTML document served from a new place. Scaleway are discontinuing the small 4-ARM-CPU, dedicated instance this website called home for the last five to seven years.
@@ -31,4 +31,5 @@ Some good things at Global Witness, mostly on the cost-cutting front and getting
 Some top progress on the Digital Evidence Toolkit front, mostly to do with approaching the putting-pen-to-paper moment. I know that at least _one_ person spotted an important milestone PR on the GitHub org: [#2: Support insertion of records in the ledger](https://github.com/digitalevidencetoolkit/deptoolkit-node-api/pull/2)
 
 ## Read
+
 No, seriously, go outside and get some fresh air.

@@ -1,8 +1,7 @@
-
 ---
 date: "2021-07-09T00:00:00Z"
-published: false
-title: 'First-class history hoops - weeknotes #41'
+draft: true
+title: "First-class history hoops - weeknotes #41"
 ---
 
 Still in France. I've not dont a tremendous amount of work this week due to a general lack of time and focus. Everybody's doing their best but sometimes it's just challenging.
@@ -21,5 +20,6 @@ Good progress on the Digital Evidence Toolkit. Some of it was on the research si
 "History" as far as the ledger is concerned isn't straightforward. It's first-class of course, but tied to the _block_ (which form the chain) and not the _documents_, so it's somehow one-step removed from view.
 
 ## Read
+
 - [“npm audit: Broken by design”](https://overreacted.io/npm-audit-broken-by-design/) by Dan Abramov (thanks [Thomas](https://détour.studio/) 🙌!)
 - [“The absurdity is the point”](https://warzel.substack.com/p/the-absurdity-is-the-point) on Charlie Warzel's newsletter about cryptocurrencies, memey-finance, and the cultural relevance of "shitposting your way" to the top.
