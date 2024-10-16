@@ -86,14 +86,18 @@ article.single {
 }
 .now .item {
   width: 100%;
-  align-content: end
+  align-content: end;
 }
 @media (min-width: 450px) {
   .now {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .now .item {
-    width: 33%;
-    padding: 0 1rem;
+    width: 100%;
+    /* padding: 0 1rem; */
+  }
+  .now .item:nth-child(-n+2) {
+    width: 50%;
   }
 }
