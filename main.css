@@ -95,11 +95,8 @@ article.single {
     justify-content: space-evenly;
   }
   .now .item {
-    width: 80%;
-    /* padding: 0 1rem; */
-  }
-  .now .item:nth-child(-n+2) {
-    width: 50%;
+    flex: 1 1 calc(50% - 1rem);
     max-width: 30rem;
+    margin: 0.5rem;
   }
 }
