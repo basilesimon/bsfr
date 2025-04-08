@@ -8,8 +8,7 @@ enableRobotsTXT: true
 
 params:
   author: "Basile Simon"
-  description: "The personal website of Basile, a creative technologist based in Berlin 
-  and working on evidence authentication and preservation, with a background in data-journalism"
+  description: "The personal website of Basile, a creative technologist based in Berlin and working on evidence authentication and preservation, with a background in data-journalism"
   logo: "/assets/author.jpg"
   favicon: "images/favicon.png"
   rssTitle: "Basile Simon • blog"
