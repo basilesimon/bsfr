@@ -95,7 +95,8 @@ article.single {
     justify-content: space-evenly;
   }
   .now .item {
-    width: 50%;
+    flex: 1 1 calc(50% - 1rem);
     max-width: 30rem;
+    margin: 0.5rem;
   }
 }

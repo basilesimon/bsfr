@@ -19,22 +19,26 @@
     <div class="wide-80">
       <div class="now">
         {{ range .now_list }}
-      <div class="item">
-        {{ if .img }}
-          <img loading="lazy" src="{{ .img }}" style="width: 200px; 
-          object-fit: contain; height: auto;"/>
+        <div class="item">
+          {{ if .img }}
+          <img
+            loading="lazy"
+            src="{{ .img }}"
+            style="width: 200px; object-fit: contain; height: auto"
+          />
+          {{ end }} {{ if .title }}
+          <h4>{{ .title }}</h4>
+          {{ end }}
+          <p>{{ .desc | markdownify }}</p>
+        </div>
         {{ end }}
-        {{ if .title }}<h4>{{ .title }}</h4>{{ end }}
-        <p>{{ .desc | markdownify }}</p>
-      </div>
-      {{ end }}
       </div>
     </div>
 
     <section>
       <hr />
       <h2>👔 Past employment</h2>
-      <p> {{ .past_employment | markdownify }}</p>
+      <p>{{ .past_employment | markdownify }}</p>
 
       <ul>
         {{ range .past_employment_jobs }}
@@ -54,17 +58,13 @@
     {{ with $.Site.Data.reel }}
     <div class="wide-80">
       <h2>Portfolio</h2>
-      {{ range $index, $data := .pieces }}
-      {{ partial "partials/item.html" (dict "index" $index "data" $data) }}
-      {{ end }}
+      {{ range $index, $data := .pieces }} {{ partial "partials/item.html" (dict
+      "index" $index "data" $data) }} {{ end }}
     </div>
-    {{ end }}
-
-    {{ with $.Site.Data.reelgrid }}
+    {{ end }} {{ with $.Site.Data.reelgrid }}
     <div class="portfolio-grid">
-      {{ range $index, $data := .items }}
-      {{ partial "partials/item-grid.html" (dict "index" $index "data" $data) }}
-      {{ end }}
+      {{ range $index, $data := .items }} {{ partial "partials/item-grid.html"
+      (dict "index" $index "data" $data) }} {{ end }}
     </div>
     {{ end }}
 
@@ -83,23 +83,38 @@
 
       <h2>🎓 Academic work</h2>
       <p>
-        Since early 2024, I have been a <b>Fellow with Stanford Electrical Engineering</b>
-        professor Tsachy Weissman, pursuing original research in respectful sharing
-        mechanisms of strongly-authenticated digital evidence and verification tools 
-        between civil society organisations and UN mechanisms.
+        Since early 2024, I have been a
+        <b>Fellow with Stanford Electrical Engineering</b>
+        professor Tsachy Weissman, pursuing original research in respectful
+        sharing mechanisms of strongly-authenticated digital evidence and
+        verification tools between civil society organisations and UN
+        mechanisms.
       </p>
       <p>
-        Before I joined Stanford, <b>I had the privilege of teaching the Advanced
-	     Data and Coding module</b> on the MA in Interactive Journalism course at
-	     <b>City University London</b>. We ran through an introduction to programming,
-	     statistical methods, R data analysis and modelling with ggplot.<br/>
-       My teaching notes are
+        I guest lecture at Stanford during the Spring Quarter, as part of the
+        EE292J class: Designing for Authenticity.
+      </p>
+      <p>
+        Before I joined Stanford,
+        <b
+          >I had the privilege of teaching the Advanced Data and Coding
+          module</b
+        >
+        on the MA in Interactive Journalism course at
+        <b>City University London</b>. We ran through an introduction to
+        programming, statistical methods, R data analysis and modelling with
+        ggplot.<br />
+        My teaching notes are
         <a href="https://github.com/basilesimon/interactive-journalism-module"
-          >available on Github</a>.
+          >available on Github</a
+        >.
       </p>
 
       <p><b>Degrees, etc.:</b></p>
       <ul>
+        <li>
+          Law Enforcement Video Association - Expert Witness certification
+        </li>
         <li>
           Master of Arts in Multimedia Journalism - Univ. of Westminster (UK)
         </li>
