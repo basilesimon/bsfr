@@ -1,7 +1,7 @@
 catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>the Starling Lab at Stanford University and USC</b>.<br/>I come from a background of <b>information design and creative technologist</b>, and I'm based in Berlin–though I miss the mountains.
 
 contact:
-  - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [PGP](https://keys.openpgp.org/search?q=basile%40basilesimon.fr)
+  - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [Keybase](https://keybase.io/basilesimon)
   - 📞 `+49 172 253 9671` (Signal/Telegram)
   - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
 
@@ -46,11 +46,15 @@ talks_publications:
     location: Chair of roundtable at the University of Colorado Boulder, Visual Evidence Lab
   - title: "Web Archives as Evidence"
     location: Int'l Internet Preservation Consortium, Oslo, 2025
+  - title: Referenced in UN report in defense of human rights defenders
+    location: From M. Lawlor, Special Rapporteur on Human Rights Defenders
   - title: Law, Evidence, and Generative AI
     location: Roundtable for the State Dpt Glocal Criminal Justice, Washington DC, 2024
   - title: Old and new doubts about verification of open-source imagery from gen AI
     location: "in <a href='https://opiniojuris.org/2024/06/26/old-doubts-new-doubts-evaluating-digital-open-source-imagery-in-the-courtroom/'>OpinioJuris</a>, 2024"
-  - title: Legal Roundtable, Whitepaper on best practices for admissible web archives
+  - title: Referenced as 'best practice' in UN Human Rights Council 53rd session report
+    location: From F. Shaheed, Special Rapporteur on the right to education, incl. our monitoring of schools and their non-military use
+  - title: Whitepaper, Legal Roundtable on best practices for admissible web archives
     location: With Global Justice Advisors, Nicholas Taylor, and the Internet Archive, 2022
   - title: Working with data in the newsroom
     location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
