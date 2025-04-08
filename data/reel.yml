@@ -36,16 +36,6 @@ pieces:
       - Data modelling
       - Scraping
 
-  # - title: 90% of all British crimes are unsolved
-  #   client: The Times & Sunday Times
-  #   copy: Collaboration with the Data team to bring this multi-week exclusive analysis of police data to life in just over two days.
-  #   url: 'https://www.thetimes.co.uk/past-six-days/2018-06-17/news/sunday-times-crime-map-under-5-of-all-burglaries-and-robberies-solved-vw569clqh'
-  #   img: 'assets/unsolved-crime.png'
-  #   tags:
-  #     - Visualisation
-  #     - D3
-  #     - React
-
   - title: Pen plotter maps
     client: Christmas
     copy: Pen-plotted bicycle journeys on postcards, from a minimal implementation of GPX in R.
