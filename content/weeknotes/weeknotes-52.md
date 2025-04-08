@@ -1,6 +1,6 @@
 ---
 date: "2021-09-24T00:00:00Z"
-
+draft: true
 title: "A year of weeknotes - weeknotes #52"
 ---
 

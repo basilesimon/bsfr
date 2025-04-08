@@ -1,6 +1,6 @@
 ---
 date: "2021-10-09T00:00:00Z"
-
+draft: true
 title: "Speccing = cool - weeknotes #54"
 ---
 

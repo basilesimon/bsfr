@@ -1,6 +1,6 @@
 ---
 date: "2021-11-05T00:00:00Z"
-
+draft: true
 title: "Long workshops - weeknotes #58"
 ---
 

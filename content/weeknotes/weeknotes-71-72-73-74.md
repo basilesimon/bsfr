@@ -1,6 +1,6 @@
 ---
 date: "2022-02-28T00:00:00Z"
-
+draft: true
 title: "No-time February - weeknotes #71, #72, #73, #74"
 ---
 

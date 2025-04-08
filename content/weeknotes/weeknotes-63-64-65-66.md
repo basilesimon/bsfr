@@ -1,6 +1,6 @@
 ---
 date: "2021-12-31T00:00:00Z"
-
+draft: true
 title: "Festive December - weeknotes #63, #64, #65, #66"
 ---
 

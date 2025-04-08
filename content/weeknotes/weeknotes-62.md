@@ -1,6 +1,6 @@
 ---
 date: "2021-12-03T00:00:00Z"
-
+draft: true
 title: "Moving to a monthly format - weeknotes #62"
 ---
 
