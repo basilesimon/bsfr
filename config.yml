@@ -50,6 +50,8 @@ outputFormats:
     mediaType: "application/atom+xml"
     baseName: "atom"
     isPlainText: false
+    rel: "alternate"
+    notAlternative: true
 
 outputs:
   home:
