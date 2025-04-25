@@ -60,12 +60,12 @@
     {{ with $.Site.Data.reel }}
     <div class="wide-80">
       <h2>Portfolio</h2>
-      {{ range $index, $data := .pieces }} {{ partial "partials/item.html" (dict
+      {{ range $index, $data := .pieces }} {{ partial "item.html" (dict
       "index" $index "data" $data) }} {{ end }}
     </div>
     {{ end }} {{ with $.Site.Data.reelgrid }}
     <div class="portfolio-grid">
-      {{ range $index, $data := .items }} {{ partial "partials/item-grid.html"
+      {{ range $index, $data := .items }} {{ partial "item-grid.html"
       (dict "index" $index "data" $data) }} {{ end }}
     </div>
     {{ end }}
@@ -77,7 +77,7 @@
     </section>
     <div class="open-source">
       {{ with $.Site.Data.opensource }} {{ range .projects }} {{ partial
-      "partials/card.html" .}} {{ end }} {{ end }}
+      "card.html" .}} {{ end }} {{ end }}
     </div>
 
     <section>

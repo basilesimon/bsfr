@@ -40,3 +40,19 @@ markup:
       unsafe: true
   highlight:
     style: github
+
+mediaTypes:
+  "application/atom+xml":
+    suffixes: ["xml"]
+
+outputFormats:
+  ATOM:
+    mediaType: "application/atom+xml"
+    baseName: "atom"
+    isPlainText: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - ATOM
