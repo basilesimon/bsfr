@@ -40,26 +40,3 @@ markup:
       unsafe: true
   highlight:
     style: github
-
-mediaTypes:
-  "application/atom+xml":
-    suffixes: ["xml"]
-
-outputFormats:
-  ATOM:
-    mediaType: "application/atom+xml"
-    baseName: "atom"
-    isPlainText: false
-    rel: "alternate"
-    notAlternative: true
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - ATOM
-
-sitemap:
-  changefreq: weekly
-  filename: sitemap.xml
-  priority: 0.5
