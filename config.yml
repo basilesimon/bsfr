@@ -40,3 +40,16 @@ markup:
       unsafe: true
   highlight:
     style: github
+
+outputs:
+  blog:
+    - html
+    - feed
+  home:
+    - html
+outputFormats:
+  feed:
+    baseName: index
+    mediaType: application/rss+xml
+    isPlainText: false
+    isHTML: false
