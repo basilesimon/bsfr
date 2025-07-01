@@ -1,5 +1,5 @@
 ---
-date: "2025-04-25T12:00:00Z"
+date: "2025-07-01T12:00:00Z"
 description: How Starling Lab’s “Web Archives as Evidence” presentation at IIPC 2025 in Oslo leverages Hypercore and Hyperbee to deliver independently verifiable metadata for web archives.
 image: https://netpreserve.org/resources/GAWAC2025-banner.png
 tags: []
