@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>D3 on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/d3?campaign=rss</link><author>Basile Simon</author><description>Recent content in D3 on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/d3/index.xml" rel="self" type="application/rss+xml"/><item><title>Some declarative, React-like logic for your Observable/d3 toolkit</title><link>https://basilesimon.fr/blog/hello-d3-render?campaign=rss</link><pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/hello-d3-render/</guid><description>&lt;iframe width="100%" height="584" frameborder="0"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>D3 on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/d3?campaign=rss</link><author>Basile Simon</author><description>Recent content in D3 on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><copyright>Copyright 2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Thu, 11 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/d3/index.xml" rel="self" type="application/rss+xml"/><item><title>Some declarative, React-like logic for your Observable/d3 toolkit</title><link>https://basilesimon.fr/blog/hello-d3-render?campaign=rss</link><pubDate>Thu, 11 Feb 2021 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/hello-d3-render/</guid><description>&lt;iframe width="100%" height="584" frameborder="0"
  src="https://observablehq.com/embed/@basilesimon/hello-d3-render-a-declarative-wrapper-around-d3s-update-pat?cells=chart">&lt;/iframe>
 &lt;p>Earlier this week, as I was looking into idiomatic ways of updating a chart, I came across &lt;a href="https://github.com/unkleho">Kaho Cheung&lt;/a>&amp;rsquo;s &lt;a href="https://github.com/unkleho/d3-render">d3-render&lt;/a> &amp;ndash; and boy did I get excited.&lt;/p>
 &lt;p>&lt;code>d3-render&lt;/code> packages up a bunch of &lt;code>d3&lt;/code> commands in a declarative shell, inspired by a eather functional and reactive approach. &lt;a href="https://observablehq.com/@unkleho/introducing-d3-render-truly-declarative-and-reusable-d3">@unkleho has got a lovely tutorial&lt;/a> introducing the library, but here&amp;rsquo;s another one from yours truly anyway.&lt;/p>
@@ -10,11 +10,193 @@
 &lt;li>A &lt;code>draw&lt;/code> function, which draws on an DOM element from an array of objects-like variable. More precisely, it &lt;code>map&lt;/code>s over each and renders&amp;hellip;&lt;/li>
 &lt;li>A component-like DOM element for each item in the &lt;code>map&lt;/code>.&lt;/li>
 &lt;/ul>
-&lt;p>Our components obviously need to be defined and crafted, but we do so at a higher, more declarative level, while &lt;code>d3-render&lt;/code> looks after the update pattern and the details.&lt;/p></description></item><item><title>A beeswarm layout in Observable -- on deadline</title><link>https://basilesimon.fr/blog/observable-beeswarm?campaign=rss</link><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/observable-beeswarm/</guid><description>&lt;p>&lt;img src="assets/beeswarm-obs.png" alt="">&lt;/p>
+&lt;p>Our components obviously need to be defined and crafted, but we do so at a higher, more declarative level, while &lt;code>d3-render&lt;/code> looks after the update pattern and the details.&lt;/p></description><content:encoded><![CDATA[<iframe width="100%" height="584" frameborder="0"
+  src="https://observablehq.com/embed/@basilesimon/hello-d3-render-a-declarative-wrapper-around-d3s-update-pat?cells=chart"></iframe>
+<p>Earlier this week, as I was looking into idiomatic ways of updating a chart, I came across <a href="https://github.com/unkleho">Kaho Cheung</a>&rsquo;s <a href="https://github.com/unkleho/d3-render">d3-render</a> &ndash; and boy did I get excited.</p>
+<p><code>d3-render</code> packages up a bunch of <code>d3</code> commands in a declarative shell, inspired by a eather functional and reactive approach. <a href="https://observablehq.com/@unkleho/introducing-d3-render-truly-declarative-and-reusable-d3">@unkleho has got a lovely tutorial</a> introducing the library, but here&rsquo;s another one from yours truly anyway.</p>
+<hr>
+<h2 id="implementation">Implementation</h2>
+<p>It&rsquo;s going to work this way:</p>
+<ul>
+<li>Our chart is just an <code>&lt;svg&gt;</code> element with a timer calling&hellip;</li>
+<li>A <code>draw</code> function, which draws on an DOM element from an array of objects-like variable. More precisely, it <code>map</code>s over each and renders&hellip;</li>
+<li>A component-like DOM element for each item in the <code>map</code>.</li>
+</ul>
+<p>Our components obviously need to be defined and crafted, but we do so at a higher, more declarative level, while <code>d3-render</code> looks after the update pattern and the details.</p>
+<h3 id="our-chart-is-just-an-svg-with-a-timer-which-calls">&ldquo;Our chart is just an SVG with a timer which calls&hellip;&rdquo;</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>chart <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> svg <span style="color:#000;font-weight:bold">=</span> d3.create(<span style="color:#d14">&#34;svg&#34;</span>).attr(<span style="color:#d14">&#34;viewBox&#34;</span>, [<span style="color:#099">0</span>, <span style="color:#099">0</span>, width, height]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">while</span> (<span style="color:#000;font-weight:bold">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">await</span> Promises.tick(<span style="color:#099">900</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">yield</span> svg.node();
+</span></span><span style="display:flex;"><span>    drawData(
+</span></span><span style="display:flex;"><span>      svg,
+</span></span><span style="display:flex;"><span>      data.map(e =&gt; ({ ...e, value<span style="color:#000;font-weight:bold">:</span> <span style="color:#0086b3">Math</span>.random() <span style="color:#000;font-weight:bold">*</span> e.value }))
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> svg.node();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="a-draw-function-that-maps-over-data-to-render">&ldquo;A draw function that maps over data to render&hellip;&rdquo;</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>drawData <span style="color:#000;font-weight:bold">=</span> (selection, data) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> root <span style="color:#000;font-weight:bold">=</span> pack(data);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> arrayOfBubbles <span style="color:#000;font-weight:bold">=</span> root
+</span></span><span style="display:flex;"><span>    .descendants()
+</span></span><span style="display:flex;"><span>    .filter(d =&gt; d.depth <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>    .map((e, i) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">const</span> { x, y, r } <span style="color:#000;font-weight:bold">=</span> e;
+</span></span><span style="display:flex;"><span>      <span style="color:#000;font-weight:bold">return</span> CircleComponent({
+</span></span><span style="display:flex;"><span>        key<span style="color:#000;font-weight:bold">:</span> e.data.title,
+</span></span><span style="display:flex;"><span>        cx<span style="color:#000;font-weight:bold">:</span> x,
+</span></span><span style="display:flex;"><span>        cy<span style="color:#000;font-weight:bold">:</span> y,
+</span></span><span style="display:flex;"><span>        r<span style="color:#000;font-weight:bold">:</span> r,
+</span></span><span style="display:flex;"><span>        fill<span style="color:#000;font-weight:bold">:</span> e.data.group
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  render(selection, arrayOfBubbles);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="a-component-like-dom-element-for-each-map-item">&ldquo;A component-like DOM element for each map item&rdquo;</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>CircleComponent <span style="color:#000;font-weight:bold">=</span> ({ key, r, fill, cx, cy }) =&gt; ({
+</span></span><span style="display:flex;"><span>  append<span style="color:#000;font-weight:bold">:</span> <span style="color:#d14">&#39;circle&#39;</span>,
+</span></span><span style="display:flex;"><span>  key,
+</span></span><span style="display:flex;"><span>  r,
+</span></span><span style="display:flex;"><span>  fill,
+</span></span><span style="display:flex;"><span>  cx,
+</span></span><span style="display:flex;"><span>  cy,
+</span></span><span style="display:flex;"><span>  fill<span style="color:#000;font-weight:bold">:</span> color(fill),
+</span></span><span style="display:flex;"><span>  duration<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">1000</span>,
+</span></span><span style="display:flex;"><span>  delay<span style="color:#000;font-weight:bold">:</span> <span style="color:#0086b3">Math</span>.random() <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><hr>
+<h3 id="background">Background</h3>
+<p>The <a href="https://observablehq.com/@d3/general-update-pattern">General Update Pattern</a> is a commonly-referred to implementation of d3&rsquo;s updating and reactive abilities.</p>
+<p>In Observable world, it&rsquo;s Michael Freeman&rsquo;s implementation of the new d3 <code>.join()</code> that I was referred to. Here&rsquo;s what the same chart would have looked like in this world &ndash; and bear in mind that you&rsquo;d have to write a lot of this imperative code for each group of elements in a more complex chart.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>oldchart <span style="color:#000;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">const</span> svg <span style="color:#000;font-weight:bold">=</span> d3.create(<span style="color:#d14">&#34;svg&#34;</span>).attr(<span style="color:#d14">&#34;viewBox&#34;</span>, [<span style="color:#099">0</span>, <span style="color:#099">0</span>, width, height]);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  svg.node().drawData <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span>(data) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">const</span> root <span style="color:#000;font-weight:bold">=</span> pack(data);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">const</span> circles <span style="color:#000;font-weight:bold">=</span> svg
+</span></span><span style="display:flex;"><span>      .selectAll(<span style="color:#d14">&#39;circle&#39;</span>)
+</span></span><span style="display:flex;"><span>      .data(root.descendants().filter(d =&gt; d.depth <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">0</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    circles.join(
+</span></span><span style="display:flex;"><span>      enter =&gt;
+</span></span><span style="display:flex;"><span>        enter
+</span></span><span style="display:flex;"><span>          .append(<span style="color:#d14">&#39;circle&#39;</span>)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;cx&#39;</span>, d =&gt; d.x)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;cy&#39;</span>, d =&gt; d.y)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;fill&#39;</span>, d =&gt; color(d.data.group))
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;r&#39;</span>, d =&gt; d.r),
+</span></span><span style="display:flex;"><span>      update =&gt;
+</span></span><span style="display:flex;"><span>        update
+</span></span><span style="display:flex;"><span>          .transition()
+</span></span><span style="display:flex;"><span>          .duration(<span style="color:#099">1000</span>)
+</span></span><span style="display:flex;"><span>          .delay(<span style="color:#0086b3">Math</span>.random() <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">50</span>)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;cx&#39;</span>, d =&gt; d.x)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;cy&#39;</span>, d =&gt; d.y)
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;fill&#39;</span>, d =&gt; color(d.data.group))
+</span></span><span style="display:flex;"><span>          .attr(<span style="color:#d14">&#39;r&#39;</span>, d =&gt; d.r)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> svg.node();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">let</span> i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">while</span> (<span style="color:#000;font-weight:bold">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">await</span> Promises.tick(<span style="color:#099">900</span>);
+</span></span><span style="display:flex;"><span>    i<span style="color:#000;font-weight:bold">++</span>;
+</span></span><span style="display:flex;"><span>    oldchart.drawData(
+</span></span><span style="display:flex;"><span>      data.map(e =&gt; ({ ...e, value<span style="color:#000;font-weight:bold">:</span> <span style="color:#0086b3">Math</span>.random() <span style="color:#000;font-weight:bold">*</span> e.value }))
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">yield</span> oldchart.nodeName;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>]]></content:encoded><category>observable</category><category>d3</category><enclosure url="https://basilesimon.fr/assets/share-render.png" type="image/jpeg"/><dc:description>Hello d3-render, a lovely declarative library looking after the heavy lifting of the General Update Pattern</dc:description><dc:date>2021-02-11T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>A beeswarm layout in Observable -- on deadline</title><link>https://basilesimon.fr/blog/observable-beeswarm?campaign=rss</link><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/observable-beeswarm/</guid><description>&lt;p>&lt;img src="assets/beeswarm-obs.png" alt="">&lt;/p>
 &lt;p>I recently had to complete a technical test for a role I&amp;rsquo;m interested in.&lt;/p>
 &lt;p>The task: from &lt;a href="https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/chevron-stop-funding-racism/">a story out of the Global Witness website&lt;/a>, can you come up with an alternative visualisation? &lt;strong>You&amp;rsquo;ve got two hours.&lt;/strong>&lt;/p>
 &lt;p>As there were no embed constraints, I figured there was no point in faffing with boilerplate code and scaffolds, so I went down the Observable route to put a chart together.&lt;/p>
-&lt;p>Here&amp;rsquo;s what we need scales-wise:&lt;/p></description></item><item><title>Machine learning's take on the Brexit's House of Commons</title><link>https://basilesimon.fr/blog/brexit-machine-learning?campaign=rss</link><pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/brexit-machine-learning/</guid><description>&lt;p>Let&amp;rsquo;s say things are a little confused over here in Brexit Land. To put it lightly, it has become difficult to explain, or simply to fathom what&amp;rsquo;s going to happen next.&lt;/p>
+&lt;p>Here&amp;rsquo;s what we need scales-wise:&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/beeswarm-obs.png" alt=""></p>
+<p>I recently had to complete a technical test for a role I&rsquo;m interested in.</p>
+<p>The task: from <a href="https://www.globalwitness.org/en/campaigns/oil-gas-and-mining/chevron-stop-funding-racism/">a story out of the Global Witness website</a>, can you come up with an alternative visualisation? <strong>You&rsquo;ve got two hours.</strong></p>
+<p>As there were no embed constraints, I figured there was no point in faffing with boilerplate code and scaffolds, so I went down the Observable route to put a chart together.</p>
+<p>Here&rsquo;s what we need scales-wise:</p>
+<ul>
+<li>On the y axis, the amount of the individual donations range from 0 to $10,000 &ndash; we&rsquo;ll use a linear scale which domain is mapped to this extent;</li>
+<li>On the x axis, we&rsquo;ve got two categories: the donations that pass the NAACP criteria, and those that don&rsquo;t. We cue an ordinal scale which domain are these values;</li>
+<li>A simple colour scale;</li>
+</ul>
+<hr>
+<p>But as donation amounts overlap each other, so do our circles. Here they are, with a small increasing offset to show this banding effect:</p>
+<p><img src="assets/beeswarm-overlap.png" alt=""></p>
+<p>Comes the force layout to the rescue, adding some simulated entropy to the x/y coordinates of our circles and allowing us to appreciate the difference in scale between the two columns.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">const</span> simulation <span style="color:#000;font-weight:bold">=</span> d3
+</span></span><span style="display:flex;"><span>  .forceSimulation(data)
+</span></span><span style="display:flex;"><span>  .force(<span style="color:#d14">&#39;x&#39;</span>, d3.forceX(d =&gt; x(d.category)).strength(<span style="color:#099">0.2</span>))
+</span></span><span style="display:flex;"><span>  .force(<span style="color:#d14">&#39;y&#39;</span>, d3.forceY(d =&gt; y(<span style="color:#000;font-weight:bold">+</span>d.donationUSD)).strength(<span style="color:#099">1</span>))
+</span></span><span style="display:flex;"><span>  .force(<span style="color:#d14">&#39;collide&#39;</span>, d3.forceCollide(d =&gt; size(<span style="color:#0086b3">Math</span>.sqrt(<span style="color:#000;font-weight:bold">+</span>d.donationUSD))))
+</span></span><span style="display:flex;"><span>  .alphaDecay(<span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>  .alpha(<span style="color:#099">0.3</span>)
+</span></span><span style="display:flex;"><span>  .stop();
+</span></span></code></pre></div><p>We apply three forces to our simulation:</p>
+<ul>
+<li>One <strong>on the x axis</strong>, so our circles bucket into our two categories. We specify a weak <code>.strength()</code> so they spread out horizontally rather than vertically (and thus are more truthful to the precise donation amounts);</li>
+<li>One <strong>on the y axis</strong>, where in this case the <code>.strength()</code> is far greater to squeeze them further, as seen above;</li>
+<li>A <strong>collision force</strong> which repels the circles from each other, so as to spread them apart.</li>
+</ul>
+<p>Here they are, showing the influence of x and y&rsquo;s <code>.strength()</code>:</p>
+<video autoplay loop muted playsinline>
+       <source src="assets/beeswarm.mp4" type="video/mp4">
+</video>
+<p>Did I say I had two hours to do this? I had to skimp on the annotations, which I&rsquo;ve positioned manually and quite roughly as <text> elements.</p>
+<hr>
+<p>Read more:</p>
+<ul>
+<li><a href="https://observablehq.com/@rospearce/beeswarm">@rospearce&rsquo;s layout greatly helped</a></li>
+<li>There appears to be an actual npm module to produce such layouts: <a href="https://github.com/Kcnarf/d3-beeswarm">d3-beeswarm</a></li>
+<li><a href="https://www.chartfleau.com/tutorials/d3swarm/">A rather complete tutorial from @chartfleau</a></li>
+</ul>
+]]></content:encoded><category>observable</category><category>d3</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/beeswarm-obs.png" type="image/jpeg"/><dc:description>A step-by-step walkthrough of a beeswarm layout I produced as an alternative a bar chart</dc:description><dc:date>2020-10-21T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Machine learning's take on the Brexit's House of Commons</title><link>https://basilesimon.fr/blog/brexit-machine-learning?campaign=rss</link><pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/brexit-machine-learning/</guid><description>&lt;p>Let&amp;rsquo;s say things are a little confused over here in Brexit Land. To put it lightly, it has become difficult to explain, or simply to fathom what&amp;rsquo;s going to happen next.&lt;/p>
 &lt;p>A few months ago I looked at &lt;a href="https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html">the rift splitting the Conservative Party&lt;/a>, but the topic kept nagging me.&lt;/p>
 &lt;p>&lt;a href="https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html">&lt;img src="assets/brexit-split.png" style="width: 50%; margin: auto;">&lt;/img>&lt;/a>&lt;/p>
-&lt;p>Obviously the &amp;ldquo;indicative votes&amp;rdquo; were a great tool to identify the &lt;a href="https://ig.ft.com/brexit-tory-tribes/">Brexit &amp;ldquo;tribes,&amp;rdquo;&lt;/a> as they represented such varied opinions, allowing us to build a mental picture of the different kinds of Brexit MPs could support.&lt;/p></description></item></channel></rss>
+&lt;p>Obviously the &amp;ldquo;indicative votes&amp;rdquo; were a great tool to identify the &lt;a href="https://ig.ft.com/brexit-tory-tribes/">Brexit &amp;ldquo;tribes,&amp;rdquo;&lt;/a> as they represented such varied opinions, allowing us to build a mental picture of the different kinds of Brexit MPs could support.&lt;/p></description><content:encoded><![CDATA[<p>Let&rsquo;s say things are a little confused over here in Brexit Land. To put it lightly, it has become difficult to explain, or simply to fathom what&rsquo;s going to happen next.</p>
+<p>A few months ago I looked at <a href="https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html">the rift splitting the Conservative Party</a>, but the topic kept nagging me.</p>
+<p><a href="https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html"><img src="assets/brexit-split.png" style="width: 50%; margin: auto;"></img></a></p>
+<p>Obviously the &ldquo;indicative votes&rdquo; were a great tool to identify the <a href="https://ig.ft.com/brexit-tory-tribes/">Brexit &ldquo;tribes,&rdquo;</a> as they represented such varied opinions, allowing us to build a mental picture of the different kinds of Brexit MPs could support.</p>
+<p>But paying close attention to British politics for a while introduces a certain perception bias, whereby we see some MPs as more or less extreme based on our impressions shaped over a few months discusssing the topic — the quite questionable data we gathered by reading the news.</p>
+<p>So here are my questions:</p>
+<p><em><strong>What about the long-term, more latent allegiances MPs might hold?</strong></em></p>
+<p><em><strong>Could we do without our &ldquo;Brexit goggles&rdquo; and look at a more impartial, objective picture of our House of Commons?</strong></em></p>
+<p>To find out, I fed a number of House of Commons Brexit-related votes to <a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding"><code>t-SNE</code>, a machine learning discovery algorithm</a>. The result is below:</p>
+<p><img src="assets/tsne.svg"></img></p>
+<p><svg role="img" viewBox="0 0 25 28" width="25" height="28" aria-label="Observable" fill="currentColor" style="width: 22px; transform: translateY(5px);" class="near-black"><path d="M12.5 22.6667C11.3458 22.6667 10.3458 22.4153 9.5 21.9127C8.65721 21.412 7.98339 20.7027 7.55521 19.8654C7.09997 18.9942 6.76672 18.0729 6.56354 17.1239C6.34796 16.0947 6.24294 15.0483 6.25 14C6.25 13.1699 6.30417 12.3764 6.41354 11.6176C6.52188 10.8598 6.72292 10.0894 7.01563 9.30748C7.30833 8.52555 7.68542 7.84763 8.14479 7.27274C8.62304 6.68378 9.24141 6.20438 9.95208 5.87163C10.6979 5.51244 11.5458 5.33333 12.5 5.33333C13.6542 5.33333 14.6542 5.58467 15.5 6.08733C16.3428 6.588 17.0166 7.29733 17.4448 8.13459C17.8969 8.99644 18.2271 9.9103 18.4365 10.8761C18.6448 11.841 18.75 12.883 18.75 14C18.75 14.8301 18.6958 15.6236 18.5865 16.3824C18.4699 17.1702 18.2639 17.9446 17.9719 18.6925C17.6698 19.4744 17.2948 20.1524 16.8427 20.7273C16.3906 21.3021 15.7927 21.7692 15.0479 22.1284C14.3031 22.4876 13.4542 22.6667 12.5 22.6667ZM14.7063 16.2945C15.304 15.6944 15.6365 14.864 15.625 14C15.625 13.1073 15.326 12.3425 14.7292 11.7055C14.1313 11.0685 13.3885 10.75 12.5 10.75C11.6115 10.75 10.8688 11.0685 10.2708 11.7055C9.68532 12.3123 9.36198 13.1405 9.375 14C9.375 14.8927 9.67396 15.6575 10.2708 16.2945C10.8688 16.9315 11.6115 17.25 12.5 17.25C13.3885 17.25 14.124 16.9315 14.7063 16.2945ZM12.5 27C19.4031 27 25 21.1792 25 14C25 6.82075 19.4031 1 12.5 1C5.59687 1 0 6.82075 0 14C0 21.1792 5.59687 27 12.5 27Z" fill="currentColor"></path></svg>
+<a href="https://observablehq.com/d/8c2c588548870f79">View on Observable</a></p>
+<p>Note the clustering of Brexiteers at the top of the plot, including Labour&rsquo;s Kate Hoey, the DUP, and Boris Johnson&rsquo;s cabinet.</p>
+<p>At the bottom of the Conservative cloud are the more moderate MPs and Theresa May&rsquo;s cabinet. Former prime minister Ken Clarke is placed close to Sir Oliver Letwin (author of prominent amendments allowing the House to wrestle control from the government) and Dr Philip Lee, who defected to the Lib Dems.</p>
+<p>Kit Malthouse, author of the <a href="https://www.theguardian.com/politics/2019/jan/29/the-malthouse-compromise-everything-you-need-to-know-brexit-vote">&ldquo;Malthouse compromise&rdquo;</a> which gathered support from both sides of the Conservative benches, is in the middle.</p>
+<hr>
+<h3 id="a-word-on-the-data">A word on the data</h3>
+<p>The dataset is comprised of 238 votes, including amendments and draft bills, &ldquo;meaningful&rdquo; and &ldquo;indicative&rdquo; votes (on Theresa May&rsquo;s deal and on a range of freely-submitted, blue-sky-thinking options respectivelly), as well as procedural votes and motions (such as Sir Oliver Letwin&rsquo;s two successes at wrestling control of parliamentary agenda away from the executive branch).</p>
+<p>These votes took place between September 2017 and September 2019, and I must thank the <a href="https://www.instituteforgovernment.org.uk/">Institute for Government</a>, who have provided the overwhelming majority of this research labelling Brexit-related votes from two years&rsquo; worth of votes.</p>
+<p>As for the previous Reuters piece, I scraped the <a href="http://www.data.parliament.uk/">Parliament API</a> to obtain each vote cast by each MP in each House of Commons vote.</p>
+<p>The <code>t-SNE</code> algorithm took into account how MPs voted (in favour or against a bill) and whether they voted at all (MPs are not bound to cast their vote, and some occasionally abstain).</p>
+<p>These numerous variables were reduced by the algorithm to two dimensions for visualisations (<em>x</em> and <em>y</em>). Contrary to a principal component analysis (see <em>The Economist</em> piece below), it is not possible to say what <code>t-SNE</code> has <em>seen</em> (so to speak) in a dataset.</p>
+<h3 id="acknowledgements">Acknowledgements</h3>
+<ol>
+<li><em>The Economist</em>&rsquo;s <a href="https://www.economist.com/graphic-detail/2019/03/29/mps-brexit-votes-reveal-myriad-divisions-among-the-tories">MP&rsquo;s Brexit votes reveal myriad divisions among the Tories</a>, based on 13 votes including the indicative and meaningful votes and on <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">principal component analysis</a>.</li>
+<li>The <a href="https://www.instituteforgovernment.org.uk/">Institute for Government</a>&rsquo;s continued excellent research and timely analysis of British politics.</li>
+</ol>
+<style>
+.annotation-note-title {
+font-family: sans-serif;
+font-weight: 100;
+font-sie: 6px;
+}
+</style>
+]]></content:encoded><category>observable</category><category>d3</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/tsne.png" type="image/jpeg"/><dc:description>Visualising 200 Brexit-related votes with machine learning</dc:description><dc:date>2019-10-06T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item></channel></rss>

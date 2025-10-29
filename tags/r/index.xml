@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/r?campaign=rss</link><author>Basile Simon</author><description>Recent content in R on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/r/index.xml" rel="self" type="application/rss+xml"/><item><title>Exercising in a 1km radius (another Strava data viz)</title><link>https://basilesimon.fr/blog/1km-covid-viz?campaign=rss</link><pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/1km-covid-viz/</guid><description>&lt;p>&lt;img src="assets/covid-viz-terrain.png" alt="">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>R on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/r?campaign=rss</link><author>Basile Simon</author><description>Recent content in R on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><copyright>Copyright 2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/r/index.xml" rel="self" type="application/rss+xml"/><item><title>Exercising in a 1km radius (another Strava data viz)</title><link>https://basilesimon.fr/blog/1km-covid-viz?campaign=rss</link><pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/1km-covid-viz/</guid><description>&lt;p>&lt;img src="assets/covid-viz-terrain.png" alt="">&lt;/p>
 &lt;p>So, I&amp;rsquo;m in France right now, and with this lockdown going on we&amp;rsquo;re quite restricted on the physical exercise front.&lt;/p>
 &lt;p>Technically we&amp;rsquo;re allowed to go out for a sweat, but can&amp;rsquo;t go for longer than an hour a day, and no further than a one-kilometre radius away rom home.&lt;/p>
-&lt;p>With this in mind and for no particular reason I set off to cycle, run, or walk every street in this virtual confinement circle.&lt;/p></description></item><item><title>noaastorms R package now supports NOAA IBTrACS v4</title><link>https://basilesimon.fr/blog/update-noaastorms-r-package?campaign=rss</link><pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/update-noaastorms-r-package/</guid><description>&lt;p>&lt;img src="assets/storms_facet.png" alt="">&lt;/p>
+&lt;p>With this in mind and for no particular reason I set off to cycle, run, or walk every street in this virtual confinement circle.&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/covid-viz-terrain.png" alt=""></p>
+<p>So, I&rsquo;m in France right now, and with this lockdown going on we&rsquo;re quite restricted on the physical exercise front.</p>
+<p>Technically we&rsquo;re allowed to go out for a sweat, but can&rsquo;t go for longer than an hour a day, and no further than a one-kilometre radius away rom home.</p>
+<p>With this in mind and for no particular reason I set off to cycle, run, or walk every street in this virtual confinement circle.</p>
+<p>I applied similar techniques <a href="blog/strava-rides-map-in-r">as before</a> to collect my Strava activities and overlay them on a collection of OpenStreetMap.</p>
+<hr>
+<p>Here&rsquo;s a bonus animated version:</p>
+<video autoplay controls loop muted playsinline muted style="margin: 0 auto; width: 100%;">
+ <source src="assets/output2.mp4" type="video/mp4">
+ <p>this video could not be played</p>
+</video>
+]]></content:encoded><category>r</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/covid-viz-terrain.png" type="image/jpeg"/><dc:description>Animated map of Strava activities during Covid in a one-kilometre radius</dc:description><dc:date>2020-04-26T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>noaastorms R package now supports NOAA IBTrACS v4</title><link>https://basilesimon.fr/blog/update-noaastorms-r-package?campaign=rss</link><pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/update-noaastorms-r-package/</guid><description>&lt;p>&lt;img src="assets/storms_facet.png" alt="">&lt;/p>
 &lt;p>Earlier this year, I released a simple R package (available at &lt;a href="https://github.com/basilesimon/noaastorms">basilesimon/noaastorms&lt;/a>) that downloads, cleans and parses NOAA IBtrack data for you.&lt;/p>
 &lt;p>As the NOAA updated its datasets, &lt;code>noaastorms&lt;/code> is now using these!&lt;/p>
 &lt;h2 id="how-to-install">How to install&lt;/h2>
@@ -18,23 +29,722 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">4&lt;/span> &lt;span style="color:#099">1902276&lt;/span>N14266 &lt;span style="color:#099">1902&lt;/span> &lt;span style="color:#099">01&lt;/span> EP MM UNNAMED
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">5&lt;/span> &lt;span style="color:#099">1902276&lt;/span>N14266 &lt;span style="color:#099">1902&lt;/span> &lt;span style="color:#099">01&lt;/span> EP MM UNNAMED
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#099">6&lt;/span> &lt;span style="color:#099">1902276&lt;/span>N14266 &lt;span style="color:#099">1902&lt;/span> &lt;span style="color:#099">01&lt;/span> EP MM UNNAMED
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The first argument is a vector of basin codes from this list:&lt;/p></description></item><item><title>Tractatus Logico (Phylo)sophicus</title><link>https://basilesimon.fr/blog/tractatus-logico-philosophicus?campaign=rss</link><pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/tractatus-logico-philosophicus/</guid><description>&lt;div id="viz" width="100%">&lt;/div>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The first argument is a vector of basin codes from this list:&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/storms_facet.png" alt=""></p>
+<p>Earlier this year, I released a simple R package (available at <a href="https://github.com/basilesimon/noaastorms">basilesimon/noaastorms</a>) that downloads, cleans and parses NOAA IBtrack data for you.</p>
+<p>As the NOAA updated its datasets, <code>noaastorms</code> is now using these!</p>
+<h2 id="how-to-install">How to install</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;basilesimon/noaastorms&#34;</span>)
+</span></span></code></pre></div><h2 id="available-functions">Available functions</h2>
+<p><code>getStorms</code>: Fetch NOAA historical best track storms data</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;EP&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">head</span>(df[1<span style="color:#000;font-weight:bold">:</span><span style="color:#099">5</span>])
+</span></span><span style="display:flex;"><span>     Serial_Num Season Num Basin Sub_basin    Name
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span></code></pre></div><p>The first argument is a vector of basin codes from this list:</p>
+<ul>
+<li>NA: North Atlantic</li>
+<li>SA: South Atlantic</li>
+<li>NI: North Indian</li>
+<li>SI: South Indian</li>
+<li>EP: East Pacific</li>
+<li>SP: South Pacific</li>
+<li>WP: West Pacific</li>
+</ul>
+<p><img src="https://www.ssd.noaa.gov/PS/TROP/TCFP/images/TCFP_basins.gif" alt="NOAA basins map"></p>
+<p>To get storms that took place in the Atlantic for example, run <code>getStorms(c('NA', 'SA'))</code>.</p>
+<p>The second (optional) argument is a date range to filter data with. For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dateRange <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#900;font-weight:bold">as.Date</span>(<span style="color:#d14">&#39;2010-01-01&#39;</span>), <span style="color:#900;font-weight:bold">as.Date</span>(<span style="color:#d14">&#39;2012-12-31&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;NA&#39;</span>, <span style="color:#d14">&#39;SA&#39;</span>), dateRange <span style="color:#000;font-weight:bold">=</span> dateRange)
+</span></span></code></pre></div><p>Will query storms that took place in the Atlantic in 2010 and 2012.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># load a map of the world and</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># use `clipPolys` to avoid issues</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># when zooming in with `coord_map`</span>
+</span></span><span style="display:flex;"><span>wm <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">map_data</span>(<span style="color:#d14">&#34;world&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(<span style="color:#d14">&#34;PBSmapping&#34;</span>)
+</span></span><span style="display:flex;"><span>data.table<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">setnames</span>(wm, <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;X&#34;</span>,<span style="color:#d14">&#34;Y&#34;</span>,<span style="color:#d14">&#34;PID&#34;</span>,<span style="color:#d14">&#34;POS&#34;</span>,<span style="color:#d14">&#34;region&#34;</span>,<span style="color:#d14">&#34;subregion&#34;</span>))
+</span></span><span style="display:flex;"><span>worldmap <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">clipPolys</span>(wm,
+</span></span><span style="display:flex;"><span>  xlim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">20</span>,<span style="color:#099">110</span>),ylim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span>, <span style="color:#099">45</span>),
+</span></span><span style="display:flex;"><span>  keepExtra<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># load storms for the Atlantic ocean</span>
+</span></span><span style="display:flex;"><span>spStorms <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;NA&#39;</span>, <span style="color:#d14">&#39;SA&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(spStorms,
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> Longitude, y <span style="color:#000;font-weight:bold">=</span> Latitude,
+</span></span><span style="display:flex;"><span>    group <span style="color:#000;font-weight:bold">=</span> Serial_Num)) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> worldmap,
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> X, y <span style="color:#000;font-weight:bold">=</span> Y, group <span style="color:#000;font-weight:bold">=</span> PID), 
+</span></span><span style="display:flex;"><span>    fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;whitesmoke&#34;</span>,
+</span></span><span style="display:flex;"><span>    colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;gray10&#34;</span>,
+</span></span><span style="display:flex;"><span>    size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.2</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.1</span>, size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.8</span>,
+</span></span><span style="display:flex;"><span>    color <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">20</span>,<span style="color:#099">110</span>),
+</span></span><span style="display:flex;"><span>    ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span>, <span style="color:#099">45</span>)) 
+</span></span></code></pre></div><p><img src="https://github.com/basilesimon/noaastorms/raw/master/Rplot.png" alt="Screenshot of storms"></p>
+<h4 id="official-changelog-retrieved-aug-16-2019">Official changelog (retrieved Aug 16, 2019)</h4>
+<p>[https://www.ncdc.noaa.gov/ibtracs/index.php?name=status][https://www.ncdc.noaa.gov/ibtracs/index.php?name=status]</p>
+<p>This is the first release of IBTrACS version 04. It is updated weekly.<br>
+Release date: March 2019</p>
+<p>New features (improvements from v03):</p>
+<ul>
+<li>Best track data updated daily and contain provisional tracks of recent storms.</li>
+<li>Reduced formats - Version 4 is available in 3 formats (netCDF, CSV, shapefiles)</li>
+<li>Consistent formats - The data presented in each format is completely interconsistent (identical).</li>
+<li>More parameters - More parameters provided by the agencies are provided in IBTrACS</li>
+<li>Basin assignment - Any system occuring in a basin is included in that basin file (in version 3, the storm was only included in the basin in which it had its genesis)</li>
+<li>New derived parameters - We provide storm translation speed and direction and other variables requested by users.</li>
+</ul>
+]]></content:encoded><category>r</category><enclosure url="https://basilesimon.fr/assets/storms_facet.png" type="image/jpeg"/><dc:description>New R package to load, parse and chart 20 years of oceanic storms data</dc:description><dc:date>2019-08-18T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Tractatus Logico (Phylo)sophicus</title><link>https://basilesimon.fr/blog/tractatus-logico-philosophicus?campaign=rss</link><pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/tractatus-logico-philosophicus/</guid><description>&lt;div id="viz" width="100%">&lt;/div>
 &lt;p>Over the Christmas holidays, I read &lt;a href="https://www.amazon.co.uk/Maths-Meets-Myths-Quantitative-Understanding-ebook/dp/B01LXAHGCK?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&amp;amp;tag=duckduckgo-ffab-uk-21&amp;amp;linkCode=xm2&amp;amp;camp=2025&amp;amp;creative=165953&amp;amp;creativeASIN=B01LXAHGCK">&amp;ldquo;Maths Meets Myths: Quantitative Approaches to Ancient Narratives,&amp;rdquo;&lt;/a> from the Springer &lt;em>Understanding Complex Systems&lt;/em> collection.&lt;/p>
 &lt;p>The authors present their application of &amp;ldquo;hard&amp;rdquo; science techniques to datasets coming from the humanities &amp;ndash; mostly large corpus of texts, legends and myths.&lt;/p>
-&lt;p>One paper in particular uses bioinformatics and phylogenetics to &lt;a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871">study the spread of a popular folk tale: Little Red Riding Hood&lt;/a>. The story that I knew from Perrult and Grimm has patterns that are also found in African and East Asian tales.&lt;/p></description></item><item><title>New R package: load and chart oceanic storms</title><link>https://basilesimon.fr/blog/noaastorms-r-package?campaign=rss</link><pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/noaastorms-r-package/</guid><description>&lt;p>&lt;img src="assets/storms_final.png" alt="">&lt;/p>
+&lt;p>One paper in particular uses bioinformatics and phylogenetics to &lt;a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871">study the spread of a popular folk tale: Little Red Riding Hood&lt;/a>. The story that I knew from Perrult and Grimm has patterns that are also found in African and East Asian tales.&lt;/p></description><content:encoded><![CDATA[<div id="viz" width="100%"></div>
+<p>Over the Christmas holidays, I read <a href="https://www.amazon.co.uk/Maths-Meets-Myths-Quantitative-Understanding-ebook/dp/B01LXAHGCK?SubscriptionId=AKIAILSHYYTFIVPWUY6Q&amp;tag=duckduckgo-ffab-uk-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01LXAHGCK">&ldquo;Maths Meets Myths: Quantitative Approaches to Ancient Narratives,&rdquo;</a> from the Springer <em>Understanding Complex Systems</em> collection.</p>
+<p>The authors present their application of &ldquo;hard&rdquo; science techniques to datasets coming from the humanities &ndash; mostly large corpus of texts, legends and myths.</p>
+<p>One paper in particular uses bioinformatics and phylogenetics to <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078871">study the spread of a popular folk tale: Little Red Riding Hood</a>. The story that I knew from Perrult and Grimm has patterns that are also found in African and East Asian tales.</p>
+<hr>
+<h3 id="the-tractatus-logico-philosophicus-viewed-as-a-phylogenetic-tree">The Tractatus Logico-Philosophicus viewed as a phylogenetic tree</h3>
+<p>Inspired by this, I&rsquo;ve had a look at Wittgenstein&rsquo;s <a href="https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus">Tractatus Logico Philosophicus</a> (available on <a href="http://www.gutenberg.org/ebooks/5740">Project Gutenberg</a>), which is presented as hierachically numbered statements and sub-statements.</p>
+<p>We start by scraping the book into a dataframe with one row per statement:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(rvest)
+</span></span><span style="display:flex;"><span>page <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">read_html</span>(<span style="color:#d14">&#34;http://www.tractatuslogico-philosophicus.com/&#34;</span>)
+</span></span><span style="display:flex;"><span>root <span style="color:#000;font-weight:bold">&lt;-</span> page <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">html_node</span>(<span style="color:#d14">&#34;#root&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> (item <span style="color:#000;font-weight:bold">in</span> root <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">html_nodes</span>(<span style="color:#d14">&#39;li&#39;</span>)) {
+</span></span><span style="display:flex;"><span>  label <span style="color:#000;font-weight:bold">&lt;-</span> item <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">html_attr</span>(<span style="color:#d14">&#34;data-name&#34;</span>)
+</span></span><span style="display:flex;"><span>  content <span style="color:#000;font-weight:bold">&lt;-</span> item <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">html_text</span>(trim <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  temp <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(label, content)
+</span></span><span style="display:flex;"><span>  df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">rbind</span>(df, temp)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>We then generate our cluster analysis based on the distance between the columns of <code>df</code>, hoping that the hierachical numbering of statements will yield something interesting.</p>
+<p>We adopt the <code>single</code> method, described like so:</p>
+<blockquote>
+<p>The <em>single linkage</em> method (which is closely related to the minimal spanning tree) adopts a ‘friends of friends’ clustering strategy</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clusters <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">hclust</span>(<span style="color:#900;font-weight:bold">dist</span>(df), method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;single&#34;</span>)
+</span></span></code></pre></div><hr>
+<h3 id="dendograms-galore">Dendograms galore</h3>
+<p>From these clusters, we can represent the book as dendograms, which are used in phylogenetics to represent evolutionary splits and genetic relationships in a tree.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(clusters, labels <span style="color:#000;font-weight:bold">=</span> clusters<span style="color:#000;font-weight:bold">$</span>labels)
+</span></span></code></pre></div><p><img src="assets/Rplot01.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>d <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.dendrogram</span>(clusters)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(d, horiz <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>, type <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;triangle&#34;</span>)
+</span></span></code></pre></div><p><img src="assets/Rplot02.png" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ape)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(<span style="color:#900;font-weight:bold">as.phylo</span>(clusters), type <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;fan&#34;</span>)
+</span></span></code></pre></div><p><img src="assets/Rplot03.png" alt=""></p>
+<p>The diagrams above show how our clusters have correctly grouped together the hierachical statements of the <em>Tractatus</em>.</p>
+<p>From Mike Bostock&rsquo;s <a href="https://observablehq.com/@mbostock/tree-of-life">Tree of Life</a> helped by Jason Davies&rsquo; work <a href="https://github.com/jasondavies/newick.js">parsing a Newick text file format</a> (standard in tree representations) in Javascript, I re-implemented the above with <code>d3-jetpack</code> and ES6: <a href="https://bl.ocks.org/basilesimon/66db4338c15099f6e8d62f236db2ef2d">https://bl.ocks.org/basilesimon/66db4338c15099f6e8d62f236db2ef2d</a>.</p>
+<p>The resulting chart is at the top of this page.</p>
+<p>I love how simple the result looks and how little we end up knowing about the book itself. The only thinkg I&rsquo;ll let you in the final, chapter seven put-down of this book about language, facts and truths of the world:</p>
+<blockquote>
+<p>What we cannot speak about we must pass over in silence.</p>
+</blockquote>
+<p>Precisely what I didn&rsquo;t do in this blog about phylogenetics and a book I never finished.</p>
+<!-- Copyright 2011 Jason Davies https://github.com/jasondavies/newick.js -->
+<script>function parseNewick(a){for(var e=[],r={},s=a.split(/\s*(;|\(|\)|,|:)\s*/),t=0;t<s.length;t++){var n=s[t];switch(n){case"(":var c={};r.branchset=[c],e.push(r),r=c;break;case",":var c={};e[e.length-1].branchset.push(c),r=c;break;case")":r=e.pop();break;case":":break;default:var h=s[t-1];")"==h||"("==h||","==h?r.name=n:":"==h&&(r.length=parseFloat(n))}}return r}</script>
+<!-- Copyright 2016 Mike Bostock https://d3js.org -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/d3-jetpack@2.0.20/build/d3-jetpack.js"></script>
+<script>
+const outerRadius = 900/2,
+  innerRadius = outerRadius - 150;
+
+const color = d3
+  .scaleOrdinal()
+  .domain(["1.", "2.", "3.", "4.", "5.", "6.", "7."])
+  .range(d3.schemeCategory10);
+
+const cluster = d3
+  .cluster()
+  .size([360, innerRadius])
+  .separation(function(a, b) {
+    return 1;
+  });
+
+const svg = d3
+  .select('#viz')
+  .append('svg')
+  .at({
+    width: outerRadius * 2,
+    height: outerRadius * 2,
+  });
+
+const chart = svg.append('g').translate([outerRadius-100, outerRadius]);
+
+d3.text(
+  'https://gist.githubusercontent.com/basilesimon/fa37a436836e3556b1cc36a5067e5e33/raw/a4dddacc9e4332219ac5b94568818e7272977cdd/tlp.txt',
+  function(error, life) {
+    if (error) throw error;
+
+    const root = d3
+      .hierarchy(parseNewick(life), d => d.branchset)
+      .sum(d => (d.branchset ? 0 : 1))
+      .sort(
+        (a, b) =>
+          a.value - b.value || d3.ascending(a.data.length, b.data.length)
+      );
+
+    cluster(root);
+
+    setRadius(root, (root.data.length = 0), innerRadius / maxLength(root));
+    setColor(root);
+
+    const linkExtension = chart
+      .append('g')
+      .attr('class', 'link-extensions')
+      .selectAll('path')
+      .data(root.links().filter(d => !d.target.children))
+      .enter()
+      .append('path')
+      .each(function(d) {
+        d.target.linkExtensionNode = this;
+      })
+      .attr('d', linkExtensionConstiable);
+
+    const link = chart
+      .append('g')
+      .attr('class', 'links')
+      .selectAll('path')
+      .data(root.links())
+      .enter()
+      .append('path')
+      .each(function(d) {
+        d.target.linkNode = this;
+      })
+      .attr('d', linkConstant)
+      .attr('stroke', d => d.target.color);
+
+    chart
+      .append('g')
+      .attr('class', 'labels')
+      .selectAll('text')
+      .data(root.leaves())
+      .enter()
+      .append('text')
+      .attr('dy', '.31em')
+      .attr(
+        'transform',
+        d =>
+          'rotate(' +
+          (d.x - 90) +
+          ')translate(' +
+          (innerRadius + 4) +
+          ',0)' +
+          (d.x < 180 ? '' : 'rotate(180)')
+      )
+      .attr('text-anchor', d => (d.x < 180 ? 'start' : 'end'))
+      .text(d => (d.data.name.length < 3 ? d.data.name : ''));
+
+
+  }
+);
+
+// Compute the maximum cumulative length of any node in the tree.
+const maxLength = d =>
+  d.data.length + (d.children ? d3.max(d.children, maxLength) : 0);
+
+// Set the radius of each node by recursively summing and scaling the distance from the root.
+const setRadius = (d, y0, k) => {
+  d.radius = (y0 += d.data.length) * k;
+  if (d.children)
+    d.children.forEach(function(d) {
+      setRadius(d, y0, k);
+    });
+};
+
+// Set the color of each node by recursively inheriting.
+const setColor = d => {
+  const name = d.data.name.substring(0,2);
+  d.color =
+    color.domain().indexOf(name) >= 0
+      ? color(name)
+      : d.parent ? d.parent.color : null;
+  if (d.children) d.children.forEach(setColor);
+};
+
+const linkConstiable = d =>
+  linkStep(d.source.x, d.source.radius, d.target.x, d.target.radius);
+
+const linkConstant = d =>
+  linkStep(d.source.x, d.source.y, d.target.x, d.target.y);
+
+const linkExtensionConstiable = d =>
+  linkStep(d.target.x, d.target.radius, d.target.x, innerRadius);
+
+const linkExtensionConstant = d =>
+  linkStep(d.target.x, d.target.y, d.target.x, innerRadius);
+
+// Like d3.svg.diagonal.radial, but with square corners.
+function linkStep(startAngle, startRadius, endAngle, endRadius) {
+  const c0 = Math.cos((startAngle = (startAngle - 90) / 180 * Math.PI)),
+    s0 = Math.sin(startAngle),
+    c1 = Math.cos((endAngle = (endAngle - 90) / 180 * Math.PI)),
+    s1 = Math.sin(endAngle);
+  return (
+    'M' +
+    startRadius * c0 +
+    ',' +
+    startRadius * s0 +
+    (endAngle === startAngle
+      ? ''
+      : 'A' +
+        startRadius +
+        ',' +
+        startRadius +
+        ' 0 0 ' +
+        (endAngle > startAngle ? 1 : 0) +
+        ' ' +
+        startRadius * c1 +
+        ',' +
+        startRadius * s1) +
+    'L' +
+    endRadius * c1 +
+    ',' +
+    endRadius * s1
+  );
+}
+
+
+</script>
+<style>
+.links {
+  fill: none;
+  stroke: #000;
+}
+
+.link-extensions {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .25;
+}
+
+.labels {
+  font: 10px sans-serif;
+  font-weight: bold;
+}
+
+</style>
+]]></content:encoded><category>r</category><enclosure url="https://basilesimon.fr/assets/tractatus_tree.png" type="image/jpeg"/><dc:description>Using phylogenetics visualisations to represent the Tractatus Logico-Philosophicus</dc:description><dc:date>2019-03-02T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>New R package: load and chart oceanic storms</title><link>https://basilesimon.fr/blog/noaastorms-r-package?campaign=rss</link><pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/noaastorms-r-package/</guid><description>&lt;p>&lt;img src="assets/storms_final.png" alt="">&lt;/p>
 &lt;p>Mapping historical storms data is now a little bit easier. &lt;a href="https://blog.basilesimon.fr/2018/09/05/storms-map-in-R/">Off the back of this blog&lt;/a>, I have authored an R package (available at &lt;a href="https://github.com/basilesimon/noaastorms">basilesimon/noaastorms&lt;/a>) that downloads, cleans and parses NOAA IBtrack data for you.&lt;/p>
 &lt;p>The National Oceanic and Atmospheric Administration releases datasets known as &lt;a href="https://www.ncdc.noaa.gov/ibtracs/">International Best Track Archive for Climate Stewardship&lt;/a>.&lt;/p>
-&lt;p>These datasets are updated regulary and cover all our oceans. The data found in there is fantasticly detailed and goes back as far as 1850 in some case (I wonder how!).&lt;/p></description></item><item><title>Strava rides map in R</title><link>https://basilesimon.fr/blog/strava-rides-map-in-r?campaign=rss</link><pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/strava-rides-map-in-r/</guid><description>&lt;p>&lt;img src="assets/strava-map-final.jpeg" alt="">&lt;/p>
+&lt;p>These datasets are updated regulary and cover all our oceans. The data found in there is fantasticly detailed and goes back as far as 1850 in some case (I wonder how!).&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/storms_final.png" alt=""></p>
+<p>Mapping historical storms data is now a little bit easier. <a href="https://blog.basilesimon.fr/2018/09/05/storms-map-in-R/">Off the back of this blog</a>, I have authored an R package (available at <a href="https://github.com/basilesimon/noaastorms">basilesimon/noaastorms</a>) that downloads, cleans and parses NOAA IBtrack data for you.</p>
+<p>The National Oceanic and Atmospheric Administration releases datasets known as <a href="https://www.ncdc.noaa.gov/ibtracs/">International Best Track Archive for Climate Stewardship</a>.</p>
+<p>These datasets are updated regulary and cover all our oceans. The data found in there is fantasticly detailed and goes back as far as 1850 in some case (I wonder how!).</p>
+<h2 id="how-to-install">How to install</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;basilesimon/noaastorms&#34;</span>)
+</span></span></code></pre></div><h2 id="available-functions">Available functions</h2>
+<p><code>getStorms</code>: Fetch NOAA historical best track storms data</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;EP&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">head</span>(df[1<span style="color:#000;font-weight:bold">:</span><span style="color:#099">5</span>])
+</span></span><span style="display:flex;"><span>     Serial_Num Season Num Basin Sub_basin    Name
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span> <span style="color:#099">1902276</span>N14266   <span style="color:#099">1902</span>  <span style="color:#099">01</span>    EP        MM UNNAMED
+</span></span></code></pre></div><p>The first argument is a vector of basin codes from this list:</p>
+<ul>
+<li>NA: North Atlantic</li>
+<li>SA: South Atlantic</li>
+<li>NI: North Indian</li>
+<li>SI: South Indian</li>
+<li>EP: East Pacific</li>
+<li>SP: South Pacific</li>
+<li>WP: West Pacific</li>
+</ul>
+<p><img src="https://www.ssd.noaa.gov/PS/TROP/TCFP/images/TCFP_basins.gif" alt="NOAA basins map"></p>
+<p>To get storms that took place in the Atlantic for example, run <code>getStorms(c('NA', 'SA'))</code>.</p>
+<p>The second (optional) argument is a date range to filter data with. For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dateRange <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#900;font-weight:bold">as.Date</span>(<span style="color:#d14">&#39;2010-01-01&#39;</span>), <span style="color:#900;font-weight:bold">as.Date</span>(<span style="color:#d14">&#39;2012-12-31&#39;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;NA&#39;</span>, <span style="color:#d14">&#39;SA&#39;</span>), dateRange <span style="color:#000;font-weight:bold">=</span> dateRange)
+</span></span></code></pre></div><p>Will query storms that took place in the Atlantic in 2010 and 2012.</p>
+<h2 id="usage">Usage</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># load a map of the world and</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># use `clipPolys` to avoid issues</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># when zooming in with `coord_map`</span>
+</span></span><span style="display:flex;"><span>wm <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">map_data</span>(<span style="color:#d14">&#34;world&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(<span style="color:#d14">&#34;PBSmapping&#34;</span>)
+</span></span><span style="display:flex;"><span>data.table<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">setnames</span>(wm, <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;X&#34;</span>,<span style="color:#d14">&#34;Y&#34;</span>,<span style="color:#d14">&#34;PID&#34;</span>,<span style="color:#d14">&#34;POS&#34;</span>,<span style="color:#d14">&#34;region&#34;</span>,<span style="color:#d14">&#34;subregion&#34;</span>))
+</span></span><span style="display:flex;"><span>worldmap <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">clipPolys</span>(wm,
+</span></span><span style="display:flex;"><span>  xlim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">20</span>,<span style="color:#099">110</span>),ylim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span>, <span style="color:#099">45</span>),
+</span></span><span style="display:flex;"><span>  keepExtra<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># load storms for the Atlantic ocean</span>
+</span></span><span style="display:flex;"><span>spStorms <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">getStorms</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;NA&#39;</span>, <span style="color:#d14">&#39;SA&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(spStorms,
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> Longitude, y <span style="color:#000;font-weight:bold">=</span> Latitude,
+</span></span><span style="display:flex;"><span>    group <span style="color:#000;font-weight:bold">=</span> Serial_Num)) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> worldmap,
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> X, y <span style="color:#000;font-weight:bold">=</span> Y, group <span style="color:#000;font-weight:bold">=</span> PID), 
+</span></span><span style="display:flex;"><span>    fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;whitesmoke&#34;</span>,
+</span></span><span style="display:flex;"><span>    colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;gray10&#34;</span>,
+</span></span><span style="display:flex;"><span>    size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.2</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.1</span>, size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.8</span>,
+</span></span><span style="display:flex;"><span>    color <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">20</span>,<span style="color:#099">110</span>),
+</span></span><span style="display:flex;"><span>    ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span>, <span style="color:#099">45</span>)) 
+</span></span></code></pre></div><p><img src="https://github.com/basilesimon/noaastorms/raw/master/Rplot.png" alt="Screenshot of storms"></p>
+<h2 id="your-feedback-is-important">Your feedback is important</h2>
+<p>Next on the list are more complex queries. Sadly, supporting date ranges doesn&rsquo;t change how much data we need to download (the NOAA data is bulk export).</p>
+<p>I maintain a <a href="https://github.com/basilesimon/noaastorms">list of open issues on Github</a> and hope to capture some feature requests there.</p>
+<p>If you have ideas, bug reports, feature requests, this is the place to go. Thank you!</p>
+]]></content:encoded><category>r</category><enclosure url="https://basilesimon.fr/assets/storms_final.png" type="image/jpeg"/><dc:description>New R package to load, parse and chart 20 years of oceanic storms data</dc:description><dc:date>2019-01-30T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Strava rides map in R</title><link>https://basilesimon.fr/blog/strava-rides-map-in-r?campaign=rss</link><pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/strava-rides-map-in-r/</guid><description>&lt;p>&lt;img src="assets/strava-map-final.jpeg" alt="">&lt;/p>
 &lt;p>This is a Christmas present to myself to celebrate 10,000km of commuting on my bicycle: a lovely frame print of all my GPS traces on a home-made map of London. Here&amp;rsquo;s how I made it.&lt;/p>
 &lt;p>&lt;em>This blog was contributed to &lt;a href="https://www.r-bloggers.com/">R Bloggers&lt;/a>&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="step-one-getting-strava-data">Step one: getting Strava data&lt;/h2>
-&lt;p>The process has become slightly convoluted in May 2018. In the past, it was possible to download a Strava archive which contained all activities as GPX; however, GDPR regulations &lt;a href="https://support.strava.com/hc/en-us/community/posts/360014914631-Activities-in-the-new-bulk-export-feature-have-meaningless-names-and-multiple-formats-">led to a change in bulk export format&lt;/a>.&lt;/p></description></item><item><title>Pen plotter maps in R</title><link>https://basilesimon.fr/blog/pen-plotter-maps?campaign=rss</link><pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/pen-plotter-maps/</guid><description>&lt;p>&lt;img src="assets/blog-map-final-group.JPG" alt="">&lt;/p>
+&lt;p>The process has become slightly convoluted in May 2018. In the past, it was possible to download a Strava archive which contained all activities as GPX; however, GDPR regulations &lt;a href="https://support.strava.com/hc/en-us/community/posts/360014914631-Activities-in-the-new-bulk-export-feature-have-meaningless-names-and-multiple-formats-">led to a change in bulk export format&lt;/a>.&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/strava-map-final.jpeg" alt=""></p>
+<p>This is a Christmas present to myself to celebrate 10,000km of commuting on my bicycle: a lovely frame print of all my GPS traces on a home-made map of London. Here&rsquo;s how I made it.</p>
+<p><em>This blog was contributed to <a href="https://www.r-bloggers.com/">R Bloggers</a></em></p>
+<hr>
+<h2 id="step-one-getting-strava-data">Step one: getting Strava data</h2>
+<p>The process has become slightly convoluted in May 2018. In the past, it was possible to download a Strava archive which contained all activities as GPX; however, GDPR regulations <a href="https://support.strava.com/hc/en-us/community/posts/360014914631-Activities-in-the-new-bulk-export-feature-have-meaningless-names-and-multiple-formats-">led to a change in bulk export format</a>.</p>
+<p>Anyway: <a href="https://www.strava.com/athlete/delete_your_account">request your Strava archive</a>, wait for the email, download it.</p>
+<p><code>activities.csv</code> gives us a list of activities&hellip; which we can then scrape from Strava.</p>
+<pre tabindex="0"><code>$ cat activities/activities.csv | head -5
+id,date,name,type,description,elapsed_time,distance,commute,gear,filename
+1988225457,2018-11-27 19:11:32,Evening Ride,Ride,&#34;&#34;,1468,6075.0,true,1x1x8,activities/2125648250.fit.gz
+1992478096,2018-11-29 10:02:58,Morning Ride,Ride,&#34;&#34;,1449,5869.0,true,1x1x8,activities/2130096306.fit.gz
+1992478209,2018-11-29 23:04:16,Night Ride,Ride,&#34;&#34;,1166,5930.0,true,1x1x8,activities/2130096453.fit.gz
+1992479540,2018-11-30 08:51:29,Morning Ride,Ride,&#34;&#34;,1427,6563.0,true,Michel le fixie,activities/2130097780.fit.gz
+</code></pre><p>Clone <a href="https://github.com/hugovk/strava-tools">hugovk/strava-tools</a>, a set of Python tools to do automate interactions with Strava. There are some instructions at the top of <code>download_fit_as_gpx.py</code>.</p>
+<p>Follow these before running <code>$ python download_fit_as_gpx.py</code></p>
+<p>Some time later&hellip; here we are!</p>
+<pre tabindex="0"><code>$ ls activities/activities | head -5
+20160908-170525-Ride.gpx
+20160909-080222-Ride.gpx
+20160909-180740-Ride.gpx
+20160912-081014-Ride.gpx
+20160912-172611-Ride.gpx
+</code></pre><hr>
+<h2 id="step-two-ingesting-activities-in-r">Step two: Ingesting activities in R</h2>
+<p>Install <a href="https://github.com/marcusvolz/strava"> marcusvolz/strava</a>, an excellent suite of R functions that help us load activities in a (big, big) dataframe.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span><span style="display:flex;"><span>devtools<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;marcusvolz/strava&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(strava)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(tidyverse)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># main ingestion method</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># ACHTUNG: slow!</span>
+</span></span><span style="display:flex;"><span>data  <span style="color:#000;font-weight:bold">&lt;-</span>  <span style="color:#900;font-weight:bold">process_data</span>(<span style="color:#d14">&#34;./activities/activities/&#34;</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">head</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  id      lat      lon   ele                time dist_to_prev    cumdist time_diff_to_prev  cumtime
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span>  <span style="color:#099">1</span> <span style="color:#099">45.78514</span> <span style="color:#099">4.717282</span> <span style="color:#099">295.7</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">21</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">48</span>  <span style="color:#099">0.000000000</span> <span style="color:#099">0.00000000</span>                 <span style="color:#099">0</span>        <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span>  <span style="color:#099">1</span> <span style="color:#099">45.78512</span> <span style="color:#099">4.717559</span> <span style="color:#099">295.3</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">22</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">12</span>  <span style="color:#099">0.021643479</span> <span style="color:#099">0.02164348</span>                <span style="color:#099">24</span>       <span style="color:#099">24</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span>  <span style="color:#099">1</span> <span style="color:#099">45.78512</span> <span style="color:#099">4.717573</span> <span style="color:#099">295.2</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">22</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">13</span>  <span style="color:#099">0.001111138</span> <span style="color:#099">0.02275462</span>                 <span style="color:#099">1</span>       <span style="color:#099">25</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span>  <span style="color:#099">1</span> <span style="color:#099">45.78512</span> <span style="color:#099">4.717583</span> <span style="color:#099">295.2</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">22</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">17</span>  <span style="color:#099">0.000785528</span> <span style="color:#099">0.02354015</span>                 <span style="color:#099">4</span>       <span style="color:#099">29</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span>  <span style="color:#099">1</span> <span style="color:#099">45.78509</span> <span style="color:#099">4.717684</span> <span style="color:#099">295.1</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">22</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">38</span>  <span style="color:#099">0.008715879</span> <span style="color:#099">0.03225602</span>                <span style="color:#099">21</span>       <span style="color:#099">50</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span>  <span style="color:#099">1</span> <span style="color:#099">45.78508</span> <span style="color:#099">4.717694</span> <span style="color:#099">295.1</span> <span style="color:#099">2015-12-26</span> <span style="color:#099">11</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">22</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">39</span>  <span style="color:#099">0.001181249</span> <span style="color:#099">0.03343727</span>                 <span style="color:#099">1</span>        <span style="color:#099">5</span>
+</span></span></code></pre></div><hr>
+<h2 id="step-three-visualising-our-activities">Step three: Visualising our activities</h2>
+<p>We can piece together a simple plot (besides throwing a caveman-like <code>plot(data)</code>) limited to London:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span>theme_opts<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">list</span>(<span style="color:#900;font-weight:bold">theme</span>(panel.grid.minor <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  panel.background <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  plot.background <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.line <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.text.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.text.y <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.ticks <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.title.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  axis.title.y <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  plot.title <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>  panel.grid.major <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_line</span>(colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;transparent&#39;</span>),
+</span></span><span style="display:flex;"><span>  legend.position <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;none&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(data,
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">aes</span>(lon, lat, group <span style="color:#000;font-weight:bold">=</span> id)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(colour<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;steelblue&#34;</span>,alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.2</span>) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(projection <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;mercator&#34;</span>, 
+</span></span><span style="display:flex;"><span>    xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.41</span>, <span style="color:#099">0.08</span>), 
+</span></span><span style="display:flex;"><span>    ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">51.42</span>, <span style="color:#099">51.73</span>), clip <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;on&#34;</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  theme_opts
+</span></span></code></pre></div><p><img src="assets/strava-map-1.png" alt=""></p>
+<p>Obviously we are going to need some geographical landmarks to get our bearings. <a href="https://github.com/geotheory/londonShapefiles/">geotheory/londonShapefiles</a> is one of the simplest and quickest ways to get London boundaries loaded in - and that includes the river Thames.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;geotheory/londonShapefiles&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(<span style="color:#d14">&#34;londonShapefiles&#34;</span>)
+</span></span><span style="display:flex;"><span>thames <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">load_thames</span>()
+</span></span><span style="display:flex;"><span>thames.proj <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">spTransform</span>(thames, <span style="color:#900;font-weight:bold">CRS</span>(<span style="color:#d14">&#34;+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs&#34;</span>))
+</span></span><span style="display:flex;"><span>thames.df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">fortify</span>(thames.proj)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>() <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(thames.df,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(long, lat, group <span style="color:#000;font-weight:bold">=</span> group,
+</span></span><span style="display:flex;"><span>    fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;skyblue&#34;</span>)), alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.4</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(data,
+</span></span><span style="display:flex;"><span>    mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(lon, lat, group <span style="color:#000;font-weight:bold">=</span> id,
+</span></span><span style="display:flex;"><span>    alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.9</span>, color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;tomato&#34;</span>)),
+</span></span><span style="display:flex;"><span>    size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">3</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(projection <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;mercator&#34;</span>,
+</span></span><span style="display:flex;"><span>    xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.41</span>, <span style="color:#099">0.08</span>),
+</span></span><span style="display:flex;"><span>    ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">51.42</span>, <span style="color:#099">51.73</span>)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  theme_opts
+</span></span></code></pre></div><p><img src="assets/strava-map-2.png" alt=""></p>
+<p>But behold, we can also get data straight from Open Street Map thanks to <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html">osmdata</a>. The syntax is relatively concise and OSM&rsquo;s web interface allows you to query features directly from there:</p>
+<p><img src="https://i.gyazo.com/4f3440eea455f9f94ce42e46444cb838.gif" alt=""></p>
+<p>In our example, we grab all the parks in London and them use <code>geom_sf()</code> to represent both the <code>polygons</code> and <code>multipolygons</code> (the <code>osmdata</code>object <a href="https://cran.r-project.org/web/packages/osmdata/vignettes/osmdata.html#3_the_osmdata_object">has plenty inside it</a>). We need both polygons and multipolygons because, according to the OSM wiki:</p>
+<blockquote>
+<p>Any area that is more complex than that (e.g., because its outline consists of several ways joined together, or because the area consists of multiple disjunct parts, or has holes) requires a <em>multipolygon</em> relation.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(osmdata)
+</span></span><span style="display:flex;"><span>parks2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">opq</span>(bbox <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.41</span>, <span style="color:#099">51.42</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#099">0.08</span>, <span style="color:#099">51.73</span>)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">add_osm_feature</span>(key <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;leisure&#39;</span>,
+</span></span><span style="display:flex;"><span>    value <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;park&#34;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">osmdata_sf</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>() <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(thames.df,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(long, lat, group <span style="color:#000;font-weight:bold">=</span> group,
+</span></span><span style="display:flex;"><span>    fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;skyblue&#34;</span>)), alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.4</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_sf</span>(parks2<span style="color:#000;font-weight:bold">$</span>osm_polygons,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;springgreen4&#34;</span>),
+</span></span><span style="display:flex;"><span>    color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;transparent&#34;</span>)),
+</span></span><span style="display:flex;"><span>    alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.4</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_sf</span>(parks2<span style="color:#000;font-weight:bold">$</span>osm_multipolygons,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;springgreen4&#34;</span>),
+</span></span><span style="display:flex;"><span>   color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;transparent&#34;</span>)), alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.4</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(data,
+</span></span><span style="display:flex;"><span>  mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(lon, lat, group <span style="color:#000;font-weight:bold">=</span> id,
+</span></span><span style="display:flex;"><span>   alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.9</span>, color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;tomato&#34;</span>)),
+</span></span><span style="display:flex;"><span>   size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">3</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_sf</span>(xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.41</span>, <span style="color:#099">0.08</span>),
+</span></span><span style="display:flex;"><span>           ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">51.42</span>, <span style="color:#099">51.73</span>)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  theme_opts
+</span></span></code></pre></div><p><img src="assets/strava-map-3.png" alt=""></p>
+<hr>
+<p>Well, we&rsquo;re almost there. For this first draft I stopped at the map above, exported an SVG and sent that to the lab for printing.</p>
+<p>There is no limit to how much you can play with this data. One thing that really struck me was how imprecise my GPS tracking devices were in the City of London (despite being prosumer equipment). Below is a representation of one year of data, on which I&rsquo;ve overlaid the OSM paths corresponding to the streets around Bishopsgate, Cheapside, Monument, Cannon Street, Aldgate, Smithfields, London Bridge and Blackfriars.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>streets <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">opq</span>(bbox <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.21</span>, <span style="color:#099">51.47</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#099">0.05</span>, <span style="color:#099">51.61</span>)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">add_osm_feature</span>(key <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;highway&#39;</span>,
+</span></span><span style="display:flex;"><span>  value <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;primary&#34;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">osmdata_sf</span>()
+</span></span><span style="display:flex;"><span>streets2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">opq</span>(bbox <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.21</span>, <span style="color:#099">51.47</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#099">0.05</span>, <span style="color:#099">51.61</span>)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">add_osm_feature</span>(key <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;highway&#39;</span>,
+</span></span><span style="display:flex;"><span>  value <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;secondary&#34;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">osmdata_sf</span>()
+</span></span><span style="display:flex;"><span>streets3 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">opq</span>(bbox <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-0.21</span>, <span style="color:#099">51.47</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#099">0.05</span>, <span style="color:#099">51.61</span>)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">add_osm_feature</span>(key <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;highway&#39;</span>,
+</span></span><span style="display:flex;"><span>  value <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;tertiary&#34;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">osmdata_sf</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">+</span> <span style="color:#900;font-weight:bold">geom_sf</span>(streets<span style="color:#000;font-weight:bold">$</span>osm_lines,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;transparent&#34;</span>),
+</span></span><span style="display:flex;"><span>   color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;darkgray&#34;</span>)), size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.5</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">geom_sf</span>(streets2<span style="color:#000;font-weight:bold">$</span>osm_lines,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;transparent&#34;</span>),
+</span></span><span style="display:flex;"><span>   color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;darkgray&#34;</span>)), size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.3</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">geom_sf</span>(streets3<span style="color:#000;font-weight:bold">$</span>osm_lines,
+</span></span><span style="display:flex;"><span>   mapping<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">aes</span>(fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;transparent&#34;</span>),
+</span></span><span style="display:flex;"><span>   color <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">I</span>(<span style="color:#d14">&#34;darkgray&#34;</span>)), size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.1</span>) 
+</span></span></code></pre></div><p><img src="assets/strava-map-4.png" alt=""></p>
+]]></content:encoded><category>r</category><category>viz</category><enclosure url="https://blog.basilesimon.fr/assets/strava-map-final.jpeg" type="image/jpeg"/><dc:description>Scraping Strava to map 10,000km of cycling with Python, R and ggplot</dc:description><dc:date>2019-01-02T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Pen plotter maps in R</title><link>https://basilesimon.fr/blog/pen-plotter-maps?campaign=rss</link><pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/pen-plotter-maps/</guid><description>&lt;p>&lt;img src="assets/blog-map-final-group.JPG" alt="">&lt;/p>
 &lt;p>I made a sweet Christmas present for my friend Clément, who cycles far too much. Last year he got himself a nice custom bicycle made and started &lt;a href="https://github.com/Cgg/stayer-super-audax-prototype-road-log">documenting his travels&lt;/a>.&lt;/p>
 &lt;p>So I grabbed the lot and started playing, and I pen-plotted his journeys on postcards.&lt;/p>
 &lt;p>&lt;em>This blog was contributed to &lt;a href="https://www.r-bloggers.com/">R Bloggers&lt;/a>&lt;/em>&lt;/p>
 &lt;hr>
 &lt;h2 id="base-map">Base map&lt;/h2>
-&lt;p>First order of business is getting and representing borders of the countries travelled. Arcane base R beware.&lt;/p></description></item><item><title>Mapping storms in R</title><link>https://basilesimon.fr/blog/storms-map-in-r?campaign=rss</link><pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/storms-map-in-r/</guid><description>&lt;p>&lt;img src="https://basilesimon.fr/assets/storms_final.png" alt="">&lt;/p>
+&lt;p>First order of business is getting and representing borders of the countries travelled. Arcane base R beware.&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/blog-map-final-group.JPG" alt=""></p>
+<p>I made a sweet Christmas present for my friend Clément, who cycles far too much. Last year he got himself a nice custom bicycle made and started <a href="https://github.com/Cgg/stayer-super-audax-prototype-road-log">documenting his travels</a>.</p>
+<p>So I grabbed the lot and started playing, and I pen-plotted his journeys on postcards.</p>
+<p><em>This blog was contributed to <a href="https://www.r-bloggers.com/">R Bloggers</a></em></p>
+<hr>
+<h2 id="base-map">Base map</h2>
+<p>First order of business is getting and representing borders of the countries travelled. Arcane base R beware.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic">###################</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Get the world map</span>
+</span></span><span style="display:flex;"><span>worldMap <span style="color:#000;font-weight:bold">&lt;-</span> rworldmap<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">getMap</span>(resolution <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;high&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Europe</span>
+</span></span><span style="display:flex;"><span>europe <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;France&#39;</span>, <span style="color:#d14">&#39;United Kingdom&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Select only the index of states member of the E.U.</span>
+</span></span><span style="display:flex;"><span>country_filtered <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">which</span>(worldMap<span style="color:#000;font-weight:bold">$</span>NAME<span style="color:#000;font-weight:bold">%in%</span>europe)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Extract longitude and latitude border&#39;s coordinates of countries</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Rebuild a dataframe with just the stuff we want</span>
+</span></span><span style="display:flex;"><span>europeCoords <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">lapply</span>(country_filtered, <span style="color:#000;font-weight:bold">function</span>(i){
+</span></span><span style="display:flex;"><span>  df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(worldMap<span style="color:#000;font-weight:bold">@</span>polygons[[i]]<span style="color:#000;font-weight:bold">@</span>Polygons[[1]]<span style="color:#000;font-weight:bold">@</span>coords)
+</span></span><span style="display:flex;"><span>  df<span style="color:#000;font-weight:bold">$</span>region <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">as.character</span>(worldMap<span style="color:#000;font-weight:bold">$</span>NAME[i])
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">colnames</span>(df) <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">list</span>(<span style="color:#d14">&#34;long&#34;</span>, <span style="color:#d14">&#34;lat&#34;</span>, <span style="color:#d14">&#34;region&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span>(df)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>europeCoords <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">do.call</span>(<span style="color:#d14">&#34;rbind&#34;</span>, europeCoords)
+</span></span></code></pre></div><p><img src="assets/blog-map-1.png" alt=""></p>
+<h2 id="parsing-gpx-files-and-tracks">Parsing GPX files and tracks</h2>
+<p>Since Clément has done some good work compiling this dataset, we only need to loop over all GPX files we can find in the directories. We&rsquo;ve kept <code>data@time</code> to have a look at when the journeys happened.</p>
+<p>Oh, and we need to assign a <code>group</code> variable to each unique path in order to be able to separate them when visualising. Otherwise, we&rsquo;ll end up with one single uninterrupted line.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic">########################</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># build riders&#39; paths in df</span>
+</span></span><span style="display:flex;"><span>paths <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>()
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> (file <span style="color:#000;font-weight:bold">in</span> <span style="color:#900;font-weight:bold">list.files</span>(<span style="color:#d14">&#34;data/&#34;</span>, pattern <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;gpx&#34;</span>, recursive <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">print</span>(file)
+</span></span><span style="display:flex;"><span>  track_points <span style="color:#000;font-weight:bold">&lt;-</span> rgdal<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">readOGR</span>(<span style="color:#900;font-weight:bold">paste</span>(<span style="color:#d14">&#34;data/&#34;</span>, file, sep <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>),
+</span></span><span style="display:flex;"><span>                           layer <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;track_points&#34;</span>)
+</span></span><span style="display:flex;"><span>  track_points<span style="color:#000;font-weight:bold">@</span>data<span style="color:#000;font-weight:bold">$</span>time_clean <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">ymd_hms</span>(track_points<span style="color:#000;font-weight:bold">@</span>data<span style="color:#000;font-weight:bold">$</span>time)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  df1 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(track_points<span style="color:#000;font-weight:bold">@</span>data)
+</span></span><span style="display:flex;"><span>  df2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(track_points<span style="color:#000;font-weight:bold">@</span>coords)
+</span></span><span style="display:flex;"><span>  df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">bind_cols</span>(df1, df2)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  df.filter <span style="color:#000;font-weight:bold">&lt;-</span> df <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">select</span>(time, coords.x1, coords.x2) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">mutate</span>(group <span style="color:#000;font-weight:bold">=</span> file)
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">colnames</span>(df.filter) <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;time&#39;</span>, <span style="color:#d14">&#39;lon&#39;</span>, <span style="color:#d14">&#39;lat&#39;</span>, <span style="color:#d14">&#39;group&#39;</span>)
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  paths <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">rbind</span>(paths, df.filter)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> paths <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">head</span>()
+</span></span><span style="display:flex;"><span>                    time       lon      lat                                  group
+</span></span><span style="display:flex;"><span><span style="color:#099">1</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">00</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">45+00</span> <span style="color:#099">-1.983406</span> <span style="color:#099">50.71916</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span><span style="display:flex;"><span><span style="color:#099">2</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">00</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">57+00</span> <span style="color:#099">-1.983241</span> <span style="color:#099">50.71897</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span><span style="display:flex;"><span><span style="color:#099">3</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">03+00</span> <span style="color:#099">-1.982949</span> <span style="color:#099">50.71899</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span><span style="display:flex;"><span><span style="color:#099">4</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">15+00</span> <span style="color:#099">-1.982324</span> <span style="color:#099">50.71934</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span><span style="display:flex;"><span><span style="color:#099">5</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">27+00</span> <span style="color:#099">-1.981452</span> <span style="color:#099">50.71970</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span><span style="display:flex;"><span><span style="color:#099">6</span> <span style="color:#099">2017</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">04</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">08</span> <span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">01</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">32+00</span> <span style="color:#099">-1.981107</span> <span style="color:#099">50.71955</span> <span style="color:#099">17-04-08</span><span style="color:#000;font-weight:bold">-</span>hard<span style="color:#000;font-weight:bold">-</span>boiled<span style="color:#099">-300</span><span style="color:#000;font-weight:bold">/</span>gpx<span style="color:#000;font-weight:bold">/</span>trace.gpx
+</span></span></code></pre></div><h2 id="visualising-and-plotting">Visualising and plotting</h2>
+<p>Easy as pie: our country boundaries are <code>polygons</code>, while the GPS tracks are <code>paths</code>, in <code>ggplot</code> world.</p>
+<p>Once happy with a general layout, exporting an SVG is trivial.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>() <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> europeCoords,
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> long, y <span style="color:#000;font-weight:bold">=</span> lat, group <span style="color:#000;font-weight:bold">=</span> region),
+</span></span><span style="display:flex;"><span>      colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;#DDDDDD&#34;</span>,
+</span></span><span style="display:flex;"><span>      fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;#FFFFFF&#34;</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(data <span style="color:#000;font-weight:bold">=</span> paths,
+</span></span><span style="display:flex;"><span>    <span style="color:#900;font-weight:bold">aes</span>(lon, lat, group <span style="color:#000;font-weight:bold">=</span> group),
+</span></span><span style="display:flex;"><span>      colour<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;steelblue&#34;</span>,
+</span></span><span style="display:flex;"><span>      alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.5</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  theme_opts  <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(projection <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;mercator&#34;</span>)
+</span></span></code></pre></div><p><img src="assets/blog-map-2.png" alt=""></p>
+<h2 id="pen-plotting">Pen plotting</h2>
+<p>In the output SVG file, the country boundaries and the tracks are in separate <code>&lt;g&gt;</code> groups, and very easy to isolate. This makes plotting the result one group after the other, with two different pens, very easy. There&rsquo;s a video of the plotting below.</p>
+<p><img src="assets/blog-map-final.jpg" alt=""></p>
+<video width="500" autoplay nocontrols loop muted src="https://giant.gfycat.com/ClearcutGrotesqueGoat.webm">
+<source src="https://giant.gfycat.com/ClearcutGrotesqueGoat.webm">
+</video>
+]]></content:encoded><category>r</category><enclosure url="https://basilesimon.fr/assets/blog-map-final-group.JPG" type="image/jpeg"/><dc:description>Drawing Strava data on pen-plotter maps in R</dc:description><dc:date>2018-12-19T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Mapping storms in R</title><link>https://basilesimon.fr/blog/storms-map-in-r?campaign=rss</link><pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/storms-map-in-r/</guid><description>&lt;p>&lt;img src="https://basilesimon.fr/assets/storms_final.png" alt="">&lt;/p>
 &lt;p>Japan is currently counting the cost of the strongest typhoon to hit its coasts in 25 years. The death toll currently stands at nine, and hundreds were injured.&lt;/p>
-&lt;p>The north western Pacific basin sees many storms, and meteorology agencies release loads of data about climate events such as these. For this example, we are going to use the work of the National Oceanic and Atmospheric Administration, which releases datasets known as &lt;a href="https://www.ncdc.noaa.gov/ibtracs/">International Best Track Archive for Climate Stewardship&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>The north western Pacific basin sees many storms, and meteorology agencies release loads of data about climate events such as these. For this example, we are going to use the work of the National Oceanic and Atmospheric Administration, which releases datasets known as &lt;a href="https://www.ncdc.noaa.gov/ibtracs/">International Best Track Archive for Climate Stewardship&lt;/a>.&lt;/p></description><content:encoded><![CDATA[<p><img src="/assets/storms_final.png" alt=""></p>
+<p>Japan is currently counting the cost of the strongest typhoon to hit its coasts in 25 years. The death toll currently stands at nine, and hundreds were injured.</p>
+<p>The north western Pacific basin sees many storms, and meteorology agencies release loads of data about climate events such as these. For this example, we are going to use the work of the National Oceanic and Atmospheric Administration, which releases datasets known as <a href="https://www.ncdc.noaa.gov/ibtracs/">International Best Track Archive for Climate Stewardship</a>.</p>
+<p>Head to &ldquo;data access&rdquo; and make your way to the <a href="ftp://eclipse.ncdc.noaa.gov/pub/ibtracs/v03r10/all/csv/basin">CSV release</a> for each oceanic basin. We need the western Pacific one.</p>
+<p><em>This blog was contributed to <a href="https://www.r-bloggers.com/">R Bloggers</a></em></p>
+<hr>
+<h1 id="preparing-data-and-basic-mapping">Preparing data and basic mapping</h1>
+<p>Now let&rsquo;s load our packages. No need for <code>rgdal</code>, we&rsquo;ll do everything in <code>ggplot</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(dplyr)
+</span></span></code></pre></div><p>We read our data source in and just clean things up a bit.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># data source</span>
+</span></span><span style="display:flex;"><span>basin <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">read.csv</span>(<span style="color:#d14">&#39;Basin.WP.ibtracs_all.v03r10.csv&#39;</span>,
+</span></span><span style="display:flex;"><span>                  skip <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, stringsAsFactors <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">FALSE</span>)
+</span></span><span style="display:flex;"><span>basin <span style="color:#000;font-weight:bold">&lt;-</span> basin[<span style="color:#099">-1</span>, ] <span style="color:#998;font-style:italic"># first column is garbled, disegard</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># cleaner columns</span>
+</span></span><span style="display:flex;"><span>basin<span style="color:#000;font-weight:bold">$</span>Season <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.numeric</span>(basin<span style="color:#000;font-weight:bold">$</span>Season)
+</span></span><span style="display:flex;"><span>basin<span style="color:#000;font-weight:bold">$</span>Latitude <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.numeric</span>(<span style="color:#900;font-weight:bold">gsub</span>(<span style="color:#d14">&#34;^ &#34;</span>, <span style="color:#d14">&#34;&#34;</span>, basin<span style="color:#000;font-weight:bold">$</span>Latitude))
+</span></span><span style="display:flex;"><span>basin<span style="color:#000;font-weight:bold">$</span>Longitude <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.numeric</span>(<span style="color:#900;font-weight:bold">gsub</span>(<span style="color:#d14">&#34;^ &#34;</span>, <span style="color:#d14">&#34;&#34;</span>, basin<span style="color:#000;font-weight:bold">$</span>Longitude))
+</span></span><span style="display:flex;"><span>basin<span style="color:#000;font-weight:bold">$</span>Wind.WMO. <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.numeric</span>(<span style="color:#900;font-weight:bold">gsub</span>(<span style="color:#d14">&#34;^ &#34;</span>, <span style="color:#d14">&#34;&#34;</span>, basin<span style="color:#000;font-weight:bold">$</span>Wind.WMO.))
+</span></span><span style="display:flex;"><span>basin<span style="color:#000;font-weight:bold">$</span>Name <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.factor</span>(basin<span style="color:#000;font-weight:bold">$</span>Name)
+</span></span></code></pre></div><p>For the purpose of this exercise, we want to visualise 2000 to 2017 data. Sadly our dataset does not contain data for 2018 yet&hellip; Please excuse my poor chaining of <code>filter()</code> methods &ndash; I am but a journalist after all.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># extract 2000 to 2017 data</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># also remove some weird datapoints</span>
+</span></span><span style="display:flex;"><span>substorms <span style="color:#000;font-weight:bold">&lt;-</span> basin <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">filter</span>(Season <span style="color:#000;font-weight:bold">%in%</span> <span style="color:#099">2000</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">2017</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">filter</span>(<span style="color:#000;font-weight:bold">!</span>Name <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;NOT NAMED&#34;</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">filter</span>(<span style="color:#000;font-weight:bold">!</span>Latitude <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">-999</span>) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">filter</span>(<span style="color:#000;font-weight:bold">!</span>Longitude <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">-999</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>substorms<span style="color:#000;font-weight:bold">$</span>ID <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">as.factor</span>(<span style="color:#900;font-weight:bold">paste</span>(substorms<span style="color:#000;font-weight:bold">$</span>Name, substorms<span style="color:#000;font-weight:bold">$</span>Season, 
+</span></span><span style="display:flex;"><span>                                sep <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#d14">&#34;.&#34;</span>))
+</span></span></code></pre></div><p>We&rsquo;re going to rely on <code>map_data(&quot;world&quot;)</code> for our base map. In <code>ggplot</code> world that&rsquo;s how we build that up:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># world map</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>() <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">map_data</span>(<span style="color:#d14">&#34;world&#34;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> long, y <span style="color:#000;font-weight:bold">=</span> lat, group <span style="color:#000;font-weight:bold">=</span> group))
+</span></span></code></pre></div><p><img src="assets/worldmap.png" alt=""></p>
+<p>Our storms will be a set of <code>geom_path()</code> which lat/long coordinates we&rsquo;ve passed in at the top.</p>
+<p>The object of our study here is a series of tracks followed by each storm. Representing tracks as lines feels natural.
+As our data comes as a list of points, we need to group together all the points that represent one storm. Were we studying say, the winds, we would run something like this, grouping our points by storm unique ID.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>substorms <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">group_by</span>(ID) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">summarise</span>(average_winds <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(Wind.WMO.)) <span style="color:#000;font-weight:bold">%&gt;%</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">arrange</span>(<span style="color:#900;font-weight:bold">desc</span>(average_winds))
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>A tibble<span style="color:#000;font-weight:bold">:</span> <span style="color:#099">401</span> x <span style="color:#099">2</span>
+</span></span><span style="display:flex;"><span>   ID               average_winds
+</span></span><span style="display:flex;"><span>   <span style="color:#000;font-weight:bold">&lt;</span>fct<span style="color:#000;font-weight:bold">&gt;</span>                    <span style="color:#000;font-weight:bold">&lt;</span>dbl<span style="color:#000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span> <span style="color:#099">1</span> JELAWAT <span style="color:#099">2012</span> .            <span style="color:#099">71.4</span>
+</span></span><span style="display:flex;"><span> <span style="color:#099">2</span> HAIYAN <span style="color:#099">2013</span> .             <span style="color:#099">70.5</span>
+</span></span><span style="display:flex;"><span> <span style="color:#099">3</span> CHOI<span style="color:#000;font-weight:bold">-</span>WAN <span style="color:#099">2009</span> .           <span style="color:#099">69.2</span>
+</span></span><span style="display:flex;"><span> <span style="color:#099">4</span> FENGSHEN <span style="color:#099">2002</span> .           <span style="color:#099">68.8</span>
+</span></span><span style="display:flex;"><span> <span style="color:#099">5</span> MEGI <span style="color:#099">2010</span> .               <span style="color:#099">68.7</span>
+</span></span></code></pre></div><p>We can do the same inside <code>ggplot</code> by passing <code>aes(group = ID)</code>. Here is our result:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(substorms, <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> Longitude, y <span style="color:#000;font-weight:bold">=</span> Latitude, group <span style="color:#000;font-weight:bold">=</span> ID)) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">map_data</span>(<span style="color:#d14">&#34;world&#34;</span>), <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> long, y <span style="color:#000;font-weight:bold">=</span> lat, group <span style="color:#000;font-weight:bold">=</span> group)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(data <span style="color:#000;font-weight:bold">=</span> substorms, <span style="color:#900;font-weight:bold">aes</span>(group <span style="color:#000;font-weight:bold">=</span> ID))
+</span></span></code></pre></div><p><img src="assets/worldmap1.png" alt=""></p>
+<p>Now let&rsquo;s add some styles. We also need to limit our map coordinates to Asia and the Pacific, and <em>voilà</em>.</p>
+<p>Edit December 2018: In order to prevent the odd clipping and horizontal lines from <code>coord_map()</code>, we need to clip the world map polygons ahead of rendering:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>wm <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">map_data</span>(<span style="color:#d14">&#34;world&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(<span style="color:#d14">&#34;PBSmapping&#34;</span>)
+</span></span><span style="display:flex;"><span>data.table<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">setnames</span>(wm, <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;X&#34;</span>,<span style="color:#d14">&#34;Y&#34;</span>,<span style="color:#d14">&#34;PID&#34;</span>,<span style="color:#d14">&#34;POS&#34;</span>,<span style="color:#d14">&#34;region&#34;</span>,<span style="color:#d14">&#34;subregion&#34;</span>))
+</span></span><span style="display:flex;"><span>worldmap <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">clipPolys</span>(wm, xlim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">60</span>,<span style="color:#099">180</span>),ylim<span style="color:#000;font-weight:bold">=</span><span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-20</span>, <span style="color:#099">60</span>), keepExtra<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>theme_opts<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">list</span>(<span style="color:#900;font-weight:bold">theme</span>(panel.grid.minor <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       panel.grid.major <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       panel.background <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       plot.background <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.line <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.text.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.text.y <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.ticks <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.title.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       axis.title.y <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>(),
+</span></span><span style="display:flex;"><span>                       plot.title <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>()))
+</span></span><span style="display:flex;"><span>                       
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(substorms, <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> Longitude, y <span style="color:#000;font-weight:bold">=</span> Latitude, group <span style="color:#000;font-weight:bold">=</span> ID)) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_polygon</span>(data <span style="color:#000;font-weight:bold">=</span> worldmap, <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> X, y <span style="color:#000;font-weight:bold">=</span> Y, group <span style="color:#000;font-weight:bold">=</span> PID), 
+</span></span><span style="display:flex;"><span>               fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;whitesmoke&#34;</span>, colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;gray10&#34;</span>, size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.2</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_path</span>(data <span style="color:#000;font-weight:bold">=</span> substorms, <span style="color:#900;font-weight:bold">aes</span>(group <span style="color:#000;font-weight:bold">=</span> ID), 
+</span></span><span style="display:flex;"><span>            alpha <span style="color:#000;font-weight:bold">=</span> substorms<span style="color:#000;font-weight:bold">$</span>Wind.WMO.<span style="color:#000;font-weight:bold">/</span><span style="color:#099">500</span>, size <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.8</span>,
+</span></span><span style="display:flex;"><span>            color <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;red&#34;</span>) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">coord_map</span>(xlim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">60</span>,<span style="color:#099">180</span>), ylim <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">-20</span>, <span style="color:#099">60</span>)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">labs</span>(x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>, y <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>, colour <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Wind \n(knots)&#34;</span>) <span style="color:#000;font-weight:bold">+</span> theme_opts
+</span></span></code></pre></div><p><img src="assets/storms_all.png" alt=""></p>
+<hr>
+<h1 id="storms-by-year-and-month">Storms by year and month</h1>
+<p>Now who doesn&rsquo;t like a good facetting? That&rsquo;s how I fell in love with <code>ggplot</code> in the first place. We can easily extract dates from our data in order to prepare for different facetting opportunities.</p>
+<p>Facetting by year allows us to visually (and relatively unreliably) compare years against each other. Doing the same operation by month will show when do typhoons mostly hit in the Pacific. (Edit December 2018: we now use <code>lubridate</code> functions to do so.)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># extract month and year for facetting later</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(lubridate)
+</span></span><span style="display:flex;"><span>substorms <span style="color:#000;font-weight:bold">&lt;-</span> substorms <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">mutate</span>(Month <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">month</span>(<span style="color:#900;font-weight:bold">as.Date</span>(ISO_time))) <span style="color:#000;font-weight:bold">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">mutate</span>(Year <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">year</span>(<span style="color:#900;font-weight:bold">as.Date</span>(ISO_time)))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">+</span> <span style="color:#900;font-weight:bold">facet_wrap</span>(<span style="color:#000;font-weight:bold">~</span>Year)
+</span></span></code></pre></div><p><img src="assets/storms_years.png" alt=""></p>
+<p>And finally, by month (with the types done up in Illustrator):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">+</span> <span style="color:#900;font-weight:bold">facet_wrap</span>(<span style="color:#000;font-weight:bold">~</span>Month)
+</span></span></code></pre></div><p><img src="assets/storms_final.png" alt=""></p>
+]]></content:encoded><category>r</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/storms_final.png" type="image/jpeg"/><dc:description>How to map 10 years of storms in the Pacific, with R and ggplot</dc:description><dc:date>2018-09-05T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item></channel></rss>

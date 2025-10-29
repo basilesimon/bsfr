@@ -1,8 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Portfolio on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/portfolio?campaign=rss</link><author>Basile Simon</author><description>Recent content in Portfolio on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>Portfolio case study: Machine learning's take on Brexit</title><link>https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning?campaign=rss</link><pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning/</guid><description>&lt;p>&lt;strong>An original data-driven experiment looking at how Brexit splits the Tories. Modelling of a dataset to test a hypothesis.&lt;/strong>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Portfolio on 👋 hi, I’m basile</title><link>https://basilesimon.fr/tags/portfolio?campaign=rss</link><author>Basile Simon</author><description>Recent content in Portfolio on 👋 hi, I’m basile</description><generator>Hugo</generator><language>en-uk</language><copyright>Copyright 2025 Basile Simon. Licensed under CC BY 4.0.</copyright><lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://basilesimon.fr/tags/portfolio/index.xml" rel="self" type="application/rss+xml"/><item><title>Portfolio case study: Machine learning's take on Brexit</title><link>https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning?campaign=rss</link><pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/portfolio-brexit-rift-machine-learning/</guid><description>&lt;p>&lt;strong>An original data-driven experiment looking at how Brexit splits the Tories. Modelling of a dataset to test a hypothesis.&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;h3 id="project-course">Project course&lt;/h3>
 &lt;p>The project came to be as a backburner piece for my contribution to the Europe, Middle East and Africa Reuters file: a kind of backgrounder, explainer story we could mention and push out again every once in a while.&lt;/p>
-&lt;p>The central question was whether we could back up the feeling Lobby reporters had that there were several groups of Tories, so-called &amp;ldquo;tribes,&amp;rdquo; with different attitudes to Brexit — while Labour parliamentarians were relatively united in pushing back against Theresa May&amp;rsquo;s deal.&lt;/p></description></item><item><title>Portfolio case study: Reuters' 2019 general election results page</title><link>https://basilesimon.fr/blog/portfolio-general-election-2019-britain?campaign=rss</link><pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/portfolio-general-election-2019-britain/</guid><description>&lt;p>&lt;img src="assets/ge2019-header.png" alt="Intro to GE2019 page screenshot">&lt;/p>
+&lt;p>The central question was whether we could back up the feeling Lobby reporters had that there were several groups of Tories, so-called &amp;ldquo;tribes,&amp;rdquo; with different attitudes to Brexit — while Labour parliamentarians were relatively united in pushing back against Theresa May&amp;rsquo;s deal.&lt;/p></description><content:encoded><![CDATA[<p><strong>An original data-driven experiment looking at how Brexit splits the Tories. Modelling of a dataset to test a hypothesis.</strong></p>
+<hr>
+<h3 id="project-course">Project course</h3>
+<p>The project came to be as a backburner piece for my contribution to the Europe, Middle East and Africa Reuters file: a kind of backgrounder, explainer story we could mention and push out again every once in a while.</p>
+<p>The central question was whether we could back up the feeling Lobby reporters had that there were several groups of Tories, so-called &ldquo;tribes,&rdquo; with different attitudes to Brexit — while Labour parliamentarians were relatively united in pushing back against Theresa May&rsquo;s deal.</p>
+<p><strong><a href="https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html">The main Reuters Graphics story</a></strong> studied 12 key votes on amendments to the deal, which were fascinating as they reprensented new ideas from parliamentarians about what to do about Brexit.</p>
+<p><strong><a href="https://blog.basilesimon.fr/2019/10/06/brexit-machine-learning/">I also published a follow-up looking at 238 votes</a></strong> and feeding the records to a machine learning algorithm, which as it was a lot more speculative was not Reuters&rsquo; cup of tea.</p>
+<hr>
+<p><img src="assets/tsne.svg" alt=""></p>
+<h2 id="t-sne-for-machine-mapping-of-brexit-personalities">t-SNE for machine mapping of Brexit personalities</h2>
+<p>Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.</p>
+<p>tktktk</p>
+<hr>
+<p><img src="assets/brexit-split.png" alt="">
+<img src="assets/brexit-decision-tree.png" alt="">
+<img src="assets/brexit-rift-reuters.png" alt=""></p>
+<h2 id="a-decision-tree-through-original-solutions-to-brexit">A decision tree through original solutions to Brexit</h2>
+<p>tktktk
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.  Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.</p>
+<hr>
+<h3 id="data-work-and-modelling">Data work and modelling</h3>
+<p>To make out groups of MPs, we looked at their voting record. I&rsquo;m forever grateful to <a href="https://evanodell.com/">Evan Odell</a>, who maintains R packages I&rsquo;ve used through my time in news.</p>
+<p><a href="https://github.com/evanodell/hansard">@evanhodell/hansard</a>&rsquo;s was used to fetch a bunch of data from an original <a href="https://www.instituteforgovernment.org.uk/">Institute for Government</a> research, which highlighted recent Brexit-related votes.</p>
+]]></content:encoded><category>portfolio</category><category>viz</category><dc:date>2020-11-25T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Portfolio case study: Reuters' 2019 general election results page</title><link>https://basilesimon.fr/blog/portfolio-general-election-2019-britain?campaign=rss</link><pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/portfolio-general-election-2019-britain/</guid><description>&lt;p>&lt;img src="assets/ge2019-header.png" alt="Intro to GE2019 page screenshot">&lt;/p>
 &lt;p>&lt;strong>A node backend and a modular, reactive front page visualising the UK general election results, as they happened. For Reuters Graphics.&lt;/strong>&lt;/p>
 &lt;p>Unfortunately, this page was deleted from the internet.&lt;/p>
 &lt;hr>
@@ -12,8 +35,79 @@
 &lt;li>clients must be able to pick and choose which graphics they want, from one of them to all of them,&lt;/li>
 &lt;li>there is only one repository of code I update and push out to clients.&lt;/li>
 &lt;/ul>
-&lt;p>So the main app itself is broken down into sections which are totally independent from one another.&lt;/p></description></item><item><title>Portfolio case study: Global Witness' Pipedown interactive map</title><link>https://basilesimon.fr/blog/portfolio-global-witness-pipedown-map?campaign=rss</link><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><guid>https://basilesimon.fr/blog/portfolio-global-witness-pipedown-map/</guid><description>&lt;p>&lt;img src="assets/gw-full.png" alt="Pipedown screenshot">&lt;/p>
+&lt;p>So the main app itself is broken down into sections which are totally independent from one another.&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/ge2019-header.png" alt="Intro to GE2019 page screenshot"></p>
+<p><strong>A node backend and a modular, reactive front page visualising the UK general election results, as they happened. For Reuters Graphics.</strong></p>
+<p>Unfortunately, this page was deleted from the internet.</p>
+<hr>
+<h2 id="front-end-the-results-page">Front end: the results page</h2>
+<p>The page was built to be modular, i.e. to work this way:</p>
+<ul>
+<li>clients must be able to pick and choose which graphics they want, from one of them to all of them,</li>
+<li>there is only one repository of code I update and push out to clients.</li>
+</ul>
+<p>So the main app itself is broken down into sections which are totally independent from one another.</p>
+<p>The root of the main app, which all clients will run, is then quite minimal in terms of data processing, as it does not need to worry about what kind of data wrangling the modular sections downstream require.</p>
+<hr>
+<h3 id="selected-graphics">Selected graphics</h3>
+<p><strong>A blue wave&hellip; if you don&rsquo;t know where to look</strong><br>
+For the results map, we weren&rsquo;t quite ready to commit to cartogram only, for fear that our very international audience wouldn&rsquo;t quite recognise the country.</p>
+<p>I felt it was an important thing to include, though, since urban/rural voting patterns are quite different in the UK, and Labour&rsquo;s importance is visually underwhelming otherwise.</p>
+<p>So I built both, and I&rsquo;m particularly proud of I managed to run 650 <a href="https://github.com/d3/d3-transition#transition_attrTween">tween interpolators</a> at the same time to transition between the two states. <a href="https://github.com/veltman/flubber">Noah, thanks for Flubber</a> once again!</p>
+<video autoplay loop muted playsinline class="video-background" style="width:100%">
+  <source src="assets/ge2019-maps.mp4" type="video/mp4">
+</video>
+<div style="margin-top: 70px"></div>
+<p><strong>Visualising change and who won from whom</strong><br>
+I&rsquo;m no stranger to ternary plots, which allow to plot three dimensions in an Euclidean space, in 2D. I think The Economist did a chart like this just before the election (if it was you, please email me a link :)).</p>
+<p>I wanted to show the swing and who picked up seats from whom, but we weren&rsquo;t sure how the night was going to play out, and it would have looked very empty for a while. So this was done live and added as a hot commit overnight. And I&rsquo;m quite pleased (in a non-political way) about how well it shows Labour losing seats to quite literally everyone.</p>
+<p><img src="assets/ge2019-ternaries.png" alt="Screenshot of the GE2019 ternary charts"></p>
+<div style="margin-top: 70px"></div>
+<p>And finally, the classic barcode references, which I think do a decent job of conveying the general sense of distribution (and outliers) as well as the general picture.</p>
+<p><img src="assets/ge2019-misc.png" alt="Screenshot of miscellaneous bits of the GE2019 page"></p>
+<hr>
+<h2 id="backend">Backend</h2>
+<p>The backend I put together was two-fold:</p>
+<ul>
+<li>A <code>bash</code> scraper polled the PA&rsquo;s FTP server for data they&rsquo;d put out (yes you read this right: FTP) and would mirror and version this data to our <code>S3</code> buckets,</li>
+<li>A <code>node</code> app would then poll these buckets and take it from there.</li>
+</ul>
+<p>In this instance, the role of the backend is to build up, from all the XML files dropped by the PA, a JSON-like representation of the election results as they currently stand.</p>
+<p>There are quite a few hoops to jump through and hurdles to clear, such as recounts and corrections, and unfortunately this process can be quite manual (e.g. file names) or edge cases (e.g. the Speaker&rsquo;s constituency is handled differently by different news organisations).</p>
+<hr>
+<h2 id="inception-and-duties">Inception and duties</h2>
+<p>I designed, built and maintained this project, under the careful editing of Simon Scarr.</p>
+<p>We had code reviews and handovers with colleagues in other offices (Bangalore, Singapore, New York City) in case I&rsquo;d be incapacitated, or if I needed a rest overnight.</p>
+]]></content:encoded><category>portfolio</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/ge2019-header.png" type="image/jpeg"/><dc:date>2020-11-08T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item><item><title>Portfolio case study: Global Witness' Pipedown interactive map</title><link>https://basilesimon.fr/blog/portfolio-global-witness-pipedown-map?campaign=rss</link><pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate><author>Basile Simon</author><dc:creator>Basile Simon</dc:creator><guid>https://basilesimon.fr/blog/portfolio-global-witness-pipedown-map/</guid><description>&lt;p>&lt;img src="assets/gw-full.png" alt="Pipedown screenshot">&lt;/p>
 &lt;p>&lt;strong>An interactive map of natural gas infrastructure in the EU, built with Svelte and d3, for Global Witness.&lt;/strong>&lt;/p>
 &lt;hr>
 &lt;h3 id="some-context">Some context&lt;/h3>
-&lt;p>The EU has a rule in place to regulate which electricity and fossil fuel projects it will financially support. These projects include the terminals and pipelines used to import and transport fossil gas – sometimes referred to as natural gas. Under this regulation, selected gas projects get fast-track approval and access to billions in public subsidies.&lt;/p></description></item></channel></rss>
+&lt;p>The EU has a rule in place to regulate which electricity and fossil fuel projects it will financially support. These projects include the terminals and pipelines used to import and transport fossil gas – sometimes referred to as natural gas. Under this regulation, selected gas projects get fast-track approval and access to billions in public subsidies.&lt;/p></description><content:encoded><![CDATA[<p><img src="assets/gw-full.png" alt="Pipedown screenshot"></p>
+<p><strong>An interactive map of natural gas infrastructure in the EU, built with Svelte and d3, for Global Witness.</strong></p>
+<hr>
+<h3 id="some-context">Some context</h3>
+<p>The EU has a rule in place to regulate which electricity and fossil fuel projects it will financially support. These projects include the terminals and pipelines used to import and transport fossil gas – sometimes referred to as natural gas. Under this regulation, selected gas projects get fast-track approval and access to billions in public subsidies.</p>
+<p>That&rsquo;s a law called TEN-E Regulation.</p>
+<p>And it has a problem: it gifts remarkable power over EU policy to an obscure cadre of gas companies called the <em>European Network of Transmission System Operators for Gas</em>, or ENTSOG. Under the law, ENTSOG companies help the EU predict how much gas Europe needs and helps the Commission decide what gas infrastructure projects to support.</p>
+<p><strong>Conflict of interest? Legal but non-virtuous circle?</strong></p>
+<hr>
+<p><strong>For their campaign, Global Witness wanted to visualise all the gas projects the EU has subsidised, and how much projects backed by these ENTSOG companies have received.</strong></p>
+<h3 id="project-course">Project course</h3>
+<p>From a rough interactive map prototype, I pitched a stack proposal and a five-day contract, which I worked over three or four weeks.</p>
+<p>I focused on the complex interactivity first, bringing in styles from GW&rsquo;s guidelines as we went along. We kept the show on track with frequent reviews, which were helpful but greatly helped by the fact that we were all on the same page and that my proposals and initiative seemed to be appreciated.</p>
+<p>We kept some on-call hours for publication day, but it all went smoothly.</p>
+<hr>
+<h3 id="visual-density-and-jargon">Visual density and jargon</h3>
+<p>The campaign is aimed at European lawmakers or persons of influence. Folks who know about a particular country, or particular infrastructure projects, and who <em>will</em> want to know the precise names and amounts.</p>
+<p>So we&rsquo;re getting away with this kind of rather busy display, which has the merit of displaying <em>a lot</em> of information, though it&rsquo;s rather wordy:</p>
+<p><img src="assets/gw-bulgaria.png" alt=""></p>
+<h3 id="link-in-place">Link in place</h3>
+<p>Readers can link to a specific country, as well as tweet some pre-defined patterns of copy which are also country-specific. Here again, we&rsquo;re helping the MEP tweet out their outrage about projects in their country.</p>
+<h3 id="explorable-clickable-hoverable">Explorable, clickable, hoverable</h3>
+<p>This is where reactive programming patterns really help:</p>
+<p>We use <a href="https://svelte.dev/">Svelte</a> to set up a central, app-wide source of truth, which the different components and views can access, and sometimes edit.</p>
+<p>This allows us to have different behaviours at different moments. For example:</p>
+<ul>
+<li>When looking at the European level, we don&rsquo;t highlight and can&rsquo;t click the individual projects ; but we can do so at the country level.</li>
+<li>We display different data depending on the country highlighted. For the Trans Adriatic Pipeline, a Belgian MEP will see the funding of Belgian ENTSOG companies ; an Italian will see their side of the projects, and so on.</li>
+</ul>
+]]></content:encoded><category>portfolio</category><category>viz</category><enclosure url="https://basilesimon.fr/assets/gw-full.png" type="image/jpeg"/><dc:date>2020-10-21T00:00:00Z</dc:date><dc:rights>CC BY 4.0</dc:rights></item></channel></rss>
