@@ -31,15 +31,18 @@
 {{- $pages = $pages | first $limit }}
 {{- end }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink | strings.TrimSuffix "/"}}?campaign=rss</link>
     <author>{{ .Site.Params.author }}</author>
     <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo</generator>
-    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
-    <copyright>{{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
+    <language>{{ site.Language.LanguageCode }}</language>
+    <copyright>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}. Licensed under CC BY 4.0.</copyright>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
@@ -49,9 +52,28 @@
       <title>{{ .Title }}</title>
       <link>{{ .Permalink | strings.TrimSuffix "/"}}?campaign=rss</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      <author>{{ .Site.Params.author }}</author>
+      {{- with $authorName }}
+      <author>{{ . }}</author>
+      <dc:creator>{{ . }}</dc:creator>
+      {{- end }}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- if .Content }}
+      <content:encoded>{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content:encoded>
+      {{- end }}
+      {{- with .Params.tags }}
+      {{- range . }}
+      <category>{{ . }}</category>
+      {{- end }}
+      {{- end }}
+      {{- with .Params.image }}
+      <enclosure url="{{ . }}" type="image/jpeg" />
+      {{- end }}
+      {{- if .Description }}
+      <dc:description>{{ .Description | transform.XMLEscape }}</dc:description>
+      {{- end }}
+      <dc:date>{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}</dc:date>
+      <dc:rights>CC BY 4.0</dc:rights>
     </item>
     {{- end }}
   </channel>
