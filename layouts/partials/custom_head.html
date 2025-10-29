@@ -7,38 +7,224 @@
 <link rel="stylesheet" href="main.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
+<!-- RSS Feed Discovery -->
 {{ with .OutputFormats.Get "rss" }}
     {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 <link rel=alternate type=application/rss+xml href=https://basilesimon.fr/blog/index.xml title="{{ .Site.Title }}">
 
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Enhanced Open Graph Tags -->
+{{ $image := "" }}
+{{ if .Params.image }}
+  {{ $image = .Params.image }}
+{{ else if .Site.Params.defaultImage }}
+  {{ $image = printf "%s%s" .Site.BaseURL .Site.Params.defaultImage }}
+{{ end }}
+
+{{ if $image }}
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{ end }}
+
+<!-- Enhanced Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.twitter }}
+<meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}">
+{{ end }}
+{{ if $image }}
+<meta name="twitter:image" content="{{ $image }}">
+{{ end }}
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="robots" content="max-image-preview:large">
+
+<!-- Enhanced JSON-LD Structured Data -->
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "headline": "{{ .Title }}",
-      "url": "{{ .Permalink }}",
-      "description": "{{ .Params.description }}",
-      "publisher": {
-        "@type": "Person",
-        "name": {{ $.Site.Params.Author }},
-        "url": {{ .Site.BaseURL }},
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.Params.logo }}"
+{{ if .IsPage }}
+  {{- /* Blog Post or Article Page */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ .Title }},
+    "url": {{ .Permalink }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
+    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+    {{ if $image }}"image": {
+      "@type": "ImageObject",
+      "url": {{ $image }},
+      "width": 1200,
+      "height": 630
+    },{{ end }}
+    {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " }},{{ end }}
+    "wordCount": {{ .WordCount }},
+    "author": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }},
+      "url": {{ .Site.BaseURL }},
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+      },
+      "jobTitle": "Research Scholar",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Starling Lab for Data Integrity",
+          "url": "https://starlinglab.org/",
+          "parentOrganization": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Stanford University",
+              "url": "https://www.stanford.edu/"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Southern California",
+              "url": "https://www.usc.edu/"
+            }
+          ]
         }
-      }
-    }
-    </script>
+      ],
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "BBC News Labs"
+        },
+        {
+          "@type": "Organization",
+          "name": "Reuters"
+        },
+        {
+          "@type": "Organization",
+          "name": "The Times and The Sunday Times"
+        }
+      ],
+      "sameAs": [
+        "{{ .Site.Params.mastodon }}",
+        "{{ .Site.Params.github }}",
+        "{{ .Site.Params.bluesky }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}"
+      ]
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink }}
+    },
+    "inLanguage": "en-GB",
+    "copyrightHolder": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person"
+    },
+    "copyrightYear": {{ .Date.Format "2006" }},
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+{{ else }}
+  {{- /* Homepage or Other Pages */ -}}
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": {{ .Site.Params.author }},
+      "url": {{ .Site.BaseURL }},
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+      },
+      "jobTitle": "Research Scholar",
+      "description": {{ .Site.Params.description }},
+      "knowsAbout": [
+        "Evidence Authentication",
+        "Cryptographic Provenance",
+        "Data Journalism",
+        "Information Design",
+        "C2PA",
+        "Verifiable Credentials",
+        "Digital Preservation",
+        "Open Source Investigation"
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Starling Lab for Data Integrity",
+          "url": "https://starlinglab.org/",
+          "parentOrganization": [
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "Stanford University",
+              "url": "https://www.stanford.edu/"
+            },
+            {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Southern California",
+              "url": "https://www.usc.edu/"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "Hypha Worker Co-operative",
+          "url": "https://hypha.coop/"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "BBC News Labs"
+        },
+        {
+          "@type": "Organization",
+          "name": "Reuters"
+        },
+        {
+          "@type": "Organization",
+          "name": "The Times and The Sunday Times"
+        }
+      ],
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "Airwars",
+          "url": "https://airwars.org/",
+          "description": "Advisory board member"
+        }
+      ],
+      "sameAs": [
+        "{{ .Site.Params.mastodon }}",
+        "{{ .Site.Params.github }}",
+        "{{ .Site.Params.bluesky }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}",
+        "https://keybase.io/basilesimon"
+      ]
+    },
+    "headline": {{ .Title }},
+    "url": {{ .Permalink }},
+    "description": {{ .Site.Params.description }}
+  }
+{{ end }}
+</script>
 
-    <!-- Cloudflare Web Analytics -->
-     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' 
-     data-cf-beacon='{"token": "dbdcfc9895e340f8a4e734b917d51280"}'>
-    </script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+data-cf-beacon='{"token": "dbdcfc9895e340f8a4e734b917d51280"}'>
+</script><!-- End Cloudflare Web Analytics -->
 
-    <!-- GoatCounter Web Analytics -->
-    <script data-goatcounter="https://deptoolkit.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<!-- GoatCounter Web Analytics -->
+<script data-goatcounter="https://deptoolkit.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>

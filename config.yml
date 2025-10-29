@@ -13,11 +13,21 @@ params:
   favicon: "images/favicon.png"
   rssTitle: "Basile Simon • blog"
 
+  # Social media handles
+  twitter: "basilesimon"
+  mastodon: "https://vis.social/@basilesimon"
+  github: "https://github.com/basilesimon"
+  bluesky: "https://bsky.app/profile/basilesimon.bsky.social"
+
+  # Default fallback image for social media sharing
+  # Individual posts can override this with their own 'image' frontmatter
+  defaultImage: "/assets/author.jpg"
+
   # These "images" are used for the structured data templates. This will show up, when
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  # images: ["images/share.png"]
+  images: ["/assets/author.jpg"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
