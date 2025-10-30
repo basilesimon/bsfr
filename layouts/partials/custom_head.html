@@ -54,27 +54,27 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": {{ .Title }},
-    "url": {{ .Permalink }},
-    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
-    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
-    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+    "headline": {{ .Title | jsonify }},
+    "url": {{ .Permalink | jsonify }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ .Summary | jsonify }}{{ end }},
     {{ if $image }}"image": {
       "@type": "ImageObject",
-      "url": {{ $image }},
+      "url": {{ $image | jsonify }},
       "width": 1200,
       "height": 630
     },{{ end }}
-    {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " }},{{ end }}
+    {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " | jsonify }},{{ end }}
     "wordCount": {{ .WordCount }},
     "author": {
       "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person",
-      "name": {{ .Site.Params.author }},
-      "url": {{ .Site.BaseURL }},
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }},
+      "name": {{ .Site.Params.author | jsonify }},
+      "url": {{ .Site.BaseURL | jsonify }},
       "image": {
         "@type": "ImageObject",
-        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+        "url": {{ printf "%s%s" .Site.BaseURL .Site.Params.logo | jsonify }}
       },
       "jobTitle": "Research Scholar",
       "affiliation": [
@@ -111,26 +111,26 @@
         }
       ],
       "sameAs": [
-        "{{ .Site.Params.mastodon }}",
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.bluesky }}",
-        "https://twitter.com/{{ .Site.Params.twitter }}"
+        {{ .Site.Params.mastodon | jsonify }},
+        {{ .Site.Params.github | jsonify }},
+        {{ .Site.Params.bluesky | jsonify }},
+        {{ printf "https://twitter.com/%s" .Site.Params.twitter | jsonify }}
       ]
     },
     "publisher": {
       "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person"
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }}
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": {{ .Permalink }}
+      "@id": {{ .Permalink | jsonify }}
     },
     "inLanguage": "en-GB",
     "copyrightHolder": {
       "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person"
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }}
     },
-    "copyrightYear": {{ .Date.Format "2006" }},
+    "copyrightYear": {{ .Date.Format "2006" | jsonify }},
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
 {{ else }}
@@ -140,15 +140,15 @@
     "@type": "ProfilePage",
     "mainEntity": {
       "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person",
-      "name": {{ .Site.Params.author }},
-      "url": {{ .Site.BaseURL }},
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify }},
+      "name": {{ .Site.Params.author | jsonify }},
+      "url": {{ .Site.BaseURL | jsonify }},
       "image": {
         "@type": "ImageObject",
-        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+        "url": {{ printf "%s%s" .Site.BaseURL .Site.Params.logo | jsonify }}
       },
       "jobTitle": "Research Scholar",
-      "description": {{ .Site.Params.description }},
+      "description": {{ .Site.Params.description | jsonify }},
       "knowsAbout": [
         "Evidence Authentication",
         "Cryptographic Provenance",
@@ -206,16 +206,16 @@
         }
       ],
       "sameAs": [
-        "{{ .Site.Params.mastodon }}",
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.bluesky }}",
-        "https://twitter.com/{{ .Site.Params.twitter }}",
+        {{ .Site.Params.mastodon | jsonify }},
+        {{ .Site.Params.github | jsonify }},
+        {{ .Site.Params.bluesky | jsonify }},
+        {{ printf "https://twitter.com/%s" .Site.Params.twitter | jsonify }},
         "https://keybase.io/basilesimon"
       ]
     },
-    "headline": {{ .Title }},
-    "url": {{ .Permalink }},
-    "description": {{ .Site.Params.description }}
+    "headline": {{ .Title | jsonify }},
+    "url": {{ .Permalink | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }}
   }
 {{ end }}
 </script>
