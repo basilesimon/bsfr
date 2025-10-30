@@ -1,5 +1,5 @@
 baseURL: "https://basilesimon.fr/"
-languageCode: "en-uk"
+languageCode: "en-gb"
 
 title: "👋 hi, I’m basile"
 author: "basile simon"
@@ -27,7 +27,7 @@ params:
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  images: ["/assets/author.jpg"]
+  images: ["assets/author.jpg"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
