@@ -59,7 +59,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
       {{- if .Content }}
-      <content:encoded>{{ printf "<![CDATA[%s]]>" .Content | safeHTML }}</content:encoded>
+      <content:encoded>{{ printf "<![CDATA[%s<p><em>Thanks for keeping RSS alive!</em></p>]]>" .Content | safeHTML }}</content:encoded>
       {{- end }}
       {{- with .Params.tags }}
       {{- range . }}
