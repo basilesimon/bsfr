@@ -1,0 +1,20 @@
+{
+  "name": "basilesimon-blog",
+  "version": "1.0.0",
+  "description": "BlueSky/ATProto integration for basilesimon.fr",
+  "private": true,
+  "scripts": {
+    "test:atproto": "node test-atproto-access.js",
+    "build:hugo": "hugo",
+    "serve:hugo": "hugo server"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.14.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

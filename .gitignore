@@ -1,2 +1,15 @@
-.DS_Store
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Hugo
 public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
