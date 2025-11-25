@@ -42,24 +42,34 @@ awards:
         url: https://www.informationisbeautifulawards.com/showcase/4232-not-far-ahead
 
 talks_publications:
-  - title: Justice by Video Workshop, Evidence and Deepfake session
-    location: Chair of roundtable at the University of Colorado Boulder, Visual Evidence Lab
   - title: "Web Archives as Evidence"
     location: Int'l Internet Preservation Consortium, Oslo, 2025
-  - title: Referenced in UN report in defense of human rights defenders
-    location: From M. Lawlor, Special Rapporteur on Human Rights Defenders
+  - title: Justice by Video Workshop, Evidence and Deepfake session
+    location: Chair of roundtable at the University of Colorado Boulder, Visual Evidence Lab, 2025
+  - title: "Journalists fight digital decay"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2024/12/journalists-fight-digital-decay/'>2024</a>"
   - title: Law, Evidence, and Generative AI
     location: Roundtable for the State Dpt Glocal Criminal Justice, Washington DC, 2024
   - title: Old and new doubts about verification of open-source imagery from gen AI
     location: "in <a href='https://opiniojuris.org/2024/06/26/old-doubts-new-doubts-evaluating-digital-open-source-imagery-in-the-courtroom/'>OpinioJuris</a>, 2024"
+  - title: Referenced in UN report in defense of human rights defenders
+    location: From M. Lawlor, Special Rapporteur on Human Rights Defenders, 2024
   - title: Referenced as 'best practice' in UN Human Rights Council 53rd session report
-    location: From F. Shaheed, Special Rapporteur on the right to education, incl. our monitoring of schools and their non-military use
+    location: From F. Shaheed, Special Rapporteur on the right to education, incl. our monitoring of schools and their non-military use, 2023
+  - title: "Legal rigor meets journalistic inquiry to yield groundbreaking investigations"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2023/12/legal-rigor-meets-journalistic-inquiry-to-yield-groundbreaking-investigations/'>2023</a>"
+  - title: "Towards supporting criminal accountability"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2022/12/towards-supporting-criminal-accountability/'>2022</a>"
   - title: Whitepaper, Legal Roundtable on best practices for admissible web archives
     location: With Global Justice Advisors, Nicholas Taylor, and the Internet Archive, 2022
   - title: Working with data in the newsroom
     location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
+  - title: "Graphics, unite"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2020/12/graphics-unite/'>2020</a>"
   - title: Career paths for news nerds (or lack of them)
     location: International Journalism Festival 2018, Perugia
+  - title: "We need better career paths for news nerds"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2017/12/we-need-better-career-paths-for-news-nerds/'>2017</a>"
   - title: "Airwars.org: a field report,two years on"
     location: Hacks/Hackers Berlin 2017
   - title: "Airwars: strike by strike"
@@ -70,6 +80,8 @@ talks_publications:
     location: Sud Web 2016, France
   - title: Hacking the newsroom
     location: International Journalism Festival 2016, Perugia
+  - title: "Love thy reader, securely"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2015/12/love-thy-reader-securely/'>2015</a>"
   - title: "BBC News Labs, Linked Data, Datastringer: the Hacks and Hackers paradigm"
     location: Computation + Journalism Symposium 2014, New York City
   - title: "Algorithms in Journalism: danger or opportunity?"
