@@ -19,6 +19,11 @@
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ .Permalink }}">
 
+<!-- C2PA Manifest Discovery (for blog posts and weeknotes) -->
+{{ if and .IsPage (or (eq .Section "blog") (eq .Section "weeknotes")) }}
+<link rel="c2pa-manifest" href="index.html.c2pa">
+{{ end }}
+
 <!-- Enhanced Open Graph Tags -->
 {{ $image := "" }}
 {{ if .Params.image }}
