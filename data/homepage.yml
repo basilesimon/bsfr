@@ -2,8 +2,8 @@ catchline: I do research in evidentiary standards and cryptographic authenticati
 
 contact:
   - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [Keybase](https://keybase.io/basilesimon)
-  - 📞 `+49 172 253 9671` (Signal/Telegram)
-  - 🔗 `@basilesimon` on some social platforms (incl. <a rel="me" href="https://vis.social/@basilesimon">Mastodon</a>)
+  - 📞 `@basile.42` on Signal
+  - 🔗 `@basilesimon` on some social platforms
 
 now: "The freedom I draw from self-employment is really important to me. My varied interest and work strands don't make for a snappy soundbite over a family holiday meal, however. Ah well–can't please everybody. Here's a short summary of what I'm up to:"
 now_list:
@@ -14,11 +14,11 @@ now_list:
   - img: "assets/hypha-wordmark.png"
     desc: "Independent contractor to Hypha Worker Co-operative focusing on bringing opportunities from the field of provenance and authenticity metadata, incl. C2PA/VCs."
   - title: misc
-    desc: "Advisory board at **Airwars** on technical and architectural matters; technical advisor to the **Hala Protocol on Audio**. Resident at **ECCHR** and **Investigative Commons**. <br />Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others."
+    desc: "Advisory board at **Airwars** on technical and architectural matters; technical advisor to the **Hala Protocol on Audio**. Resident at the **Investigative Commons**. Advisory board at the **Visual Evidence Lab**, CU Boulder. <br />Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others."
 
 past_employment: "I have a decade's experience as a journalist in the UK, where I worked for large broadcasters, newspapers, and agencies:"
 past_employment_jobs:
-  - Graphics editor,  Europe, Middle East and Africa, **Reuters**
+  - Editor, Graphics, Europe Middle East and Africa, **Reuters**
   - Senior interactive journalist, **The Times and The Sunday Times**
   - Newsroom developer, **The Times and the Sunday Times**
   - Coder-journalist, **BBC News Labs**
@@ -40,12 +40,27 @@ awards:
         url: https://www.informationisbeautifulawards.com/showcase/4236-reading-the-brexit-tea-leaves
       - title: Not Far Ahead
         url: https://www.informationisbeautifulawards.com/showcase/4232-not-far-ahead
+  - award: Greatest Impact and Distruption + Best Diffusion
+    org: Al Jazeera Canvas Media in Context, Doha, Qatar
+    pieces:
+      - title: tinyfm
+        url: https://tinyfm.github.io/
+  - award: Overall winner
+    org: Popathon, Mozilla, Paris, France
+    pieces:
+      - title: "Le 6 Mai 2012"
+        url:
+  - org: 44th News Emmy Award, Nominee, "Outstanding Interactive Media" / Excellence in Int'l Affairs, Overseas Press Club of America / Friedenberg Online Journalism Award, National Press Club
+    misc: Misc.
+    pieces:
+      - title: The DJ and the War Crimes
+        url: https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/
 
 talks_publications:
   - title: "Web Archives as Evidence"
     location: Int'l Internet Preservation Consortium, Oslo, 2025
   - title: Justice by Video Workshop, Evidence and Deepfake session
-    location: Chair of roundtable at the University of Colorado Boulder, Visual Evidence Lab, 2025
+    location: Chair of roundtable, <a href="https://www.colorado.edu/lab/visualevidence/2025/11/05/inaugural-report-videos-day-court-advancing-equitable-legal-usage-visual-technologies">whitepaper advisor</a> at CU Boulder Visual Evidence Lab, 2025
   - title: "Journalists fight digital decay"
     location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2024/12/journalists-fight-digital-decay/'>2024</a>"
   - title: Law, Evidence, and Generative AI
@@ -88,9 +103,8 @@ talks_publications:
     location: Assises du Journalism 2014, France
   - title: "Datastringer: easy dataset monitoring for journalists"
     location: "Paper on <a href='https://arxiv.org/abs/2402.05764'>arXiv (PDF)</a>, 2014"
-
-hackathons:
-  - “Greatest Impact and Distruption” and “Best Diffusion” awards for tinyfm - Al Jazeera Canvas Media in Context, Doha, Qatar
-  - Winner with Le 6 Mai 2012 and Pancarte.js - Popathon, Mozilla Paris, France
-  - Participated in Tribeca Hacks Story Matter - CERN, Geneva, Switzerland
-  - Failed to do something worth mentioning at many others
+# hackathons:
+#   - “Greatest Impact and Distruption” and “Best Diffusion” awards for tinyfm - Al Jazeera Canvas Media in Context, Doha, Qatar
+#   - Winner with Le 6 Mai 2012 and Pancarte.js - Popathon, Mozilla Paris, France
+#   - Participated in Tribeca Hacks Story Matter - CERN, Geneva, Switzerland
+#   - Failed to do something worth mentioning at many others

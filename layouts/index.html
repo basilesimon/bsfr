@@ -60,15 +60,16 @@
     {{ with $.Site.Data.reel }}
     <div class="wide-80">
       <h2>Portfolio</h2>
-      {{ range $index, $data := .pieces }} {{ partial "item.html" (dict
-      "index" $index "data" $data) }} {{ end }}
-    </div>
-    {{ end }} {{ with $.Site.Data.reelgrid }}
-    <div class="portfolio-grid">
-      {{ range $index, $data := .items }} {{ partial "item-grid.html"
-      (dict "index" $index "data" $data) }} {{ end }}
+      {{ range $index, $data := .pieces }} {{ partial "item.html" (dict "index"
+      $index "data" $data) }} {{ end }}
     </div>
     {{ end }}
+    <!-- {{ with $.Site.Data.reelgrid }}
+    <div class="portfolio-grid">
+      {{ range $index, $data := .items }} {{ partial "item-grid.html" (dict
+      "index" $index "data" $data) }} {{ end }}
+    </div>
+    {{ end }} -->
 
     <section>
       <hr />
@@ -115,7 +116,8 @@
       <p><b>Degrees, etc.:</b></p>
       <ul>
         <li>
-          Law Enforcement Video Association - Expert Witness certification
+          Law Enforcement Video Association - Expert Witness Courtroom Testimony
+          course
         </li>
         <li>
           Master of Arts in Multimedia Journalism - Univ. of Westminster (UK)
