@@ -1,12 +1,17 @@
 ---
 date: "2020-11-13T00:00:00Z"
-description: ""
-image: ""
-tags: [observable, viz]
-title: Comparing Berlin memorial street plaques datasets
+updated: "2025-12-18T00:00:00Z"
+description: "Comparing Stolpersteine memorial datasets: Wikidata vs stolpersteine-berlin.de. Updated 2025 analysis with 10,000+ Berlin records and interactive maps."
+image: "assets/stolpersteine-maps.png"
+tags: [observable, viz, berlin, stolpersteine, open-data, holocaust-memorial]
+title: "Berlin Stolpersteine Data: Comparing Memorial Databases"
 ---
 
-Here are two quite different datasets, which supposedly represent the same thing. Hard to miss how different is the extent of their geographical coverage.
+> **December 2025 Update:** I've refreshed the data for this analysis. The landscape has changed dramatically—Wikidata's coverage has improved so much that it now *exceeds* the Berlin-specific database. See updated numbers below.
+
+---
+
+Here are two datasets documenting Berlin's Stolpersteine memorial plaques. In 2020, their coverage differed dramatically. Four years later, Wikidata has caught up—and surpassed—the Berlin-specific database.
 
    🔸 Wikidata reference 🔹 Stolpersteine-berlin dataset
 [![maps of Stolpersteine](assets/stolpersteine-maps.png)](https://observablehq.com/@basilesimon/berlin-stolpersteine)
@@ -18,31 +23,55 @@ Here are two quite different datasets, which supposedly represent the same thing
 ## Background
 In the night of Nov 9 to 10, 1938, Nazi Germany's SA forces carried out a devastating pogrom. The event came to be called [_Kristallnacht_, "The Night of Broken Glass."](https://en.wikipedia.org/wiki/Kristallnacht)
 
-Last week, as I walked in the street in the evening I noticed that some of the brass plques had candles and roses next to them, a silent and unattended vigil in the street. It was in remeberance of Kristallnacht. The picture below is mine:
+Last week, as I walked in the street in the evening I noticed that some of the brass plaques had candles and roses next to them, a silent and unattended vigil in the street. It was in remembrance of Kristallnacht. The picture below is mine:
 
-![picture of a Stolperstein in the street](assets/stolpersteine.jpg)
+![A Stolperstein memorial plaque in a Berlin street, with candles placed beside it](assets/stolpersteine.jpg)
 
-These plaques are Stolpersteine:
+These plaques are Stolpersteine—the world's largest decentralized memorial, with over 100,000 brass-topped concrete cubes installed across Europe by artist Gunter Demnig:
 
-> "A Stolperstein (pronounced [ˈʃtɔlpɐˌʃtaɪn]; literally "stumbling stone", metaphorically a "stumbling block") is a sett-size, ten-centimetre (3.9 in) concrete cube bearing a brass plate inscribed with the name and life dates of victims of Nazi extermination or persecution." 
+> "A Stolperstein (pronounced [ˈʃtɔlpɐˌʃtaɪn]; literally "stumbling stone", metaphorically a "stumbling block") is a sett-size, ten-centimetre (3.9 in) concrete cube bearing a brass plate inscribed with the name and life dates of victims of Nazi extermination or persecution."
 
-> "Today, Stolpersteine are being realized for Jews, Sinti and Roma, people from the political or religious resistance, victims of the "euthanasia" murders, homosexuals, Jehovahs Witnesses and for people who were persecuted for being declared to be "asocial"."   
+> "Today, Stolpersteine are being realized for Jews, Sinti and Roma, people from the political or religious resistance, victims of the "euthanasia" murders, homosexuals, Jehovahs Witnesses and for people who were persecuted for being declared to be "asocial"."
 
-> "(It is a) project created by Gunter Demnig for honoring victims of National Socialism"
 [(Wikipedia)](https://en.wikipedia.org/wiki/Stolperstein)
 
 ---
 
-## So why is the data so different?
+## The Data: 2020 vs 2025
+
 These are two public records of the location and number of Berlin's Stolpersteine:
 
-* the [Wikidata database](https://www.wikidata.org/wiki/Q314003),
-* and another database referenced in the [daten.berlin.de](daten.berlin.de) catalogue, is the dataset produced by [stolpersteine-berlin.de](https://stolpersteine-berlin.de) – which describes itself as "(a) liaison office between the artist Gunter Demnig together with his team and the local Stolperstein-groups."
+* the [Wikidata database](https://www.wikidata.org/wiki/Q26703203),
+* and the dataset produced by [stolpersteine-berlin.de](https://www.stolpersteine-berlin.de/en), referenced in the [daten.berlin.de](https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin) catalogue. It describes itself as "a liaison office between the artist Gunter Demnig together with his team and the local Stolperstein-groups."
 
-There are only about **1,780 Wikidata records** in Berlin, and they're overwhelmingly in the west of the city. Stolpersteine-berlin, on the other hand, has **3,307 records**, many of them including several family members.
+| Source | 2020 Records | 2025 Records | Change |
+|--------|--------------|--------------|--------|
+| [stolpersteine-berlin.de](https://www.stolpersteine-berlin.de/en) | 3,307 | **10,341** | +213% |
+| [Wikidata](https://www.wikidata.org/wiki/Q26703203) (Berlin) | ~1,780 | **11,992** | +574% |
+| Wikidata (all Europe) | ~14,000 | **47,320** | +238% |
 
-The Wikidata dataset has however the merit of spanning not only all of Germany, but also all of Europe:
+In 2020, there were only about **1,780 Wikidata records** in Berlin, overwhelmingly in the west of the city. Stolpersteine-berlin had **3,307 records**, many including several family members at the same address.
+
+By 2025, the situation has reversed. Wikidata now has **more Berlin records** than the Berlin-specific database, thanks to community contributors adding nearly 35,000 geocoded entries across Europe.
+
+The Wikidata dataset spans not only all of Germany, but all of Europe:
 <iframe width="100%" height="584" frameborder="0"
   src="https://observablehq.com/embed/@basilesimon/berlin-stolpersteine?cell=viz"></iframe>
 
-Could the second dataset, good enough to be referenced by the Berlin open data initiative, be added to the Wikidata records, I wonder?
+## Technical Notes
+
+The stolpersteine-berlin.de site now provides a [JSON API](https://www.stolpersteine-berlin.de/en/api/json/stolpersteine.json) with pre-geocoded coordinates. The old XML endpoint I used in 2020 no longer exists.
+
+For Wikidata, a SPARQL query retrieves all Stolpersteine with coordinates:
+
+```sparql
+SELECT ?item ?itemLabel ?coords WHERE {
+  ?item wdt:P31 wd:Q26703203 .
+  OPTIONAL { ?item wdt:P625 ?coords }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+```
+
+---
+
+*Originally published November 2020. Updated December 2025 with fresh data.*
