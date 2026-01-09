@@ -141,8 +141,7 @@
         <div
           class="award-card"
           style="
-            flex: 1;
-            min-width: 300px;
+            {{ if .misc }}width: 100%;{{ else }}flex: 1; min-width: 300px;{{ end }}
             border: 1px solid #ddd;
             padding: 10px;
             border-radius: 5px;
@@ -152,7 +151,7 @@
           <span style="margin: 0">{{ .award }}</span>
           <ul>
             {{ range .pieces }}
-            <li>{{ .title }}</li>
+            <li>{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</li>
             {{ end }}
           </ul>
         </div>

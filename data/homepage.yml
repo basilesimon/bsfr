@@ -24,6 +24,11 @@ past_employment_jobs:
   - Coder-journalist, **BBC News Labs**
 
 awards:
+  - org: 44th News Emmy Award, Nominee, "Outstanding Interactive Media" / Excellence in Int'l Affairs, Overseas Press Club of America / Friedenberg Online Journalism Award, National Press Club
+    misc: Misc.
+    pieces:
+      - title: The DJ and the War Crimes
+        url: https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/
   - award: Award of Excellence, 2019
     org: Society of News Design
     pieces:
@@ -50,13 +55,10 @@ awards:
     pieces:
       - title: "Le 6 Mai 2012"
         url:
-  - org: 44th News Emmy Award, Nominee, "Outstanding Interactive Media" / Excellence in Int'l Affairs, Overseas Press Club of America / Friedenberg Online Journalism Award, National Press Club
-    misc: Misc.
-    pieces:
-      - title: The DJ and the War Crimes
-        url: https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/
 
 talks_publications:
+  - title: "If confusion is the commodity, certainty is the premium product"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2025/12/if-confusion-is-the-commodity-certainty-is-the-premium-product/'>2025</a>"
   - title: "When Tech Disrupts Faster Than Rules Adapt: Drafting Emergency Guidance for AI-Affected Evidence"
     location: "in <a href='https://opiniojuris.org/2025/12/16/when-tech-disrupts-faster-than-rules-adapt-drafting-emergency-guidance-for-ai-affected-evidence/'>OpinioJuris</a>, 2025"
   - title: "Web Archives as Evidence"
