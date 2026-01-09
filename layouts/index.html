@@ -158,17 +158,51 @@
         {{ end }}
       </div>
 
-      <h2>🎙 Talks and publications</h2>
-      <ul>
-        {{ range .talks_publications }}
-        <li>
-          “{{ .title | markdownify }}”<br />
-          <em style="color: #6c6c6c">{{ .location | markdownify }}</em>
-        </li>
-        {{ end }}
-      </ul>
-
       {{ end }}
+    </section>
+
+    <div class="wide-80">
+      {{ with $.Site.Data.homepage }}
+      <h2>🎙 Talks, publications, and references</h2>
+      <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+          <h3>📚 References</h3>
+          <ul>
+            {{ range .references }}
+            <li>
+              "{{ .title | markdownify }}"<br />
+              <em style="color: #6c6c6c">{{ .location | markdownify }}</em>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+          <h3>🎙 Talks</h3>
+          <ul>
+            {{ range .talks }}
+            <li>
+              "{{ .title | markdownify }}"<br />
+              <em style="color: #6c6c6c">{{ .location | markdownify }}</em>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+          <h3>📝 Publications</h3>
+          <ul>
+            {{ range .publications }}
+            <li>
+              "{{ .title | markdownify }}"<br />
+              <em style="color: #6c6c6c">{{ .location | markdownify }}</em>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    <section>
     </section>
 
     <!-- pull from content/_index.md -->

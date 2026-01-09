@@ -56,39 +56,29 @@ awards:
       - title: "Le 6 Mai 2012"
         url:
 
-talks_publications:
-  - title: "If confusion is the commodity, certainty is the premium product"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2025/12/if-confusion-is-the-commodity-certainty-is-the-premium-product/'>2025</a>"
-  - title: "When Tech Disrupts Faster Than Rules Adapt: Drafting Emergency Guidance for AI-Affected Evidence"
-    location: "in <a href='https://opiniojuris.org/2025/12/16/when-tech-disrupts-faster-than-rules-adapt-drafting-emergency-guidance-for-ai-affected-evidence/'>OpinioJuris</a>, 2025"
-  - title: "Web Archives as Evidence"
-    location: Int'l Internet Preservation Consortium, Oslo, 2025
-  - title: Justice by Video Workshop, Evidence and Deepfake session
-    location: Chair of roundtable, <a href="https://www.colorado.edu/lab/visualevidence/2025/11/05/inaugural-report-videos-day-court-advancing-equitable-legal-usage-visual-technologies">whitepaper advisor</a> at CU Boulder Visual Evidence Lab, 2025
-  - title: "Journalists fight digital decay"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2024/12/journalists-fight-digital-decay/'>2024</a>"
-  - title: Law, Evidence, and Generative AI
-    location: Roundtable for the State Dpt Glocal Criminal Justice, Washington DC, 2024
-  - title: Old and new doubts about verification of open-source imagery from gen AI
-    location: "in <a href='https://opiniojuris.org/2024/06/26/old-doubts-new-doubts-evaluating-digital-open-source-imagery-in-the-courtroom/'>OpinioJuris</a>, 2024"
+references:
+  - title: Referenced in UN report on counter terrorism, about the impact of using AI in countering terrorism
+    location: From Ben Saul, Special Rapporteur on Counter Terrorism, 2025
   - title: Referenced in UN report in defense of human rights defenders
     location: From M. Lawlor, Special Rapporteur on Human Rights Defenders, 2024
   - title: Referenced as 'best practice' in UN Human Rights Council 53rd session report
     location: From F. Shaheed, Special Rapporteur on the right to education, incl. our monitoring of schools and their non-military use, 2023
-  - title: "Legal rigor meets journalistic inquiry to yield groundbreaking investigations"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2023/12/legal-rigor-meets-journalistic-inquiry-to-yield-groundbreaking-investigations/'>2023</a>"
-  - title: "Towards supporting criminal accountability"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2022/12/towards-supporting-criminal-accountability/'>2022</a>"
-  - title: Whitepaper, Legal Roundtable on best practices for admissible web archives
-    location: With Global Justice Advisors, Nicholas Taylor, and the Internet Archive, 2022
-  - title: Working with data in the newsroom
-    location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
-  - title: "Graphics, unite"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2020/12/graphics-unite/'>2020</a>"
+  - title: Referenced in Munich Security Report on military actions and civilian harm in Syria
+    location: "Munich Security Conference, 2016"
+
+talks:
+  - title: "Closed door session on catching a war criminal in the 21st century"
+    location: Yale Law School, 2025
+  - title: "Web Archives as Evidence"
+    location: Int'l Internet Preservation Consortium, Oslo, 2025
+  - title: Justice by Video Workshop, Evidence and Deepfake session
+    location: Chair of roundtable, whitepaper advisor at CU Boulder Visual Evidence Lab, 2025
+  - title: Law, Evidence, and Generative AI
+    location: Roundtable for the State Dpt Glocal Criminal Justice, Washington DC, 2024
+  - title: "New Frontiers in Evidence conference"
+    location: Inner Temple, London, 2023
   - title: Career paths for news nerds (or lack of them)
     location: International Journalism Festival 2018, Perugia
-  - title: "We need better career paths for news nerds"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2017/12/we-need-better-career-paths-for-news-nerds/'>2017</a>"
   - title: "Airwars.org: a field report,two years on"
     location: Hacks/Hackers Berlin 2017
   - title: "Airwars: strike by strike"
@@ -99,14 +89,44 @@ talks_publications:
     location: Sud Web 2016, France
   - title: Hacking the newsroom
     location: International Journalism Festival 2016, Perugia
-  - title: "Love thy reader, securely"
-    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2015/12/love-thy-reader-securely/'>2015</a>"
   - title: "BBC News Labs, Linked Data, Datastringer: the Hacks and Hackers paradigm"
     location: Computation + Journalism Symposium 2014, New York City
   - title: "Algorithms in Journalism: danger or opportunity?"
     location: Assises du Journalism 2014, France
+
+publications:
+  - title: "If confusion is the commodity, certainty is the premium product"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2025/12/if-confusion-is-the-commodity-certainty-is-the-premium-product/'>2025</a>"
+  - title: "When Tech Disrupts Faster Than Rules Adapt: Drafting Emergency Guidance for AI-Affected Evidence"
+    location: "in <a href='https://opiniojuris.org/2025/12/16/when-tech-disrupts-faster-than-rules-adapt-drafting-emergency-guidance-for-ai-affected-evidence/'>OpinioJuris</a>, 2025"
+  - title: "Journalists fight digital decay"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2024/12/journalists-fight-digital-decay/'>2024</a>"
+  - title: Old and new doubts about verification of open-source imagery from gen AI
+    location: "in <a href='https://opiniojuris.org/2024/06/26/old-doubts-new-doubts-evaluating-digital-open-source-imagery-in-the-courtroom/'>OpinioJuris</a>, 2024"
+  - title: "Legal rigor meets journalistic inquiry to yield groundbreaking investigations"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2023/12/legal-rigor-meets-journalistic-inquiry-to-yield-groundbreaking-investigations/'>2023</a>"
+  - title: "Towards supporting criminal accountability"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2022/12/towards-supporting-criminal-accountability/'>2022</a>"
+  - title: Whitepaper, Legal Roundtable on best practices for admissible web archives
+    location: With Global Justice Advisors, Nicholas Taylor, and the Internet Archive, 2022
+  - title: Working with data in the newsroom
+    location: "in <a href='https://www.aup.nl/en/book/9789462989511/the-data-journalism-handbook'>The Data Journalism Handbook</a> (Amsterdam University Press, 2021)"
+  - title: "Graphics, unite"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2020/12/graphics-unite/'>2020</a>"
+  - title: "We need better career paths for news nerds"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2017/12/we-need-better-career-paths-for-news-nerds/'>2017</a>"
+  - title: "Linked data and structured journalism at the BBC"
+    location: "Guest post on <a href='https://onlinejournalismblog.com/2016/06/06/bbc-linked-data-to-structured-journalism-csv-conference/'>Online Journalism Blog</a>, 2016"
+  - title: "Love thy reader, securely"
+    location: "Nieman Lab Prediction for Journalism, <a href='https://www.niemanlab.org/2015/12/love-thy-reader-securely/'>2015</a>"
   - title: "Datastringer: easy dataset monitoring for journalists"
     location: "Paper on <a href='https://arxiv.org/abs/2402.05764'>arXiv (PDF)</a>, 2014"
+  - title: "From the BBC News Labs: Datastringer"
+    location: "in <a href='https://source.opennews.org/articles/bbc-news-labs-datastringer/'>Source (OpenNews)</a>, 2014"
+  - title: "Covering the European Elections with Linked Data"
+    location: "in <a href='https://source.opennews.org/articles/covering-european-elections-linked-data/'>Source (OpenNews)</a>, 2014"
+  - title: "How We Are Exploring Mountains of Linked Data at BBC News Labs"
+    location: "in <a href='https://source.opennews.org/articles/linked-data-bbc/'>Source (OpenNews)</a>, 2014"
 # hackathons:
 #   - “Greatest Impact and Distruption” and “Best Diffusion” awards for tinyfm - Al Jazeera Canvas Media in Context, Doha, Qatar
 #   - Winner with Le 6 Mai 2012 and Pancarte.js - Popathon, Mozilla Paris, France
