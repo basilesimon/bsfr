@@ -21,11 +21,14 @@
         {{ range .now_list }}
         <div class="item">
           {{ if .img }}
-          <img
-            loading="lazy"
-            src="{{ .img }}"
-            style="width: 200px; object-fit: contain; height: auto"
-          />
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <img
+              loading="lazy"
+              src="{{ .img }}"
+              style="width: 200px; object-fit: contain; height: auto"
+            />
+            {{ if .img_suffix }}<span style="font-style: italic; color: #6c6c6c;">{{ .img_suffix }}</span>{{ end }}
+          </div>
           {{ end }} {{ if .title }}
           <h4>{{ .title }}</h4>
           {{ end }}

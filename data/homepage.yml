@@ -10,7 +10,8 @@ now_list:
   - img: "assets/logo-starling.png"
     desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA and Verifiable Credentials. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
   - img: "assets/logo-gw.png"
-    desc: "Consultant technologist and sysadmin to the Data Investigations team. Advise investigative reporting initiatives on workflow and technical, cloud-based resources. IAM policies, lambdas, information design, chasing whitespace chars in Ansible."
+    img_suffix: "+ etc."
+    desc: "Subscription-based consultant technologist and sysadmin service with two clients, incl. Global Witness. Advise investigative reporting initiatives on workflow and technical, cloud-based resources. IAM policies, lambdas, information design, chasing whitespace chars in Ansible."
   - img: "assets/hypha-wordmark.png"
     desc: "Independent contractor to Hypha Worker Co-operative focusing on bringing opportunities from the field of provenance and authenticity metadata, incl. C2PA/VCs."
   - title: misc
