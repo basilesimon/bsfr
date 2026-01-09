@@ -99,4 +99,8 @@ article.single {
     max-width: 30rem;
     margin: 0.5rem;
   }
+  .now .item--full-width {
+    flex: 1 1 100%;
+    max-width: 80%;
+  }
 }
