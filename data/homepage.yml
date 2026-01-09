@@ -7,15 +7,19 @@ contact:
 
 now: "The freedom I draw from self-employment is really important to me. My varied interest and work strands don't make for a snappy soundbite over a family holiday meal, however. Ah well–can't please everybody. Here's a short summary of what I'm up to:"
 now_list:
+  - img: "assets/detoolkit.png"
+    img_max_height: "90px"
+    desc: "Founder, building an evidence and web archiving preservation product for investigative journalists and OSINT professionals, with publishing in mind."
   - img: "assets/logo-starling.png"
-    desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA and Verifiable Credentials. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
+    desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
   - img: "assets/logo-gw.png"
     img_suffix: "+ etc."
     desc: "Subscription-based consultant technologist and sysadmin service with two clients, incl. Global Witness. Advise investigative reporting initiatives on workflow and technical, cloud-based resources. IAM policies, lambdas, information design, chasing whitespace chars in Ansible."
   - img: "assets/hypha-wordmark.png"
     desc: "Independent contractor to Hypha Worker Co-operative focusing on bringing opportunities from the field of provenance and authenticity metadata, incl. C2PA/VCs."
   - title: misc
-    desc: "Advisory board at **Airwars** on technical and architectural matters; technical advisor to the **Hala Protocol on Audio**. Resident at the **Investigative Commons**. Advisory board at the **Visual Evidence Lab**, CU Boulder. <br />Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others."
+    full_width: true
+    desc: "Advisory board at **Airwars** on technical and architectural matters; technical advisor to the **Hala Protocol on Audio**. Resident at the **Investigative Commons**. Advisory board at the **Visual Evidence Lab**, CU Boulder. <br />Freelance work with TBIJ, Correctiv, Tactical Tech, Dot•Studio, among others. <br /><b>Get in touch to discuss:</b> legal research & drafting, op-ed publishing, ghost writing, data visualisation commissioning."
 
 past_employment: "I have a decade's experience as a journalist in the UK, where I worked for large broadcasters, newspapers, and agencies:"
 past_employment_jobs:
@@ -25,7 +29,13 @@ past_employment_jobs:
   - Coder-journalist, **BBC News Labs**
 
 awards:
-  - org: 44th News Emmy Award, Nominee, "Outstanding Interactive Media" / Excellence in Int'l Affairs, Overseas Press Club of America / Friedenberg Online Journalism Award, National Press Club
+  - org_list:
+      - org: "44th News Emmy Award"
+        award: "Nominee, \"Outstanding Interactive Media\""
+      - org: "Overseas Press Club of America"
+        award: "Excellence in Int'l Affairs"
+      - org: "National Press Club"
+        award: "Friedenberg Online Journalism Award"
     misc: Misc.
     pieces:
       - title: The DJ and the War Crimes

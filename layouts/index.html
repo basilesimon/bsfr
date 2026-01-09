@@ -19,13 +19,13 @@
     <div class="wide-80">
       <div class="now">
         {{ range .now_list }}
-        <div class="item">
+        <div class="item{{ if .full_width }} item--full-width{{ end }}">
           {{ if .img }}
-          <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div style="display: flex; align-items: center; justify-content: flex-start; gap: 0.5rem;">
             <img
               loading="lazy"
               src="{{ .img }}"
-              style="width: 200px; object-fit: contain; height: auto"
+              style="max-width: 200px; object-fit: contain; height: auto;{{ with .img_max_height }} max-height: {{ . }};{{ end }}"
             />
             {{ if .img_suffix }}<span style="font-style: italic; color: #6c6c6c;">{{ .img_suffix }}</span>{{ end }}
           </div>
@@ -150,7 +150,7 @@
             border-radius: 5px;
           "
         >
-          <h4 style="margin: 0">{{ .org }}</h4>
+          {{ if .org_list }}<h4 style="margin: 0; font-weight: normal;">{{ range $i, $item := .org_list }}{{ if $i }} / {{ end }}<b>{{ $item.org }}</b>, {{ $item.award }}{{ end }}</h4>{{ else }}<h4 style="margin: 0">{{ .org }}</h4>{{ end }}
           <span style="margin: 0">{{ .award }}</span>
           <ul>
             {{ range .pieces }}
