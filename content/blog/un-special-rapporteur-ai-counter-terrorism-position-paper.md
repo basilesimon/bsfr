@@ -5,8 +5,8 @@ date: "2026-02-20T12:00:00Z"
 tags: []
 ---
 
-Essential reading from the [UN Special Rapporteur on Counter-Terrorism](https://www.ohchr.org/en/special-procedures/sr-terrorism) Professor Ben Saul: their latest position paper, [Protecting Human Rights while Using Artificial Intelligence to Counter Terrorism](https://www.ohchr.org/en/documents/thematic-reports/ahrc5875-protecting-human-rights-while-using-artificial-intelligence), tackles a critical challenge — how to ensure AI systems protect rather than endanger rights.
+The [UN Special Rapporteur on Counter-Terrorism](https://www.ohchr.org/en/special-procedures/sr-terrorism) Professor Ben Saul has published a new position paper: [Protecting Human Rights while Using Artificial Intelligence to Counter Terrorism](https://www.ohchr.org/en/documents/thematic-reports/ahrc5875-protecting-human-rights-while-using-artificial-intelligence). Essential reading on how to ensure AI systems protect rather than endanger rights.
 
-I'm proud that my [Starling Lab for Data Integrity](https://www.starlinglab.org/) submission was referenced in this position paper. It advocated for a proactively designed system for authenticity and preservation, arguing that without cryptographic data integrity, we cannot have accountability.
+I'm really proud to see my [Starling Lab](https://www.starlinglab.org/) submission referenced in there. I argued for a proactively designed system for authenticity and preservation — that without cryptographic data integrity, we simply cannot have accountability. It's validating to see this line of thinking picked up at this level.
 
-You can read the [submission in full on the UN website](https://www.ohchr.org/en/calls-for-input/2024/call-input-position-paper-protecting-human-rights-while-countering-terrorism). More about the [mandate of the Special Rapporteur](https://www.ohchr.org/en/special-procedures/sr-terrorism).
+Read [my submission in full on the UN website](https://www.ohchr.org/en/calls-for-input/2024/call-input-position-paper-protecting-human-rights-while-countering-terrorism), and more about the [mandate of the Special Rapporteur](https://www.ohchr.org/en/special-procedures/sr-terrorism).
