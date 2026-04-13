@@ -1,4 +1,14 @@
 pieces:
+  - title: evidx
+    tagline: "Creating a new company:"
+    copy: A web evidence preservation product for investigative journalists — one-click browser capture, C2PA cryptographic signing, and on-premises deployment. Co-founded with investment from MIZ Babelsberg – built in collaboration with [DOT Studio](https://dot.studio).
+    video: "https://www.evidx.de/demo2.mp4"
+    blog: "https://www.evidx.de/"
+    tags:
+      - C2PA
+      - WACZ
+      - Founder
+
   - title: The Digital Evidence Toolkit
     client: Prototype Fund
     copy: Public/private 50,000€ grant for the r&d of proof-of-concept techniques highlighting the uncertain legal framework of digital evidence admissibility and chain of custody.
