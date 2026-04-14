@@ -1,4 +1,4 @@
-catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>the Starling Lab at Stanford University and USC</b>.<br/>I come from a background of <b>information design and creative technologist</b>, and I'm based in Berlin–though I miss the mountains.
+catchline: I do research in evidentiary standards and cryptographic authentication of evidence for <b>the Starling Lab at Stanford University and USC</b> and am building <b>evidx.de</b>, your newsroom's online sources capture and preservation desk.<br/>I come from a background of <b>information design and creative technologist</b>, and I'm based in Berlin – though I miss the mountains.
 
 contact:
   - ✉️ `basile-at-stanford-dot-edu` or  `basile-at-basilesimon-dot-fr` 🔐 [Keybase](https://keybase.io/basilesimon)
@@ -7,9 +7,9 @@ contact:
 
 now: "The freedom I draw from self-employment is really important to me. My varied interest and work strands don't make for a snappy soundbite over a family holiday meal, however. Ah well–can't please everybody. Here's a short summary of what I'm up to:"
 now_list:
-  - img: "assets/detoolkit.png"
+  - img: "assets/dept-evidx.png"
     img_max_height: "90px"
-    desc: "Founder, building an evidence and web archiving preservation product for investigative journalists and OSINT professionals, with publishing in mind."
+    desc: "Founder, building an evidence and web archiving preservation product for investigative journalists and OSINT professionals, with publishing in mind.<br/> Publicly available Q2 2026."
   - img: "assets/logo-starling.png"
     desc: "Lead the Legal and Accountability lab. Focus on the evidentiary value of integrity and authenticity data e.g. C2PA. OSI verification, U.S. federal authentication rules. Preservation of at-risk collections of evidence."
   - img: "assets/logo-gw.png"
