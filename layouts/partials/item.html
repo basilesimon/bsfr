@@ -3,7 +3,7 @@
 <div class="portfolioitem">
   <div class="copy">
     <h3>
-      For {{ .data.client }}:<br />
+      {{ if .data.tagline }}{{ .data.tagline }}{{ else }}For {{ .data.client }}:{{ end }}<br />
       {{ .data.title }}
     </h3>
     <p>{{ .data.copy | markdownify }}</p>
@@ -21,7 +21,11 @@
     {{ end }}
   </div>
   <div class="image">
+    {{ if .data.video }}
+    <video class="reelitem" src="{{ .data.video }}" autoplay loop muted playsinline></video>
+    {{ else }}
     <img class="reelitem" loading="lazy" src="{{ .data.img }}" />
+    {{ end }}
   </div>
 </div>
 
@@ -47,7 +51,8 @@
   .image {
     width: 50%;
   }
-  .image > img {
+  .image > img,
+  .image > video {
     object-fit: cover;
     border: 1px solid #ddd;
     border-radius: 8px;
