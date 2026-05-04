@@ -1,38 +1,38 @@
 ---
 title: "Bridging Journalism and Justice at IJF Perugia"
-description: "Notes from the closed-door side event at IJF26 on preserving, verifying, and managing atrocity documentation for accountability."
+description: "Reflections on a closed-door side event at IJF26 about making journalistic atrocity documentation usable for legal accountability."
 date: "2026-04-18T12:00:00Z"
 tags: []
 ---
 
-Mid April, [Starling Lab](https://www.starlinglab.org/) joined [Airwars](https://airwars.org/), [IrpiMedia](https://irpimedia.irpi.eu/), [Paper Trail Media](https://www.papertrailmedia.de/), and [Videre](https://viderestimony.org/) to co-host a closed-door side event at the International Journalism Festival in Perugia. The event – **Bridging Journalism and Justice** – brought together journalists, investigators, and legal practitioners for a technical conversation about one specific problem: how journalistic documentation of atrocity crimes can be preserved, verified, and managed in ways that support future accountability efforts.
+I was back in Perugia in April for the International Journalism Festival, this time as part of a small group co-hosting a closed-door side event called **Bridging Journalism and Justice**. [Starling Lab](https://www.starlinglab.org/) organised it alongside [Airwars](https://airwars.org/), [IrpiMedia](https://irpimedia.irpi.eu/), [Paper Trail Media](https://www.papertrailmedia.de/), and [Videre](https://viderestimony.org/), and we deliberately kept it off the main programme to get a working conversation rather than a panel.
 
-#### What we discussed
+The room had journalists, investigators, and lawyers in it. The question we came in with was narrow and practical: what does it actually take for documentation of atrocity crimes to survive contact with a legal proceeding?
 
-The conversation was organised around four themes: OSINT and verification workflows; secure archiving and evidence management; controlled capture and metadata capture tools; and standardised documentation templates.
+#### What I argued
 
-Deliberately avoiding a "List Of Tools That Will Solve Your Problems", I tried to instead situate the growing necessity of considering data integrity to make images count in court. The key to a legal claim about digital material rests on three things: **authenticity** (is this the genuine article, tied to a source we can interrogate?), **integrity** (has it been altered?), and **chain of custody** (is there a documented record at every handoff?). In practice, the strongest evidence is evidence that can explain its own history.
+My contribution tried to reframe what "good" looks like when digital evidence meets a courtroom – and to push back against the instinct to reach for a new tool as the answer.
 
-This is not only about admissibility in a strict legal sense. Several things can undermine otherwise useful material: unclear provenance, missing timestamps, no record of who handled a file, and unlogged edits or compression. Courts may treat these as reliability problems, and unreliable evidence gets discounted or excluded.
+Courts assessing digital material care about three things. Can you establish that this content is what you say it is, traceable to a real source? Has it been altered, and can you prove it? And can you account for everywhere it's been and everyone who's touched it? These are the questions of authenticity, integrity, and chain of custody – and they interact in ways that matter. Material can fail on any one of them even when the other two are solid.
 
-#### What tools help; and what's underused
+What I find underappreciated is how many of these failures happen before anything reaches a legal team. Missing timestamps, unrecorded file transfers, compression applied without logging – none of these look like problems at the time. They become problems when someone needs to reconstruct the history of a file months later and the record simply isn't there.
 
-The tool landscape for capture and preservation has matured considerably. Capture apps like Proofmode, eyeWitness to Atrocities, and Numbers Capture Cam help journalists and human rights defenders embed useful and immutable metadata at the point of documentation. Online archiving through the Internet Archive and tools like Webrecorder and [evidx.de](https://evidx.de) enable content longevity without the risk of top-down censorship and removal. And an emerging set of technologies binds provenance and custody metadata to files across their entire information lifecycle.
+#### The tool conversation
 
-But the category most participants agreed was underused was simpler: investigation plans, policies and procedures, and asset management – the unglamorous work of being able to find your own material, track its handling, and quote from it confidently months or years later.
+We did talk about tools – there are genuinely good ones now. Capture applications that bake metadata in at the moment of documentation. Archiving infrastructure that survives platform takedowns. Emerging standards that carry provenance information with a file across its whole lifecycle, including [evidx.de](https://evidx.de), which I'm building with this in mind.
 
-#### The needs we identified
+But the most interesting part of that conversation was where participants felt the gap most acutely. It wasn't lack of software. It was the absence of simple, shared, consistent practice: an investigation plan people actually follow, a policy for how files get named and stored, someone whose job it is to know where the assets are. The boring stuff that makes sophisticated tools usable.
 
-A few threads ran through the whole conversation:
+#### What pulled at the room
 
-The journalists and investigators in the room were not looking for new applications. They were looking for ways to make good practice fit into what they already do. The friction of adopting parallel workflows is a genuine barrier.
+A few tensions came up that I don't think anyone resolved, but which deserve to stay in the conversation.
 
-The gap between "we documented this" and "this is usable" is often a habits gap more than a tooling one. Consistent use of any system, even a simple one, beats intermittent use of a sophisticated one.
+The people doing this work aren't looking to add another system to their workflow. The bar for adoption is much higher than developers often assume, and solutions that require parallel processes will be ignored regardless of their merits.
 
-Raising the bar for "verified content" risks systematically disadvantaging those who cannot meet technical thresholds: communities in conflict zones, witnesses without institutional backing, sources who shared material in difficult conditions. Any serious framework needs to grapple with this.
+There's also a real equity problem lurking in any push to raise the evidentiary bar. If "verifiable" becomes a requirement, that requirement lands hardest on witnesses in conflict zones, community documenters, and sources operating without institutional support – exactly the people whose testimony is often most critical. A framework that systematically disadvantages them isn't serving accountability.
 
-Preservation is a starting point, but managing consent – who agreed to what, under what conditions, including over time – is an ongoing obligation that most current workflows handle poorly.
+And consent doesn't end at collection. Managing what people agreed to share, under what conditions, over time, is an obligation that most current workflows aren't built around at all.
 
 ---
 
-The group is reconvening to attempt to address several of these gaps directly. Read the [full write-up on the Starling Lab dispatch](https://dispatch.starlinglab.org/p/bridging-journalism-and-justice-what).
+The Starling Lab dispatch has the [full write-up](https://dispatch.starlinglab.org/p/bridging-journalism-and-justice-what), including what the group is working on next.
