@@ -31,7 +31,7 @@ past_employment_jobs:
 awards:
   - org_list:
       - org: "44th News Emmy Award"
-        award: "Nominee, \"Outstanding Interactive Media\""
+        award: 'Nominee, "Outstanding Interactive Media"'
       - org: "Overseas Press Club of America"
         award: "Excellence in Int'l Affairs"
       - org: "National Press Club"
@@ -79,7 +79,7 @@ references:
 
 talks:
   - title: "Closing Keynote chair, Web Archiving for Accountability"
-    location: "[IIPC Web Archiving Conference, Brussels, 2026](/blog/iipc-2026-closing-keynote/)"
+    location: "IIPC Web Archiving Conference, Brussels, 2026"
   - title: "Bridging Journalism and Justice, co-organised closed-door side event"
     location: International Journalism Festival, Perugia, 2026
   - title: "Closed door session on catching a war criminal in the 21st century"
