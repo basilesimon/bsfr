@@ -22,9 +22,9 @@
 <!-- Enhanced Open Graph Tags -->
 {{ $image := "" }}
 {{ if .Params.image }}
-  {{ $image = .Params.image }}
+  {{ $image = .Params.image | absURL }}
 {{ else if .Site.Params.defaultImage }}
-  {{ $image = printf "%s%s" .Site.BaseURL .Site.Params.defaultImage }}
+  {{ $image = .Site.Params.defaultImage | absURL }}
 {{ end }}
 
 {{ if $image }}
@@ -47,105 +47,34 @@
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="robots" content="max-image-preview:large">
 
-<!-- Enhanced JSON-LD Structured Data -->
+<!-- Enhanced JSON-LD Structured Data.
+     A single @graph links every node by its stable hash @id (#person, #website,
+     #blog) so the Person and WebSite are defined once and referenced everywhere
+     else, rather than duplicated on each page. -->
 <script type="application/ld+json">
-{{ if .IsPage }}
-  {{- /* Blog Post or Article Page */ -}}
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": {{ .Title }},
-    "url": {{ .Permalink }},
-    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
-    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
-    "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
-    {{ if $image }}"image": {
-      "@type": "ImageObject",
-      "url": {{ $image }},
-      "width": 1200,
-      "height": 630
-    },{{ end }}
-    {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " }},{{ end }}
-    "wordCount": {{ .WordCount }},
-    "author": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{- /* The website itself: foundational node, referenced by every page. */ -}}
+    {
+      "@type": "WebSite",
+      "@id": "{{ .Site.BaseURL }}#website",
+      "url": {{ .Site.BaseURL }},
+      "name": {{ .Site.Params.author }},
+      "description": {{ .Site.Params.description }},
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "{{ .Site.BaseURL }}#person" }
+    },
+    {{- /* The canonical Person node. Defined once; everything else points at
+           "{{ .Site.BaseURL }}#person" instead of repeating these details. */ -}}
+    {
       "@type": "Person",
       "@id": "{{ .Site.BaseURL }}#person",
       "name": {{ .Site.Params.author }},
       "url": {{ .Site.BaseURL }},
       "image": {
         "@type": "ImageObject",
-        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
-      },
-      "jobTitle": "Research Scholar",
-      "affiliation": [
-        {
-          "@type": "Organization",
-          "name": "Starling Lab for Data Integrity",
-          "url": "https://starlinglab.org/",
-          "parentOrganization": [
-            {
-              "@type": "CollegeOrUniversity",
-              "name": "Stanford University",
-              "url": "https://www.stanford.edu/"
-            },
-            {
-              "@type": "CollegeOrUniversity",
-              "name": "University of Southern California",
-              "url": "https://www.usc.edu/"
-            }
-          ]
-        }
-      ],
-      "alumniOf": [
-        {
-          "@type": "Organization",
-          "name": "BBC News Labs"
-        },
-        {
-          "@type": "Organization",
-          "name": "Reuters"
-        },
-        {
-          "@type": "Organization",
-          "name": "The Times and The Sunday Times"
-        }
-      ],
-      "sameAs": [
-        "{{ .Site.Params.mastodon }}",
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.bluesky }}",
-        "https://twitter.com/{{ .Site.Params.twitter }}"
-      ]
-    },
-    "publisher": {
-      "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": {{ .Permalink }}
-    },
-    "inLanguage": "en-GB",
-    "copyrightHolder": {
-      "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person"
-    },
-    "copyrightYear": {{ .Date.Format "2006" }},
-    "license": "https://creativecommons.org/licenses/by/4.0/"
-  }
-{{ else }}
-  {{- /* Homepage or Other Pages */ -}}
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "@id": "{{ .Site.BaseURL }}#person",
-      "name": {{ .Site.Params.author }},
-      "url": {{ .Site.BaseURL }},
-      "image": {
-        "@type": "ImageObject",
-        "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+        "url": {{ .Site.Params.logo | absURL }}
       },
       "jobTitle": "Research Scholar",
       "description": {{ .Site.Params.description }},
@@ -184,18 +113,9 @@
         }
       ],
       "alumniOf": [
-        {
-          "@type": "Organization",
-          "name": "BBC News Labs"
-        },
-        {
-          "@type": "Organization",
-          "name": "Reuters"
-        },
-        {
-          "@type": "Organization",
-          "name": "The Times and The Sunday Times"
-        }
+        { "@type": "Organization", "name": "BBC News Labs" },
+        { "@type": "Organization", "name": "Reuters" },
+        { "@type": "Organization", "name": "The Times and The Sunday Times" }
       ],
       "memberOf": [
         {
@@ -213,11 +133,97 @@
         "https://keybase.io/basilesimon"
       ]
     },
-    "headline": {{ .Title }},
-    "url": {{ .Permalink }},
-    "description": {{ .Site.Params.description }}
-  }
-{{ end }}
+    {{- if .IsHome -}}
+    {{- /* Homepage: a ProfilePage about the Person. */ -}}
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ .Permalink }}#profilepage",
+      "url": {{ .Permalink }},
+      "name": {{ .Site.Params.author }},
+      "description": {{ .Site.Params.description }},
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
+      "about": { "@id": "{{ .Site.BaseURL }}#person" },
+      "mainEntity": { "@id": "{{ .Site.BaseURL }}#person" }
+    }
+    {{- else if .IsPage -}}
+    {{- /* A single blog post / weeknote, plus its breadcrumb trail. */ -}}
+    {
+      "@type": "BlogPosting",
+      "@id": "{{ .Permalink }}#blogposting",
+      "headline": {{ .Title }},
+      "url": {{ .Permalink }},
+      "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
+      "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+      "description": {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }},
+      {{ if $image }}"image": {
+        "@type": "ImageObject",
+        "url": {{ $image }},
+        "width": 1200,
+        "height": 630
+      },{{ end }}
+      {{ if .Params.tags }}"keywords": {{ delimit .Params.tags ", " }},{{ end }}
+      "wordCount": {{ .WordCount }},
+      "inLanguage": "en-GB",
+      "author": { "@id": "{{ .Site.BaseURL }}#person" },
+      "publisher": { "@id": "{{ .Site.BaseURL }}#person" },
+      "copyrightHolder": { "@id": "{{ .Site.BaseURL }}#person" },
+      "copyrightYear": {{ .Date.Format "2006" }},
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
+      "mainEntityOfPage": { "@id": "{{ .Permalink }}" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ .Permalink }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ .Site.BaseURL }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ .Type | title }}",
+          "item": "{{ .Site.BaseURL }}{{ .Type }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ .Title }},
+          "item": {{ .Permalink }}
+        }
+      ]
+    }
+    {{- else if eq .Type "blog" -}}
+    {{- /* The blog index: a Blog listing, not a profile of the author. */ -}}
+    {
+      "@type": "Blog",
+      "@id": "{{ .Site.BaseURL }}#blog",
+      "url": {{ .Permalink }},
+      "name": {{ .Title }},
+      "description": {{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }},
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
+      "author": { "@id": "{{ .Site.BaseURL }}#person" },
+      "publisher": { "@id": "{{ .Site.BaseURL }}#person" }
+    }
+    {{- else -}}
+    {{- /* Any other listing (weeknotes index, tag/term pages). */ -}}
+    {
+      "@type": "CollectionPage",
+      "@id": "{{ .Permalink }}#collectionpage",
+      "url": {{ .Permalink }},
+      "name": {{ .Title }},
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "{{ .Site.BaseURL }}#website" },
+      "about": { "@id": "{{ .Site.BaseURL }}#person" }
+    }
+    {{- end -}}
+  ]
+}
 </script>
 
 <!-- Cloudflare Web Analytics -->
