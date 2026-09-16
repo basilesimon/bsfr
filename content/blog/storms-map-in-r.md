@@ -1,4 +1,5 @@
 ---
+aliases: ["/2018/09/05/storms-map-in-r/"]
 date: "2018-09-05T00:00:00Z"
 description: How to map 10 years of storms in the Pacific, with R and ggplot
 image: https://basilesimon.fr/assets/storms_final.png

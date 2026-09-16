@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/03/23/data-journalism-handbook-published/"]
 date: "2021-03-23T00:00:00Z"
 description: "The newly updated version of #ddj's bible is out, and I've contributed a chapter about the challenges of coding in newsrooms"
 image: https://basilesimon.fr/assets/ddj-handbook-cover.png

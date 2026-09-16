@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/01/15/weeknotes-16/"]
 date: "2021-01-15T00:00:00Z"
 draft: true
 title: "Daycare alternatives - weeknotes #16"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/2018/04/04/jom299-interactive-journalism-year-2-end/"]
 date: "2018-04-04T00:00:00Z"
 description: Things I learned and taught during this year's MA in Interactive Journalism at City University London, from Javascript, Python and R
 title: Lessons from teaching in this year's MA in Interactive Journalism

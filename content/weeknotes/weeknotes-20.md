@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/02/12/weeknotes-20/"]
 date: "2021-02-12T00:00:00Z"
 draft: true
 title: "Bubbles bubbles - weeknotes #20"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/11/08/portfolio-general-election-2019-britain/"]
 date: "2020-11-08T00:00:00Z"
 description: null
 image: https://basilesimon.fr/assets/ge2019-header.png

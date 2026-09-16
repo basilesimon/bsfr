@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/03/11/announcing-digital-evidence-toolkit/"]
 date: "2021-03-11T00:00:00Z"
 description: Funded by the Prototype Fund, the project aims to improve the standards
   of evidence-gathering by small groups or individuals

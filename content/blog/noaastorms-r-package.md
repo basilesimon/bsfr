@@ -1,4 +1,5 @@
 ---
+aliases: ["/2019/01/30/noaastorms-r-package/"]
 date: "2019-01-30T00:00:00Z"
 description: New R package to load, parse and chart 20 years of oceanic storms data
 image: https://basilesimon.fr/assets/storms_final.png
@@ -8,7 +9,7 @@ title: 'New R package: load and chart oceanic storms'
 
 ![](assets/storms_final.png)
 
-Mapping historical storms data is now a little bit easier. [Off the back of this blog](https://blog.basilesimon.fr/2018/09/05/storms-map-in-R/), I have authored an R package (available at [basilesimon/noaastorms](https://github.com/basilesimon/noaastorms)) that downloads, cleans and parses NOAA IBtrack data for you.
+Mapping historical storms data is now a little bit easier. [Off the back of this blog](/blog/storms-map-in-r/), I have authored an R package (available at [basilesimon/noaastorms](https://github.com/basilesimon/noaastorms)) that downloads, cleans and parses NOAA IBtrack data for you.
 
 The National Oceanic and Atmospheric Administration releases datasets known as [International Best Track Archive for Climate Stewardship](<https://www.ncdc.noaa.gov/ibtracs/>).
 

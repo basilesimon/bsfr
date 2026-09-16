@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/06/04/weeknotes-36/"]
 date: "2021-06-04T00:00:00Z"
 draft: true
 title: "News in brief - weeknotes #36"

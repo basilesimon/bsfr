@@ -1,4 +1,5 @@
 ---
+aliases: ["/2019/08/18/update-noaastorms-r-package/"]
 date: "2019-08-18T00:00:00Z"
 description: New R package to load, parse and chart 20 years of oceanic storms data
 image: https://basilesimon.fr/assets/storms_facet.png

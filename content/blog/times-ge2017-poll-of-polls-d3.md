@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/04/27/times-ge2017-poll-of-polls-d3/"]
 date: "2017-04-27T00:00:00Z"
 description: How the Times Digital Team created a poll of polls in d3.js in little time
 title: The Times poll of polls in d3

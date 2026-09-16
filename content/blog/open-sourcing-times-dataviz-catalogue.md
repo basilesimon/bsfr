@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/12/18/open-sourcing-times-dataviz-catalogue/"]
 date: "2017-12-18T00:00:00Z"
 description: 'We are happy to share the first version of our data visualisation catalogue: a collection of data visualisations created for the Times and Sunday Times, collected together in one place in the hope that what we have learned can be useful to others.'
 image: https://basilesimon.fr/assets/catalogue.png

@@ -1,4 +1,5 @@
 ---
+aliases: ["/2019/10/06/brexit-machine-learning/"]
 date: "2019-10-06T00:00:00Z"
 description: Visualising 200 Brexit-related votes with machine learning
 image: https://basilesimon.fr/assets/tsne.png

@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/04/02/weeknotes-27/"]
 date: "2021-04-02T00:00:00Z"
 draft: true
 title: "Working from Factory - weeknotes #27"

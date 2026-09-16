@@ -1,4 +1,5 @@
 ---
+aliases: ["/2019/03/02/tractatus-logico-philosophicus/"]
 date: "2019-03-02T00:00:00Z"
 description: Using phylogenetics visualisations to represent the Tractatus Logico-Philosophicus
 image: https://basilesimon.fr/assets/tractatus_tree.png
