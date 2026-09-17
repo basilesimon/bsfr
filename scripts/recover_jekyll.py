@@ -3,9 +3,9 @@
 
 The original source of blog.basilesimon.fr survives at
 github.com/basilesimon/archive-blog. This reads posts from a checkout of that
-repo and writes content/<section>/<slug>.md, copying referenced images into
+repo and writes content/<section>/<slug>.md, copying referenced assets into
 static/assets/ — falling back to `git show` against the archive's history for
-images that are no longer in its worktree.
+files that are no longer in its worktree.
 
 Which posts to convert comes from the checklists in IMPLEMENTATION_PLAN.md,
 which also supply each post's historical URL (used as the Hugo alias).
@@ -14,7 +14,9 @@ See IMPLEMENTATION_PLAN.md, stages 2-3.
 """
 
 import argparse
+import html
 import os
+import posixpath
 import re
 import subprocess
 import sys
@@ -25,10 +27,11 @@ PLAN = os.path.join(REPO, "IMPLEMENTATION_PLAN.md")
 # Images live in these directories of the archive, in priority order.
 ASSET_DIRS = ("_assets", "_attachments")
 
-IMG_RE = re.compile(
-    r"""(?:src=["']|\]\(|url\()\s*([^"')]+?\.(?:png|jpe?g|gif|svg|webp))""",
-    re.I,
-)
+# Any site-hosted file a post points at: images, but also the iframe bundles,
+# scripts and video that several posts embed.
+ASSET_RE = re.compile(r"""(?:src=|href=|\]\(|url\()["']?\s*(/assets/[^"')\s>]+)""")
+# Relative references inside a copied iframe bundle's HTML.
+BUNDLE_RE = re.compile(r"""(?:src=|href=)["']([^"'#/][^"':]*?)["']""")
 PLAN_ENTRY_RE = re.compile(
     r"- \[[ x]\] `(\d{4}-\d{2}-\d{2})` \*\*(.+?)\*\*.*?— `(/\S+?)`"
 )
@@ -161,8 +164,19 @@ def fix_tight_headings(body):
     return "".join(parts)
 
 
+def strip_wordpress_cruft(body):
+    """Drop the dead Google+ button WordPress stamped onto every exported post."""
+    return re.sub(
+        r'\s*<div class="wp_plus_one_button".*?</div>\s*', "\n\n", body, flags=re.S
+    )
+
+
 def rewrite_urls(body, linkmap):
     """Point old-domain asset and post URLs at their current location."""
+    # Where each post ended up, keyed by slug, for lookups that can't match a
+    # full path: French posts kept /YYYY/MM/ permalinks while their English
+    # editions got /YYYY/MM/DD/ ones.
+    slugmap = {url.strip("/").split("/")[-1]: url for url in linkmap.values()}
     body = re.sub(
         r"https?://blog\.basilesimon\.fr/wp-content/uploads/(?:\d{4}/\d{2}/)?",
         "/assets/",
@@ -174,12 +188,29 @@ def rewrite_urls(body, linkmap):
         path = "/" + m.group("path").strip("/") + "/"
         return linkmap.get(path, path)
 
+    def en_link(m):
+        """`/en/<path>` was the English edition of a French post.
+
+        Those translations were published under the same slug with a `-2`
+        suffix, so prefer that; fall back to the original when there is none.
+        """
+        path = "/" + m.group("path").strip("/") + "/"
+        slug = path.strip("/").split("/")[-1]
+        return slugmap.get(slug + "-2") or linkmap.get(path, path)
+
+    body = re.sub(
+        r"https?://blog\.basilesimon\.fr/en/(?P<path>\d{4}/\d{2}(?:/\d{2})?/[^\s)\"'<>]+?)/?(?=[\s)\"'<>]|$)",
+        en_link,
+        body,
+    )
     # Links to posts on the dead subdomain, and bare old-style paths.
     body = re.sub(
         r"https?://blog\.basilesimon\.fr/(?P<path>\d{4}/\d{2}(?:/\d{2})?/[^\s)\"'<>]+?)/?(?=[\s)\"'<>]|$)",
         post_link,
         body,
     )
+    # Whatever is left pointing at the dead subdomain's own root.
+    body = re.sub(r"https?://blog\.basilesimon\.fr/(?:en/)?(?=[\s)\"'<>]|$)", "/", body)
     body = re.sub(
         r"(?<=\()(?P<path>/\d{4}/\d{2}(?:/\d{2})?/[^\s)\"'<>]+?)/?(?=\))",
         post_link,
@@ -207,9 +238,15 @@ def html_to_markdown(body):
 
 def excerpt(body, limit=155):
     """First prose sentence(s) of a post, for the `description` frontmatter."""
-    text = re.sub(r"<[^>]+>", " ", body)
+    text = html.unescape(body)
+    text = re.sub(r"```.*?```", " ", text, flags=re.S)
+    # Reference-style link definitions and horizontal rules are not prose.
+    text = re.sub(r"^\s*\[[^\]]+\]:\s*\S+.*$", " ", text, flags=re.M)
+    text = re.sub(r"^\s*([-*_])(?:\s*\1){2,}\s*$", " ", text, flags=re.M)
+    text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", text)
-    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    text = re.sub(r"\[([^\]]*)\]\((?:[^)]*)\)", r"\1", text)
+    text = re.sub(r"\[([^\]]*)\]\[[^\]]*\]", r"\1", text)
     text = re.sub(r"[#>*_`]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     if len(text) <= limit:
@@ -238,9 +275,10 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats):
     else:
         body = fix_tight_headings(body)
     body = rewrite_urls(body, linkmap)
+    body = strip_wordpress_cruft(body)
     body = body.strip() + "\n"
 
-    images = copy_images(body, archive, hist, stats)
+    assets = copy_assets(body, archive, hist, stats)
 
     # The filename date is the real publication day; the plan's date is derived
     # from the URL, which for WordPress-era posts only carries year and month.
@@ -266,7 +304,7 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats):
         tags = [tags]
     tags = [t.lower() for t in (tags or []) if t.lower() != "non classé"]
     lines.append(f"tags: [{', '.join(tags)}]")
-    lines.append(f"title: {yaml_quote(fm.get('title') or slug)}")
+    lines.append(f"title: {yaml_quote(html.unescape(fm.get('title') or slug))}")
     if str(fm.get("published")).lower() == "false":
         lines.append("draft: true")
         stats["drafts"].append(slug)
@@ -274,39 +312,74 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats):
     lines.append("")
 
     out_path = os.path.join(REPO, "content", section, slug + ".md")
-    return out_path, "\n".join(lines) + body, images
+    return out_path, "\n".join(lines) + body, assets
 
 
-def copy_images(body, archive, hist, stats):
-    """Copy every site-hosted image a post references into static/assets/."""
+def fetch_asset(archive, hist, rel, stats):
+    """Find one `/assets/<rel>` file, in the archive worktree or its history.
+
+    `rel` keeps its subdirectories: two different images are both named
+    scotland-1.jpg, so matching on basename alone would serve the wrong one.
+    Basename fallbacks therefore only apply to references that had no
+    directory of their own.
+    """
+    candidates = [os.path.join(d, rel) for d in ASSET_DIRS]
+    if os.path.dirname(rel) == "":
+        candidates += [os.path.join(d, os.path.basename(rel)) for d in ASSET_DIRS]
+
+    for c in candidates:
+        path = os.path.join(archive, c)
+        if os.path.exists(path):
+            return open(path, "rb").read()
+
+    for c in candidates:
+        data = read_from_history(archive, c)
+        if data:
+            stats["from_history"].append(rel)
+            return data
+
+    if os.path.dirname(rel) == "":
+        for p in sorted(hist.get(os.path.basename(rel), [])):
+            data = read_from_history(archive, p)
+            if data:
+                stats["from_history"].append(rel)
+                return data
+    return None
+
+
+def copy_assets(body, archive, hist, stats):
+    """Copy every `/assets/...` file a post references into static/assets/.
+
+    Iframe bundles pull in their own stylesheets and scripts, so copied HTML
+    is rescanned and its relative references followed.
+    """
     copied = []
-    for ref in IMG_RE.findall(body):
-        ref = ref.strip()
-        if re.match(r"https?://", ref):
+    queue = [r.split("?")[0].split("#")[0] for r in ASSET_RE.findall(body)]
+    seen = set()
+    while queue:
+        ref = queue.pop(0)
+        if ref in seen:
             continue
-        name = os.path.basename(ref.split("?")[0])
-        dest = os.path.join(REPO, "static", "assets", name)
+        seen.add(ref)
+        rel = ref[len("/assets/") :]
+        dest = os.path.join(REPO, "static", "assets", rel)
+
         if os.path.exists(dest):
-            copied.append(name)
-            continue
-        data = None
-        for d in ASSET_DIRS:
-            candidate = os.path.join(archive, d, name)
-            if os.path.exists(candidate):
-                data = open(candidate, "rb").read()
-                break
-        if data is None:
-            for p in sorted(hist.get(name, [])):
-                data = read_from_history(archive, p)
-                if data:
-                    stats["from_history"].append(name)
-                    break
-        if data is None:
-            stats["missing_images"].append(name)
-            continue
-        with open(dest, "wb") as fh:
-            fh.write(data)
-        copied.append(name)
+            data = open(dest, "rb").read()
+        else:
+            data = fetch_asset(archive, hist, rel, stats)
+            if data is None:
+                stats["missing_assets"].append(rel)
+                continue
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with open(dest, "wb") as fh:
+                fh.write(data)
+            copied.append(rel)
+
+        if rel.endswith((".html", ".htm")):
+            base = posixpath.dirname(rel)
+            for sub in BUNDLE_RE.findall(data.decode("utf-8", "replace")):
+                queue.append("/assets/" + posixpath.normpath(posixpath.join(base, sub)))
     return copied
 
 
@@ -359,7 +432,7 @@ def main():
     src = source_posts(args.archive)
     hist = history_paths(args.archive)
     linkmap = build_linkmap(entries, args.section)
-    stats = {"drafts": [], "from_history": [], "missing_images": [], "written": []}
+    stats = {"drafts": [], "from_history": [], "missing_assets": [], "written": []}
 
     todo = args.only or sorted(entries)
     for slug in todo:
@@ -369,7 +442,7 @@ def main():
         if slug not in src:
             print(f"  !! {slug}: no source file in the archive", file=sys.stderr)
             continue
-        out_path, text, images = convert(
+        out_path, text, assets = convert(
             slug, entries[slug], args.archive, src, hist, args.section, linkmap, stats
         )
         if os.path.exists(out_path) and not args.only:
@@ -377,18 +450,18 @@ def main():
             continue
         stats["written"].append(slug)
         if args.dry_run:
-            print(f"===== {out_path} ({len(images)} images) =====\n{text}")
+            print(f"===== {out_path} ({len(assets)} assets) =====\n{text}")
         else:
             os.makedirs(os.path.dirname(out_path), exist_ok=True)
             with open(out_path, "w", encoding="utf-8") as fh:
                 fh.write(text)
 
     print(f"\nwrote {len(stats['written'])} posts into content/{args.section}/")
-    print(f"images recovered from git history: {len(set(stats['from_history']))}")
+    print(f"assets recovered from git history: {len(set(stats['from_history']))}")
     if stats["drafts"]:
         print(f"marked draft (published: false in Jekyll): {len(stats['drafts'])}")
-    if stats["missing_images"]:
-        print(f"UNRECOVERABLE images: {sorted(set(stats['missing_images']))}")
+    if stats["missing_assets"]:
+        print(f"UNRECOVERABLE assets: {sorted(set(stats['missing_assets']))}")
 
 
 if __name__ == "__main__":
