@@ -9,37 +9,37 @@ Aujourd&#8217;hui, je vous propose de vous rincer les yeux avec quelques très n
 
 Une étude amusante : saurez-vous dire quelles images sont numériques, et quelles images sont argentiques ?
 
-<a href=/assets/3049384299\_6c13521fce\_z.jpg><img class=aligncenter size-full src=/assets/3049384299\_6c13521fce\_z.jpg /></a>
+<a href=/assets/3049384299_6c13521fce_z.jpg><img class=aligncenter size-full src=/assets/3049384299_6c13521fce_z.jpg /></a>
 &#8211; [Arnaud Legrand][2]
 
-<a href=/assets/3730159952\_35c5af3ed5\_z.jpg><img class=aligncenter size-full src=/assets/3730159952\_35c5af3ed5\_z.jpg /></a>
+<a href=/assets/3730159952_35c5af3ed5_z.jpg><img class=aligncenter size-full src=/assets/3730159952_35c5af3ed5_z.jpg /></a>
 &#8211; [Viola\***][3]
 
-<a href=/assets/3738340464\_35c1702b08\_z.jpg><img class=aligncenter size-full src=/assets/3738340464\_35c1702b08\_z.jpg /></a>
+<a href=/assets/3738340464_35c1702b08_z.jpg><img class=aligncenter size-full src=/assets/3738340464_35c1702b08_z.jpg /></a>
 &#8211; [WarriorJazz][4]
 
-<a href=/assets/3984854914\_b0c038c0be\_z.jpg><img class=aligncenter size-full src=/assets/3984854914\_b0c038c0be\_z.jpg /></a>
+<a href=/assets/3984854914_b0c038c0be_z.jpg><img class=aligncenter size-full src=/assets/3984854914_b0c038c0be_z.jpg /></a>
 &#8211; [Cyrille Rabiller][5]
 
-<a href=/assets/4143145345\_d16d0934e5\_z.jpg><img class=aligncenter size-full src=/assets/4143145345\_d16d0934e5\_z.jpg /></a>
+<a href=/assets/4143145345_d16d0934e5_z.jpg><img class=aligncenter size-full src=/assets/4143145345_d16d0934e5_z.jpg /></a>
 &#8211; [Philipp A.][6]
 
-<a href=/assets/421632648\_d53ec6390a\_z.jpg><img class=aligncenter size-full src=/assets/421632648\_d53ec6390a\_z.jpg /></a>
+<a href=/assets/421632648_d53ec6390a_z.jpg><img class=aligncenter size-full src=/assets/421632648_d53ec6390a_z.jpg /></a>
 &#8211; [Robert Croma][7]
 
-<a href=/assets/481975907\_929107da9b\_z.jpg><img class=aligncenter size-full src=/assets/481975907\_929107da9b\_z.jpg /></a>
+<a href=/assets/481975907_929107da9b_z.jpg><img class=aligncenter size-full src=/assets/481975907_929107da9b_z.jpg /></a>
 &#8211; [Sohrab Hura][8]
 
-<a href=/assets/4885759456\_34027d9944\_z.jpg><img class=aligncenter size-full src=/assets/4885759456\_34027d9944\_z.jpg /></a>
+<a href=/assets/4885759456_34027d9944_z.jpg><img class=aligncenter size-full src=/assets/4885759456_34027d9944_z.jpg /></a>
 &#8211; [Sechmalsechs][9]
 
-<a href=/assets/5471046678\_2ab80d3968\_z.jpg><img class=aligncenter size-full src=/assets/5471046678\_2ab80d3968\_z.jpg /></a>
+<a href=/assets/5471046678_2ab80d3968_z.jpg><img class=aligncenter size-full src=/assets/5471046678_2ab80d3968_z.jpg /></a>
 &#8211; [Ivan Constantin][10]
 
-<a href=/assets/5563206953\_bb9b78e84e\_z.jpg><img class=aligncenter size-full src=/assets/5563206953\_bb9b78e84e\_z.jpg /></a>
+<a href=/assets/5563206953_bb9b78e84e_z.jpg><img class=aligncenter size-full src=/assets/5563206953_bb9b78e84e_z.jpg /></a>
 &#8211; [Sagasurfer][11]
 
-<a href=/assets/6199786537\_408c333816\_z.jpg><img class=aligncenter size-full src=/assets/6199786537\_408c333816\_z.jpg /></a>
+<a href=/assets/6199786537_408c333816_z.jpg><img class=aligncenter size-full src=/assets/6199786537_408c333816_z.jpg /></a>
 &#8211; [R. Krabichler][12]
 
 &#8212;

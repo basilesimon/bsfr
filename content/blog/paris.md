@@ -1,7 +1,7 @@
 ---
 aliases: ["/2016/02/26/paris/"]
 date: "2016-02-26T00:00:00Z"
-description: "Weekend in Paris. Fun with VSCO-like presets. img { margin-bottom: 7em; }"
+description: "Weekend in Paris. Fun with VSCO-like presets."
 tags: []
 title: "Photo album: Paris"
 ---

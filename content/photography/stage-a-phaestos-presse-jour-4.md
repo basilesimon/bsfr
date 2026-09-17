@@ -41,7 +41,7 @@ L&#8217;enchaînement de deux plans, la variation de couleurs, l&#8217;absence d
   -
 </p>
 
-<a href=/assets/580960\_513212482028002\_422698370_n.jpg><img class=aligncenter size-full src=/assets/580960\_513212482028002\_422698370_n.jpg /></a>
+<a href=/assets/580960_513212482028002_422698370_n.jpg><img class=aligncenter size-full src=/assets/580960_513212482028002_422698370_n.jpg /></a>
 
 Et parfois, il faut repartir. Il manque un plan, alors direction la voiture pour aller chercher cette séquence de fin.
 Mais bon, on a connu plus difficile que bosser les pieds dans l&#8217;eau.

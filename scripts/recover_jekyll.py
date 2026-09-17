@@ -31,9 +31,15 @@ ASSET_DIRS = ("_assets", "_attachments")
 # scripts and video that several posts embed. Quoted attributes are matched to
 # their closing quote because a few WordPress filenames contain spaces.
 ASSET_RE = re.compile(
-    r"""(?:src|href)=["'](/assets/[^"']+)["']"""
-    r"""|(?:\]\(|url\()\s*(/assets/[^)\s]+)"""
+    r"""(?:src|href)=["'](/assets/[^"']+)["']"""  # quoted: may contain spaces
+    r"""|(?:src|href)=(/assets/[^\s>"']+)"""  # unquoted, as WordPress wrote it
+    r"""|(?:\]\(|url\()\s*(/assets/[^)\s]+)"""  # Markdown and CSS references
+    r"""|^\s*\[[^\]]+\]:\s*(/assets/\S+)""",  # reference-style link definitions
+    re.M,
 )
+# pandoc escapes Markdown punctuation even inside the raw HTML it emits, where
+# a backslash is literal rather than an escape. Undo that inside asset paths.
+MD_ESCAPE_RE = re.compile(r"\\([_*\[\]()~`>#+=|.!-])")
 # Relative references inside a copied iframe bundle's HTML.
 BUNDLE_RE = re.compile(r"""(?:src=|href=)["']([^"'#/][^"':]*?)["']""")
 PLAN_ENTRY_RE = re.compile(
@@ -314,6 +320,9 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats, keep_tags=
     else:
         body = fix_tight_headings(body)
     body = rewrite_urls(body, linkmap, section)
+    body = re.sub(
+        r"/assets/[^\s\"'<>)]+", lambda m: MD_ESCAPE_RE.sub(r"\1", m.group(0)), body
+    )
     body = strip_wordpress_cruft(body)
     body = body.strip() + "\n"
 
@@ -414,8 +423,6 @@ def copy_assets(body, archive, hist, stats):
     queue = []
     for match in ASSET_RE.findall(body):
         ref = next(g for g in match if g)
-        # pandoc escapes underscores in Markdown link targets.
-        ref = re.sub(r"\\([_*\[\]()~`>#+=|.!-])", r"\1", ref)
         queue.append(ref.split("?")[0].split("#")[0])
     seen = set()
     while queue:
