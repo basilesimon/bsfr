@@ -3,7 +3,7 @@ aliases: ["/2013/12/15/the-nsa-is-coming-to-town/"]
 date: "2013-12-15T00:00:00Z"
 description: "Yes, yes, this is a repost, and this is \\ old.\\ What can I say? I've been busy. You wouldn't let government agents spy on your special holiday moments in…"
 tags: []
-title: "! '\"The NSA is coming to town\"'"
+title: "\"The NSA is coming to town\""
 draft: true
 ---
 <div style="text-align: center;">

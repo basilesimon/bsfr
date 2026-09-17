@@ -3,7 +3,7 @@ aliases: ["/2014/02/10/ddj-project-migrations-in-europe/"]
 date: "2014-02-10T00:00:00Z"
 description: "I'm glad to be back, and with some good news. Michael and I published a data-journalism project about the flows of migration in Europe. The idea came from…"
 tags: []
-title: "! 'DDJ project: migrations in Europe'"
+title: "DDJ project: migrations in Europe"
 ---
 ![](/assets/Screen-Shot-2014-02-10-at-12.59.57.png)</a>
 

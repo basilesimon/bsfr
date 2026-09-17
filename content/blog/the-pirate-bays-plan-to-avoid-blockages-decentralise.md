@@ -3,7 +3,7 @@ aliases: ["/2014/01/23/the-pirate-bays-plan-to-avoid-blockages-decentralise/"]
 date: "2014-01-23T00:00:00Z"
 description: "The Pirate Bay, one of the most popular torrents website, may give itself some peace - for at least a few months. The website is targeted by authorities…"
 tags: []
-title: "! 'The Pirate Bay''s plan to avoid blockades: decentralise'"
+title: "The Pirate Bay's plan to avoid blockades: decentralise"
 draft: true
 ---
 The Pirate Bay, one of the most popular torrents website, may give itself some peace - for at least a few months. The website is targeted by authorities around the world and often taken down: 6 times precisely in 2013, switching between different domain names and swinging between court orders.

@@ -3,7 +3,7 @@ aliases: ["/2014/02/14/first-week-at-the-bbc-knowing-where-to-begin/"]
 date: "2014-02-14T00:00:00Z"
 description: "It's been a hell of a week. I just started working for the BBC News Lab last Tuesday, and spent three days in its Euston offices, but boy it was a nice…"
 tags: []
-title: "! 'First week at the BBC: knowing where to begin'"
+title: "First week at the BBC: knowing where to begin"
 draft: true
 ---
 ![](/assets/Screenshot-from-2014-02-14-203837.png)

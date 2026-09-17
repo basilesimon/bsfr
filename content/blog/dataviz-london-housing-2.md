@@ -3,7 +3,7 @@ aliases: ["/2013/09/30/dataviz-london-housing-2/"]
 date: "2013-09-30T00:00:00Z"
 description: "Some disturbing statistics were released this month and show that London is, more than ever, an expensive city to live in.\\ The average rent in the…"
 tags: []
-title: "! 'Dataviz: where do London students live vs. how much they pay'"
+title: "Dataviz: where do London students live vs. how much they pay"
 ---
 Some disturbing statistics were released this month and show that London is, more than ever, an expensive city to live in.\
 The average rent in the capital is now more than £1,100, beating the national average rent which stands at £743. This new peak is the second highest price since the 2008 crisis, and pairs with a 10% rise of housing prices this year.

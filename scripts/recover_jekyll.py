@@ -124,8 +124,16 @@ def parse_frontmatter(fm):
 
 
 def unquote(value):
+    """Strip YAML quoting from a scalar.
+
+    WordPress's exporter emitted titles containing a colon as `! 'Some: title'`
+    — a non-specific tag followed by a single-quoted scalar, in which an
+    apostrophe is escaped by doubling it.
+    """
+    value = re.sub(r"^!+\S*\s+", "", value.strip())
     if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
-        return value[1:-1]
+        quote = value[0]
+        return value[1:-1].replace(quote * 2, quote)
     return value
 
 
