@@ -28,8 +28,12 @@ PLAN = os.path.join(REPO, "IMPLEMENTATION_PLAN.md")
 ASSET_DIRS = ("_assets", "_attachments")
 
 # Any site-hosted file a post points at: images, but also the iframe bundles,
-# scripts and video that several posts embed.
-ASSET_RE = re.compile(r"""(?:src=|href=|\]\(|url\()["']?\s*(/assets/[^"')\s>]+)""")
+# scripts and video that several posts embed. Quoted attributes are matched to
+# their closing quote because a few WordPress filenames contain spaces.
+ASSET_RE = re.compile(
+    r"""(?:src|href)=["'](/assets/[^"']+)["']"""
+    r"""|(?:\]\(|url\()\s*(/assets/[^)\s]+)"""
+)
 # Relative references inside a copied iframe bundle's HTML.
 BUNDLE_RE = re.compile(r"""(?:src=|href=)["']([^"'#/][^"':]*?)["']""")
 PLAN_ENTRY_RE = re.compile(
@@ -173,13 +177,22 @@ def fix_tight_headings(body):
 
 
 def strip_wordpress_cruft(body):
-    """Drop the dead Google+ button WordPress stamped onto every exported post."""
-    return re.sub(
+    """Remove WordPress widgets that cannot survive the move off WordPress."""
+    # The Google+ button it stamped onto every exported post.
+    body = re.sub(
         r'\s*<div class="wp_plus_one_button".*?</div>\s*', "\n\n", body, flags=re.S
     )
 
+    # Emoticons were served as images from wp-includes, which is gone. Each one
+    # carries the emoticon it replaced in its alt text, so put that back.
+    def smiley(m):
+        alt = re.search(r'alt="([^"]*)"', m.group(0))
+        return alt.group(1) if alt else ""
 
-def rewrite_urls(body, linkmap):
+    return re.sub(r"<img[^>]*\bwp-smiley\b[^>]*>", smiley, body)
+
+
+def rewrite_urls(body, linkmap, section):
     """Point old-domain asset and post URLs at their current location."""
     # Where each post ended up, keyed by slug, for lookups that can't match a
     # full path: French posts kept /YYYY/MM/ permalinks while their English
@@ -215,6 +228,22 @@ def rewrite_urls(body, linkmap):
     body = re.sub(
         r"https?://blog\.basilesimon\.fr/(?P<path>\d{4}/\d{2}(?:/\d{2})?/[^\s)\"'<>]+?)/?(?=[\s)\"'<>]|$)",
         post_link,
+        body,
+    )
+    # Standalone WordPress pages that came back as posts.
+    def page_link(m):
+        return slugmap.get(m.group("slug"), m.group(0))
+
+    body = re.sub(
+        r"https?://blog\.basilesimon\.fr/(?P<slug>[a-z0-9-]+)/(?=[\s)\"'<>]|$)",
+        page_link,
+        body,
+    )
+    # WordPress tag and category archives have no equivalent here; the section
+    # index is the closest thing that still lists the same posts.
+    body = re.sub(
+        r"https?://blog\.basilesimon\.fr/(?:tag|category)/[^\s)\"'<>]*",
+        f"/{section}/",
         body,
     )
     # Whatever is left pointing at the dead subdomain's own root.
@@ -270,7 +299,7 @@ def excerpt(body, limit=155):
 # --------------------------------------------------------------------------
 
 
-def convert(slug, entry, archive, src, hist, section, linkmap, stats):
+def convert(slug, entry, archive, src, hist, section, linkmap, stats, keep_tags=True):
     date, _title, old_url = entry
     directory, filename, file_date = src[slug]
     path = os.path.join(archive, directory, filename)
@@ -284,7 +313,7 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats):
         body = html_to_markdown(body)
     else:
         body = fix_tight_headings(body)
-    body = rewrite_urls(body, linkmap)
+    body = rewrite_urls(body, linkmap, section)
     body = strip_wordpress_cruft(body)
     body = body.strip() + "\n"
 
@@ -309,7 +338,7 @@ def convert(slug, entry, archive, src, hist, section, linkmap, stats):
             r"https?://(?:blog\.)?basilesimon\.fr/assets/", "/assets/", image
         )
         lines.append(f"image: {yaml_quote(image)}")
-    tags = fm.get("tags")
+    tags = fm.get("tags") if keep_tags else None
     if isinstance(tags, str):
         tags = [tags]
     tags = [t.lower() for t in (tags or []) if t.lower() != "non classé"]
@@ -333,9 +362,27 @@ def fetch_asset(archive, hist, rel, stats):
     Basename fallbacks therefore only apply to references that had no
     directory of their own.
     """
-    candidates = [os.path.join(d, rel) for d in ASSET_DIRS]
+    names = [rel]
+    # Some accented filenames were committed mangled: the UTF-8 bytes of the
+    # name were read back as CP866, so `à` sits on disk as `├а`.
+    try:
+        mojibake = rel.encode("utf-8").decode("cp866")
+        if mojibake != rel:
+            names.append(mojibake)
+    except (UnicodeDecodeError, UnicodeEncodeError):
+        pass
+    # WordPress served generated thumbnails like `name-300x215.jpg`; only the
+    # full-size original was ever committed.
+    for n in list(names):
+        full = re.sub(r"-\d+x\d+(?=\.\w+$)", "", n)
+        if full != n:
+            names.append(full)
+
+    candidates = [os.path.join(d, n) for n in names for d in ASSET_DIRS]
     if os.path.dirname(rel) == "":
-        candidates += [os.path.join(d, os.path.basename(rel)) for d in ASSET_DIRS]
+        candidates += [
+            os.path.join(d, os.path.basename(n)) for n in names for d in ASSET_DIRS
+        ]
 
     for c in candidates:
         path = os.path.join(archive, c)
@@ -364,7 +411,12 @@ def copy_assets(body, archive, hist, stats):
     is rescanned and its relative references followed.
     """
     copied = []
-    queue = [r.split("?")[0].split("#")[0] for r in ASSET_RE.findall(body)]
+    queue = []
+    for match in ASSET_RE.findall(body):
+        ref = next(g for g in match if g)
+        # pandoc escapes underscores in Markdown link targets.
+        ref = re.sub(r"\\([_*\[\]()~`>#+=|.!-])", r"\1", ref)
+        queue.append(ref.split("?")[0].split("#")[0])
     seen = set()
     while queue:
         ref = queue.pop(0)
@@ -401,7 +453,8 @@ def copy_assets(body, archive, hist, stats):
 def plan_entries(stage):
     """Parse a stage's checklist from IMPLEMENTATION_PLAN.md."""
     text = open(PLAN, encoding="utf-8").read()
-    section = text.split(f"## Stage {stage}")[1].split(f"## Stage {stage + 1}")[0]
+    section = text.split(f"## Stage {stage}")[1]
+    section = re.split(r"^## ", section, maxsplit=1, flags=re.M)[0]
     return {
         url.strip("/").split("/")[-1]: (date, title, url)
         for date, title, url in PLAN_ENTRY_RE.findall(section)
@@ -413,9 +466,10 @@ def build_linkmap(entries, section):
     linkmap = {}
     for slug, (_d, _t, url) in entries.items():
         linkmap["/" + url.strip("/") + "/"] = f"/{section}/{slug}/"
-    # Posts already migrated carry their old URLs in `aliases:`.
-    for sec in ("blog", "weeknotes"):
-        d = os.path.join(REPO, "content", sec)
+    # Posts already recovered or migrated carry their old URLs in `aliases:`.
+    content = os.path.join(REPO, "content")
+    for sec in sorted(os.listdir(content)):
+        d = os.path.join(content, sec)
         if not os.path.isdir(d):
             continue
         for f in os.listdir(d):
@@ -435,6 +489,12 @@ def main():
     ap.add_argument("--stage", type=int, default=3, help="plan stage to convert")
     ap.add_argument("--section", default="blog", help="content/<section> to write into")
     ap.add_argument("--only", nargs="*", help="convert just these slugs")
+    ap.add_argument(
+        "--drop-tags",
+        action="store_true",
+        help="omit source tags; the photography archive carries 309 of them, "
+        "which would swamp the site-wide tag list shown on /blog",
+    )
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -453,7 +513,8 @@ def main():
             print(f"  !! {slug}: no source file in the archive", file=sys.stderr)
             continue
         out_path, text, assets = convert(
-            slug, entries[slug], args.archive, src, hist, args.section, linkmap, stats
+            slug, entries[slug], args.archive, src, hist, args.section, linkmap,
+            stats, keep_tags=not args.drop_tags,
         )
         if os.path.exists(out_path) and not args.only:
             print(f"  -- {slug}: already exists, skipped", file=sys.stderr)
