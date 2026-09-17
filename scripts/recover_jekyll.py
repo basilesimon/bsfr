@@ -248,6 +248,8 @@ def excerpt(body, limit=155):
     """First prose sentence(s) of a post, for the `description` frontmatter."""
     text = html.unescape(body)
     text = re.sub(r"```.*?```", " ", text, flags=re.S)
+    # Inline charts, scripts and styles carry text nodes that are not prose.
+    text = re.sub(r"<(svg|script|style)\b.*?</\1>", " ", text, flags=re.S | re.I)
     # Reference-style link definitions and horizontal rules are not prose.
     text = re.sub(r"^\s*\[[^\]]+\]:\s*\S+.*$", " ", text, flags=re.M)
     text = re.sub(r"^\s*([-*_])(?:\s*\1){2,}\s*$", " ", text, flags=re.M)
