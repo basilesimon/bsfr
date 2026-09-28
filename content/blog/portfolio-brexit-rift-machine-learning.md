@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/11/25/portfolio-brexit-rift-machine-learning/"]
 date: "2020-11-25T00:00:00Z"
 description: null
 image: null
@@ -17,7 +18,7 @@ The central question was whether we could back up the feeling Lobby reporters ha
 
 **[The main Reuters Graphics story](https://graphics.reuters.com/BRITAIN-EU-LEADER/010092Q33KW/index.html)** studied 12 key votes on amendments to the deal, which were fascinating as they reprensented new ideas from parliamentarians about what to do about Brexit.
 
-**[I also published a follow-up looking at 238 votes](https://blog.basilesimon.fr/2019/10/06/brexit-machine-learning/)** and feeding the records to a machine learning algorithm, which as it was a lot more speculative was not Reuters' cup of tea.
+**[I also published a follow-up looking at 238 votes](/blog/brexit-machine-learning/)** and feeding the records to a machine learning algorithm, which as it was a lot more speculative was not Reuters' cup of tea.
 
 ---
 

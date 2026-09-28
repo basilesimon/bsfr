@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/02/02/january-transfer-window-on-the-times/"]
 date: "2017-02-02T00:00:00Z"
 title: January Transfer Window graphics in The Times
 ---

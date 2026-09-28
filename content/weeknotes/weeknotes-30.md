@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/04/23/weeknotes-30/"]
 date: "2021-04-23T00:00:00Z"
 draft: true
 title: "The new normal settles in - weeknotes #30"

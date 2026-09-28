@@ -1,4 +1,5 @@
 ---
+aliases: ["/2018/12/19/pen-plotter-maps/"]
 date: "2018-12-19T00:00:00Z"
 description: Drawing Strava data on pen-plotter maps in R
 image: https://basilesimon.fr/assets/blog-map-final-group.JPG

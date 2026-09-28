@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/10/21/portfolio-global-witness-pipedown-map/"]
 date: "2020-10-21T00:00:00Z"
 image: https://basilesimon.fr/assets/gw-full.png
 tags: [portfolio, viz]

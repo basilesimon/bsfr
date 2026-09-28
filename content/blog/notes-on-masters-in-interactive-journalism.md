@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/03/10/notes-on-masters-in-interactive-journalism/"]
 date: "2017-03-10T00:00:00Z"
 description: Open sourcing my notes and presentations for the MA in Interactive Journalism at City University
 title: Open sourcing my MA in Interactive Journalism lecturing notes

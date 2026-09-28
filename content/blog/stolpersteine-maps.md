@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/11/13/stolpersteine-maps/"]
 date: "2020-11-13T00:00:00Z"
 updated: "2025-12-18T00:00:00Z"
 description: "Comparing Stolpersteine memorial datasets: Wikidata vs stolpersteine-berlin.de. Updated 2025 analysis with 10,000+ Berlin records and interactive maps."

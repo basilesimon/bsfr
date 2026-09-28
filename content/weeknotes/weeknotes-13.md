@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/12/18/weeknotes-13/"]
 date: "2020-12-18T00:00:00Z"
 draft: true
 title: "Paying for the Christmas presents - weeknotes #13"

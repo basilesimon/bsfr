@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/03/12/weeknotes-24/"]
 date: "2021-03-12T00:00:00Z"
 draft: true
 title: "Hello, Digital Evidence Toolkit - weeknotes #24"

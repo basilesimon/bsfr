@@ -1,12 +1,11 @@
 ---
+aliases: ["/2019/01/02/strava-rides-map-in-r/"]
 date: "2019-01-02T00:00:00Z"
 description: Scraping Strava to map 10,000km of cycling with Python, R and ggplot
-image: https://blog.basilesimon.fr/assets/strava-map-final.jpeg
+image: /assets/strava-map-1.png
 tags: [r, viz]
 title: Strava rides map in R
 ---
-
-![](assets/strava-map-final.jpeg)
 
 This is a Christmas present to myself to celebrate 10,000km of commuting on my bicycle: a lovely frame print of all my GPS traces on a home-made map of London. Here's how I made it.
 

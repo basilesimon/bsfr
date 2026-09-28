@@ -1,4 +1,5 @@
 ---
+aliases: ["/2020/04/26/1km-covid-viz/"]
 date: "2020-04-26T00:00:00Z"
 description: Animated map of Strava activities during Covid in a one-kilometre radius
 image: https://basilesimon.fr/assets/covid-viz-terrain.png

@@ -1,4 +1,5 @@
 ---
+aliases: ["/2018/04/13/ijf18-career-paths-for-news-nerds/"]
 date: "2018-04-13T00:00:00Z"
 description: A collection of influential articles we referred to on our IJF 2018 panel about the leading cause of people leaving their jobs in news nerdery
 image: https://basilesimon.fr/assets/logo_ijf18.jpg

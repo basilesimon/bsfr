@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/02/19/weeknotes-21/"]
 date: "2021-02-19T00:00:00Z"
 draft: true
 title: "Jaccard and dendrograms - weeknotes #21"

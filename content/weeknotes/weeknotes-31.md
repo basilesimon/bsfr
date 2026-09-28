@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/04/30/weeknotes-31/"]
 date: "2021-04-30T00:00:00Z"
 draft: true
 title: "Deutsche Welle sprint - weeknotes #31"

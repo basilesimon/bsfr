@@ -1,4 +1,5 @@
 ---
+aliases: ["/2021/02/11/hello-d3-render/"]
 date: "2021-02-11T00:00:00Z"
 description: Hello d3-render, a lovely declarative library looking after the heavy lifting of the General Update Pattern
 image: https://basilesimon.fr/assets/share-render.png

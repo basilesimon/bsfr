@@ -1,4 +1,5 @@
 ---
+aliases: ["/2017/04/11/the-times-sunday-times-https/", "/blog/2017-04-11-the-times-sunday-times-https/"]
 date: "2017-04-11T00:00:00Z"
 description: We moved the Times and Sunday Times domains to HTTPS, and here is why
   we’re quietly celebrating
